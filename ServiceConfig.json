@@ -1,0 +1,52 @@
+{
+        "common": {
+                "msgVpnName": "united-ep-tools-v2",
+        				"serviceTypeId": "enterprise-standalone",
+        				"serviceClassId": "enterprise-250-standalone",
+                "eventBrokerVersion": "10.25",
+                "messagingStorage": 10,
+                "ssl": {
+                        "brokerCert": "n/a",
+                        "brokerCAs" : {
+                                "not used": "n/a"
+                        }
+                },
+                "cluster": {
+                        "name": "united-ep-tools-cluster"
+                },
+        				"GlobalAdminUser": "cicd_admin",
+        				"GlobalAdminToken": "p6tWgBCe1F28+uzZySK2rg==nM2KSsk=",				
+        				"createDNSEntry": false,
+        				"uploadCustomCerts": true,
+        				"shellCommandsForWindows": false,
+        				"enableSSO": false,
+        				"DRBridgeRejectWhenSyncIneligible": true,
+        				"DRBridgeCompressed": false
+		    },
+        "primary": {
+                "serviceName": "united-ep-tools-primary-v2",
+                "datacenterId": "unitedsolaceservices-eks-us-east-1",
+                "k8s": {
+                        "namespace": "kube-system",
+                        "setupKubectlCommand": "source ~/psg-vpc/setup-eks-1.source-me"
+                },
+                "dns": {
+                        "cname": "",
+                        "cnameX": "mikeob-stg-atw.sol-psg.com",
+                        "createAwsCnameCommand": "./create-cname.sh -c {{cname}} -t {{TARGET_URL}} -i Z1039032QC3BZFZ1YE6E"
+                }
+        },
+        "dr": {
+                "serviceName": "united-ep-tools-DR-v2",
+                "datacenterId": "unitedsolaceservices-eks-us-east-1",
+                "k8s": {
+                        "namespace": "kube-system",
+                        "setupKubectlCommand": "source ~/psg-vpc/setup-eks-1.source-me"
+                },
+                "dns": {
+                        "cname": "",
+                        "unusedcname": "mikeob-stgdr-atw.sol-psg.com",
+                        "createAwsCnameCommand": "./create-cname.sh -c {{cname}} -t {{TARGET_URL}} -i Z1039032QC3BZFZ1YE6E"
+                }
+        }
+}
