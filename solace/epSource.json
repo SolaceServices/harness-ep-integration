@@ -1,0 +1,60 @@
+{
+    "eventPortal": {
+        "documentation": "Lists things pulled from event portal",
+        "applications": [
+            {
+                "applicationName": "NotificationDirectProducer",
+                "version": "0.0.1"
+            },
+            {
+                "applicationName": "NotificationDirectConsumer",
+                 "version": "0.0.1"
+            }
+        ]
+    },
+    "eventPortalOverlays": {
+        "documentation": "User settings to be overlaid ontop of client username settings from event portal",
+      	"users": [
+      		{
+      			"clientUsername": "notification_direct_producer",
+      			"clientProfileName": "notification_direct_producer_cp",
+      			"password": "notification_direct_producer_pwd"
+      		},
+      		{
+      			"clientUsername": "notification_direct_consumer",
+      			"clientProfileName": "notification_direct_consumer_cp",
+      			"password": "notification_direct_consumer_pwd"
+      		}
+      	]
+      },
+      "clientProfiles": [
+          {
+              "clientProfileName": "notification_direct_producer_cp",
+              "allowGuaranteedMsgReceiveEnabled": true,
+              "maxConnectionCountPerClientUsername": 20,
+              "maxEgressFlowCount": 20,
+              "maxEndpointCountPerClientUsername": 0,
+              "maxIngressFlowCount": 20,
+              "maxMsgsPerTransaction": 256,
+              "maxSubscriptionCount": 250,
+              "maxTransactedSessionCount": 0,
+              "maxTransactionCount": 0,
+              "serviceSmfMaxConnectionCountPerClientUsername": 20,
+              "serviceWebMaxConnectionCountPerClientUsername": 0
+          },
+          {
+              "clientProfileName": "notification_direct_consumer_cp",
+              "allowGuaranteedMsgReceiveEnabled": true,
+              "maxConnectionCountPerClientUsername": 20,
+              "maxEgressFlowCount": 20,
+              "maxEndpointCountPerClientUsername": 0,
+              "maxIngressFlowCount": 20,
+              "maxMsgsPerTransaction": 256,
+              "maxSubscriptionCount": 250,
+              "maxTransactedSessionCount": 0,
+              "maxTransactionCount": 0,
+              "serviceSmfMaxConnectionCountPerClientUsername": 20,
+              "serviceWebMaxConnectionCountPerClientUsername": 0
+          }    
+      ]
+  }
