@@ -1,4 +1,67 @@
 {
+    "msgVpnName": "united-ep-tools-v2",
+    "users": [
+        {
+            "aclProfileName": "boomi",
+            "clientProfileName": "boomi_cpx",
+            "clientUsername": "boomi",
+            "enabled": true,
+            "guaranteedEndpointPermissionOverrideEnabled": false,
+            "msgVpnName": "united-ep-tools-v2",
+            "passwordToken": "<UNKNOWN>",
+            "subscriptionManagerEnabled": false
+        },
+        {
+            "aclProfileName": "boomi_consumer",
+            "clientProfileName": "boomi_consumer_cpx",
+            "clientUsername": "boomi_consumer",
+            "enabled": true,
+            "guaranteedEndpointPermissionOverrideEnabled": false,
+            "msgVpnName": "united-ep-tools-v2",
+            "passwordToken": "<UNKNOWN>",
+            "subscriptionManagerEnabled": false
+        },
+        {
+            "aclProfileName": "demo_acl",
+            "clientProfileName": "demo_cp",
+            "clientUsername": "demo",
+            "enabled": true,
+            "guaranteedEndpointPermissionOverrideEnabled": false,
+            "msgVpnName": "united-ep-tools-v2",
+            "passwordToken": "<UNKNOWN>",
+            "subscriptionManagerEnabled": false
+        },
+        {
+            "aclProfileName": "sdk_perf_1",
+            "clientProfileName": "sdk_perf",
+            "clientUsername": "demo_user456",
+            "enabled": true,
+            "guaranteedEndpointPermissionOverrideEnabled": false,
+            "msgVpnName": "united-ep-tools-v2",
+            "passwordToken": "<UNKNOWN>",
+            "subscriptionManagerEnabled": false
+        },
+        {
+            "aclProfileName": "sdk_perf",
+            "clientProfileName": "sdk_perf",
+            "clientUsername": "sdk_perf",
+            "enabled": true,
+            "guaranteedEndpointPermissionOverrideEnabled": false,
+            "msgVpnName": "united-ep-tools-v2",
+            "passwordToken": "<UNKNOWN>",
+            "subscriptionManagerEnabled": false
+        },
+        {
+            "aclProfileName": "sdk_perf_1",
+            "clientProfileName": "sdk_perf",
+            "clientUsername": "sdk_perf_1",
+            "enabled": true,
+            "guaranteedEndpointPermissionOverrideEnabled": false,
+            "msgVpnName": "united-ep-tools-v2",
+            "passwordToken": "<UNKNOWN>",
+            "subscriptionManagerEnabled": false
+        }
+    ],
     "aclProfiles": [
         {
             "aclProfileName": "boomi",
@@ -36,6 +99,14 @@
             "subscribeTopicDefaultAction": "disallow"
         },
         {
+            "aclProfileName": "sdk_perf_1",
+            "clientConnectDefaultAction": "allow",
+            "msgVpnName": "united-ep-tools-v2",
+            "publishTopicDefaultAction": "disallow",
+            "subscribeShareNameDefaultAction": "allow",
+            "subscribeTopicDefaultAction": "disallow"
+        },
+        {
             "aclProfileName": "sdk_perf",
             "clientConnectDefaultAction": "allow",
             "msgVpnName": "united-ep-tools-v2",
@@ -48,14 +119,6 @@
             "subscribeTopicExceptions": [
                 "united/demo/test2"
             ]
-        },
-        {
-            "aclProfileName": "sdk_perf_1",
-            "clientConnectDefaultAction": "allow",
-            "msgVpnName": "united-ep-tools-v2",
-            "publishTopicDefaultAction": "disallow",
-            "subscribeShareNameDefaultAction": "allow",
-            "subscribeTopicDefaultAction": "disallow"
         }
     ],
     "clientProfiles": [
@@ -72,7 +135,7 @@
             "apiQueueManagementCopyFromOnCreateTemplateName": "",
             "apiTopicEndpointManagementCopyFromOnCreateName": "",
             "apiTopicEndpointManagementCopyFromOnCreateTemplateName": "",
-            "clientProfileName": "boomi_consumer_cpx",
+            "clientProfileName": "boomi_cpx",
             "compressionEnabled": true,
             "elidingDelay": 0,
             "elidingEnabled": false,
@@ -126,7 +189,7 @@
             "apiQueueManagementCopyFromOnCreateTemplateName": "",
             "apiTopicEndpointManagementCopyFromOnCreateName": "",
             "apiTopicEndpointManagementCopyFromOnCreateTemplateName": "",
-            "clientProfileName": "boomi_cpx",
+            "clientProfileName": "boomi_consumer_cpx",
             "compressionEnabled": true,
             "elidingDelay": 0,
             "elidingEnabled": false,
@@ -276,7 +339,6 @@
             "tlsAllowDowngradeToPlainTextEnabled": false
         }
     ],
-    "msgVpnName": "united-ep-tools-v2",
     "queues": [
         {
             "accessType": "exclusive",
@@ -521,76 +583,5 @@
             ]
         }
     ],
-    "topicEndpoints": [
-        {
-            "accessType": "exclusive",
-            "egressEnabled": true,
-            "ingressEnabled": true,
-            "maxSpoolUsage": 100,
-            "owner": "mike",
-            "topicEndpointName": "testTopicEndpoint"
-        }
-    ],
-    "users": [
-        {
-            "aclProfileName": "boomi",
-            "clientProfileName": "boomi_cpx",
-            "clientUsername": "boomi",
-            "enabled": true,
-            "guaranteedEndpointPermissionOverrideEnabled": false,
-            "msgVpnName": "united-ep-tools-v2",
-            "password": "U4e^!!V+",
-            "subscriptionManagerEnabled": false
-        },
-        {
-            "aclProfileName": "boomi_consumer",
-            "clientProfileName": "boomi_consumer_cpx",
-            "clientUsername": "boomi_consumer",
-            "enabled": true,
-            "guaranteedEndpointPermissionOverrideEnabled": false,
-            "msgVpnName": "united-ep-tools-v2",
-            "password": "boomi_consumer_pwd",
-            "subscriptionManagerEnabled": false
-        },
-        {
-            "aclProfileName": "demo_acl",
-            "clientProfileName": "demo_cp",
-            "clientUsername": "demo",
-            "enabled": true,
-            "guaranteedEndpointPermissionOverrideEnabled": false,
-            "msgVpnName": "united-ep-tools-v2",
-            "password": "password",
-            "subscriptionManagerEnabled": false
-        },
-        {
-            "aclProfileName": "sdk_perf_1",
-            "clientProfileName": "sdk_perf",
-            "clientUsername": "demo_user456",
-            "enabled": true,
-            "guaranteedEndpointPermissionOverrideEnabled": false,
-            "msgVpnName": "united-ep-tools-v2",
-            "password": "password",
-            "subscriptionManagerEnabled": false
-        },
-        {
-            "aclProfileName": "sdk_perf",
-            "clientProfileName": "sdk_perf",
-            "clientUsername": "sdk_perf",
-            "enabled": true,
-            "guaranteedEndpointPermissionOverrideEnabled": false,
-            "msgVpnName": "united-ep-tools-v2",
-            "password": "password",
-            "subscriptionManagerEnabled": false
-        },
-        {
-            "aclProfileName": "sdk_perf_1",
-            "clientProfileName": "sdk_perf",
-            "clientUsername": "sdk_perf_1",
-            "enabled": true,
-            "guaranteedEndpointPermissionOverrideEnabled": false,
-            "msgVpnName": "united-ep-tools-v2",
-            "password": "password",
-            "subscriptionManagerEnabled": false
-        }
-    ]
+    "replicatedTopics": []
 }
