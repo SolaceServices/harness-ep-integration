@@ -36,6 +36,28 @@
             "subscribeTopicDefaultAction": "disallow"
         },
         {
+            "aclProfileName": "notification_direct_consumer",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicDefaultAction": "disallow",
+            "publishTopicExceptions": [],
+            "subscribeShareNameDefaultAction": "allow",
+            "subscribeTopicDefaultAction": "disallow",
+            "subscribeTopicExceptions": [
+                "ua/notifications/delivered"
+            ]
+        },
+        {
+            "aclProfileName": "notification_direct_producer",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicDefaultAction": "disallow",
+            "publishTopicExceptions": [
+                "ua/notifications/delivered"
+            ],
+            "subscribeShareNameDefaultAction": "allow",
+            "subscribeTopicDefaultAction": "disallow",
+            "subscribeTopicExceptions": []
+        },
+        {
             "aclProfileName": "sdk_perf",
             "clientConnectDefaultAction": "allow",
             "msgVpnName": "united-ep-tools-v2",
@@ -220,6 +242,34 @@
             "tcpMaxSegmentSize": 1460,
             "tcpMaxWindowSize": 256,
             "tlsAllowDowngradeToPlainTextEnabled": true
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "clientProfileName": "notification_direct_consumer_cp",
+            "maxConnectionCountPerClientUsername": 20,
+            "maxEgressFlowCount": 20,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 20,
+            "maxMsgsPerTransaction": 256,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 20,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "clientProfileName": "notification_direct_producer_cp",
+            "maxConnectionCountPerClientUsername": 20,
+            "maxEgressFlowCount": 20,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 20,
+            "maxMsgsPerTransaction": 256,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 20,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
         },
         {
             "allowBridgeConnectionsEnabled": true,
@@ -571,6 +621,22 @@
             "msgVpnName": "united-ep-tools-v2",
             "password": "password",
             "subscriptionManagerEnabled": false
+        },
+        {
+            "aclProfileName": "notification_direct_consumer",
+            "clientProfileName": "notification_direct_consumer_cp",
+            "clientUsername": "notification_direct_consumer",
+            "documentation": "This user was imported from Event Portal for app 'NotificationDirectConsumer'.",
+            "enabled": true,
+            "password": "notification_direct_consumer_pwd"
+        },
+        {
+            "aclProfileName": "notification_direct_producer",
+            "clientProfileName": "notification_direct_producer_cp",
+            "clientUsername": "notification_direct_producer",
+            "documentation": "This user was imported from Event Portal for app 'NotificationDirectProducer'.",
+            "enabled": true,
+            "password": "notification_direct_producer_pwd"
         },
         {
             "aclProfileName": "sdk_perf",
