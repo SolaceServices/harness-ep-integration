@@ -59,7 +59,6 @@
             "clientConnectDefaultAction": "allow",
             "msgVpnName": "united-ep-tools-v2",
             "publishTopicDefaultAction": "disallow",
-            "publishTopicExceptions": [],
             "subscribeShareNameDefaultAction": "allow",
             "subscribeTopicDefaultAction": "disallow",
             "subscribeTopicExceptions": [
@@ -75,8 +74,7 @@
                 "ua/notifications/delivered"
             ],
             "subscribeShareNameDefaultAction": "allow",
-            "subscribeTopicDefaultAction": "disallow",
-            "subscribeTopicExceptions": []
+            "subscribeTopicDefaultAction": "disallow"
         },
         {
             "aclProfileName": "sdk_perf",
@@ -785,17 +783,21 @@
             "aclProfileName": "notification_direct_consumer",
             "clientProfileName": "notification_direct_consumer_cp",
             "clientUsername": "notification_direct_consumer",
-            "documentation": "This user was imported from Event Portal for app 'NotificationDirectConsumer'.",
             "enabled": true,
-            "password": "notification_direct_consumer_pwd"
+            "guaranteedEndpointPermissionOverrideEnabled": false,
+            "msgVpnName": "united-ep-tools-v2",
+            "password": "notification_direct_consumer_pwd",
+            "subscriptionManagerEnabled": false
         },
         {
             "aclProfileName": "notification_direct_producer",
             "clientProfileName": "notification_direct_producer_cp",
             "clientUsername": "notification_direct_producer",
-            "documentation": "This user was imported from Event Portal for app 'NotificationDirectProducer'.",
             "enabled": true,
-            "password": "notification_direct_producer_pwd"
+            "guaranteedEndpointPermissionOverrideEnabled": false,
+            "msgVpnName": "united-ep-tools-v2",
+            "password": "notification_direct_producer_pwd",
+            "subscriptionManagerEnabled": false
         },
         {
             "aclProfileName": "sdk_perf",
