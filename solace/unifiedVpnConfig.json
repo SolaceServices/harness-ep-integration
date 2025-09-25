@@ -790,26 +790,6 @@
     ],
     "users": [
         {
-            "aclProfileName": "application_x_user_acl",
-            "clientProfileName": "application_x_cp",
-            "clientUsername": "application_x_user",
-            "enabled": true,
-            "guaranteedEndpointPermissionOverrideEnabled": false,
-            "msgVpnName": "united-ep-tools-v2",
-            "passwordToken": "<UNKNOWN>",
-            "subscriptionManagerEnabled": false
-        },
-        {
-            "aclProfileName": "application_y_user_acl",
-            "clientProfileName": "application_y_cp",
-            "clientUsername": "application_y_user",
-            "enabled": true,
-            "guaranteedEndpointPermissionOverrideEnabled": false,
-            "msgVpnName": "united-ep-tools-v2",
-            "passwordToken": "<UNKNOWN>",
-            "subscriptionManagerEnabled": false
-        },
-        {
             "aclProfileName": "boomi",
             "clientProfileName": "boomi_cpx",
             "clientUsername": "boomi",
