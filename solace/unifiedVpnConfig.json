@@ -596,7 +596,7 @@
             "enabled": true,
             "guaranteedEndpointPermissionOverrideEnabled": false,
             "msgVpnName": "united-ep-tools-v2",
-            "password": "application_x_user_pwd"
+            "password": "application_x_user_pwd",
             "subscriptionManagerEnabled": false
         },
         {
@@ -606,7 +606,7 @@
             "enabled": true,
             "guaranteedEndpointPermissionOverrideEnabled": false,
             "msgVpnName": "united-ep-tools-v2",
-            "password": "application_y_user_pwd"
+            "password": "application_y_user_pwd",
             "subscriptionManagerEnabled": false
         },
         {
