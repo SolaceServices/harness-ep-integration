@@ -1,8 +1,8 @@
 {
-    "msgVpnName": "united-ep-tools-v2",
-    "users": [],
     "aclProfiles": [],
     "clientProfiles": [],
+    "msgVpnName": "united-ep-tools-v2",
     "queues": [],
-    "replicatedTopics": []
+    "replicatedTopics": [],
+    "users": []
 }
