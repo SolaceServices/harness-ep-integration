@@ -315,7 +315,7 @@
             "maxBindCount": 1000,
             "maxDeliveredUnackedMsgsPerFlow": 10000,
             "maxMsgSize": 10000000,
-            "maxMsgSpoolUsage": 100,
+            "maxMsgSpoolUsage": 2100,
             "maxRedeliveryCount": 0,
             "maxTtl": 0,
             "msgVpnName": "united-ep-tools-v2",
