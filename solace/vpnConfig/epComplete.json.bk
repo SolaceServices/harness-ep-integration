@@ -1,46 +1,44 @@
 {
     "__event-portal": {
         "__ep_applications": {
-            "__NotificationDirectConsumer": {
-                "clientUsername": "notification_direct_consumer",
-                "id": "jxf93bscl0h",
-                "name": "NotificationDirectConsumer"
+            "__BoomiApp": {
+                "clientUsername": "boomi_pub",
+                "id": "6sncqwsiokc",
+                "name": "BoomiApp"
             },
-            "__NotificationDirectProducer": {
-                "clientUsername": "notification_direct_producer",
-                "id": "rgv74yl13ss",
-                "name": "NotificationDirectProducer"
+            "__BoomiConsumerApp": {
+                "clientUsername": "boomi_sub",
+                "id": "rem7hxgpwq4",
+                "name": "BoomiConsumerApp"
             }
         }
     },
     "aclProfiles": [
         {
-            "aclProfileName": "notification_direct_producer",
-            "clientConnectDefaultAction": "allow",
-            "publishTopicDefaultAction": "disallow",
-            "publishTopicExceptions": [
-                "ua/notifications/delivered"
-            ],
-            "subscribeShareNameDefaultAction": "allow",
-            "subscribeTopicDefaultAction": "disallow",
-            "subscribeTopicExceptions": []
-        },
-        {
-            "aclProfileName": "notification_direct_consumer",
+            "aclProfileName": "boomi_sub",
             "clientConnectDefaultAction": "allow",
             "publishTopicDefaultAction": "disallow",
             "publishTopicExceptions": [],
             "subscribeShareNameDefaultAction": "allow",
             "subscribeTopicDefaultAction": "disallow",
-            "subscribeTopicExceptions": [
-                "ua/notifications/delivered"
-            ]
+            "subscribeTopicExceptions": []
+        },
+        {
+            "aclProfileName": "boomi_pub",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicDefaultAction": "disallow",
+            "publishTopicExceptions": [
+                "material/master/cannonical/v1/boomi/evt"
+            ],
+            "subscribeShareNameDefaultAction": "allow",
+            "subscribeTopicDefaultAction": "disallow",
+            "subscribeTopicExceptions": []
         }
     ],
     "clientProfiles": [
         {
             "allowGuaranteedMsgReceiveEnabled": true,
-            "clientProfileName": "notification_direct_producer_cp",
+            "clientProfileName": "boomi_pub_cp",
             "maxConnectionCountPerClientUsername": 20,
             "maxEgressFlowCount": 20,
             "maxEndpointCountPerClientUsername": 0,
@@ -54,7 +52,7 @@
         },
         {
             "allowGuaranteedMsgReceiveEnabled": true,
-            "clientProfileName": "notification_direct_consumer_cp",
+            "clientProfileName": "boomi_sub_cp",
             "maxConnectionCountPerClientUsername": 20,
             "maxEgressFlowCount": 20,
             "maxEndpointCountPerClientUsername": 0,
@@ -70,60 +68,34 @@
     "queues": [
         {
             "accessType": "exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'Q.NOT.CONSUMER.TEST.PREVIEW'.",
+            "documentation": "This queue was imported from Event Portal for app 'Q.CANNONICAL.V1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
-            "maxMsgSpoolUsage": 5000,
-            "owner": "notification_direct_consumer",
+            "maxMsgSpoolUsage": 100,
+            "owner": "boomi_sub",
             "permission": "no-access",
-            "queueName": "Q.NOT.CONSUMER.TEST.PREVIEW",
+            "queueName": "Q.CANNONICAL.V1",
             "subscriptionTopics": [
-                "united/test/preview"
-            ]
-        },
-        {
-            "accessType": "exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'Q.UaNotificationsDelivered'.",
-            "egressEnabled": true,
-            "ingressEnabled": true,
-            "maxMsgSpoolUsage": 5000,
-            "owner": "notification_direct_consumer",
-            "permission": "no-access",
-            "queueName": "Q.UaNotificationsDelivered",
-            "subscriptionTopics": [
-                "ua/notifications/delivered"
-            ]
-        },
-        {
-            "accessType": "exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'Q.UaNotificationsDelivered_CP'.",
-            "egressEnabled": true,
-            "ingressEnabled": true,
-            "maxMsgSpoolUsage": 5000,
-            "owner": "notification_direct_consumer",
-            "permission": "no-access",
-            "queueName": "Q.UaNotificationsDelivered_CP",
-            "subscriptionTopics": [
-                "ua/notifications/delivered"
+                "material/master/cannonical/v1/boomi/>"
             ]
         }
     ],
     "users": [
         {
-            "aclProfileName": "notification_direct_producer",
-            "clientProfileName": "notification_direct_producer_cp",
-            "clientUsername": "notification_direct_producer",
-            "documentation": "This user was imported from Event Portal for app 'NotificationDirectProducer'.",
+            "aclProfileName": "boomi_sub",
+            "clientProfileName": "boomi_sub_cp",
+            "clientUsername": "boomi_sub",
+            "documentation": "This user was imported from Event Portal for app 'BoomiConsumerApp'.",
             "enabled": true,
-            "password": "notification_direct_producer_pwd"
+            "password": "boomi_sub_pwd"
         },
         {
-            "aclProfileName": "notification_direct_consumer",
-            "clientProfileName": "notification_direct_consumer_cp",
-            "clientUsername": "notification_direct_consumer",
-            "documentation": "This user was imported from Event Portal for app 'NotificationDirectConsumer'.",
+            "aclProfileName": "boomi_pub",
+            "clientProfileName": "boomi_pub_cp",
+            "clientUsername": "boomi_pub",
+            "documentation": "This user was imported from Event Portal for app 'BoomiApp'.",
             "enabled": true,
-            "password": "notification_direct_consumer_pwd"
+            "password": "boomi_pub_pwd"
         }
     ]
 }

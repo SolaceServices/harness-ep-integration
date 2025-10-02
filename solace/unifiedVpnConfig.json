@@ -1,6 +1,26 @@
 {
     "aclProfiles": [
         {
+            "aclProfileName": "boomi_pub",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicDefaultAction": "disallow",
+            "publishTopicExceptions": [
+                "material/master/cannonical/v1/boomi/evt"
+            ],
+            "subscribeShareNameDefaultAction": "allow",
+            "subscribeTopicDefaultAction": "disallow",
+            "subscribeTopicExceptions": []
+        },
+        {
+            "aclProfileName": "boomi_sub",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicDefaultAction": "disallow",
+            "publishTopicExceptions": [],
+            "subscribeShareNameDefaultAction": "allow",
+            "subscribeTopicDefaultAction": "disallow",
+            "subscribeTopicExceptions": []
+        },
+        {
             "aclProfileName": "notification_direct_consumer",
             "clientConnectDefaultAction": "allow",
             "msgVpnName": "united-ep-tools-v2",
@@ -24,6 +44,34 @@
         }
     ],
     "clientProfiles": [
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "clientProfileName": "boomi_pub_cp",
+            "maxConnectionCountPerClientUsername": 20,
+            "maxEgressFlowCount": 20,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 20,
+            "maxMsgsPerTransaction": 256,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 20,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "clientProfileName": "boomi_sub_cp",
+            "maxConnectionCountPerClientUsername": 20,
+            "maxEgressFlowCount": 20,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 20,
+            "maxMsgsPerTransaction": 256,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 20,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
         {
             "allowBridgeConnectionsEnabled": false,
             "allowCutThroughForwardingEnabled": false,
@@ -137,6 +185,19 @@
     "queues": [
         {
             "accessType": "exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'Q.CANNONICAL.V1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "maxMsgSpoolUsage": 100,
+            "owner": "boomi_sub",
+            "permission": "no-access",
+            "queueName": "Q.CANNONICAL.V1",
+            "subscriptionTopics": [
+                "material/master/cannonical/v1/boomi/>"
+            ]
+        },
+        {
+            "accessType": "exclusive",
             "consumerAckPropagationEnabled": true,
             "deadMsgQueue": "#DEAD_MSG_QUEUE",
             "deliveryCountEnabled": false,
@@ -243,6 +304,22 @@
     ],
     "replicatedTopics": [],
     "users": [
+        {
+            "aclProfileName": "boomi_pub",
+            "clientProfileName": "boomi_pub_cp",
+            "clientUsername": "boomi_pub",
+            "documentation": "This user was imported from Event Portal for app 'BoomiApp'.",
+            "enabled": true,
+            "password": "boomi_pub_pwd"
+        },
+        {
+            "aclProfileName": "boomi_sub",
+            "clientProfileName": "boomi_sub_cp",
+            "clientUsername": "boomi_sub",
+            "documentation": "This user was imported from Event Portal for app 'BoomiConsumerApp'.",
+            "enabled": true,
+            "password": "boomi_sub_pwd"
+        },
         {
             "aclProfileName": "notification_direct_consumer",
             "clientProfileName": "notification_direct_consumer_cp",
