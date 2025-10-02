@@ -71,7 +71,7 @@
             "documentation": "This queue was imported from Event Portal for app 'Q.CANNONICAL.V1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
-            "maxMsgSpoolUsage": 100,
+            "maxMsgSpoolUsage": 2100,
             "owner": "boomi_sub",
             "permission": "no-access",
             "queueName": "Q.CANNONICAL.V1",
