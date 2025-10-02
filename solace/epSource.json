@@ -3,11 +3,11 @@
         "documentation": "Lists things pulled from event portal",
         "applications": [
             {
-                "applicationName": "NotificationDirectProducer",
+                "applicationName": "BoomiConsumerApp",
                 "version": "0.0.1"
             },
             {
-                "applicationName": "NotificationDirectConsumer",
+                "applicationName": "BoomiApp",
                  "version": "0.0.1"
             }
         ]
@@ -16,20 +16,20 @@
         "documentation": "User settings to be overlaid ontop of client username settings from event portal",
       	"users": [
       		{
-      			"clientUsername": "notification_direct_producer",
-      			"clientProfileName": "notification_direct_producer_cp",
-      			"password": "notification_direct_producer_pwd"
+      			"clientUsername": "boomi_pub",
+      			"clientProfileName": "boomi_pub_cp",
+      			"password": "boomi_pub_pwd"
       		},
       		{
-      			"clientUsername": "notification_direct_consumer",
-      			"clientProfileName": "notification_direct_consumer_cp",
-      			"password": "notification_direct_consumer_pwd"
+      			"clientUsername": "boomi_sub",
+      			"clientProfileName": "boomi_sub_cp",
+      			"password": "boomi_sub_pwd"
       		}
       	]
       },
       "clientProfiles": [
           {
-              "clientProfileName": "notification_direct_producer_cp",
+              "clientProfileName": "boomi_pub_cp",
               "allowGuaranteedMsgReceiveEnabled": true,
               "maxConnectionCountPerClientUsername": 20,
               "maxEgressFlowCount": 20,
@@ -43,7 +43,7 @@
               "serviceWebMaxConnectionCountPerClientUsername": 0
           },
           {
-              "clientProfileName": "notification_direct_consumer_cp",
+              "clientProfileName": "boomi_sub_cp",
               "allowGuaranteedMsgReceiveEnabled": true,
               "maxConnectionCountPerClientUsername": 20,
               "maxEgressFlowCount": 20,
