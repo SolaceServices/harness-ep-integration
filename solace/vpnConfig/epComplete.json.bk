@@ -1,16 +1,19 @@
 {
+    "__event-portal": {
+        "__ep_applications": {
+            "__NotificationDirectConsumer": {
+                "clientUsername": "notification_direct_consumer",
+                "id": "jxf93bscl0h",
+                "name": "NotificationDirectConsumer"
+            },
+            "__NotificationDirectProducer": {
+                "clientUsername": "notification_direct_producer",
+                "id": "rgv74yl13ss",
+                "name": "NotificationDirectProducer"
+            }
+        }
+    },
     "aclProfiles": [
-        {
-            "aclProfileName": "notification_direct_consumer",
-            "clientConnectDefaultAction": "allow",
-            "publishTopicDefaultAction": "disallow",
-            "publishTopicExceptions": [],
-            "subscribeShareNameDefaultAction": "allow",
-            "subscribeTopicDefaultAction": "disallow",
-            "subscribeTopicExceptions": [
-                "ua/notifications/delivered"
-            ]
-        },
         {
             "aclProfileName": "notification_direct_producer",
             "clientConnectDefaultAction": "allow",
@@ -21,23 +24,20 @@
             "subscribeShareNameDefaultAction": "allow",
             "subscribeTopicDefaultAction": "disallow",
             "subscribeTopicExceptions": []
+        },
+        {
+            "aclProfileName": "notification_direct_consumer",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicDefaultAction": "disallow",
+            "publishTopicExceptions": [],
+            "subscribeShareNameDefaultAction": "allow",
+            "subscribeTopicDefaultAction": "disallow",
+            "subscribeTopicExceptions": [
+                "ua/notifications/delivered"
+            ]
         }
     ],
     "clientProfiles": [
-        {
-            "allowGuaranteedMsgReceiveEnabled": true,
-            "clientProfileName": "notification_direct_consumer_cp",
-            "maxConnectionCountPerClientUsername": 20,
-            "maxEgressFlowCount": 20,
-            "maxEndpointCountPerClientUsername": 0,
-            "maxIngressFlowCount": 20,
-            "maxMsgsPerTransaction": 256,
-            "maxSubscriptionCount": 250,
-            "maxTransactedSessionCount": 0,
-            "maxTransactionCount": 0,
-            "serviceSmfMaxConnectionCountPerClientUsername": 20,
-            "serviceWebMaxConnectionCountPerClientUsername": 0
-        },
         {
             "allowGuaranteedMsgReceiveEnabled": true,
             "clientProfileName": "notification_direct_producer_cp",
@@ -51,9 +51,22 @@
             "maxTransactionCount": 0,
             "serviceSmfMaxConnectionCountPerClientUsername": 20,
             "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "clientProfileName": "notification_direct_consumer_cp",
+            "maxConnectionCountPerClientUsername": 20,
+            "maxEgressFlowCount": 20,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 20,
+            "maxMsgsPerTransaction": 256,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 20,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
         }
     ],
-    "msgVpnName": "united-ep-tools-v2",
     "queues": [
         {
             "accessType": "exclusive",
@@ -95,16 +108,7 @@
             ]
         }
     ],
-    "replicatedTopics": [],
     "users": [
-        {
-            "aclProfileName": "notification_direct_consumer",
-            "clientProfileName": "notification_direct_consumer_cp",
-            "clientUsername": "notification_direct_consumer",
-            "documentation": "This user was imported from Event Portal for app 'NotificationDirectConsumer'.",
-            "enabled": true,
-            "password": "notification_direct_consumer_pwd"
-        },
         {
             "aclProfileName": "notification_direct_producer",
             "clientProfileName": "notification_direct_producer_cp",
@@ -112,6 +116,14 @@
             "documentation": "This user was imported from Event Portal for app 'NotificationDirectProducer'.",
             "enabled": true,
             "password": "notification_direct_producer_pwd"
+        },
+        {
+            "aclProfileName": "notification_direct_consumer",
+            "clientProfileName": "notification_direct_consumer_cp",
+            "clientUsername": "notification_direct_consumer",
+            "documentation": "This user was imported from Event Portal for app 'NotificationDirectConsumer'.",
+            "enabled": true,
+            "password": "notification_direct_consumer_pwd"
         }
     ]
 }
