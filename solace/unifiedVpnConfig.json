@@ -3,7 +3,7 @@
         {
             "aclProfileName": "boomi_pub",
             "clientConnectDefaultAction": "allow",
-            "msgVpnName": "united-ep-tools-v2",
+            "msgVpnName": "united-ep-tools-v3",
             "publishTopicDefaultAction": "disallow",
             "publishTopicExceptions": [
                 "material/master/cannonical/v1/boomi/evt"
@@ -14,7 +14,7 @@
         {
             "aclProfileName": "boomi_sub",
             "clientConnectDefaultAction": "allow",
-            "msgVpnName": "united-ep-tools-v2",
+            "msgVpnName": "united-ep-tools-v3",
             "publishTopicDefaultAction": "disallow",
             "subscribeShareNameDefaultAction": "allow",
             "subscribeTopicDefaultAction": "disallow"
@@ -22,7 +22,7 @@
         {
             "aclProfileName": "notification_direct_consumer",
             "clientConnectDefaultAction": "allow",
-            "msgVpnName": "united-ep-tools-v2",
+            "msgVpnName": "united-ep-tools-v3",
             "publishTopicDefaultAction": "disallow",
             "subscribeShareNameDefaultAction": "allow",
             "subscribeTopicDefaultAction": "disallow",
@@ -33,7 +33,7 @@
         {
             "aclProfileName": "notification_direct_producer",
             "clientConnectDefaultAction": "allow",
-            "msgVpnName": "united-ep-tools-v2",
+            "msgVpnName": "united-ep-tools-v3",
             "publishTopicDefaultAction": "disallow",
             "publishTopicExceptions": [
                 "ua/notifications/delivered"
@@ -70,7 +70,7 @@
             "maxSubscriptionCount": 250,
             "maxTransactedSessionCount": 0,
             "maxTransactionCount": 0,
-            "msgVpnName": "united-ep-tools-v2",
+            "msgVpnName": "united-ep-tools-v3",
             "queueControl1MaxDepth": 20000,
             "queueControl1MinMsgBurst": 4,
             "queueDirect1MaxDepth": 20000,
@@ -124,7 +124,7 @@
             "maxSubscriptionCount": 250,
             "maxTransactedSessionCount": 0,
             "maxTransactionCount": 0,
-            "msgVpnName": "united-ep-tools-v2",
+            "msgVpnName": "united-ep-tools-v3",
             "queueControl1MaxDepth": 20000,
             "queueControl1MinMsgBurst": 4,
             "queueDirect1MaxDepth": 20000,
@@ -178,7 +178,7 @@
             "maxSubscriptionCount": 250,
             "maxTransactedSessionCount": 0,
             "maxTransactionCount": 0,
-            "msgVpnName": "united-ep-tools-v2",
+            "msgVpnName": "united-ep-tools-v3",
             "queueControl1MaxDepth": 20000,
             "queueControl1MinMsgBurst": 4,
             "queueDirect1MaxDepth": 20000,
@@ -232,7 +232,7 @@
             "maxSubscriptionCount": 250,
             "maxTransactedSessionCount": 0,
             "maxTransactionCount": 0,
-            "msgVpnName": "united-ep-tools-v2",
+            "msgVpnName": "united-ep-tools-v3",
             "queueControl1MaxDepth": 20000,
             "queueControl1MinMsgBurst": 4,
             "queueDirect1MaxDepth": 20000,
@@ -260,7 +260,7 @@
             "tlsAllowDowngradeToPlainTextEnabled": true
         }
     ],
-    "msgVpnName": "united-ep-tools-v2",
+    "msgVpnName": "united-ep-tools-v3",
     "queues": [
         {
             "accessType": "exclusive",
@@ -276,7 +276,7 @@
             "maxMsgSpoolUsage": 2100,
             "maxRedeliveryCount": 0,
             "maxTtl": 0,
-            "msgVpnName": "united-ep-tools-v2",
+            "msgVpnName": "united-ep-tools-v3",
             "owner": "boomi_sub",
             "partitionCount": 0,
             "partitionRebalanceDelay": 5,
@@ -311,7 +311,7 @@
             "maxMsgSpoolUsage": 5000,
             "maxRedeliveryCount": 0,
             "maxTtl": 0,
-            "msgVpnName": "united-ep-tools-v2",
+            "msgVpnName": "united-ep-tools-v3",
             "owner": "notification_direct_consumer",
             "partitionCount": 0,
             "partitionRebalanceDelay": 5,
@@ -346,7 +346,7 @@
             "maxMsgSpoolUsage": 5000,
             "maxRedeliveryCount": 0,
             "maxTtl": 0,
-            "msgVpnName": "united-ep-tools-v2",
+            "msgVpnName": "united-ep-tools-v3",
             "owner": "notification_direct_consumer",
             "partitionCount": 0,
             "partitionRebalanceDelay": 5,
@@ -381,7 +381,7 @@
             "maxMsgSpoolUsage": 5000,
             "maxRedeliveryCount": 0,
             "maxTtl": 0,
-            "msgVpnName": "united-ep-tools-v2",
+            "msgVpnName": "united-ep-tools-v3",
             "owner": "notification_direct_consumer",
             "partitionCount": 0,
             "partitionRebalanceDelay": 5,
@@ -411,7 +411,7 @@
             "clientUsername": "boomi_pub",
             "enabled": true,
             "guaranteedEndpointPermissionOverrideEnabled": false,
-            "msgVpnName": "united-ep-tools-v2",
+            "msgVpnName": "united-ep-tools-v3",
             "password": "boomi_pub_pwd",
             "subscriptionManagerEnabled": false
         },
@@ -421,7 +421,7 @@
             "clientUsername": "boomi_sub",
             "enabled": true,
             "guaranteedEndpointPermissionOverrideEnabled": false,
-            "msgVpnName": "united-ep-tools-v2",
+            "msgVpnName": "united-ep-tools-v3",
             "password": "boomi_sub_pwd",
             "subscriptionManagerEnabled": false
         },
@@ -431,7 +431,7 @@
             "clientUsername": "notification_direct_consumer",
             "enabled": true,
             "guaranteedEndpointPermissionOverrideEnabled": false,
-            "msgVpnName": "united-ep-tools-v2",
+            "msgVpnName": "united-ep-tools-v3",
             "password": "notification_direct_consumer_pwd",
             "subscriptionManagerEnabled": false
         },
@@ -441,7 +441,7 @@
             "clientUsername": "notification_direct_producer",
             "enabled": true,
             "guaranteedEndpointPermissionOverrideEnabled": false,
-            "msgVpnName": "united-ep-tools-v2",
+            "msgVpnName": "united-ep-tools-v3",
             "password": "notification_direct_producer_pwd",
             "subscriptionManagerEnabled": false
         }

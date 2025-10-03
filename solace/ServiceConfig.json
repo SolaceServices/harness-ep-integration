@@ -1,8 +1,8 @@
 {
         "common": {
-                "msgVpnName": "united-ep-tools-v2",
-        				"serviceTypeId": "enterprise-standalone",
-        				"serviceClassId": "enterprise-250-standalone",
+                "msgVpnName": "united-ep-tools-v3",
+                "serviceTypeId": "enterprise-standalone",
+                "serviceClassId": "enterprise-10k-standalone",
                 "eventBrokerVersion": "10.25",
                 "messagingStorage": 10,
                 "ssl": {
@@ -15,7 +15,7 @@
                         "name": "united-ep-tools-cluster"
                 },
         				"GlobalAdminUser": "cicd_admin",
-        				"GlobalAdminToken": "p6tWgBCe1F28+uzZySK2rg==nM2KSsk=",				
+        				"GlobalAdminToken": "p6tWgBCe1F28+uzZySK2rg==nM2KSsk=",
         				"createDNSEntry": false,
         				"uploadCustomCerts": true,
         				"shellCommandsForWindows": false,
@@ -24,7 +24,7 @@
         				"DRBridgeCompressed": false
 		    },
         "primary": {
-                "serviceName": "united-ep-tools-primary-v2",
+                "serviceName": "united-ep-tools-primary-v3",
                 "datacenterId": "unitedsolaceservices-eks-us-east-1",
                 "k8s": {
                         "namespace": "kube-system",
@@ -37,7 +37,7 @@
                 }
         },
         "dr": {
-                "serviceName": "united-ep-tools-DR-v2",
+                "serviceName": "united-ep-tools-standby-v3",
                 "datacenterId": "unitedsolaceservices-eks-us-east-1",
                 "k8s": {
                         "namespace": "kube-system",
