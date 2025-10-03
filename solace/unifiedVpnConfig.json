@@ -9,18 +9,15 @@
                 "material/master/cannonical/v1/boomi/evt"
             ],
             "subscribeShareNameDefaultAction": "allow",
-            "subscribeTopicDefaultAction": "disallow",
-            "subscribeTopicExceptions": []
+            "subscribeTopicDefaultAction": "disallow"
         },
         {
             "aclProfileName": "boomi_sub",
             "clientConnectDefaultAction": "allow",
             "msgVpnName": "united-ep-tools-v2",
             "publishTopicDefaultAction": "disallow",
-            "publishTopicExceptions": [],
             "subscribeShareNameDefaultAction": "allow",
-            "subscribeTopicDefaultAction": "disallow",
-            "subscribeTopicExceptions": []
+            "subscribeTopicDefaultAction": "disallow"
         },
         {
             "aclProfileName": "notification_direct_consumer",
@@ -267,13 +264,35 @@
     "queues": [
         {
             "accessType": "exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'Q.CANNONICAL.V1'.",
+            "consumerAckPropagationEnabled": true,
+            "deadMsgQueue": "#DEAD_MSG_QUEUE",
+            "deliveryCountEnabled": false,
+            "deliveryDelay": 0,
             "egressEnabled": true,
             "ingressEnabled": true,
+            "maxBindCount": 1000,
+            "maxDeliveredUnackedMsgsPerFlow": 10000,
+            "maxMsgSize": 10000000,
             "maxMsgSpoolUsage": 2100,
+            "maxRedeliveryCount": 0,
+            "maxTtl": 0,
+            "msgVpnName": "united-ep-tools-v2",
             "owner": "boomi_sub",
+            "partitionCount": 0,
+            "partitionRebalanceDelay": 5,
+            "partitionRebalanceMaxHandoffTime": 3,
             "permission": "no-access",
             "queueName": "Q.CANNONICAL.V1",
+            "redeliveryDelayEnabled": false,
+            "redeliveryDelayInitialInterval": 1000,
+            "redeliveryDelayMaxInterval": 64000,
+            "redeliveryDelayMultiplier": 200,
+            "redeliveryEnabled": true,
+            "rejectLowPriorityMsgEnabled": false,
+            "rejectLowPriorityMsgLimit": 0,
+            "rejectMsgToSenderOnDiscardBehavior": "when-queue-enabled",
+            "respectMsgPriorityEnabled": false,
+            "respectTtlEnabled": false,
             "subscriptionTopics": [
                 "material/master/cannonical/v1/boomi/>"
             ]
@@ -390,17 +409,21 @@
             "aclProfileName": "boomi_pub",
             "clientProfileName": "boomi_pub_cp",
             "clientUsername": "boomi_pub",
-            "documentation": "This user was imported from Event Portal for app 'BoomiApp'.",
             "enabled": true,
-            "password": "boomi_pub_pwd"
+            "guaranteedEndpointPermissionOverrideEnabled": false,
+            "msgVpnName": "united-ep-tools-v2",
+            "password": "boomi_pub_pwd",
+            "subscriptionManagerEnabled": false
         },
         {
             "aclProfileName": "boomi_sub",
             "clientProfileName": "boomi_sub_cp",
             "clientUsername": "boomi_sub",
-            "documentation": "This user was imported from Event Portal for app 'BoomiConsumerApp'.",
             "enabled": true,
-            "password": "boomi_sub_pwd"
+            "guaranteedEndpointPermissionOverrideEnabled": false,
+            "msgVpnName": "united-ep-tools-v2",
+            "password": "boomi_sub_pwd",
+            "subscriptionManagerEnabled": false
         },
         {
             "aclProfileName": "notification_direct_consumer",
