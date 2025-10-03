@@ -9,6 +9,10 @@
             {
                 "applicationName": "BoomiApp",
                  "version": "0.0.1"
+            },
+            {
+                "applicationName": "DQN_QA_AppUser",
+                 "version": "0.0.1"
             }
         ]
     },
@@ -24,7 +28,12 @@
       			"clientUsername": "boomi_sub",
       			"clientProfileName": "boomi_sub_cp",
       			"password": "boomi_sub_pwd"
-      		}
+      		},
+           {
+            "clientUsername": "dqnqaappuser",
+             "clientProfileName": "dqnqaappuser_cp",
+            "password": "dqnqaappuser"
+          }
       	]
       },
       "clientProfiles": [
@@ -55,6 +64,20 @@
               "maxTransactionCount": 0,
               "serviceSmfMaxConnectionCountPerClientUsername": 20,
               "serviceWebMaxConnectionCountPerClientUsername": 0
-          }    
+          },
+          {
+              "clientProfileName": "dqnqaappuser_cp",
+              "allowGuaranteedMsgReceiveEnabled": true,
+              "maxConnectionCountPerClientUsername": 20,
+              "maxEgressFlowCount": 20,
+              "maxEndpointCountPerClientUsername": 0,
+              "maxIngressFlowCount": 20,
+              "maxMsgsPerTransaction": 256,
+              "maxSubscriptionCount": 250,
+              "maxTransactedSessionCount": 0,
+              "maxTransactionCount": 0,
+              "serviceSmfMaxConnectionCountPerClientUsername": 20,
+              "serviceWebMaxConnectionCountPerClientUsername": 0
+          }
       ]
   }
