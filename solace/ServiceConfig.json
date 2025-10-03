@@ -1,6 +1,6 @@
 {
         "common": {
-                "msgVpnName": "united-ep-tools-v3",
+                "msgVpnName": "united-ep-tools-primary-v3",
                 "serviceTypeId": "enterprise-standalone",
                 "serviceClassId": "enterprise-10k-standalone",
                 "eventBrokerVersion": "10.25",
