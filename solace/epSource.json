@@ -1,17 +1,22 @@
 {
     "eventPortal": {
         "documentation": "Lists things pulled from event portal",
+        "applicationDomain": "EZM_OneEvtPerQSub",
         "applications": [
             {
-                "applicationName": "BoomiConsumerApp",
+                "applicationName": "NotificationDirectProducerApp",
                 "version": "0.0.1"
             },
             {
-                "applicationName": "BoomiApp",
+                "applicationName": "NotificationDirectConsumerApp",
                  "version": "0.0.1"
             },
             {
                 "applicationName": "DQN_QA_AppUser",
+                 "version": "0.0.1"
+            },
+            {
+                "applicationName": "DqndevappuserApp",
                  "version": "0.0.1"
             }
         ]
@@ -20,25 +25,30 @@
         "documentation": "User settings to be overlaid ontop of client username settings from event portal",
       	"users": [
       		{
-      			"clientUsername": "boomi_pub",
-      			"clientProfileName": "boomi_pub_cp",
-      			"password": "boomi_pub_pwd"
+      			"clientUsername": "notification_direct_producer",
+      			"clientProfileName": "notification_direct_producer_cp",
+      			"password": "notification_direct_producer_pwd"
       		},
       		{
-      			"clientUsername": "boomi_sub",
-      			"clientProfileName": "boomi_sub_cp",
-      			"password": "boomi_sub_pwd"
+      			"clientUsername": "notification_direct_consumer",
+      			"clientProfileName": "notification_direct_consumer_cp",
+      			"password": "notification_direct_consumer_pwd"
       		},
-           {
-            "clientUsername": "dqnqaappuser",
-             "clientProfileName": "dqnqaappuser_cp",
-            "password": "dqnqaappuser"
-          }
+            {
+                "clientUsername": "dqnqaappuser",
+                "password": "dqnqaappuser",
+                "aclProfileName": "default"
+            },
+            {
+                "clientUsername": "dqndevappuserapp",
+                "password": "dqndevappuserapp",
+                "aclProfileName": "default"
+            }
       	]
       },
       "clientProfiles": [
           {
-              "clientProfileName": "boomi_pub_cp",
+              "clientProfileName": "notification_direct_producer_cp",
               "allowGuaranteedMsgReceiveEnabled": true,
               "maxConnectionCountPerClientUsername": 20,
               "maxEgressFlowCount": 20,
@@ -52,21 +62,7 @@
               "serviceWebMaxConnectionCountPerClientUsername": 0
           },
           {
-              "clientProfileName": "boomi_sub_cp",
-              "allowGuaranteedMsgReceiveEnabled": true,
-              "maxConnectionCountPerClientUsername": 20,
-              "maxEgressFlowCount": 20,
-              "maxEndpointCountPerClientUsername": 0,
-              "maxIngressFlowCount": 20,
-              "maxMsgsPerTransaction": 256,
-              "maxSubscriptionCount": 250,
-              "maxTransactedSessionCount": 0,
-              "maxTransactionCount": 0,
-              "serviceSmfMaxConnectionCountPerClientUsername": 20,
-              "serviceWebMaxConnectionCountPerClientUsername": 0
-          },
-          {
-              "clientProfileName": "dqnqaappuser_cp",
+              "clientProfileName": "notification_direct_consumer_cp",
               "allowGuaranteedMsgReceiveEnabled": true,
               "maxConnectionCountPerClientUsername": 20,
               "maxEgressFlowCount": 20,
