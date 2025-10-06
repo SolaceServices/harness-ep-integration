@@ -24,6 +24,16 @@
         {
             "aclProfileName": "default",
             "clientProfileName": "default",
+            "clientUsername": "dqndevappuserapp",
+            "enabled": true,
+            "guaranteedEndpointPermissionOverrideEnabled": false,
+            "msgVpnName": "united-ep-tools-primary-v3",
+            "passwordToken": "<UNKNOWN>",
+            "subscriptionManagerEnabled": false
+        },
+        {
+            "aclProfileName": "default",
+            "clientProfileName": "default",
             "clientUsername": "dqnqaappuser",
             "enabled": true,
             "guaranteedEndpointPermissionOverrideEnabled": false,
