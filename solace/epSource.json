@@ -40,8 +40,23 @@
                 "aclProfileName": "default"
             },
             {
-                "clientUsername": "dqndevappuserapp",
-                "password": "dqndevappuserapp",
+                "clientUsername": "dqndevappuser",
+                "password": "dqndevappuser",
+                "aclProfileName": "default"
+            },
+            {
+                "clientUsername": "test",
+                "password": "test",
+                "aclProfileName": "default"
+            },
+            {
+                "clientUsername": "odmsdevuser",
+                "password": "odmsdevuser",
+                "aclProfileName": "default"
+            },
+            {
+                "clientUsername": "loyaltydevuser",
+                "password": "loyaltydevuser",
                 "aclProfileName": "default"
             }
       	]
