@@ -18,6 +18,18 @@
             {
                 "applicationName": "DqndevappuserApp",
                  "version": "0.0.1"
+            },
+            {
+                "applicationName": "LoyaltydevuserApp",
+                 "version": "0.0.1"
+            },
+            {
+                "applicationName": "OdmsdevuserApp",
+                 "version": "0.0.1"
+            },
+            {
+                "applicationName": "TestApp",
+                 "version": "0.0.1"
             }
         ]
     },
