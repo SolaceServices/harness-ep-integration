@@ -120,6 +120,19 @@
             ]
         },
         {
+            "accessType": "exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'TEST.QUEUE_1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "maxMsgSpoolUsage": 5000,
+            "owner": "notification_direct_consumer",
+            "permission": "no-access",
+            "queueName": "TEST.QUEUE_1",
+            "subscriptionTopics": [
+                "ua/notifications/>"
+            ]
+        },
+        {
             "accessType": "non-exclusive",
             "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.CCE.PRETRAVEL.IN.1'.",
             "egressEnabled": true,
