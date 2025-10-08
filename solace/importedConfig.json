@@ -1795,7 +1795,8 @@
             "respectMsgPriorityEnabled": false,
             "respectTtlEnabled": false,
             "subscriptionTopics": [
-                "UAL/QA/DQN/CCE/PTP/*/*/*/*/1"
+                "UAL/QA/DQN/CCE/PTP/*/*/*/*/1",
+                "DEMO/TEST/EP/*/MSG"
             ]
         },
         {
