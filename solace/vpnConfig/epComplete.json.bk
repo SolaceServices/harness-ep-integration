@@ -142,6 +142,7 @@
             "permission": "consume",
             "queueName": "UAL.QA.DQN.CCE.PRETRAVEL.IN.1",
             "subscriptionTopics": [
+                "DEMO/TEST/DEMO1",
                 "DEMO/TEST/EP/*/MSG",
                 "UAL/QA/DQN/CCE/PTP/*/*/*/*/1"
             ]
