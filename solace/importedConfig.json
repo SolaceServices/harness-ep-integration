@@ -1796,7 +1796,8 @@
             "respectTtlEnabled": false,
             "subscriptionTopics": [
                 "UAL/QA/DQN/CCE/PTP/*/*/*/*/1",
-                "DEMO/TEST/EP/*/MSG"
+                "DEMO/TEST/EP/*/MSG",
+                "DEMO/TEST/DEMO1"
             ]
         },
         {
