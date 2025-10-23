@@ -4059,7 +4059,7 @@
             "aclProfileName": "abc123",
             "clientUsername": "abc123",
             "enabled": true,
-            "passwordToken": "<UNKNOWN>"
+            "password": "abc123"
         },
         {
             "aclProfileName": "dev-bos-bagcount-pub",
