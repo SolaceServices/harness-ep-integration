@@ -4479,36 +4479,36 @@
         {
             "clientUsername": "dqndevappuser",
             "enabled": true,
-            "passwordToken": "<UNKNOWN>"
+            "password": "password"
         },
         {
             "clientUsername": "dqnqaappuser",
             "enabled": true,
-            "passwordToken": "<UNKNOWN>"
+            "password": "password"
         },
         {
             "clientUsername": "loyaltydevuser",
             "enabled": true,
-            "passwordToken": "<UNKNOWN>"
+            "password": "password"
         },
         {
             "aclProfileName": "notification_direct_consumer",
             "clientProfileName": "notification_direct_consumer_cp",
             "clientUsername": "notification_direct_consumer",
             "enabled": true,
-            "passwordToken": "<UNKNOWN>"
+            "password": "password"
         },
         {
             "aclProfileName": "notification_direct_producer",
             "clientProfileName": "notification_direct_producer_cp",
             "clientUsername": "notification_direct_producer",
             "enabled": true,
-            "passwordToken": "<UNKNOWN>"
+            "password": "password"
         },
         {
             "clientUsername": "odmsdevuser",
             "enabled": true,
-            "passwordToken": "<UNKNOWN>"
+            "password": "password"
         },
         {
             "aclProfileName": "poc-aap-jumpseat-pub",
@@ -4905,7 +4905,7 @@
         {
             "clientUsername": "test",
             "enabled": true,
-            "passwordToken": "<UNKNOWN>"
+            "password": "password"
         }
     ]
 }
