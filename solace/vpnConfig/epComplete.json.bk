@@ -95,6 +95,19 @@
     "queues": [
         {
             "accessType": "exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'new queue'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "maxMsgSpoolUsage": 5000,
+            "owner": "notification_direct_consumer",
+            "permission": "no-access",
+            "queueName": "new queue",
+            "subscriptionTopics": [
+                "them/test"
+            ]
+        },
+        {
+            "accessType": "exclusive",
             "documentation": "This queue was imported from Event Portal for app 'Q.UaNotificationsDelivered'.",
             "egressEnabled": true,
             "ingressEnabled": true,
