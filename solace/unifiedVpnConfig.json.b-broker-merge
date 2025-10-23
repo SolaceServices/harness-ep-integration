@@ -1,0 +1,4473 @@
+{
+	"msgVpnName": "united-ep-tools-primary-v3",
+	"users": [
+	  {
+		"clientUsername": "dev-jet-ucd-sub",
+		"guaranteedEndpointPermissionOverrideEnabled": false,
+		"passwordToken": "B6dHPsdumFYZmaTGdmia5A==qdZVLRdaXYvGDVHXsiH4w20wyHg=",
+		"enabled": true,
+		"clientProfile": {
+		  "allowGuaranteedMsgReceiveEnabled": true,
+		  "maxConnectionCountPerClientUsername": 40,
+		  "maxEgressFlowCount": 40,
+		  "maxEndpointCountPerClientUsername": 0,
+		  "maxIngressFlowCount": 40,
+		  "maxMsgsPerTransaction": 256,
+		  "maxSubscriptionCount": 250,
+		  "maxTransactedSessionCount": 0,
+		  "maxTransactionCount": 0,
+		  "serviceSmfMaxConnectionCountPerClientUsername": 40,
+		  "serviceWebMaxConnectionCountPerClientUsername": 0
+		},
+		"aclProfile": {
+		  "clientConnectDefaultAction": "allow",
+		  "clientConnectExceptions": [],
+		  "publicTopicExceptions": [],
+		  "subscribeTopicExceptions": [
+			"test/>"
+		  ]
+		}
+	  },{
+		"clientUsername": "qa-jet-ucd-sub",
+		"guaranteedEndpointPermissionOverrideEnabled": false,
+		"passwordToken": "jwKbKGzuK1chGBBVv8osVQ==L9Gh+zrLoaZojbPTN2XTF45YU2KVoDyR69U=",
+		"enabled": true,
+		"clientProfile": {
+		  "allowGuaranteedMsgReceiveEnabled": true,
+		  "maxConnectionCountPerClientUsername": 40,
+		  "maxEgressFlowCount": 40,
+		  "maxEndpointCountPerClientUsername": 0,
+		  "maxIngressFlowCount": 40,
+		  "maxMsgsPerTransaction": 256,
+		  "maxSubscriptionCount": 250,
+		  "maxTransactedSessionCount": 0,
+		  "maxTransactionCount": 0,
+		  "serviceSmfMaxConnectionCountPerClientUsername": 40,
+		  "serviceWebMaxConnectionCountPerClientUsername": 0
+		},
+		"aclProfile": {
+		  "clientConnectDefaultAction": "allow",
+		  "clientConnectExceptions": [],
+		  "publicTopicExceptions": [],
+		  "subscribeTopicExceptions": [
+			"test/>"
+		  ]
+		}
+	  },
+	  {
+		"clientUsername": "dev-gsapp-ucd-sub",
+		"guaranteedEndpointPermissionOverrideEnabled": false,
+		"passwordToken": "bdbmlIe1WzYZ6itYGXHmbA==wYfcdOlvhVDLDdyRYzKtzNQ=",
+		"enabled": true,
+		"clientProfile": {
+		  "allowGuaranteedMsgReceiveEnabled": true,
+		  "maxConnectionCountPerClientUsername": 40,
+		  "maxEgressFlowCount": 40,
+		  "maxEndpointCountPerClientUsername": 0,
+		  "maxIngressFlowCount": 40,
+		  "maxMsgsPerTransaction": 256,
+		  "maxSubscriptionCount": 250,
+		  "maxTransactedSessionCount": 0,
+		  "maxTransactionCount": 0,
+		  "serviceSmfMaxConnectionCountPerClientUsername": 40,
+		  "serviceWebMaxConnectionCountPerClientUsername": 0
+		},
+		"aclProfile": {
+		  "clientConnectDefaultAction": "allow",
+		  "clientConnectExceptions": [],
+		  "publicTopicExceptions": [],
+		  "subscribeTopicExceptions": [
+			"test/>"
+		  ]
+		}
+	  },
+	  {
+		"clientUsername": "dev-jet-flifo-sub",
+		"guaranteedEndpointPermissionOverrideEnabled": false,
+		"passwordToken": "3nCJ7Xpbjjz/yg2fcFjdow==NSRvSp2QO21qw5ck7Q==",
+		"enabled": true,
+		"clientProfile": {
+		  "allowGuaranteedMsgReceiveEnabled": true,
+		  "maxConnectionCountPerClientUsername": 40,
+		  "maxEgressFlowCount": 40,
+		  "maxEndpointCountPerClientUsername": 0,
+		  "maxIngressFlowCount": 40,
+		  "maxMsgsPerTransaction": 256,
+		  "maxSubscriptionCount": 250,
+		  "maxTransactedSessionCount": 0,
+		  "maxTransactionCount": 0,
+		  "serviceSmfMaxConnectionCountPerClientUsername": 40,
+		  "serviceWebMaxConnectionCountPerClientUsername": 0
+		},
+		"aclProfile": {
+		  "clientConnectDefaultAction": "allow",
+		  "clientConnectExceptions": [],
+		  "publicTopicExceptions": [],
+		  "subscribeTopicExceptions": [
+			"test/>"
+		  ]
+		}
+	  },
+	  {
+		"clientUsername": "dev-jet-flifo-pub",
+		"guaranteedEndpointPermissionOverrideEnabled": false,
+		"passwordToken": "wdEMiL1fZg5el8qGTTZYdg==X3xFJ5ijhmfS5KV6cw==",
+		"enabled": true,
+		"clientProfile": {
+		  "allowGuaranteedMsgSendEnabled": true,
+		  "maxConnectionCountPerClientUsername": 40,
+		  "maxEgressFlowCount": 40,
+		  "maxEndpointCountPerClientUsername": 0,
+		  "maxIngressFlowCount": 40,
+		  "maxMsgsPerTransaction": 256,
+		  "maxSubscriptionCount": 250,
+		  "maxTransactedSessionCount": 0,
+		  "maxTransactionCount": 0,
+		  "serviceSmfMaxConnectionCountPerClientUsername": 40,
+		  "serviceWebMaxConnectionCountPerClientUsername": 0
+		},
+		"aclProfile": {
+		  "clientConnectDefaultAction": "allow",
+		  "publishTopicDefaultAction":"allow",
+		  "clientConnectExceptions": [],
+		  "publicTopicExceptions": [],
+		  "subscribeTopicExceptions": [
+			"test/>"
+		  ]
+		}
+	  },
+	  {
+		"clientUsername": "dev-jet-collab-sub",
+		"guaranteedEndpointPermissionOverrideEnabled": false,
+		"passwordToken": "2lvKY7QEaC35ruqjjwvaKw==sh0HZz1JG8AYNN7gUQ==",
+		"enabled": true,
+		"clientProfile": {
+		  "allowGuaranteedMsgReceiveEnabled": true,
+		  "maxConnectionCountPerClientUsername": 40,
+		  "maxEgressFlowCount": 40,
+		  "maxEndpointCountPerClientUsername": 0,
+		  "maxIngressFlowCount": 40,
+		  "maxMsgsPerTransaction": 256,
+		  "maxSubscriptionCount": 250,
+		  "maxTransactedSessionCount": 0,
+		  "maxTransactionCount": 0,
+		  "serviceSmfMaxConnectionCountPerClientUsername": 40,
+		  "serviceWebMaxConnectionCountPerClientUsername": 0
+		},
+		"aclProfile": {
+		  "clientConnectDefaultAction": "allow",
+		  "clientConnectExceptions": [],
+		  "publicTopicExceptions": [],
+		  "subscribeTopicExceptions": [
+			"test/>"
+		  ]
+		}
+	  },
+	  {
+		"clientUsername": "dev-jet-collab-pub",
+		"guaranteedEndpointPermissionOverrideEnabled": false,
+		"passwordToken": "xYGrz5wNpIMLv6aioxLyOA==eidGZGJQYUD7Fuh6dw==",
+		"enabled": true,
+		"clientProfile": {
+		  "allowGuaranteedMsgSendEnabled": true,
+		  "maxConnectionCountPerClientUsername": 40,
+		  "maxEgressFlowCount": 40,
+		  "maxEndpointCountPerClientUsername": 0,
+		  "maxIngressFlowCount": 40,
+		  "maxMsgsPerTransaction": 256,
+		  "maxSubscriptionCount": 250,
+		  "maxTransactedSessionCount": 0,
+		  "maxTransactionCount": 0,
+		  "serviceSmfMaxConnectionCountPerClientUsername": 40,
+		  "serviceWebMaxConnectionCountPerClientUsername": 0
+		},
+		"aclProfile": {
+		  "clientConnectDefaultAction": "allow",
+		  "publishTopicDefaultAction":"allow",
+		  "clientConnectExceptions": [],
+		  "publicTopicExceptions": [],
+		  "subscribeTopicExceptions": [
+			"test/>"
+		  ]
+		}
+	  },
+	  {
+		"clientUsername": "dev-jet-pcdr-inbound-sub",
+		"guaranteedEndpointPermissionOverrideEnabled": false,
+		"passwordToken": "EATDsIpIJTef93uaKTentA==XlUqc7IdvnqlC8WGmA==",
+		"enabled": true,
+		"clientProfile": {
+		  "allowGuaranteedMsgReceiveEnabled": true,
+		  "maxConnectionCountPerClientUsername": 40,
+		  "maxEgressFlowCount": 40,
+		  "maxEndpointCountPerClientUsername": 0,
+		  "maxIngressFlowCount": 40,
+		  "maxMsgsPerTransaction": 256,
+		  "maxSubscriptionCount": 250,
+		  "maxTransactedSessionCount": 0,
+		  "maxTransactionCount": 0,
+		  "serviceSmfMaxConnectionCountPerClientUsername": 40,
+		  "serviceWebMaxConnectionCountPerClientUsername": 0
+		},
+		"aclProfile": {
+		  "clientConnectDefaultAction": "allow",
+		  "clientConnectExceptions": [],
+		  "publicTopicExceptions": [],
+		  "subscribeTopicExceptions": [
+			"test/>"
+		  ]
+		}
+	  },
+	  {
+		"clientUsername": "dev-jet-pcdr-inbound-pub",
+		"guaranteedEndpointPermissionOverrideEnabled": false,
+		"passwordToken": "sLX/J/Syv7XNKfLD0Nqz3Q==g3QJugyEQTnQ6ZcECA==",
+		"enabled": true,
+		"clientProfile": {
+		  "allowGuaranteedMsgSendEnabled": true,
+		  "maxConnectionCountPerClientUsername": 40,
+		  "maxEgressFlowCount": 40,
+		  "maxEndpointCountPerClientUsername": 0,
+		  "maxIngressFlowCount": 40,
+		  "maxMsgsPerTransaction": 256,
+		  "maxSubscriptionCount": 250,
+		  "maxTransactedSessionCount": 0,
+		  "maxTransactionCount": 0,
+		  "serviceSmfMaxConnectionCountPerClientUsername": 40,
+		  "serviceWebMaxConnectionCountPerClientUsername": 0
+		},
+		"aclProfile": {
+		  "clientConnectDefaultAction": "allow",
+		  "publishTopicDefaultAction":"allow",
+		  "clientConnectExceptions": [],
+		  "publicTopicExceptions": [],
+		  "subscribeTopicExceptions": [
+			"test/>"
+		  ]
+		}
+	  },
+	  {
+		"clientUsername": "dev-jet-pcdr-outbound-pub",
+		"guaranteedEndpointPermissionOverrideEnabled": false,
+		"passwordToken": "0wlcke+2JoxKXnzIFvEk4w==FtXXtgSDzbG41AhbAQ==",
+		"enabled": true,
+		"clientProfile": {
+		  "allowGuaranteedMsgSendEnabled": true,
+		  "maxConnectionCountPerClientUsername": 40,
+		  "maxEgressFlowCount": 40,
+		  "maxEndpointCountPerClientUsername": 0,
+		  "maxIngressFlowCount": 40,
+		  "maxMsgsPerTransaction": 256,
+		  "maxSubscriptionCount": 250,
+		  "maxTransactedSessionCount": 0,
+		  "maxTransactionCount": 0,
+		  "serviceSmfMaxConnectionCountPerClientUsername": 40,
+		  "serviceWebMaxConnectionCountPerClientUsername": 0
+		},
+		"aclProfile": {
+		  "clientConnectDefaultAction": "allow",
+		  "publishTopicDefaultAction":"allow",
+		  "clientConnectExceptions": [],
+		  "publicTopicExceptions": [],
+		  "subscribeTopicExceptions": [
+			"test/>"
+		  ]
+		}
+	  },
+	  {
+		"clientUsername": "dev-jet-pcdr-outbound-shares-sub",
+		"guaranteedEndpointPermissionOverrideEnabled": false,
+		"passwordToken": "BU7J/Rk6QmnqXDimRcVW4g==lxhpzdqpuxs2A4jsJQ==",
+		"enabled": true,
+		"clientProfile": {
+		  "allowGuaranteedMsgReceiveEnabled": true,
+		  "maxConnectionCountPerClientUsername": 40,
+		  "maxEgressFlowCount": 40,
+		  "maxEndpointCountPerClientUsername": 0,
+		  "maxIngressFlowCount": 40,
+		  "maxMsgsPerTransaction": 256,
+		  "maxSubscriptionCount": 250,
+		  "maxTransactedSessionCount": 0,
+		  "maxTransactionCount": 0,
+		  "serviceSmfMaxConnectionCountPerClientUsername": 40,
+		  "serviceWebMaxConnectionCountPerClientUsername": 0
+		},
+		"aclProfile": {
+		  "clientConnectDefaultAction": "allow",
+		  "publishTopicDefaultAction":"allow",
+		  "clientConnectExceptions": [],
+		  "publicTopicExceptions": [],
+		  "subscribeTopicExceptions": [
+			"test/>"
+		  ]
+		}
+	  },
+	  {
+		"clientUsername": "dev-jet-pcdr-outbound-tm-sub",
+		"guaranteedEndpointPermissionOverrideEnabled": false,
+		"passwordToken": "EWm1oMWYfo0Rc0w4YY8E2g==iHHtN9EuooA+7hAC5Q==",
+		"enabled": true,
+		"clientProfile": {
+		  "allowGuaranteedMsgReceiveEnabled": true,
+		  "maxConnectionCountPerClientUsername": 40,
+		  "maxEgressFlowCount": 40,
+		  "maxEndpointCountPerClientUsername": 0,
+		  "maxIngressFlowCount": 40,
+		  "maxMsgsPerTransaction": 256,
+		  "maxSubscriptionCount": 250,
+		  "maxTransactedSessionCount": 0,
+		  "maxTransactionCount": 0,
+		  "serviceSmfMaxConnectionCountPerClientUsername": 40,
+		  "serviceWebMaxConnectionCountPerClientUsername": 0
+		},
+		"aclProfile": {
+		  "clientConnectDefaultAction": "allow",
+		  "clientConnectExceptions": [],
+		  "publicTopicExceptions": [],
+		  "subscribeTopicExceptions": [
+			"test/>"
+		  ]
+		}
+	  },
+	  {
+		"clientUsername": "dev-uds-flifo-sub",
+		"guaranteedEndpointPermissionOverrideEnabled": false,
+		"passwordToken": "qv2RCVV623E+iQRyNt3VPQ==2LvPna5hDSo1X4Iw",
+		"enabled": true,
+		"clientProfile": {
+		  "allowGuaranteedMsgReceiveEnabled": true,
+		  "maxConnectionCountPerClientUsername": 40,
+		  "maxEgressFlowCount": 40,
+		  "maxEndpointCountPerClientUsername": 0,
+		  "maxIngressFlowCount": 40,
+		  "maxMsgsPerTransaction": 256,
+		  "maxSubscriptionCount": 250,
+		  "maxTransactedSessionCount": 0,
+		  "maxTransactionCount": 0,
+		  "serviceSmfMaxConnectionCountPerClientUsername": 40,
+		  "serviceWebMaxConnectionCountPerClientUsername": 0
+		},
+		"aclProfile": {
+		  "clientConnectDefaultAction": "allow",
+		  "publishTopicDefaultAction":"allow",
+		  "clientConnectExceptions": [],
+		  "publicTopicExceptions": [],
+		  "subscribeTopicExceptions": [
+			"test/>"
+		  ]
+		}
+	  },
+	  {
+		"clientUsername": "dev-uds-ezfidsgate-sub",
+		"guaranteedEndpointPermissionOverrideEnabled": false,
+		"passwordToken": "/MeELvkcn5xp3vK6BQkyKQ==k+Htq33r278iT/JgcRGhNg==",
+		"enabled": true,
+		"clientProfile": {
+		  "allowGuaranteedMsgReceiveEnabled": true,
+		  "maxConnectionCountPerClientUsername": 10,
+		  "maxEgressFlowCount": 10,
+		  "maxEndpointCountPerClientUsername": 0,
+		  "maxIngressFlowCount": 10,
+		  "maxMsgsPerTransaction": 256,
+		  "maxSubscriptionCount": 250,
+		  "maxTransactedSessionCount": 0,
+		  "maxTransactionCount": 0,
+		  "serviceSmfMaxConnectionCountPerClientUsername": 10,
+		  "serviceWebMaxConnectionCountPerClientUsername": 0
+		},
+		"aclProfile": {
+		  "clientConnectDefaultAction": "allow",
+		  "publishTopicDefaultAction":"allow",
+		  "clientConnectExceptions": [],
+		  "publicTopicExceptions": [],
+		  "subscribeTopicExceptions": [
+			"test/>"
+		  ]
+		}
+	  },
+	  {
+		"clientUsername": "dev-uds-ezfidsgate-pub",
+		"guaranteedEndpointPermissionOverrideEnabled": false,
+		"passwordToken": "FH6FX0/lgucmiw/6eNd+gg==d7UVLVBOrQ1PFcrni7fD9Fb2",
+		"enabled": true,
+		"clientProfile": {
+		  "allowGuaranteedMsgSendEnabled": true,
+		  "maxConnectionCountPerClientUsername": 10,
+		  "maxEgressFlowCount": 10,
+		  "maxEndpointCountPerClientUsername": 0,
+		  "maxIngressFlowCount": 10,
+		  "maxMsgsPerTransaction": 256,
+		  "maxSubscriptionCount": 250,
+		  "maxTransactedSessionCount": 0,
+		  "maxTransactionCount": 0,
+		  "serviceSmfMaxConnectionCountPerClientUsername": 10,
+		  "serviceWebMaxConnectionCountPerClientUsername": 0
+		},
+		"aclProfile": {
+		  "clientConnectDefaultAction": "allow",
+		  "publishTopicDefaultAction":"allow",
+		  "clientConnectExceptions": [],
+		  "publicTopicExceptions": [],
+		  "subscribeTopicExceptions": [
+			"test/>"
+		  ]
+		}
+	  },
+	  {
+		"clientUsername": "dev-uds-bagscan-sub",
+		"guaranteedEndpointPermissionOverrideEnabled": false,
+		"passwordToken": "0hIDqvD10E0Z70pRcvelag==ibqrPEFL5NqEaXz+qdxI2bsT",
+		"enabled": true,
+		"clientProfile": {
+		  "allowGuaranteedMsgReceiveEnabled": true,
+		  "maxConnectionCountPerClientUsername": 4,
+		  "maxEgressFlowCount": 4,
+		  "maxEndpointCountPerClientUsername": 0,
+		  "maxIngressFlowCount": 4,
+		  "maxMsgsPerTransaction": 256,
+		  "maxSubscriptionCount": 250,
+		  "maxTransactedSessionCount": 0,
+		  "maxTransactionCount": 0,
+		  "serviceSmfMaxConnectionCountPerClientUsername": 4,
+		  "serviceWebMaxConnectionCountPerClientUsername": 0
+		},
+		"aclProfile": {
+		  "clientConnectDefaultAction": "allow",
+		  "publishTopicDefaultAction":"allow",
+		  "clientConnectExceptions": [],
+		  "publicTopicExceptions": [],
+		  "subscribeTopicExceptions": [
+			"test/>"
+		  ]
+		}
+	  },
+	  {
+		"clientUsername": "dev-uds-bagscan-pub",
+		"guaranteedEndpointPermissionOverrideEnabled": false,
+		"passwordToken": "PUIGMDZM7T+iUYgpBGIcgw==MGR3gfnK4ngBgdGRYdSUYvKE",
+		"enabled": true,
+		"clientProfile": {
+		  "allowGuaranteedMsgSendEnabled": true,
+		  "maxConnectionCountPerClientUsername": 4,
+		  "maxEgressFlowCount": 4,
+		  "maxEndpointCountPerClientUsername": 0,
+		  "maxIngressFlowCount": 4,
+		  "maxMsgsPerTransaction": 256,
+		  "maxSubscriptionCount": 250,
+		  "maxTransactedSessionCount": 0,
+		  "maxTransactionCount": 0,
+		  "serviceSmfMaxConnectionCountPerClientUsername": 4,
+		  "serviceWebMaxConnectionCountPerClientUsername": 0
+		},
+		"aclProfile": {
+		  "clientConnectDefaultAction": "allow",
+		  "publishTopicDefaultAction":"allow",
+		  "clientConnectExceptions": [],
+		  "publicTopicExceptions": [],
+		  "subscribeTopicExceptions": [
+			"test/>"
+		  ]
+		}
+	  },
+	  {
+		"clientUsername": "dev-cux-waittimes-sub",
+		"guaranteedEndpointPermissionOverrideEnabled": false,
+		"passwordToken": "FQtdvV1DxBNqT5YDdYLNbg==6osU3zfkQUI1E0TBSVqZUQrzAg==",
+		"enabled": true,
+		"clientProfile": {
+		  "allowGuaranteedMsgReceiveEnabled": true,
+		  "maxConnectionCountPerClientUsername": 4,
+		  "maxEgressFlowCount": 4,
+		  "maxEndpointCountPerClientUsername": 0,
+		  "maxIngressFlowCount": 4,
+		  "maxMsgsPerTransaction": 256,
+		  "maxSubscriptionCount": 250,
+		  "maxTransactedSessionCount": 100,
+		  "maxTransactionCount": 100,
+		  "serviceSmfMaxConnectionCountPerClientUsername": 4,
+		  "serviceWebMaxConnectionCountPerClientUsername": 0,
+		  "allowTransactedSessionsEnabled": true
+		},
+		"aclProfile": {
+		  "clientConnectDefaultAction": "allow",
+		  "publishTopicDefaultAction":"disallow",
+		  "clientConnectExceptions": [],
+		  "publicTopicExceptions": [],
+		  "subscribeTopicExceptions": [
+			"test/>"
+		  ]
+		}
+	  },
+	  {
+		"clientUsername": "dev-uia-waittimes-pub",
+		"guaranteedEndpointPermissionOverrideEnabled": false,
+		"passwordToken": "ToaY2qw7iRSinoVbcz3YFA==EuxMAQBFEQK+HqoYAfKSzZymkw==",
+		"enabled": true,
+		"clientProfile": {
+		  "allowGuaranteedMsgSendEnabled": true,
+		  "maxConnectionCountPerClientUsername": 4,
+		  "maxEgressFlowCount": 4,
+		  "maxEndpointCountPerClientUsername": 0,
+		  "maxIngressFlowCount": 4,
+		  "maxMsgsPerTransaction": 256,
+		  "maxSubscriptionCount": 250,
+		  "maxTransactedSessionCount": 100,
+		  "maxTransactionCount": 100,
+		  "serviceSmfMaxConnectionCountPerClientUsername": 4,
+		  "serviceWebMaxConnectionCountPerClientUsername": 0,
+		  "allowTransactedSessionsEnabled": true
+		},
+		"aclProfile": {
+		  "clientConnectDefaultAction": "allow",
+		  "publishTopicDefaultAction":"disallow",
+		  "clientConnectExceptions": [],
+		  "publicTopicExceptions": ["UAL/DEV/ATW/UIA/WAITTIMES/>"],
+		  "subscribeTopicExceptions": [
+			"test/>"
+		  ]
+		}
+	  },
+	  {
+		"clientUsername": "dev-cxp-flifo-sub",
+		"guaranteedEndpointPermissionOverrideEnabled": false,
+		"passwordToken": "JqLBQjL6ENxmwkMLbL1yLA==qVTxbUeVfDWhomjWYtu5svRq89LB",
+		"enabled": true,
+		"clientProfile": {
+		  "allowGuaranteedMsgReceiveEnabled": true,
+		  "maxConnectionCountPerClientUsername": 40,
+		  "maxEgressFlowCount": 40,
+		  "maxEndpointCountPerClientUsername": 0,
+		  "maxIngressFlowCount": 40,
+		  "maxMsgsPerTransaction": 256,
+		  "maxSubscriptionCount": 250,
+		  "maxTransactedSessionCount": 0,
+		  "maxTransactionCount": 0,
+		  "serviceSmfMaxConnectionCountPerClientUsername": 40,
+		  "serviceWebMaxConnectionCountPerClientUsername": 0
+		},
+		"aclProfile": {
+		  "clientConnectDefaultAction": "allow",
+		  "publishTopicDefaultAction":"allow",
+		  "clientConnectExceptions": [],
+		  "publicTopicExceptions": [],
+		  "subscribeTopicExceptions": [
+			"test/>"
+		  ]
+		}
+	  },
+
+	  {
+		"clientUsername": "dev-cxp-flifo-pub",
+		"guaranteedEndpointPermissionOverrideEnabled": false,
+		"passwordToken": "zGHAYZJh21e5zMNQx9wHkA==Y6xFL7co/tOPhtIwqgvEytZf2M+gsuY=",
+		"enabled": true,
+		"clientProfile": {
+		  "allowGuaranteedMsgSendEnabled": true,
+		  "maxConnectionCountPerClientUsername": 40,
+		  "maxEgressFlowCount": 4,
+		  "maxEndpointCountPerClientUsername": 0,
+		  "maxIngressFlowCount": 4,
+		  "maxMsgsPerTransaction": 256,
+		  "maxSubscriptionCount": 250,
+		  "maxTransactedSessionCount": 0,
+		  "maxTransactionCount": 0,
+		  "serviceSmfMaxConnectionCountPerClientUsername": 40,
+		  "serviceWebMaxConnectionCountPerClientUsername": 0
+		},
+		"aclProfile": {
+		  "clientConnectDefaultAction": "allow",
+		  "publishTopicDefaultAction":"disallow",
+		  "clientConnectExceptions": [],
+		  "publicTopicExceptions": ["UAL/DEV/ATW/CXP/FLIFO/>"],
+		  "subscribeTopicExceptions": []
+		}
+	  },
+
+	  {
+		"clientUsername": "dev-uds-bagpier-pub",
+		"guaranteedEndpointPermissionOverrideEnabled": false,
+		"passwordToken": "DIQKoQvcADTAh3EFnakeBw==2n6dlN90bWUNLh8j+Ye45vw=",
+		"enabled": true,
+		"clientProfile": {
+		  "allowGuaranteedMsgSendEnabled": true,
+		  "maxConnectionCountPerClientUsername": 40,
+		  "maxEgressFlowCount": 4,
+		  "maxEndpointCountPerClientUsername": 0,
+		  "maxIngressFlowCount": 4,
+		  "maxMsgsPerTransaction": 256,
+		  "maxSubscriptionCount": 250,
+		  "maxTransactedSessionCount": 0,
+		  "maxTransactionCount": 0,
+		  "serviceSmfMaxConnectionCountPerClientUsername": 40,
+		  "serviceWebMaxConnectionCountPerClientUsername": 0
+		},
+		"aclProfile": {
+		  "clientConnectDefaultAction": "allow",
+		  "publishTopicDefaultAction":"disallow",
+		  "clientConnectExceptions": [],
+		  "publicTopicExceptions": ["UAL/DEV/UDS/BAGPIER/>"],
+		  "subscribeTopicExceptions": []
+		}
+	  },
+
+	  {
+		"clientUsername": "dev-uds-bagpier-sub",
+		"guaranteedEndpointPermissionOverrideEnabled": false,
+		"passwordToken": "uo9bsyyeVivtZSubnTDEyA==xl84bv1H3jk2+tFxkQoTWGs=",
+		"enabled": true,
+		"clientProfile": {
+		  "allowGuaranteedMsgReceiveEnabled": true,
+		  "maxConnectionCountPerClientUsername": 40,
+		  "maxEgressFlowCount": 4,
+		  "maxEndpointCountPerClientUsername": 0,
+		  "maxIngressFlowCount": 4,
+		  "maxMsgsPerTransaction": 256,
+		  "maxSubscriptionCount": 250,
+		  "maxTransactedSessionCount": 0,
+		  "maxTransactionCount": 0,
+		  "serviceSmfMaxConnectionCountPerClientUsername": 40,
+		  "serviceWebMaxConnectionCountPerClientUsername": 0
+		},
+		"aclProfile": {
+		  "clientConnectDefaultAction": "allow",
+		  "publishTopicDefaultAction":"allow",
+		  "clientConnectExceptions": [],
+		  "publicTopicExceptions": [],
+		  "subscribeTopicExceptions": [
+			"UAL/DEV/UDS/BAGPIER/>"
+		  ]
+		}
+	  },
+	  {
+		"clientUsername": "dev-jet-fm-ucd-sub",
+		"guaranteedEndpointPermissionOverrideEnabled": false,
+		"passwordToken": "mpwciontd1GUaIOFQgqAdw==PBZoYqnMEvTP0nw6eA==",
+		"enabled": true,
+		"clientProfile": {
+		  "allowGuaranteedMsgReceiveEnabled": true,
+		  "maxConnectionCountPerClientUsername": 40,
+		  "maxEgressFlowCount": 40,
+		  "maxEndpointCountPerClientUsername": 0,
+		  "maxIngressFlowCount": 40,
+		  "maxMsgsPerTransaction": 256,
+		  "maxSubscriptionCount": 250,
+		  "maxTransactedSessionCount": 0,
+		  "maxTransactionCount": 0,
+		  "serviceSmfMaxConnectionCountPerClientUsername": 40,
+		  "serviceWebMaxConnectionCountPerClientUsername": 0
+		},
+		"aclProfile": {
+		  "clientConnectDefaultAction": "allow",
+		  "clientConnectExceptions": [],
+		  "publicTopicExceptions": [],
+		  "subscribeTopicExceptions": [
+			"test/>"
+		  ]
+		}
+	  },
+	  {
+		"clientUsername": "dev-jet-fm-boarding-pub",
+		"guaranteedEndpointPermissionOverrideEnabled": false,
+		"passwordToken": "V88tSIljRglb22xtiBP9VA==N7a/PqgxM1EXNJjo4w==",
+		"enabled": true,
+		"clientProfile": {
+		  "allowGuaranteedMsgSendEnabled": true,
+		  "maxConnectionCountPerClientUsername": 100,
+		  "maxEgressFlowCount": 100,
+		  "maxEndpointCountPerClientUsername": 0,
+		  "maxIngressFlowCount": 100,
+		  "maxMsgsPerTransaction": 256,
+		  "maxSubscriptionCount": 250,
+		  "maxTransactedSessionCount": 0,
+		  "maxTransactionCount": 0,
+		  "serviceSmfMaxConnectionCountPerClientUsername": 100,
+		  "serviceWebMaxConnectionCountPerClientUsername": 0
+		},
+		"aclProfile": {
+		  "clientConnectDefaultAction": "allow",
+		  "clientConnectExceptions": [],
+		  "publicTopicExceptions": ["UAL/DEV/ATW/JET/BOARDING/>"],
+		  "subscribeTopicExceptions": [
+			"test/>"
+		  ]
+		}
+	  },
+	  {
+		"clientUsername": "dev-jet-fm-boarding-pubsub",
+		"guaranteedEndpointPermissionOverrideEnabled": false,
+		"passwordToken": "AmwoIKLHsSHM91zDJqBGYg==JKJRrMHmnl5PW3O8lg==",
+		"enabled": true,
+		"clientProfile": {
+		  "allowGuaranteedMsgSendEnabled": true,
+		  "allowGuaranteedMsgReceiveEnabled": true,
+		  "maxConnectionCountPerClientUsername": 100,
+		  "maxEgressFlowCount": 100,
+		  "maxEndpointCountPerClientUsername": 0,
+		  "maxIngressFlowCount": 100,
+		  "maxMsgsPerTransaction": 256,
+		  "maxSubscriptionCount": 250,
+		  "maxTransactedSessionCount": 0,
+		  "maxTransactionCount": 0,
+		  "serviceSmfMaxConnectionCountPerClientUsername": 100,
+		  "serviceWebMaxConnectionCountPerClientUsername": 0
+		},
+		"aclProfile": {
+		"clientConnectDefaultAction": "allow",
+		  "subscribeTopicDefaultAction": "allow",
+		  "clientConnectExceptions": [],
+		  "publicTopicExceptions": ["UAL/DEV/ATW/JET/BOARDING/>"],
+		  "subscribeTopicExceptions": [
+			"test/>"
+		  ]
+		}
+	  },
+	  {
+		"clientUsername": "dev-uds-fwdbags-sub",
+		"guaranteedEndpointPermissionOverrideEnabled": false,
+		"passwordToken": "CWxlCCsb+jJ3OSid9gnUbQ==wudY8QItuz0Gay5qrMWiKyPrH8VQWm8=",
+		"enabled": true,
+		"clientProfile": {
+		  "allowGuaranteedMsgReceiveEnabled": true,
+		  "maxConnectionCountPerClientUsername": 6,
+		  "maxEgressFlowCount": 6,
+		  "maxEndpointCountPerClientUsername": 0,
+		  "maxIngressFlowCount": 6,
+		  "maxMsgsPerTransaction": 256,
+		  "maxSubscriptionCount": 250,
+		  "maxTransactedSessionCount": 0,
+		  "maxTransactionCount": 0,
+		  "serviceSmfMaxConnectionCountPerClientUsername": 6,
+		  "serviceWebMaxConnectionCountPerClientUsername": 0
+		},
+		"aclProfile": {
+		"clientConnectDefaultAction": "allow",
+		  "publishTopicDefaultAction":"disallow",
+		  "subscribeTopicDefaultAction": "allow",
+		  "clientConnectExceptions": [],
+		  "publicTopicExceptions": [],
+		  "subscribeTopicExceptions": [
+			"test/>"
+		  ]
+		}
+	  },
+	  {
+		"clientUsername": "dev-uds-bagclaim-sub",
+		"guaranteedEndpointPermissionOverrideEnabled": false,
+		"passwordToken": "iJmL99Y59Crd/J48JiQoLA==Q9t2GmVg7Yl60XGvLu+tfX378gISd4A=",
+		"enabled": true,
+		"clientProfile": {
+		  "allowGuaranteedMsgReceiveEnabled": true,
+		  "maxConnectionCountPerClientUsername": 6,
+		  "maxEgressFlowCount": 6,
+		  "maxEndpointCountPerClientUsername": 0,
+		  "maxIngressFlowCount": 6,
+		  "maxMsgsPerTransaction": 256,
+		  "maxSubscriptionCount": 250,
+		  "maxTransactedSessionCount": 0,
+		  "maxTransactionCount": 0,
+		  "serviceSmfMaxConnectionCountPerClientUsername": 6,
+		  "serviceWebMaxConnectionCountPerClientUsername": 0
+		},
+		"aclProfile": {
+		"clientConnectDefaultAction": "allow",
+		  "publishTopicDefaultAction":"disallow",
+		  "subscribeTopicDefaultAction": "allow",
+		  "clientConnectExceptions": [],
+		  "publicTopicExceptions": [],
+		  "subscribeTopicExceptions": [
+			"test/>"
+		  ]
+		}
+	  },
+	  {
+		"clientUsername": "dev-uds-bagclaimetaevt-sub",
+		"guaranteedEndpointPermissionOverrideEnabled": false,
+		"passwordToken": "XRh3Pk0pM0byl4xbtBVQyA==3/EdCie5GX0pzc++LG8PGFbNztQfGu4=",
+		"enabled": true,
+		"clientProfile": {
+		  "allowGuaranteedMsgReceiveEnabled": true,
+		  "maxConnectionCountPerClientUsername": 6,
+		  "maxEgressFlowCount": 6,
+		  "maxEndpointCountPerClientUsername": 0,
+		  "maxIngressFlowCount": 6,
+		  "maxMsgsPerTransaction": 256,
+		  "maxSubscriptionCount": 250,
+		  "maxTransactedSessionCount": 0,
+		  "maxTransactionCount": 0,
+		  "serviceSmfMaxConnectionCountPerClientUsername": 6,
+		  "serviceWebMaxConnectionCountPerClientUsername": 0
+		},
+		"aclProfile": {
+		"clientConnectDefaultAction": "allow",
+		  "publishTopicDefaultAction":"disallow",
+		  "subscribeTopicDefaultAction": "allow",
+		  "clientConnectExceptions": [],
+		  "publicTopicExceptions": [],
+		  "subscribeTopicExceptions": [
+			"test/>"
+		  ]
+		}
+	  },
+	  {
+		"clientUsername": "dev-uds-lightdetectalerts-sub",
+		"guaranteedEndpointPermissionOverrideEnabled": false,
+		"passwordToken": "OP9Qv9znECymyzLKTiKIxg==cRr1YIcSY5/CGdLGPMN+VO0rbH7eqfE=",
+		"enabled": true,
+		"clientProfile": {
+		  "allowGuaranteedMsgReceiveEnabled": true,
+		  "maxConnectionCountPerClientUsername": 6,
+		  "maxEgressFlowCount": 6,
+		  "maxEndpointCountPerClientUsername": 0,
+		  "maxIngressFlowCount": 6,
+		  "maxMsgsPerTransaction": 256,
+		  "maxSubscriptionCount": 250,
+		  "maxTransactedSessionCount": 0,
+		  "maxTransactionCount": 0,
+		  "serviceSmfMaxConnectionCountPerClientUsername": 6,
+		  "serviceWebMaxConnectionCountPerClientUsername": 0
+		},
+		"aclProfile": {
+		"clientConnectDefaultAction": "allow",
+		  "publishTopicDefaultAction":"disallow",
+		  "subscribeTopicDefaultAction": "allow",
+		  "clientConnectExceptions": [],
+		  "publicTopicExceptions": [],
+		  "subscribeTopicExceptions": [
+			"test/>"
+		  ]
+		}
+	  },
+	  {
+		"clientUsername": "dev-uds-fwdbags-pub",
+		"guaranteedEndpointPermissionOverrideEnabled": false,
+		"passwordToken": "LBTp6HuLam1aZk3QzNBtuw==sedYwP5GH7cz2bZ6b2oenfMH5z1wUrE=",
+		"enabled": true,
+		"clientProfile": {
+		  "allowGuaranteedMsgSendEnabled": true,
+		  "maxConnectionCountPerClientUsername": 6,
+		  "maxEgressFlowCount": 6,
+		  "maxEndpointCountPerClientUsername": 0,
+		  "maxIngressFlowCount": 6,
+		  "maxMsgsPerTransaction": 256,
+		  "maxSubscriptionCount": 250,
+		  "maxTransactedSessionCount": 0,
+		  "maxTransactionCount": 0,
+		  "serviceSmfMaxConnectionCountPerClientUsername": 6,
+		  "serviceWebMaxConnectionCountPerClientUsername": 0
+		},
+		"aclProfile": {
+		"clientConnectDefaultAction": "allow",
+		  "subscribeTopicDefaultAction": "disallow",
+		  "clientConnectExceptions": [],
+		  "publicTopicExceptions": ["UAL/DEV/ATW/UDS/FWDBAGS/>"],
+		  "subscribeTopicExceptions": []
+		}
+	  },
+	  {
+		"clientUsername": "dev-uds-bagclaim-pub",
+		"guaranteedEndpointPermissionOverrideEnabled": false,
+		"passwordToken": "bg25vsf8Jqg6n9nCSziHSw==AJxZileJPlFNKZydzYQJBo3v5EwZksI=",
+		"enabled": true,
+		"clientProfile": {
+		  "allowGuaranteedMsgSendEnabled": true,
+		  "maxConnectionCountPerClientUsername": 6,
+		  "maxEgressFlowCount": 6,
+		  "maxEndpointCountPerClientUsername": 0,
+		  "maxIngressFlowCount": 6,
+		  "maxMsgsPerTransaction": 256,
+		  "maxSubscriptionCount": 250,
+		  "maxTransactedSessionCount": 0,
+		  "maxTransactionCount": 0,
+		  "serviceSmfMaxConnectionCountPerClientUsername": 6,
+		  "serviceWebMaxConnectionCountPerClientUsername": 0
+		},
+		"aclProfile": {
+		"clientConnectDefaultAction": "allow",
+		  "subscribeTopicDefaultAction": "disallow",
+		  "clientConnectExceptions": [],
+		  "publicTopicExceptions": ["UAL/DEV/ATW/UDS/BAGCLAIM/>"],
+		  "subscribeTopicExceptions": []
+		}
+	  },
+	  {
+		"clientUsername": "dev-uds-bagclaimetaevt-pub",
+		"guaranteedEndpointPermissionOverrideEnabled": false,
+		"passwordToken": "7Pwo0D2DXaeuXA64dmirDw==QCQdFoJutIVqk4fVz/4LC5ZyQ50g4Pc=",
+		"enabled": true,
+		"clientProfile": {
+		  "allowGuaranteedMsgSendEnabled": true,
+		  "maxConnectionCountPerClientUsername": 6,
+		  "maxEgressFlowCount": 6,
+		  "maxEndpointCountPerClientUsername": 0,
+		  "maxIngressFlowCount": 6,
+		  "maxMsgsPerTransaction": 256,
+		  "maxSubscriptionCount": 250,
+		  "maxTransactedSessionCount": 0,
+		  "maxTransactionCount": 0,
+		  "serviceSmfMaxConnectionCountPerClientUsername": 6,
+		  "serviceWebMaxConnectionCountPerClientUsername": 0
+		},
+		"aclProfile": {
+		"clientConnectDefaultAction": "allow",
+		  "subscribeTopicDefaultAction": "disallow",
+		  "clientConnectExceptions": [],
+		  "publicTopicExceptions": ["UAL/DEV/ATW/UDS/BAGCLAIMETAEVT/>"],
+		  "subscribeTopicExceptions": []
+		}
+	  },
+	  {
+		"clientUsername": "dev-uds-lightdetectalerts-pub",
+		"guaranteedEndpointPermissionOverrideEnabled": false,
+		"passwordToken": "s5WjKFlrRmmXdnkI5OJbxg==WWoA/mwZkD1IH+RF12TgeMCMIyOT8Jw=",
+		"enabled": true,
+		"clientProfile": {
+		  "allowGuaranteedMsgSendEnabled": true,
+		  "maxConnectionCountPerClientUsername": 6,
+		  "maxEgressFlowCount": 6,
+		  "maxEndpointCountPerClientUsername": 0,
+		  "maxIngressFlowCount": 6,
+		  "maxMsgsPerTransaction": 256,
+		  "maxSubscriptionCount": 250,
+		  "maxTransactedSessionCount": 0,
+		  "maxTransactionCount": 0,
+		  "serviceSmfMaxConnectionCountPerClientUsername": 6,
+		  "serviceWebMaxConnectionCountPerClientUsername": 0
+		},
+		"aclProfile": {
+		"clientConnectDefaultAction": "allow",
+		  "subscribeTopicDefaultAction": "disallow",
+		  "clientConnectExceptions": [],
+		  "publicTopicExceptions": ["UAL/DEV/ATW/UDS/LIGHTDETECTALERTS/>"],
+		  "subscribeTopicExceptions": []
+		}
+	  },
+	  {
+		"clientUsername": "dev-epo-ucd-sub",
+		"guaranteedEndpointPermissionOverrideEnabled": false,
+		"passwordToken": "FAYyimfS9gDsFqR5Xyu58A==fZZo5Rgr+PnDLS9KtSy8gB9vOc/optA=",
+		"enabled": true,
+		"clientProfile": {
+		  "allowGuaranteedMsgReceiveEnabled": true,
+		  "maxConnectionCountPerClientUsername": 40,
+		  "maxEgressFlowCount": 40,
+		  "maxEndpointCountPerClientUsername": 0,
+		  "maxIngressFlowCount": 40,
+		  "maxMsgsPerTransaction": 256,
+		  "maxSubscriptionCount": 250,
+		  "maxTransactedSessionCount": 0,
+		  "maxTransactionCount": 0,
+		  "serviceSmfMaxConnectionCountPerClientUsername": 40,
+		  "serviceWebMaxConnectionCountPerClientUsername": 0
+		},
+		"aclProfile": {
+		  "clientConnectDefaultAction": "allow",
+		  "clientConnectExceptions": [],
+		  "publicTopicExceptions": [],
+		  "subscribeTopicExceptions": [
+			"test/>"
+		  ]
+		}
+	  },{
+		"clientUsername": "qa-epo-ucd-sub",
+		"guaranteedEndpointPermissionOverrideEnabled": false,
+		"passwordToken": "ncE8Mmd6JWI3TyQhbL7nvg==RnrgB/car7P6xIE4XQYQgj09Xom4uxAlecU=",
+		"enabled": true,
+		"clientProfile": {
+		  "allowGuaranteedMsgReceiveEnabled": true,
+		  "maxConnectionCountPerClientUsername": 40,
+		  "maxEgressFlowCount": 40,
+		  "maxEndpointCountPerClientUsername": 0,
+		  "maxIngressFlowCount": 40,
+		  "maxMsgsPerTransaction": 256,
+		  "maxSubscriptionCount": 250,
+		  "maxTransactedSessionCount": 0,
+		  "maxTransactionCount": 0,
+		  "serviceSmfMaxConnectionCountPerClientUsername": 40,
+		  "serviceWebMaxConnectionCountPerClientUsername": 0
+		},
+		"aclProfile": {
+		  "clientConnectDefaultAction": "allow",
+		  "clientConnectExceptions": [],
+		  "publicTopicExceptions": [],
+		  "subscribeTopicExceptions": [
+			"test/>"
+		  ]
+		}
+	  },
+	  {
+		"clientUsername": "qa-jet-fm-boarding-pubsub",
+		"guaranteedEndpointPermissionOverrideEnabled": false,
+		"passwordToken": "a05CuNgf8Tw+ivKSH4K8oA==bAiv8ssaM7d8zPNEwSQMf3IG8Bph344=",
+		"enabled": true,
+		"clientProfile": {
+		  "allowGuaranteedMsgSendEnabled": true,
+		  "allowGuaranteedMsgReceiveEnabled": true,
+		  "maxConnectionCountPerClientUsername": 100,
+		  "maxEgressFlowCount": 100,
+		  "maxEndpointCountPerClientUsername": 0,
+		  "maxIngressFlowCount": 100,
+		  "maxMsgsPerTransaction": 256,
+		  "maxSubscriptionCount": 250,
+		  "maxTransactedSessionCount": 0,
+		  "maxTransactionCount": 0,
+		  "serviceSmfMaxConnectionCountPerClientUsername": 100,
+		  "serviceWebMaxConnectionCountPerClientUsername": 0
+		},
+		"aclProfile": {
+		"clientConnectDefaultAction": "allow",
+		  "subscribeTopicDefaultAction": "allow",
+		  "clientConnectExceptions": [],
+		  "publicTopicExceptions": ["UAL/QA/ATW/JET/BOARDING/>"],
+		  "subscribeTopicExceptions": [
+			"test/>"
+		  ]
+		}
+    },
+	{
+	  "clientUsername": "qa-jet-fm-boarding-pub",
+	  "guaranteedEndpointPermissionOverrideEnabled": false,
+	  "passwordToken": "9RxSQ4Pgck68lmuM/gz1hg==JIXV2V3f2NbmNUmkKL6JHJ/UKvQOV9s=",
+	  "enabled": true,
+	  "clientProfile": {
+		"allowGuaranteedMsgSendEnabled": true,
+		"maxConnectionCountPerClientUsername": 100,
+		"maxEgressFlowCount": 100,
+		"maxEndpointCountPerClientUsername": 0,
+		"maxIngressFlowCount": 100,
+		"maxMsgsPerTransaction": 256,
+		"maxSubscriptionCount": 250,
+		"maxTransactedSessionCount": 0,
+		"maxTransactionCount": 0,
+		"serviceSmfMaxConnectionCountPerClientUsername": 100,
+		"serviceWebMaxConnectionCountPerClientUsername": 0
+	  },
+	  "aclProfile": {
+		"clientConnectDefaultAction": "allow",
+		"clientConnectExceptions": [],
+		"publicTopicExceptions": ["UAL/QA/ATW/JET/BOARDING/>"],
+		"subscribeTopicExceptions": [
+		  "test/>"
+		]
+	  }
+	},
+	{
+	  "clientUsername": "qa-uds-bagpier-pub",
+	  "guaranteedEndpointPermissionOverrideEnabled": false,
+	  "passwordToken": "ZQyFzxc+5sYMbPVXyDbnmQ==R8HLwdM6CN40tyEv/XWdUGgCPecN6Jk=",
+	  "enabled": true,
+	  "clientProfile": {
+		"allowGuaranteedMsgSendEnabled": true,
+		"maxConnectionCountPerClientUsername": 40,
+		"maxEgressFlowCount": 4,
+		"maxEndpointCountPerClientUsername": 0,
+		"maxIngressFlowCount": 4,
+		"maxMsgsPerTransaction": 256,
+		"maxSubscriptionCount": 250,
+		"maxTransactedSessionCount": 0,
+		"maxTransactionCount": 0,
+		"serviceSmfMaxConnectionCountPerClientUsername": 40,
+		"serviceWebMaxConnectionCountPerClientUsername": 0
+	  },
+	  "aclProfile": {
+		"clientConnectDefaultAction": "allow",
+		"publishTopicDefaultAction":"disallow",
+		"clientConnectExceptions": [],
+		"publicTopicExceptions": ["UAL/QA/UDS/BAGPIER/>"],
+		"subscribeTopicExceptions": []
+	  }
+	},
+
+	{
+	  "clientUsername": "qa-uds-bagpier-sub",
+	  "guaranteedEndpointPermissionOverrideEnabled": false,
+	  "passwordToken": "sddxeDStNyBvlen6Ka+fJw==z+7+EfjbdoIX4ZLqNWdWmOKk4I56X7Y=",
+	  "enabled": true,
+	  "clientProfile": {
+		"allowGuaranteedMsgReceiveEnabled": true,
+		"maxConnectionCountPerClientUsername": 40,
+		"maxEgressFlowCount": 4,
+		"maxEndpointCountPerClientUsername": 0,
+		"maxIngressFlowCount": 4,
+		"maxMsgsPerTransaction": 256,
+		"maxSubscriptionCount": 250,
+		"maxTransactedSessionCount": 0,
+		"maxTransactionCount": 0,
+		"serviceSmfMaxConnectionCountPerClientUsername": 40,
+		"serviceWebMaxConnectionCountPerClientUsername": 0
+	  },
+	  "aclProfile": {
+		"clientConnectDefaultAction": "allow",
+		"publishTopicDefaultAction":"allow",
+		"clientConnectExceptions": [],
+		"publicTopicExceptions": [],
+		"subscribeTopicExceptions": [
+		  "UAL/QA/UDS/BAGPIER/>"
+		]
+	  }
+	},
+	{
+	  "clientUsername": "qa-uds-bagclaim-pub",
+	  "guaranteedEndpointPermissionOverrideEnabled": false,
+	  "passwordToken": "WOV2VDdZu9qTmMF8tuzhow==zcPtjrUBIPPspPcvPNQ/xIctgciurWU=",
+	  "enabled": true,
+	  "clientProfile": {
+		"allowGuaranteedMsgSendEnabled": true,
+		"maxConnectionCountPerClientUsername": 6,
+		"maxEgressFlowCount": 6,
+		"maxEndpointCountPerClientUsername": 0,
+		"maxIngressFlowCount": 6,
+		"maxMsgsPerTransaction": 256,
+		"maxSubscriptionCount": 250,
+		"maxTransactedSessionCount": 0,
+		"maxTransactionCount": 0,
+		"serviceSmfMaxConnectionCountPerClientUsername": 6,
+		"serviceWebMaxConnectionCountPerClientUsername": 0
+	  },
+	  "aclProfile": {
+	  "clientConnectDefaultAction": "allow",
+		"subscribeTopicDefaultAction": "disallow",
+		"clientConnectExceptions": [],
+		"publicTopicExceptions": ["UAL/QA/ATW/UDS/BAGCLAIM/>"],
+		"subscribeTopicExceptions": []
+	  }
+	},
+	{
+	  "clientUsername": "qa-uds-bagclaim-sub",
+	  "guaranteedEndpointPermissionOverrideEnabled": false,
+	  "passwordToken": "cxu3ZxZWchmJIIBhF54KXw==MKMlqQmQaooTgT/GCG+c3J2A4zBLB2U=",
+	  "enabled": true,
+	  "clientProfile": {
+		"allowGuaranteedMsgReceiveEnabled": true,
+		"maxConnectionCountPerClientUsername": 6,
+		"maxEgressFlowCount": 6,
+		"maxEndpointCountPerClientUsername": 0,
+		"maxIngressFlowCount": 6,
+		"maxMsgsPerTransaction": 256,
+		"maxSubscriptionCount": 250,
+		"maxTransactedSessionCount": 0,
+		"maxTransactionCount": 0,
+		"serviceSmfMaxConnectionCountPerClientUsername": 6,
+		"serviceWebMaxConnectionCountPerClientUsername": 0
+	  },
+	  "aclProfile": {
+	  "clientConnectDefaultAction": "allow",
+		"publishTopicDefaultAction":"disallow",
+		"subscribeTopicDefaultAction": "allow",
+		"clientConnectExceptions": [],
+		"publicTopicExceptions": [],
+		"subscribeTopicExceptions": [
+		  "test/>"
+		]
+	  }
+	},
+	{
+	  "clientUsername": "qa-uds-bagclaimetaevt-sub",
+	  "guaranteedEndpointPermissionOverrideEnabled": false,
+	  "passwordToken": "kLEE2ADWAEI45tRldZkjVQ==GWRiSjhQt+t3cZdmXCBFyzCUPg7NkVc=",
+	  "enabled": true,
+	  "clientProfile": {
+		"allowGuaranteedMsgReceiveEnabled": true,
+		"maxConnectionCountPerClientUsername": 6,
+		"maxEgressFlowCount": 6,
+		"maxEndpointCountPerClientUsername": 0,
+		"maxIngressFlowCount": 6,
+		"maxMsgsPerTransaction": 256,
+		"maxSubscriptionCount": 250,
+		"maxTransactedSessionCount": 0,
+		"maxTransactionCount": 0,
+		"serviceSmfMaxConnectionCountPerClientUsername": 6,
+		"serviceWebMaxConnectionCountPerClientUsername": 0
+	  },
+	  "aclProfile": {
+	  "clientConnectDefaultAction": "allow",
+		"publishTopicDefaultAction":"disallow",
+		"subscribeTopicDefaultAction": "allow",
+		"clientConnectExceptions": [],
+		"publicTopicExceptions": [],
+		"subscribeTopicExceptions": [
+		  "test/>"
+		]
+	  }
+	},
+	{
+	  "clientUsername": "qa-uds-bagclaimetaevt-pub",
+	  "guaranteedEndpointPermissionOverrideEnabled": false,
+	  "passwordToken": "Ui6Hy0bmbnfLYiCWy9Skvw==H7vOBy1GOnZOe6LNj+5gk/ffmqoF7YA=",
+	  "enabled": true,
+	  "clientProfile": {
+		"allowGuaranteedMsgSendEnabled": true,
+		"maxConnectionCountPerClientUsername": 6,
+		"maxEgressFlowCount": 6,
+		"maxEndpointCountPerClientUsername": 0,
+		"maxIngressFlowCount": 6,
+		"maxMsgsPerTransaction": 256,
+		"maxSubscriptionCount": 250,
+		"maxTransactedSessionCount": 0,
+		"maxTransactionCount": 0,
+		"serviceSmfMaxConnectionCountPerClientUsername": 6,
+		"serviceWebMaxConnectionCountPerClientUsername": 0
+	  },
+	  "aclProfile": {
+	  "clientConnectDefaultAction": "allow",
+		"subscribeTopicDefaultAction": "disallow",
+		"clientConnectExceptions": [],
+		"publicTopicExceptions": ["UAL/QA/ATW/UDS/BAGCLAIMETAEVT/>"],
+		"subscribeTopicExceptions": []
+	  }
+	},
+	{
+	  "clientUsername": "qa-uds-bagscan-pub",
+	  "guaranteedEndpointPermissionOverrideEnabled": false,
+	  "passwordToken": "oSA0qTk5yekJvrry5mto+Q==CIVYTbFqe4AZhXsX0mfuNG7mhjJtm7U=",
+	  "enabled": true,
+	  "clientProfile": {
+		"allowGuaranteedMsgSendEnabled": true,
+		"maxConnectionCountPerClientUsername": 30,
+		"maxEgressFlowCount": 30,
+		"maxEndpointCountPerClientUsername": 0,
+		"maxIngressFlowCount": 30,
+		"maxMsgsPerTransaction": 256,
+		"maxSubscriptionCount": 250,
+		"maxTransactedSessionCount": 0,
+		"maxTransactionCount": 0,
+		"serviceSmfMaxConnectionCountPerClientUsername": 30,
+		"serviceWebMaxConnectionCountPerClientUsername": 0
+	  },
+	  "aclProfile": {
+		"clientConnectDefaultAction": "allow",
+		"publishTopicDefaultAction":"allow",
+		"clientConnectExceptions": [],
+		"publicTopicExceptions": [],
+		"subscribeTopicExceptions": [
+		  "test/>"
+		]
+	  }
+	},
+	{
+	  "clientUsername": "qa-uds-bagscan-sub",
+	  "guaranteedEndpointPermissionOverrideEnabled": false,
+	  "passwordToken": "dfMNRefRBRQAqyLQBa9l+Q==cN/dBaY1tegKGbgyKnpxuItExO8zALw=",
+	  "enabled": true,
+	  "clientProfile": {
+		"allowGuaranteedMsgReceiveEnabled": true,
+		"maxConnectionCountPerClientUsername": 30,
+		"maxEgressFlowCount": 30,
+		"maxEndpointCountPerClientUsername": 0,
+		"maxIngressFlowCount": 30,
+		"maxMsgsPerTransaction": 256,
+		"maxSubscriptionCount": 250,
+		"maxTransactedSessionCount": 0,
+		"maxTransactionCount": 0,
+		"serviceSmfMaxConnectionCountPerClientUsername": 30,
+		"serviceWebMaxConnectionCountPerClientUsername": 0
+	  },
+	  "aclProfile": {
+		"clientConnectDefaultAction": "allow",
+		"publishTopicDefaultAction":"allow",
+		"clientConnectExceptions": [],
+		"publicTopicExceptions": [],
+		"subscribeTopicExceptions": [
+		  "test/>"
+		]
+	  }
+	},
+
+	{
+	  "clientUsername": "qa-uds-fwdbags-pub",
+	  "guaranteedEndpointPermissionOverrideEnabled": false,
+	  "passwordToken": "uo2pRuZtr5gnylgzSKZdqQ==sbatOU4gGEWrMnSumOSlMzVvK4h7Bfs=",
+	  "enabled": true,
+	  "clientProfile": {
+		"allowGuaranteedMsgSendEnabled": true,
+		"maxConnectionCountPerClientUsername": 6,
+		"maxEgressFlowCount": 6,
+		"maxEndpointCountPerClientUsername": 0,
+		"maxIngressFlowCount": 6,
+		"maxMsgsPerTransaction": 256,
+		"maxSubscriptionCount": 250,
+		"maxTransactedSessionCount": 0,
+		"maxTransactionCount": 0,
+		"serviceSmfMaxConnectionCountPerClientUsername": 6,
+		"serviceWebMaxConnectionCountPerClientUsername": 0
+	  },
+	  "aclProfile": {
+	  "clientConnectDefaultAction": "allow",
+		"subscribeTopicDefaultAction": "disallow",
+		"clientConnectExceptions": [],
+		"publicTopicExceptions": ["UAL/QA/ATW/UDS/FWDBAGS/>"],
+		"subscribeTopicExceptions": []
+	  }
+	},
+	{
+	  "clientUsername": "qa-uds-fwdbags-sub",
+	  "guaranteedEndpointPermissionOverrideEnabled": false,
+	  "passwordToken": "wkot+dgKATSPMnqzA++iDg==cQYKQvthcDC3uRO1bAMrZ3v+RH5TKfY=",
+	  "enabled": true,
+	  "clientProfile": {
+		"allowGuaranteedMsgReceiveEnabled": true,
+		"maxConnectionCountPerClientUsername": 6,
+		"maxEgressFlowCount": 6,
+		"maxEndpointCountPerClientUsername": 0,
+		"maxIngressFlowCount": 6,
+		"maxMsgsPerTransaction": 256,
+		"maxSubscriptionCount": 250,
+		"maxTransactedSessionCount": 0,
+		"maxTransactionCount": 0,
+		"serviceSmfMaxConnectionCountPerClientUsername": 6,
+		"serviceWebMaxConnectionCountPerClientUsername": 0
+	  },
+	  "aclProfile": {
+	  "clientConnectDefaultAction": "allow",
+		"publishTopicDefaultAction":"disallow",
+		"subscribeTopicDefaultAction": "allow",
+		"clientConnectExceptions": [],
+		"publicTopicExceptions": [],
+		"subscribeTopicExceptions": [
+		  "test/>"
+		]
+	  }
+	},
+	{
+		"clientUsername": "dev-uds-hotbag-sub",
+		"guaranteedEndpointPermissionOverrideEnabled": false,
+		"passwordToken": "qB0IuwVilu211zFgy+K2CA==noW1QIfXy9T1mmv7I+iEnwaPnC6Xmmo=",
+		"enabled": true,
+		"clientProfile": {
+		  "allowGuaranteedMsgReceiveEnabled": true,
+		  "maxConnectionCountPerClientUsername": 4,
+		  "maxEgressFlowCount": 4,
+		  "maxEndpointCountPerClientUsername": 0,
+		  "maxIngressFlowCount": 4,
+		  "maxMsgsPerTransaction": 256,
+		  "maxSubscriptionCount": 250,
+		  "maxTransactedSessionCount": 100,
+		  "maxTransactionCount": 100,
+		  "serviceSmfMaxConnectionCountPerClientUsername": 4,
+		  "serviceWebMaxConnectionCountPerClientUsername": 0,
+		  "allowTransactedSessionsEnabled": true
+		},
+		"aclProfile": {
+		"clientConnectDefaultAction": "allow",
+		  "publishTopicDefaultAction":"disallow",
+		  "subscribeTopicDefaultAction": "allow",
+		  "clientConnectExceptions": [],
+		  "publicTopicExceptions": [],
+		  "subscribeTopicExceptions": [
+			"test/>"
+		  ]
+		}
+	  },
+	  {
+		"clientUsername": "dev-uds-hotbag-pub",
+		"guaranteedEndpointPermissionOverrideEnabled": false,
+		"passwordToken": "7VWR1mlMMaXBltXFNtkByw==ciKNrNOLTwtxLS/0KEp6Qt14fdJNtHk=",
+		"enabled": true,
+		"clientProfile": {
+		  "allowGuaranteedMsgSendEnabled": true,
+		  "maxConnectionCountPerClientUsername": 4,
+		  "maxEgressFlowCount": 4,
+		  "maxEndpointCountPerClientUsername": 0,
+		  "maxIngressFlowCount": 4,
+		  "maxMsgsPerTransaction": 256,
+		  "maxSubscriptionCount": 250,
+		  "maxTransactedSessionCount": 100,
+		  "maxTransactionCount": 100,
+		  "serviceSmfMaxConnectionCountPerClientUsername": 4,
+		  "serviceWebMaxConnectionCountPerClientUsername": 0,
+		  "allowTransactedSessionsEnabled": true
+		},
+		"aclProfile": {
+		  "clientConnectDefaultAction": "allow",
+		  "subscribeTopicDefaultAction": "disallow",
+		  "clientConnectExceptions": [],
+		  "publicTopicExceptions": ["UAL/DEV/ATW/UDS/HOTBAG/>"],
+		  "subscribeTopicExceptions": []
+		}
+	  },
+	  {
+		"clientUsername": "qa-uds-hotbag-sub",
+		"guaranteedEndpointPermissionOverrideEnabled": false,
+		"passwordToken": "BwGZQOgA3UnhfUe1iKohYQ==C6RFKfgDFffCzrAatLCZ5MVpzKjhY9M=",
+		"enabled": true,
+		"clientProfile": {
+		  "allowGuaranteedMsgReceiveEnabled": true,
+		  "maxConnectionCountPerClientUsername": 4,
+		  "maxEgressFlowCount": 4,
+		  "maxEndpointCountPerClientUsername": 0,
+		  "maxIngressFlowCount": 4,
+		  "maxMsgsPerTransaction": 256,
+		  "maxSubscriptionCount": 250,
+		  "maxTransactedSessionCount": 100,
+		  "maxTransactionCount": 100,
+		  "serviceSmfMaxConnectionCountPerClientUsername": 4,
+		  "serviceWebMaxConnectionCountPerClientUsername": 0,
+		  "allowTransactedSessionsEnabled": true
+		},
+		"aclProfile": {
+		  "clientConnectDefaultAction": "allow",
+		  "publishTopicDefaultAction":"disallow",
+		  "subscribeTopicDefaultAction": "allow",
+		  "clientConnectExceptions": [],
+		  "publicTopicExceptions": [],
+		  "subscribeTopicExceptions": [
+			"test/>"
+		  ]
+		}
+	  },
+	  {
+		"clientUsername": "qa-uds-hotbag-pub",
+		"guaranteedEndpointPermissionOverrideEnabled": false,
+		"passwordToken": "MpqvNgOHpJFUAMiytESqlQ==T41mjsbY+/1c67QX6Vnrn4jghip+PVA=",
+		"enabled": true,
+		"clientProfile": {
+		  "allowGuaranteedMsgSendEnabled": true,
+		  "maxConnectionCountPerClientUsername": 4,
+		  "maxEgressFlowCount": 4,
+		  "maxEndpointCountPerClientUsername": 0,
+		  "maxIngressFlowCount": 4,
+		  "maxMsgsPerTransaction": 256,
+		  "maxSubscriptionCount": 250,
+		  "maxTransactedSessionCount": 100,
+		  "maxTransactionCount": 100,
+		  "serviceSmfMaxConnectionCountPerClientUsername": 4,
+		  "serviceWebMaxConnectionCountPerClientUsername": 0,
+		  "allowTransactedSessionsEnabled": true
+		},
+		"aclProfile": {
+		  "clientConnectDefaultAction": "allow",
+		  "subscribeTopicDefaultAction": "disallow",
+		  "clientConnectExceptions": [],
+		  "publicTopicExceptions": ["UAL/QA/ATW/UDS/HOTBAG/>"],
+		  "subscribeTopicExceptions": []
+		}
+	  },
+	  {
+		"clientUsername": "dev-jet-fm-autorefresh-pubsub",
+		"guaranteedEndpointPermissionOverrideEnabled": false,
+		"passwordToken": "WZztYQPJwj9YTCHqFxzmkg==eCfs54j0J603bk6jjfkveXFnnkEs4aI=",
+		"enabled": true,
+		"clientProfile": {
+		  "allowGuaranteedMsgSendEnabled": true,
+		  "allowGuaranteedMsgReceiveEnabled": true,
+		  "maxConnectionCountPerClientUsername": 100,
+		  "maxEgressFlowCount": 100,
+		  "maxEndpointCountPerClientUsername": 0,
+		  "maxIngressFlowCount": 100,
+		  "maxMsgsPerTransaction": 256,
+		  "maxSubscriptionCount": 250,
+		  "maxTransactedSessionCount": 0,
+		  "maxTransactionCount": 0,
+		  "serviceSmfMaxConnectionCountPerClientUsername": 100,
+		  "serviceWebMaxConnectionCountPerClientUsername": 0
+		},
+		"aclProfile": {
+		"clientConnectDefaultAction": "allow",
+		  "subscribeTopicDefaultAction": "allow",
+		  "clientConnectExceptions": [],
+		  "publicTopicExceptions": ["UAL/DEV/ATW/JET/FLIGHT/>"],
+		  "subscribeTopicExceptions": [
+			"test/>"
+		  ]
+		}
+	  },
+	  {
+		"clientUsername": "dev-uds-formtr-notify-sub",
+		"guaranteedEndpointPermissionOverrideEnabled": false,
+		"passwordToken": "iGe8tYqZcre9Nec3T5MTKQ==KzTxuvtDklYXuSfWprfpXg0SKMGwrxuXWnc=",
+		"enabled": true,
+		"clientProfile": {
+		  "allowGuaranteedMsgReceiveEnabled": true,
+		  "maxConnectionCountPerClientUsername": 6,
+		  "maxEgressFlowCount": 6,
+		  "maxEndpointCountPerClientUsername": 0,
+		  "maxIngressFlowCount": 6,
+		  "maxMsgsPerTransaction": 256,
+		  "maxSubscriptionCount": 250,
+		  "maxTransactedSessionCount": 100,
+		  "maxTransactionCount": 100,
+		  "serviceSmfMaxConnectionCountPerClientUsername": 6,
+		  "serviceWebMaxConnectionCountPerClientUsername": 0,
+		  "allowTransactedSessionsEnabled": true
+		},
+		"aclProfile": {
+		"clientConnectDefaultAction": "allow",
+		  "publishTopicDefaultAction":"disallow",
+		  "subscribeTopicDefaultAction": "allow",
+		  "clientConnectExceptions": [],
+		  "publicTopicExceptions": [],
+		  "subscribeTopicExceptions": [
+			"test/>"
+		  ]
+		}
+	  },
+	  {
+		"clientUsername": "dev-uds-formtr-notify-pub",
+		"guaranteedEndpointPermissionOverrideEnabled": false,
+		"passwordToken": "hIiDy4uQHiqhrdCXI4xMgA==ahqRcoNmCLUS9DAvkL+43CARX1+UUrt9Y8Y=",
+		"enabled": true,
+		"clientProfile": {
+		  "allowGuaranteedMsgSendEnabled": true,
+		  "maxConnectionCountPerClientUsername": 6,
+		  "maxEgressFlowCount": 6,
+		  "maxEndpointCountPerClientUsername": 0,
+		  "maxIngressFlowCount": 6,
+		  "maxMsgsPerTransaction": 256,
+		  "maxSubscriptionCount": 250,
+		  "maxTransactedSessionCount": 100,
+		  "maxTransactionCount": 100,
+		  "serviceSmfMaxConnectionCountPerClientUsername": 6,
+		  "serviceWebMaxConnectionCountPerClientUsername": 0,
+		  "allowTransactedSessionsEnabled": true
+		},
+		"aclProfile": {
+		  "clientConnectDefaultAction": "allow",
+		  "subscribeTopicDefaultAction": "disallow",
+		  "clientConnectExceptions": [],
+		  "publicTopicExceptions": ["UAL/DEV/UDS/FORMTR/NOTIFY>"],
+		  "subscribeTopicExceptions": []
+		}
+	  },
+	  {
+		"clientUsername": "dev-uds-gids-render-efids-sub",
+		"guaranteedEndpointPermissionOverrideEnabled": false,
+		"passwordToken": "QgXVoKpDfWzSXXUW+jCXAA==+WP5eiZF5yXF2tryNW3m210wom8NXffDjZ0=GpbgPVklUT8fD6PLos=",
+		"enabled": true,
+		"clientProfile": {
+		  "allowGuaranteedMsgReceiveEnabled": true,
+		  "maxConnectionCountPerClientUsername": 6,
+		  "maxEgressFlowCount": 6,
+		  "maxEndpointCountPerClientUsername": 0,
+		  "maxIngressFlowCount": 6,
+		  "maxMsgsPerTransaction": 256,
+		  "maxSubscriptionCount": 250,
+		  "maxTransactedSessionCount": 100,
+		  "maxTransactionCount": 100,
+		  "serviceSmfMaxConnectionCountPerClientUsername": 6,
+		  "serviceWebMaxConnectionCountPerClientUsername": 0,
+		  "allowTransactedSessionsEnabled": true
+		},
+		"aclProfile": {
+		"clientConnectDefaultAction": "allow",
+		  "publishTopicDefaultAction":"disallow",
+		  "subscribeTopicDefaultAction": "allow",
+		  "clientConnectExceptions": [],
+		  "publicTopicExceptions": [],
+		  "subscribeTopicExceptions": [
+			"test/>"
+		  ]
+		}
+	  },
+	  {
+		"clientUsername": "dev-uds-gids-render-efids-pub",
+		"guaranteedEndpointPermissionOverrideEnabled": false,
+		"passwordToken": "vo0QPD4ZvZKNUgmFLSbrWg==tAaaDdudi/tNGsJEAMDlnt2q+8Z7LL8Iodc=",
+		"enabled": true,
+		"clientProfile": {
+		  "allowGuaranteedMsgSendEnabled": true,
+		  "maxConnectionCountPerClientUsername": 6,
+		  "maxEgressFlowCount": 6,
+		  "maxEndpointCountPerClientUsername": 0,
+		  "maxIngressFlowCount": 6,
+		  "maxMsgsPerTransaction": 256,
+		  "maxSubscriptionCount": 250,
+		  "maxTransactedSessionCount": 100,
+		  "maxTransactionCount": 100,
+		  "serviceSmfMaxConnectionCountPerClientUsername": 6,
+		  "serviceWebMaxConnectionCountPerClientUsername": 0,
+		  "allowTransactedSessionsEnabled": true
+		},
+		"aclProfile": {
+		  "clientConnectDefaultAction": "allow",
+		  "subscribeTopicDefaultAction": "disallow",
+		  "clientConnectExceptions": [],
+		  "publicTopicExceptions": ["UAL/DEV/UDS/GIDS/RENDER/EFIDS>"],
+		  "subscribeTopicExceptions": []
+		}
+	  },
+	  {
+		"clientUsername": "dev-jet-fm-autorefresh-pub",
+		"guaranteedEndpointPermissionOverrideEnabled": false,
+		"passwordToken": "q8rVjU3X0sIhNEf8J2re0Q==+m8NDSxDqMCT43SGhpCJi+HvSkT8M4A=",
+		"enabled": true,
+		"clientProfile": {
+		  "allowGuaranteedMsgSendEnabled": true,
+		  "maxConnectionCountPerClientUsername": 100,
+		  "maxEgressFlowCount": 100,
+		  "maxEndpointCountPerClientUsername": 0,
+		  "maxIngressFlowCount": 100,
+		  "maxMsgsPerTransaction": 256,
+		  "maxSubscriptionCount": 250,
+		  "maxTransactedSessionCount": 0,
+		  "maxTransactionCount": 0,
+		  "serviceSmfMaxConnectionCountPerClientUsername": 100,
+		  "serviceWebMaxConnectionCountPerClientUsername": 0
+		},
+		"aclProfile": {
+		  "clientConnectDefaultAction": "allow",
+		  "subscribeTopicDefaultAction": "disallow",
+		  "clientConnectExceptions": [],
+		  "publicTopicExceptions": ["UAL/DEV/ATW/JET/FLIGHT/>"],
+		  "subscribeTopicExceptions": []
+		}
+	  },
+	  {
+		"clientUsername": "qa-jet-fm-autorefresh-pub",
+		"guaranteedEndpointPermissionOverrideEnabled": false,
+		"passwordToken": "vVrx7RUD3TLzDHPdIF7cEQ==7vFcFyUi4/A8NO3frP+sTt/npWb0TCo=",
+		"enabled": true,
+		"clientProfile": {
+		  "allowGuaranteedMsgSendEnabled": true,
+		  "maxConnectionCountPerClientUsername": 100,
+		  "maxEgressFlowCount": 100,
+		  "maxEndpointCountPerClientUsername": 0,
+		  "maxIngressFlowCount": 100,
+		  "maxMsgsPerTransaction": 256,
+		  "maxSubscriptionCount": 250,
+		  "maxTransactedSessionCount": 0,
+		  "maxTransactionCount": 0,
+		  "serviceSmfMaxConnectionCountPerClientUsername": 100,
+		  "serviceWebMaxConnectionCountPerClientUsername": 0
+		},
+		"aclProfile": {
+		  "clientConnectDefaultAction": "allow",
+		  "subscribeTopicDefaultAction": "disallow",
+		  "clientConnectExceptions": [],
+		  "publicTopicExceptions": ["UAL/QA/ATW/JET/FLIGHT/>"],
+		  "subscribeTopicExceptions": []
+		}
+	  },
+	  {
+	  "clientUsername": "dev-jet-fm-bjb-pcdr-events-sub",
+	  "guaranteedEndpointPermissionOverrideEnabled": false,
+	  "passwordToken": "RryUchlnY7FFApAOxNanKw==9afifPA4YWxdX8E4LY/ukJNbT3qwAMQ=",
+		  "enabled": true,
+		  "clientProfile": {
+			"allowGuaranteedMsgReceiveEnabled": true,
+			"maxConnectionCountPerClientUsername": 6,
+			"maxEgressFlowCount": 6,
+			"maxEndpointCountPerClientUsername": 0,
+			"maxIngressFlowCount": 6,
+			"maxMsgsPerTransaction": 256,
+			"maxSubscriptionCount": 250,
+			"maxTransactedSessionCount": 0,
+			"maxTransactionCount": 0,
+			"serviceSmfMaxConnectionCountPerClientUsername": 6,
+			"serviceWebMaxConnectionCountPerClientUsername": 0
+		  },
+		  "aclProfile": {
+		  "clientConnectDefaultAction": "allow",
+			"publishTopicDefaultAction":"disallow",
+			"subscribeTopicDefaultAction": "allow",
+			"clientConnectExceptions": [],
+			"publicTopicExceptions": [],
+			"subscribeTopicExceptions": [
+			  "test/>"
+			]
+		  }
+		},
+		{
+		  "clientUsername": "qa-jet-fm-autorefresh-pubsub",
+		  "guaranteedEndpointPermissionOverrideEnabled": false,
+		  "passwordToken": "pRYJkV8kAJWT5SHA7cex9w==H0Adl5AzQzzZBJm/0wQZVy6CNhbv0Wo=",
+		  "enabled": true,
+		  "clientProfile": {
+			"allowGuaranteedMsgSendEnabled": true,
+			"allowGuaranteedMsgReceiveEnabled": true,
+			"maxConnectionCountPerClientUsername": 100,
+			"maxEgressFlowCount": 100,
+			"maxEndpointCountPerClientUsername": 0,
+			"maxIngressFlowCount": 100,
+			"maxMsgsPerTransaction": 256,
+			"maxSubscriptionCount": 250,
+			"maxTransactedSessionCount": 0,
+			"maxTransactionCount": 0,
+			"serviceSmfMaxConnectionCountPerClientUsername": 100,
+			"serviceWebMaxConnectionCountPerClientUsername": 0
+		  },
+		  "aclProfile": {
+		  "clientConnectDefaultAction": "allow",
+			"subscribeTopicDefaultAction": "allow",
+			"clientConnectExceptions": [],
+			"publicTopicExceptions": ["UAL/QA/ATW/JET/FLIGHT/>"],
+			"subscribeTopicExceptions": [
+			  "test/>"
+			]
+		  }
+		},
+		{
+		  "clientUsername": "qa-jet-fm-autorefresh-pub",
+		  "guaranteedEndpointPermissionOverrideEnabled": false,
+		  "passwordToken": "vVrx7RUD3TLzDHPdIF7cEQ==7vFcFyUi4/A8NO3frP+sTt/npWb0TCo=",
+		  "enabled": true,
+		  "clientProfile": {
+			"allowGuaranteedMsgSendEnabled": true,
+			"maxConnectionCountPerClientUsername": 100,
+			"maxEgressFlowCount": 100,
+			"maxEndpointCountPerClientUsername": 0,
+			"maxIngressFlowCount": 100,
+			"maxMsgsPerTransaction": 256,
+			"maxSubscriptionCount": 250,
+			"maxTransactedSessionCount": 0,
+			"maxTransactionCount": 0,
+			"serviceSmfMaxConnectionCountPerClientUsername": 100,
+			"serviceWebMaxConnectionCountPerClientUsername": 0
+		  },
+		  "aclProfile": {
+			"clientConnectDefaultAction": "allow",
+			"subscribeTopicDefaultAction": "disallow",
+			"clientConnectExceptions": [],
+			"publicTopicExceptions": ["UAL/QA/ATW/JET/FLIGHT/>"],
+			"subscribeTopicExceptions": []
+		  }
+		},
+		{
+		  "clientUsername": "qa-jet-fm-bjb-pcdr-events-sub",
+		  "guaranteedEndpointPermissionOverrideEnabled": false,
+		  "passwordToken": "t2i/CFrMgKYWwdEnZNd0Cg==pA84ACRbWHaZv1mEO/rfsP5DSJMvjxU=",
+		  "enabled": true,
+		  "clientProfile": {
+			"allowGuaranteedMsgReceiveEnabled": true,
+			"maxConnectionCountPerClientUsername": 6,
+			"maxEgressFlowCount": 6,
+			"maxEndpointCountPerClientUsername": 0,
+			"maxIngressFlowCount": 6,
+			"maxMsgsPerTransaction": 256,
+			"maxSubscriptionCount": 250,
+			"maxTransactedSessionCount": 0,
+			"maxTransactionCount": 0,
+			"serviceSmfMaxConnectionCountPerClientUsername": 6,
+			"serviceWebMaxConnectionCountPerClientUsername": 0
+		  },
+		  "aclProfile": {
+		  "clientConnectDefaultAction": "allow",
+			"publishTopicDefaultAction":"disallow",
+			"subscribeTopicDefaultAction": "allow",
+			"clientConnectExceptions": [],
+			"publicTopicExceptions": [],
+			"subscribeTopicExceptions": [
+			  "test/>"
+			]
+		  }
+		},
+		{
+		  "clientUsername": "qa-uds-lightdetectalerts-sub",
+		  "guaranteedEndpointPermissionOverrideEnabled": false,
+		  "passwordToken": "8Qt+N508QOut+kOSMwD43Q==mq2aEr8SoeHgkLgKFHflVN+rtw8AF70=",
+		  "enabled": true,
+		  "clientProfile": {
+			"allowGuaranteedMsgReceiveEnabled": true,
+			"maxConnectionCountPerClientUsername": 6,
+			"maxEgressFlowCount": 6,
+			"maxEndpointCountPerClientUsername": 0,
+			"maxIngressFlowCount": 6,
+			"maxMsgsPerTransaction": 256,
+			"maxSubscriptionCount": 250,
+			"maxTransactedSessionCount": 0,
+			"maxTransactionCount": 0,
+			"serviceSmfMaxConnectionCountPerClientUsername": 6,
+			"serviceWebMaxConnectionCountPerClientUsername": 0
+		  },
+		  "aclProfile": {
+		  "clientConnectDefaultAction": "allow",
+			"publishTopicDefaultAction":"disallow",
+			"subscribeTopicDefaultAction": "allow",
+			"clientConnectExceptions": [],
+			"publicTopicExceptions": [],
+			"subscribeTopicExceptions": [
+			  "test/>"
+			]
+		  }
+		},
+		{
+		  "clientUsername": "qa-uds-lightdetectalerts-pub",
+		  "guaranteedEndpointPermissionOverrideEnabled": false,
+		  "passwordToken": "kRtyBEXr/HyZ3vDVW9sOMw==xV3YgOtTvHK3g3NcfH55aJvQM5JSI+s=",
+		  "enabled": true,
+		  "clientProfile": {
+			"allowGuaranteedMsgSendEnabled": true,
+			"maxConnectionCountPerClientUsername": 6,
+			"maxEgressFlowCount": 6,
+			"maxEndpointCountPerClientUsername": 0,
+			"maxIngressFlowCount": 6,
+			"maxMsgsPerTransaction": 256,
+			"maxSubscriptionCount": 250,
+			"maxTransactedSessionCount": 0,
+			"maxTransactionCount": 0,
+			"serviceSmfMaxConnectionCountPerClientUsername": 6,
+			"serviceWebMaxConnectionCountPerClientUsername": 0
+		  },
+		  "aclProfile": {
+		  "clientConnectDefaultAction": "allow",
+			"subscribeTopicDefaultAction": "disallow",
+			"clientConnectExceptions": [],
+			"publicTopicExceptions": ["UAL/QA/ATW/UDS/LIGHTDETECTALERTS/>"],
+			"subscribeTopicExceptions": []
+		  }
+		},
+		{
+		  "clientUsername": "qa-cux-waittimes-sub",
+		  "guaranteedEndpointPermissionOverrideEnabled": false,
+		  "passwordToken": "eXFBUMjbbMX7rTMdU2V0HA==mFg3nJaKKbMmAWgMTaFlpWUmCVojCYg=",
+		  "enabled": true,
+		  "clientProfile": {
+			"allowGuaranteedMsgReceiveEnabled": true,
+			"maxConnectionCountPerClientUsername": 4,
+			"maxEgressFlowCount": 4,
+			"maxEndpointCountPerClientUsername": 0,
+			"maxIngressFlowCount": 4,
+			"maxMsgsPerTransaction": 256,
+			"maxSubscriptionCount": 250,
+			"maxTransactedSessionCount": 100,
+			"maxTransactionCount": 100,
+			"serviceSmfMaxConnectionCountPerClientUsername": 4,
+			"serviceWebMaxConnectionCountPerClientUsername": 0,
+			"allowTransactedSessionsEnabled": true
+		  },
+		  "aclProfile": {
+			"clientConnectDefaultAction": "allow",
+			"publishTopicDefaultAction":"disallow",
+			"clientConnectExceptions": [],
+			"publicTopicExceptions": [],
+			"subscribeTopicExceptions": [
+			  "test/>"
+			]
+		  }
+		},
+		{
+		  "clientUsername": "qa-uia-waittimes-pub",
+		  "guaranteedEndpointPermissionOverrideEnabled": false,
+		  "passwordToken": "jnydsG5N4oqb6Vw86wjpwA==QKGVJH7XFyQLlEiiRHlV+z0B33xj4ko=",
+		  "enabled": true,
+		  "clientProfile": {
+			"allowGuaranteedMsgSendEnabled": true,
+			"maxConnectionCountPerClientUsername": 4,
+			"maxEgressFlowCount": 4,
+			"maxEndpointCountPerClientUsername": 0,
+			"maxIngressFlowCount": 4,
+			"maxMsgsPerTransaction": 256,
+			"maxSubscriptionCount": 250,
+			"maxTransactedSessionCount": 100,
+			"maxTransactionCount": 100,
+			"serviceSmfMaxConnectionCountPerClientUsername": 4,
+			"serviceWebMaxConnectionCountPerClientUsername": 0,
+			"allowTransactedSessionsEnabled": true
+		  },
+		  "aclProfile": {
+			"clientConnectDefaultAction": "allow",
+			"publishTopicDefaultAction":"disallow",
+			"clientConnectExceptions": [],
+			"publicTopicExceptions": ["UAL/QA/ATW/UIA/WAITTIMES/>"],
+			"subscribeTopicExceptions": [
+			  "test/>"
+			]
+		  }
+		},
+		{
+		  "clientUsername": "qa-cxp-flifo-sub",
+		  "guaranteedEndpointPermissionOverrideEnabled": false,
+		  "passwordToken": "SU010ZOGPIAmAlFcgTtQPA==G88g/cmXsU1s5pai4Xc6HCssGEi5TuABbKg=",
+		  "enabled": true,
+		  "clientProfile": {
+			"allowGuaranteedMsgReceiveEnabled": true,
+			"maxConnectionCountPerClientUsername": 40,
+			"maxEgressFlowCount": 40,
+			"maxEndpointCountPerClientUsername": 0,
+			"maxIngressFlowCount": 40,
+			"maxMsgsPerTransaction": 256,
+			"maxSubscriptionCount": 250,
+			"maxTransactedSessionCount": 0,
+			"maxTransactionCount": 0,
+			"serviceSmfMaxConnectionCountPerClientUsername": 40,
+			"serviceWebMaxConnectionCountPerClientUsername": 0
+		  },
+		  "aclProfile": {
+			"clientConnectDefaultAction": "allow",
+			"publishTopicDefaultAction":"allow",
+			"clientConnectExceptions": [],
+			"publicTopicExceptions": [],
+			"subscribeTopicExceptions": [
+			  "test/>"
+			]
+		  }
+		},
+
+		{
+		  "clientUsername": "qa-cxp-flifo-pub",
+		  "guaranteedEndpointPermissionOverrideEnabled": false,
+		  "passwordToken": "lixkteiWLZ5++ZPG1Im/NA==/FdSxiB1kKlBnzI7z+Pf9Chmc6yHbyuOOkQ=",
+		  "enabled": true,
+		  "clientProfile": {
+			"allowGuaranteedMsgSendEnabled": true,
+			"maxConnectionCountPerClientUsername": 40,
+			"maxEgressFlowCount": 4,
+			"maxEndpointCountPerClientUsername": 0,
+			"maxIngressFlowCount": 4,
+			"maxMsgsPerTransaction": 256,
+			"maxSubscriptionCount": 250,
+			"maxTransactedSessionCount": 0,
+			"maxTransactionCount": 0,
+			"serviceSmfMaxConnectionCountPerClientUsername": 40,
+			"serviceWebMaxConnectionCountPerClientUsername": 0
+		  },
+		  "aclProfile": {
+			"clientConnectDefaultAction": "allow",
+			"publishTopicDefaultAction":"disallow",
+			"clientConnectExceptions": [],
+			"publicTopicExceptions": ["UAL/QA/ATW/CXP/FLIFO/>"],
+			"subscribeTopicExceptions": []
+		  }
+		},
+		{
+		  "clientUsername": "qa-jet-fm-ucd-sub",
+		  "guaranteedEndpointPermissionOverrideEnabled": false,
+		  "passwordToken": "ESRBaboausixkub7eznz3g==61Go839tN5SosyE7R5VtvVdrW02ahJB3omc=",
+		  "enabled": true,
+		  "clientProfile": {
+			"allowGuaranteedMsgReceiveEnabled": true,
+			"maxConnectionCountPerClientUsername": 40,
+			"maxEgressFlowCount": 40,
+			"maxEndpointCountPerClientUsername": 0,
+			"maxIngressFlowCount": 40,
+			"maxMsgsPerTransaction": 256,
+			"maxSubscriptionCount": 250,
+			"maxTransactedSessionCount": 0,
+			"maxTransactionCount": 0,
+			"serviceSmfMaxConnectionCountPerClientUsername": 40,
+			"serviceWebMaxConnectionCountPerClientUsername": 0
+		  },
+		  "aclProfile": {
+			"clientConnectDefaultAction": "allow",
+			"clientConnectExceptions": [],
+			"publicTopicExceptions": [],
+			"subscribeTopicExceptions": [
+			  "test/>"
+			]
+		  }
+		},
+		{
+		  "clientUsername": "dev-uia-bagcount-sub",
+		  "guaranteedEndpointPermissionOverrideEnabled": false,
+		  "passwordToken": "E5t9NRb+71qboXmtgWyulg==lzE3P+vDjyuhLBP5SNeYPSQk7RoMZwKc/iA=",
+		  "enabled": true,
+		  "clientProfile": {
+			"allowGuaranteedMsgReceiveEnabled": true,
+			"maxConnectionCountPerClientUsername": 6,
+			"maxEgressFlowCount": 6,
+			"maxEndpointCountPerClientUsername": 0,
+			"maxIngressFlowCount": 6,
+			"maxMsgsPerTransaction": 256,
+			"maxSubscriptionCount": 250,
+			"maxTransactedSessionCount": 0,
+			"maxTransactionCount": 0,
+			"serviceSmfMaxConnectionCountPerClientUsername": 6,
+			"serviceWebMaxConnectionCountPerClientUsername": 0
+		  },
+		  "aclProfile": {
+		  "clientConnectDefaultAction": "allow",
+			"publishTopicDefaultAction":"disallow",
+			"subscribeTopicDefaultAction": "allow",
+			"clientConnectExceptions": [],
+			"publicTopicExceptions": [],
+			"subscribeTopicExceptions": [
+			  "test/>"
+			]
+		  }
+		},
+		{
+		  "clientUsername": "dev-bos-bagcount-pub",
+		  "guaranteedEndpointPermissionOverrideEnabled": false,
+		  "passwordToken": "7HLf+vdyekx0NdoswYuSWw==4DLVLcKqYr7d1PeAGzKiLUZnblzZymCMMUA=",
+		  "enabled": true,
+		  "clientProfile": {
+			"allowGuaranteedMsgSendEnabled": true,
+			"maxConnectionCountPerClientUsername": 6,
+			"maxEgressFlowCount": 6,
+			"maxEndpointCountPerClientUsername": 0,
+			"maxIngressFlowCount": 6,
+			"maxMsgsPerTransaction": 256,
+			"maxSubscriptionCount": 250,
+			"maxTransactedSessionCount": 0,
+			"maxTransactionCount": 0,
+			"serviceSmfMaxConnectionCountPerClientUsername": 6,
+			"serviceWebMaxConnectionCountPerClientUsername": 0
+		  },
+		  "aclProfile": {
+		  "clientConnectDefaultAction": "allow",
+			"subscribeTopicDefaultAction": "disallow",
+			"clientConnectExceptions": [],
+			"publicTopicExceptions": ["UAL/ATW/BOS/BAGCOUNT/DEV/>"],
+			"subscribeTopicExceptions": []
+		  }
+		},
+		{
+		  "clientUsername": "qa-gsapp-ucd-sub",
+		  "guaranteedEndpointPermissionOverrideEnabled": false,
+		  "passwordToken": "EDSoN26aFEGyfvGO8F02Zg==sTtcUsHzWyeG1Q+imQRP7wOz/BLv687y4bg=",
+		  "enabled": true,
+		  "clientProfile": {
+			"allowGuaranteedMsgReceiveEnabled": true,
+			"maxConnectionCountPerClientUsername": 40,
+			"maxEgressFlowCount": 40,
+			"maxEndpointCountPerClientUsername": 0,
+			"maxIngressFlowCount": 40,
+			"maxMsgsPerTransaction": 256,
+			"maxSubscriptionCount": 250,
+			"maxTransactedSessionCount": 0,
+			"maxTransactionCount": 0,
+			"serviceSmfMaxConnectionCountPerClientUsername": 40,
+			"serviceWebMaxConnectionCountPerClientUsername": 0
+		  },
+		  "aclProfile": {
+			"clientConnectDefaultAction": "allow",
+			"clientConnectExceptions": [],
+			"publicTopicExceptions": [],
+			"subscribeTopicExceptions": [
+			  "test/>"
+			]
+		  }
+		},
+		{
+		  "clientUsername": "qa-jet-flifo-pub",
+		  "guaranteedEndpointPermissionOverrideEnabled": false,
+		  "passwordToken": "NSmWzmlUZ8w1nNEZVtigRg==uIWZXaM9rlADX5UG9jdXRGM6sKH03F/uuQE=",
+		  "enabled": true,
+		  "clientProfile": {
+			"allowGuaranteedMsgSendEnabled": true,
+			"maxConnectionCountPerClientUsername": 40,
+			"maxEgressFlowCount": 40,
+			"maxEndpointCountPerClientUsername": 0,
+			"maxIngressFlowCount": 40,
+			"maxMsgsPerTransaction": 256,
+			"maxSubscriptionCount": 250,
+			"maxTransactedSessionCount": 0,
+			"maxTransactionCount": 0,
+			"serviceSmfMaxConnectionCountPerClientUsername": 40,
+			"serviceWebMaxConnectionCountPerClientUsername": 0
+		  },
+		  "aclProfile": {
+			"clientConnectDefaultAction": "allow",
+			"publishTopicDefaultAction":"allow",
+			"clientConnectExceptions": [],
+			"publicTopicExceptions": [],
+			"subscribeTopicExceptions": [
+			  "test/>"
+			]
+		  }
+		},
+		{
+		  "clientUsername": "qa-jet-flifo-sub",
+		  "guaranteedEndpointPermissionOverrideEnabled": false,
+		  "passwordToken": "AOyXN+0l0nAyrAWeyZFrVg==FCAp/G7lipqCSYnmTcFiN3xYwu2WXsdCKLo=",
+		  "enabled": true,
+		  "clientProfile": {
+			"allowGuaranteedMsgReceiveEnabled": true,
+			"maxConnectionCountPerClientUsername": 40,
+			"maxEgressFlowCount": 40,
+			"maxEndpointCountPerClientUsername": 0,
+			"maxIngressFlowCount": 40,
+			"maxMsgsPerTransaction": 256,
+			"maxSubscriptionCount": 250,
+			"maxTransactedSessionCount": 0,
+			"maxTransactionCount": 0,
+			"serviceSmfMaxConnectionCountPerClientUsername": 40,
+			"serviceWebMaxConnectionCountPerClientUsername": 0
+		  },
+		  "aclProfile": {
+			"clientConnectDefaultAction": "allow",
+			"clientConnectExceptions": [],
+			"publicTopicExceptions": [],
+			"subscribeTopicExceptions": [
+			  "test/>"
+			]
+		  }
+		},
+		{
+		  "clientUsername": "qa-jet-collab-sub",
+		  "guaranteedEndpointPermissionOverrideEnabled": false,
+		  "passwordToken": "cfeDNhgcT0a5XX+EvzAZ8g==zMPLbWnY+SX16AlukR8ma/hbyMilLhTbt+8=",
+		  "enabled": true,
+		  "clientProfile": {
+			"allowGuaranteedMsgReceiveEnabled": true,
+			"maxConnectionCountPerClientUsername": 40,
+			"maxEgressFlowCount": 40,
+			"maxEndpointCountPerClientUsername": 0,
+			"maxIngressFlowCount": 40,
+			"maxMsgsPerTransaction": 256,
+			"maxSubscriptionCount": 250,
+			"maxTransactedSessionCount": 0,
+			"maxTransactionCount": 0,
+			"serviceSmfMaxConnectionCountPerClientUsername": 40,
+			"serviceWebMaxConnectionCountPerClientUsername": 0
+		  },
+		  "aclProfile": {
+			"clientConnectDefaultAction": "allow",
+			"clientConnectExceptions": [],
+			"publicTopicExceptions": [],
+			"subscribeTopicExceptions": [
+			  "test/>"
+			]
+		  }
+		},
+		{
+		  "clientUsername": "qa-jet-collab-pub",
+		  "guaranteedEndpointPermissionOverrideEnabled": false,
+		  "passwordToken": "e0BBcK6BPeMG82GzsgDqJQ==LpxsF8P+AZkph2WYInfd64AuNnKLF49KF4g=",
+		  "enabled": true,
+		  "clientProfile": {
+			"allowGuaranteedMsgSendEnabled": true,
+			"maxConnectionCountPerClientUsername": 40,
+			"maxEgressFlowCount": 40,
+			"maxEndpointCountPerClientUsername": 0,
+			"maxIngressFlowCount": 40,
+			"maxMsgsPerTransaction": 256,
+			"maxSubscriptionCount": 250,
+			"maxTransactedSessionCount": 0,
+			"maxTransactionCount": 0,
+			"serviceSmfMaxConnectionCountPerClientUsername": 40,
+			"serviceWebMaxConnectionCountPerClientUsername": 0
+		  },
+		  "aclProfile": {
+			"clientConnectDefaultAction": "allow",
+			"publishTopicDefaultAction":"allow",
+			"clientConnectExceptions": [],
+			"publicTopicExceptions": [],
+			"subscribeTopicExceptions": [
+			  "test/>"
+			]
+		  }
+		},
+		{
+		  "clientUsername": "qa-jet-pcdr-inbound-sub",
+		  "guaranteedEndpointPermissionOverrideEnabled": false,
+		  "passwordToken": "kUM1vbM/cEjRkti7FuKmoA==dRUazqpJMJBDVLyl3vlm3+rCSjwtqmQDy8Q=",
+		  "enabled": true,
+		  "clientProfile": {
+			"allowGuaranteedMsgReceiveEnabled": true,
+			"maxConnectionCountPerClientUsername": 40,
+			"maxEgressFlowCount": 40,
+			"maxEndpointCountPerClientUsername": 0,
+			"maxIngressFlowCount": 40,
+			"maxMsgsPerTransaction": 256,
+			"maxSubscriptionCount": 250,
+			"maxTransactedSessionCount": 0,
+			"maxTransactionCount": 0,
+			"serviceSmfMaxConnectionCountPerClientUsername": 40,
+			"serviceWebMaxConnectionCountPerClientUsername": 0
+		  },
+		  "aclProfile": {
+			"clientConnectDefaultAction": "allow",
+			"clientConnectExceptions": [],
+			"publicTopicExceptions": [],
+			"subscribeTopicExceptions": [
+			  "test/>"
+			]
+		  }
+		},
+		{
+		  "clientUsername": "qa-jet-pcdr-inbound-pub",
+		  "guaranteedEndpointPermissionOverrideEnabled": false,
+		  "passwordToken": "cIFYAocm56Bi/S49pQM4wA==x75yrkaMxWC6GlVlKNlqVaHx7lnfYITKmX4=",
+		  "enabled": true,
+		  "clientProfile": {
+			"allowGuaranteedMsgSendEnabled": true,
+			"maxConnectionCountPerClientUsername": 40,
+			"maxEgressFlowCount": 40,
+			"maxEndpointCountPerClientUsername": 0,
+			"maxIngressFlowCount": 40,
+			"maxMsgsPerTransaction": 256,
+			"maxSubscriptionCount": 250,
+			"maxTransactedSessionCount": 0,
+			"maxTransactionCount": 0,
+			"serviceSmfMaxConnectionCountPerClientUsername": 40,
+			"serviceWebMaxConnectionCountPerClientUsername": 0
+		  },
+		  "aclProfile": {
+			"clientConnectDefaultAction": "allow",
+			"publishTopicDefaultAction":"allow",
+			"clientConnectExceptions": [],
+			"publicTopicExceptions": [],
+			"subscribeTopicExceptions": [
+			  "test/>"
+			]
+		  }
+		},
+		{
+		  "clientUsername": "qa-jet-pcdr-outbound-shares-sub",
+		  "guaranteedEndpointPermissionOverrideEnabled": false,
+		  "passwordToken": "1Np/Xm3iIcYqoslreH3KRA==TBro6l219IT6/6d5/WBebMmxKZTkQ61U4JQ=",
+		  "enabled": true,
+		  "clientProfile": {
+			"allowGuaranteedMsgReceiveEnabled": true,
+			"maxConnectionCountPerClientUsername": 40,
+			"maxEgressFlowCount": 40,
+			"maxEndpointCountPerClientUsername": 0,
+			"maxIngressFlowCount": 40,
+			"maxMsgsPerTransaction": 256,
+			"maxSubscriptionCount": 250,
+			"maxTransactedSessionCount": 0,
+			"maxTransactionCount": 0,
+			"serviceSmfMaxConnectionCountPerClientUsername": 40,
+			"serviceWebMaxConnectionCountPerClientUsername": 0
+		  },
+		  "aclProfile": {
+			"clientConnectDefaultAction": "allow",
+			"publishTopicDefaultAction":"allow",
+			"clientConnectExceptions": [],
+			"publicTopicExceptions": [],
+			"subscribeTopicExceptions": [
+			  "test/>"
+			]
+		  }
+		},
+		{
+		  "clientUsername": "qa-jet-pcdr-outbound-tm-sub",
+		  "guaranteedEndpointPermissionOverrideEnabled": false,
+		  "passwordToken": "NzM8mbpOhm7Q9pCmDmnnaw==dyaykWdbvXqDCrdWj2FtYgPXXlAYJBM8V6k=",
+		  "enabled": true,
+		  "clientProfile": {
+			"allowGuaranteedMsgReceiveEnabled": true,
+			"maxConnectionCountPerClientUsername": 40,
+			"maxEgressFlowCount": 40,
+			"maxEndpointCountPerClientUsername": 0,
+			"maxIngressFlowCount": 40,
+			"maxMsgsPerTransaction": 256,
+			"maxSubscriptionCount": 250,
+			"maxTransactedSessionCount": 0,
+			"maxTransactionCount": 0,
+			"serviceSmfMaxConnectionCountPerClientUsername": 40,
+			"serviceWebMaxConnectionCountPerClientUsername": 0
+		  },
+		  "aclProfile": {
+			"clientConnectDefaultAction": "allow",
+			"clientConnectExceptions": [],
+			"publicTopicExceptions": [],
+			"subscribeTopicExceptions": [
+			  "test/>"
+			]
+		  }
+		},
+		{
+		  "clientUsername": "qa-uds-flifo-sub",
+		  "guaranteedEndpointPermissionOverrideEnabled": false,
+		  "passwordToken": "ZKVQwkhcaaF4JuD+9hZWtw==5v6oG90HKfZyE6dPktwspmAnEs0XqPMWwpQ=",
+		  "enabled": true,
+		  "clientProfile": {
+			"allowGuaranteedMsgReceiveEnabled": true,
+			"maxConnectionCountPerClientUsername": 40,
+			"maxEgressFlowCount": 40,
+			"maxEndpointCountPerClientUsername": 0,
+			"maxIngressFlowCount": 40,
+			"maxMsgsPerTransaction": 256,
+			"maxSubscriptionCount": 250,
+			"maxTransactedSessionCount": 0,
+			"maxTransactionCount": 0,
+			"serviceSmfMaxConnectionCountPerClientUsername": 40,
+			"serviceWebMaxConnectionCountPerClientUsername": 0
+		  },
+		  "aclProfile": {
+			"clientConnectDefaultAction": "allow",
+			"publishTopicDefaultAction":"allow",
+			"clientConnectExceptions": [],
+			"publicTopicExceptions": [],
+			"subscribeTopicExceptions": [
+			  "test/>"
+			]
+		  }
+		},
+		{
+		  "clientUsername": "qa-uds-ezfidsgate-sub",
+		  "guaranteedEndpointPermissionOverrideEnabled": false,
+		  "passwordToken": "3Ovp2bN3EekmSvm4Qj2tBw==J37F/971hKDmxqYSuPnmoyV9WPko9d9+0AU=",
+		  "enabled": true,
+		  "clientProfile": {
+			"allowGuaranteedMsgReceiveEnabled": true,
+			"maxConnectionCountPerClientUsername": 10,
+			"maxEgressFlowCount": 10,
+			"maxEndpointCountPerClientUsername": 0,
+			"maxIngressFlowCount": 10,
+			"maxMsgsPerTransaction": 256,
+			"maxSubscriptionCount": 250,
+			"maxTransactedSessionCount": 0,
+			"maxTransactionCount": 0,
+			"serviceSmfMaxConnectionCountPerClientUsername": 10,
+			"serviceWebMaxConnectionCountPerClientUsername": 0
+		  },
+		  "aclProfile": {
+			"clientConnectDefaultAction": "allow",
+			"publishTopicDefaultAction":"allow",
+			"clientConnectExceptions": [],
+			"publicTopicExceptions": [],
+			"subscribeTopicExceptions": [
+			  "test/>"
+			]
+		  }
+		},
+		{
+		  "clientUsername": "qa-uds-ezfidsgate-pub",
+		  "guaranteedEndpointPermissionOverrideEnabled": false,
+		  "passwordToken": "XV/QSts0KNmtm0TyuJDYcw==TZB7IRMQEMbON8JlLJmr6mZ4TWecvX4MV88=",
+		  "enabled": true,
+		  "clientProfile": {
+			"allowGuaranteedMsgSendEnabled": true,
+			"maxConnectionCountPerClientUsername": 10,
+			"maxEgressFlowCount": 10,
+			"maxEndpointCountPerClientUsername": 0,
+			"maxIngressFlowCount": 10,
+			"maxMsgsPerTransaction": 256,
+			"maxSubscriptionCount": 250,
+			"maxTransactedSessionCount": 0,
+			"maxTransactionCount": 0,
+			"serviceSmfMaxConnectionCountPerClientUsername": 10,
+			"serviceWebMaxConnectionCountPerClientUsername": 0
+		  },
+		  "aclProfile": {
+			"clientConnectDefaultAction": "allow",
+			"publishTopicDefaultAction":"allow",
+			"clientConnectExceptions": [],
+			"publicTopicExceptions": [],
+			"subscribeTopicExceptions": [
+			  "test/>"
+			]
+		  }
+		},
+		{
+		  "clientUsername": "dev-etj-edifact-out-tsa-pub",
+		  "guaranteedEndpointPermissionOverrideEnabled": false,
+		  "passwordToken": "B84OPIUDlKk5H8zR6YzxHg==qj7nkGJLF099AOVWsUNUOQx0KAWCUyaQnXE=",
+		  "enabled": true,
+		  "clientProfile": {
+			"allowGuaranteedMsgSendEnabled": true,
+			"maxConnectionCountPerClientUsername": 20,
+			"maxEgressFlowCount": 20,
+			"maxEndpointCountPerClientUsername": 0,
+			"maxIngressFlowCount": 20,
+			"maxMsgsPerTransaction": 256,
+			"maxSubscriptionCount": 250,
+			"maxTransactedSessionCount": 0,
+			"maxTransactionCount": 0,
+			"serviceSmfMaxConnectionCountPerClientUsername": 20,
+			"serviceWebMaxConnectionCountPerClientUsername": 0
+		  },
+		  "aclProfile": {
+			"clientConnectDefaultAction": "allow",
+			"publishTopicDefaultAction":"disallow",
+			"clientConnectExceptions": [],
+			"publicTopicExceptions": ["UAL/TSEC/ETJ/OUT/DEV/EDIFACT/>"],
+			"subscribeTopicExceptions": []
+		  }
+		},
+		{
+		  "clientUsername": "dev-etj-edifact-out-tsa-sub",
+		  "guaranteedEndpointPermissionOverrideEnabled": false,
+		  "passwordToken": "7FW83wqNin7yXE/phERwww==W5ILWcta12XqLGFs36/SknoYQgq7Iwcsw4g=",
+		  "enabled": true,
+		  "clientProfile": {
+			"allowGuaranteedMsgReceiveEnabled": true,
+			"maxConnectionCountPerClientUsername": 20,
+			"maxEgressFlowCount": 20,
+			"maxEndpointCountPerClientUsername": 0,
+			"maxIngressFlowCount": 20,
+			"maxMsgsPerTransaction": 256,
+			"maxSubscriptionCount": 250,
+			"maxTransactedSessionCount": 0,
+			"maxTransactionCount": 0,
+			"serviceSmfMaxConnectionCountPerClientUsername": 20,
+			"serviceWebMaxConnectionCountPerClientUsername": 0
+		  },
+		  "aclProfile": {
+		  "clientConnectDefaultAction": "allow",
+		  "publishTopicDefaultAction":"disallow",
+		  "subscribeTopicDefaultAction": "allow",
+		  "clientConnectExceptions": [],
+		  "publicTopicExceptions": [],
+		  "subscribeTopicExceptions": [
+		  "test/>"
+			]
+		  }
+		},
+		{
+		  "clientUsername": "qa-etj-edifact-out-tsa-pub",
+		  "guaranteedEndpointPermissionOverrideEnabled": false,
+		  "passwordToken": "4HKolpOb9n0t4V9oCJKYRA==qDVp1EP3nNV5E92mKRKrc4sN0+61nYWc9Bg=",
+		  "enabled": true,
+		  "clientProfile": {
+			"allowGuaranteedMsgSendEnabled": true,
+			"maxConnectionCountPerClientUsername": 20,
+			"maxEgressFlowCount": 20,
+			"maxEndpointCountPerClientUsername": 0,
+			"maxIngressFlowCount": 20,
+			"maxMsgsPerTransaction": 256,
+			"maxSubscriptionCount": 250,
+			"maxTransactedSessionCount": 0,
+			"maxTransactionCount": 0,
+			"serviceSmfMaxConnectionCountPerClientUsername": 20,
+			"serviceWebMaxConnectionCountPerClientUsername": 0
+		  },
+		  "aclProfile": {
+			"clientConnectDefaultAction": "allow",
+			"publishTopicDefaultAction":"disallow",
+			"clientConnectExceptions": [],
+			"publicTopicExceptions": ["UAL/TSEC/ETJ/OUT/QA/EDIFACT/>"],
+			"subscribeTopicExceptions": []
+		  }
+		},
+		{
+		  "clientUsername": "qa-etj-edifact-out-tsa-sub",
+		  "guaranteedEndpointPermissionOverrideEnabled": false,
+		  "passwordToken": "FsR7+gCG/tOJ0R7PbHAhQQ==tXMNz+lAoohWMqm9Kr18APhiKBdbpQDemu8=",
+		  "enabled": true,
+		  "clientProfile": {
+			"allowGuaranteedMsgReceiveEnabled": true,
+			"maxConnectionCountPerClientUsername": 20,
+			"maxEgressFlowCount": 20,
+			"maxEndpointCountPerClientUsername": 0,
+			"maxIngressFlowCount": 20,
+			"maxMsgsPerTransaction": 256,
+			"maxSubscriptionCount": 250,
+			"maxTransactedSessionCount": 0,
+			"maxTransactionCount": 0,
+			"serviceSmfMaxConnectionCountPerClientUsername": 20,
+			"serviceWebMaxConnectionCountPerClientUsername": 0
+		  },
+		  "aclProfile": {
+		  "clientConnectDefaultAction": "allow",
+		  "publishTopicDefaultAction":"disallow",
+		  "subscribeTopicDefaultAction": "allow",
+		  "clientConnectExceptions": [],
+		  "publicTopicExceptions": [],
+		  "subscribeTopicExceptions": [
+		  "test/>"
+			]
+		  }
+		},
+		{
+            "clientUsername": "poc-aap-jumpseat-pub",
+            "guaranteedEndpointPermissionOverrideEnabled": false,
+            "passwordToken": "2aPlHFK4aiiIqHecmt9vcg==65Lz7Xk3x+uKrBPkLHjNT5x9dLfYZ9aE35A=",
+            "enabled": true,
+            "clientProfile": {
+              "allowGuaranteedMsgSendEnabled": true,
+              "maxConnectionCountPerClientUsername": 20,
+              "maxEgressFlowCount": 20,
+              "maxEndpointCountPerClientUsername": 0,
+              "maxIngressFlowCount": 20,
+              "maxMsgsPerTransaction": 256,
+              "maxSubscriptionCount": 250,
+              "maxTransactedSessionCount": 0,
+              "maxTransactionCount": 0,
+              "serviceSmfMaxConnectionCountPerClientUsername": 20,
+              "serviceWebMaxConnectionCountPerClientUsername": 0
+            },
+            "aclProfile": {
+              "clientConnectDefaultAction": "allow",
+              "publishTopicDefaultAction":"disallow",
+              "clientConnectExceptions": [],
+              "publicTopicExceptions": ["UAL/POC/AAP/JUMPSEAT/>"],
+              "subscribeTopicExceptions": []
+            }
+          },
+          {
+            "clientUsername": "poc-aap-jumpseat-sub",
+            "guaranteedEndpointPermissionOverrideEnabled": false,
+            "passwordToken": "MaVZiVo79pOVaXTm3bBQDg==3EWQJ73fgxgjc/kysWqKVFDhz8rcq0RRMqU=",
+            "enabled": true,
+            "clientProfile": {
+              "allowGuaranteedMsgReceiveEnabled": true,
+              "maxConnectionCountPerClientUsername": 20,
+              "maxEgressFlowCount": 20,
+              "maxEndpointCountPerClientUsername": 0,
+              "maxIngressFlowCount": 20,
+              "maxMsgsPerTransaction": 256,
+              "maxSubscriptionCount": 250,
+              "maxTransactedSessionCount": 0,
+              "maxTransactionCount": 0,
+              "serviceSmfMaxConnectionCountPerClientUsername": 20,
+              "serviceWebMaxConnectionCountPerClientUsername": 0
+            },
+            "aclProfile": {
+            "clientConnectDefaultAction": "allow",
+            "publishTopicDefaultAction":"disallow",
+            "subscribeTopicDefaultAction": "allow",
+            "clientConnectExceptions": [],
+            "publicTopicExceptions": [],
+            "subscribeTopicExceptions": [
+            "test/>"
+              ]
+            }
+          },{
+			"clientUsername": "stg-jet-fm-ucd-sub",
+			"guaranteedEndpointPermissionOverrideEnabled": false,
+			"passwordToken": "ht2+jpPCY6eZpZlZq4ky9Q==OjSV2xM47c22vCaCd+yExkKRxF7Olwf3gbc=",
+			"enabled": true,
+			"clientProfile": {
+			  "allowGuaranteedMsgReceiveEnabled": true,
+			  "maxConnectionCountPerClientUsername": 40,
+			  "maxEgressFlowCount": 40,
+			  "maxEndpointCountPerClientUsername": 0,
+			  "maxIngressFlowCount": 40,
+			  "maxMsgsPerTransaction": 256,
+			  "maxSubscriptionCount": 250,
+			  "maxTransactedSessionCount": 0,
+			  "maxTransactionCount": 0,
+			  "serviceSmfMaxConnectionCountPerClientUsername": 40,
+			  "serviceWebMaxConnectionCountPerClientUsername": 0
+			},
+			"aclProfile": {
+			  "clientConnectDefaultAction": "allow",
+			  "clientConnectExceptions": [],
+			  "publicTopicExceptions": [],
+			  "subscribeTopicExceptions": [
+				"test/>"
+			  ]
+			}
+		  },{
+			"clientUsername": "dev-uds-wb-events-sub",
+			"guaranteedEndpointPermissionOverrideEnabled": false,
+			"passwordToken": "cK00ZZHUPdSpkgjqwjiMRQ==MhEyvsJUVG1VXVfmqTuvAHcrg7owRkn4hB8=",
+			"enabled": true,
+			"clientProfile": {
+			  "allowGuaranteedMsgReceiveEnabled": true,
+			  "maxConnectionCountPerClientUsername": 20,
+			  "maxEgressFlowCount": 20,
+			  "maxEndpointCountPerClientUsername": 0,
+			  "maxIngressFlowCount": 20,
+			  "maxMsgsPerTransaction": 256,
+			  "maxSubscriptionCount": 250,
+			  "maxTransactedSessionCount": 100,
+			  "maxTransactionCount": 100,
+			  "serviceSmfMaxConnectionCountPerClientUsername": 20,
+			  "serviceWebMaxConnectionCountPerClientUsername": 0,
+			  "allowTransactedSessionsEnabled": true
+			},
+			"aclProfile": {
+			"clientConnectDefaultAction": "allow",
+			  "publishTopicDefaultAction":"disallow",
+			  "subscribeTopicDefaultAction": "allow",
+			  "clientConnectExceptions": [],
+			  "publicTopicExceptions": [],
+			  "subscribeTopicExceptions": [
+				"test/>"
+			  ]
+			}
+		  },
+		  {
+			"clientUsername": "dev-uds-wb-events-pub",
+			"guaranteedEndpointPermissionOverrideEnabled": false,
+			"passwordToken": "CzqyMpcUeeHGukYFB94X5A==95BWVkTxUPUXcJkrDtbBUfVziTfSqHmkN50=",
+			"enabled": true,
+			"clientProfile": {
+			  "allowGuaranteedMsgSendEnabled": true,
+			  "maxConnectionCountPerClientUsername": 20,
+			  "maxEgressFlowCount": 20,
+			  "maxEndpointCountPerClientUsername": 0,
+			  "maxIngressFlowCount": 20,
+			  "maxMsgsPerTransaction": 256,
+			  "maxSubscriptionCount": 250,
+			  "maxTransactedSessionCount": 100,
+			  "maxTransactionCount": 100,
+			  "serviceSmfMaxConnectionCountPerClientUsername": 20,
+			  "serviceWebMaxConnectionCountPerClientUsername": 0,
+			  "allowTransactedSessionsEnabled": true
+			},
+			"aclProfile": {
+			  "clientConnectDefaultAction": "allow",
+			  "subscribeTopicDefaultAction": "disallow",
+			  "clientConnectExceptions": [],
+			  "publicTopicExceptions": ["UAL/ATW/UDS/WB/DEV/V1/WTRESTINFO/>","UAL/ATW/UDS/WB/DEV/V1/TailTip/>"],
+			  "subscribeTopicExceptions": []
+			}
+		  },
+		  {
+			"clientUsername": "stg-jet-fm-autorefresh-pubsub",
+			"guaranteedEndpointPermissionOverrideEnabled": false,
+			"passwordToken": "nNHHCv2nwBQI2ScACSRsCA==A/a5BSVn18gcJRUWiHJe068tyXCtw7s=",
+			"enabled": true,
+			"clientProfile": {
+			  "allowGuaranteedMsgSendEnabled": true,
+			  "allowGuaranteedMsgReceiveEnabled": true,
+			  "maxConnectionCountPerClientUsername": 100,
+			  "maxEgressFlowCount": 100,
+			  "maxEndpointCountPerClientUsername": 0,
+			  "maxIngressFlowCount": 100,
+			  "maxMsgsPerTransaction": 256,
+			  "maxSubscriptionCount": 250,
+			  "maxTransactedSessionCount": 0,
+			  "maxTransactionCount": 0,
+			  "serviceSmfMaxConnectionCountPerClientUsername": 100,
+			  "serviceWebMaxConnectionCountPerClientUsername": 0
+			},
+			"aclProfile": {
+			"clientConnectDefaultAction": "allow",
+			  "subscribeTopicDefaultAction": "allow",
+			  "clientConnectExceptions": [],
+			  "publicTopicExceptions": ["UAL/STG/ATW/JET/FLIGHT/>"],
+			  "subscribeTopicExceptions": [
+				"test/>"
+			  ]
+			}
+		  },
+		  {
+			"clientUsername": "stg-jet-fm-autorefresh-pub",
+			"guaranteedEndpointPermissionOverrideEnabled": false,
+			"passwordToken": "u6490H5OlNm+AX5mkEN6xg==LqO0KvHnrPio6/XlEnf6vy/KQTuh2qs=",
+			"enabled": true,
+			"clientProfile": {
+			  "allowGuaranteedMsgSendEnabled": true,
+			  "maxConnectionCountPerClientUsername": 100,
+			  "maxEgressFlowCount": 100,
+			  "maxEndpointCountPerClientUsername": 0,
+			  "maxIngressFlowCount": 100,
+			  "maxMsgsPerTransaction": 256,
+			  "maxSubscriptionCount": 250,
+			  "maxTransactedSessionCount": 0,
+			  "maxTransactionCount": 0,
+			  "serviceSmfMaxConnectionCountPerClientUsername": 100,
+			  "serviceWebMaxConnectionCountPerClientUsername": 0
+			},
+			"aclProfile": {
+			  "clientConnectDefaultAction": "allow",
+			  "subscribeTopicDefaultAction": "disallow",
+			  "clientConnectExceptions": [],
+			  "publicTopicExceptions": ["UAL/STG/ATW/JET/FLIGHT/>"],
+			  "subscribeTopicExceptions": []
+			}
+		  },
+		  {
+		  "clientUsername": "stg-jet-fm-bjb-pcdr-events-sub",
+		  "guaranteedEndpointPermissionOverrideEnabled": false,
+		  "passwordToken": "FzvZDRxIDVBLxzZaLOB8eA==dHyBcjeZsiWqlV2ZIGxfc0AraVxjosa1igQ=",
+			  "enabled": true,
+			  "clientProfile": {
+				"allowGuaranteedMsgReceiveEnabled": true,
+				"maxConnectionCountPerClientUsername": 6,
+				"maxEgressFlowCount": 6,
+				"maxEndpointCountPerClientUsername": 0,
+				"maxIngressFlowCount": 6,
+				"maxMsgsPerTransaction": 256,
+				"maxSubscriptionCount": 250,
+				"maxTransactedSessionCount": 0,
+				"maxTransactionCount": 0,
+				"serviceSmfMaxConnectionCountPerClientUsername": 6,
+				"serviceWebMaxConnectionCountPerClientUsername": 0
+			  },
+			  "aclProfile": {
+			  "clientConnectDefaultAction": "allow",
+				"publishTopicDefaultAction":"disallow",
+				"subscribeTopicDefaultAction": "allow",
+				"clientConnectExceptions": [],
+				"publicTopicExceptions": [],
+				"subscribeTopicExceptions": [
+				  "test/>"
+				]
+			  }
+			},
+			{
+			  "clientUsername": "stg-jet-pcdr-inbound-sub",
+			  "guaranteedEndpointPermissionOverrideEnabled": false,
+			  "passwordToken": "BdL71psPUOJGwHJyHIUwTw==fY8XUv09ts1wOv8tn1IzhD6cEOMPeCZbeLVt",
+			  "enabled": true,
+			  "clientProfile": {
+				"allowGuaranteedMsgReceiveEnabled": true,
+				"maxConnectionCountPerClientUsername": 40,
+				"maxEgressFlowCount": 40,
+				"maxEndpointCountPerClientUsername": 0,
+				"maxIngressFlowCount": 40,
+				"maxMsgsPerTransaction": 256,
+				"maxSubscriptionCount": 250,
+				"maxTransactedSessionCount": 0,
+				"maxTransactionCount": 0,
+				"serviceSmfMaxConnectionCountPerClientUsername": 40,
+				"serviceWebMaxConnectionCountPerClientUsername": 0
+			  },
+			  "aclProfile": {
+				"clientConnectDefaultAction": "allow",
+				"clientConnectExceptions": [],
+				"publicTopicExceptions": [],
+				"subscribeTopicExceptions": [
+				  "test/>"
+				]
+			  }
+			},
+			{
+			  "clientUsername": "stg-jet-pcdr-inbound-pub",
+			  "guaranteedEndpointPermissionOverrideEnabled": false,
+			  "passwordToken": "XM8MnmQS9tM491/SOVYnCg==dQy8G6QXhaaFED3uHAkrXHBe5p46zh/kCPPcVe4=",
+			  "enabled": true,
+			  "clientProfile": {
+				"allowGuaranteedMsgSendEnabled": true,
+				"maxConnectionCountPerClientUsername": 40,
+				"maxEgressFlowCount": 40,
+				"maxEndpointCountPerClientUsername": 0,
+				"maxIngressFlowCount": 40,
+				"maxMsgsPerTransaction": 256,
+				"maxSubscriptionCount": 250,
+				"maxTransactedSessionCount": 0,
+				"maxTransactionCount": 0,
+				"serviceSmfMaxConnectionCountPerClientUsername": 40,
+				"serviceWebMaxConnectionCountPerClientUsername": 0
+			  },
+			  "aclProfile": {
+				"clientConnectDefaultAction": "allow",
+				"publishTopicDefaultAction":"allow",
+				"clientConnectExceptions": [],
+				"publicTopicExceptions": [],
+				"subscribeTopicExceptions": [
+				  "test/>"
+				]
+			  }
+			},
+			{
+			  "clientUsername": "stg-jet-fm-boarding-pubsub",
+			  "guaranteedEndpointPermissionOverrideEnabled": false,
+			  "passwordToken": "qktJ6XiPdbKNvqLTuHajVQ==qXtpl2SowLtfekNpYzQ8AT4jt/6/Qy4=",
+			  "enabled": true,
+			  "clientProfile": {
+				"allowGuaranteedMsgSendEnabled": true,
+				"allowGuaranteedMsgReceiveEnabled": true,
+				"maxConnectionCountPerClientUsername": 100,
+				"maxEgressFlowCount": 100,
+				"maxEndpointCountPerClientUsername": 0,
+				"maxIngressFlowCount": 100,
+				"maxMsgsPerTransaction": 256,
+				"maxSubscriptionCount": 250,
+				"maxTransactedSessionCount": 0,
+				"maxTransactionCount": 0,
+				"serviceSmfMaxConnectionCountPerClientUsername": 100,
+				"serviceWebMaxConnectionCountPerClientUsername": 0
+			  },
+			  "aclProfile": {
+			  "clientConnectDefaultAction": "allow",
+				"subscribeTopicDefaultAction": "allow",
+				"clientConnectExceptions": [],
+				"publicTopicExceptions": ["UAL/STG/ATW/JET/BOARDING/FLIGHT/>"],
+				"subscribeTopicExceptions": [
+				  "test/>"
+				]
+			  }
+			},
+			{
+			  "clientUsername": "stg-jet-fm-ucd-sub",
+			  "guaranteedEndpointPermissionOverrideEnabled": false,
+			  "passwordToken": "ht2+jpPCY6eZpZlZq4ky9Q==OjSV2xM47c22vCaCd+yExkKRxF7Olwf3gbc=",
+			  "enabled": true,
+			  "clientProfile": {
+				"allowGuaranteedMsgReceiveEnabled": true,
+				"maxConnectionCountPerClientUsername": 40,
+				"maxEgressFlowCount": 40,
+				"maxEndpointCountPerClientUsername": 0,
+				"maxIngressFlowCount": 40,
+				"maxMsgsPerTransaction": 256,
+				"maxSubscriptionCount": 250,
+				"maxTransactedSessionCount": 0,
+				"maxTransactionCount": 0,
+				"serviceSmfMaxConnectionCountPerClientUsername": 40,
+				"serviceWebMaxConnectionCountPerClientUsername": 0
+			  },
+			  "aclProfile": {
+				"clientConnectDefaultAction": "allow",
+				"clientConnectExceptions": [],
+				"publicTopicExceptions": [],
+				"subscribeTopicExceptions": [
+				  "test/>"
+				]
+			  }
+			}	,
+			{
+			  "clientUsername": "stg-jet-pcdr-outbound-shares-sub",
+			  "guaranteedEndpointPermissionOverrideEnabled": false,
+			  "passwordToken": "U9hT08ckjgzBvbVtBszu2A==S8C9A7mT3xfYXlP047PWlXu7onbM+iL+SFg2bzbM4Q==",
+			  "enabled": true,
+			  "clientProfile": {
+				"allowGuaranteedMsgReceiveEnabled": true,
+				"maxConnectionCountPerClientUsername": 40,
+				"maxEgressFlowCount": 40,
+				"maxEndpointCountPerClientUsername": 0,
+				"maxIngressFlowCount": 40,
+				"maxMsgsPerTransaction": 256,
+				"maxSubscriptionCount": 250,
+				"maxTransactedSessionCount": 0,
+				"maxTransactionCount": 0,
+				"serviceSmfMaxConnectionCountPerClientUsername": 40,
+				"serviceWebMaxConnectionCountPerClientUsername": 0
+			  },
+			  "aclProfile": {
+				"clientConnectDefaultAction": "allow",
+				"publishTopicDefaultAction":"allow",
+				"clientConnectExceptions": [],
+				"publicTopicExceptions": [],
+				"subscribeTopicExceptions": [
+				  "test/>"
+				]
+			  }
+			},
+			{
+			  "clientUsername": "stg-jet-pcdr-outbound-tm-sub",
+			  "guaranteedEndpointPermissionOverrideEnabled": false,
+			  "passwordToken": "bAwzrtMdgllw+aZMJ8uv1w==1EwVoty0Yzpa+eGnLoXH7+mBYqxP74rfm7UqUkbSnUCU",
+			  "enabled": true,
+			  "clientProfile": {
+				"allowGuaranteedMsgReceiveEnabled": true,
+				"maxConnectionCountPerClientUsername": 40,
+				"maxEgressFlowCount": 40,
+				"maxEndpointCountPerClientUsername": 0,
+				"maxIngressFlowCount": 40,
+				"maxMsgsPerTransaction": 256,
+				"maxSubscriptionCount": 250,
+				"maxTransactedSessionCount": 0,
+				"maxTransactionCount": 0,
+				"serviceSmfMaxConnectionCountPerClientUsername": 40,
+				"serviceWebMaxConnectionCountPerClientUsername": 0
+			  },
+			  "aclProfile": {
+				"clientConnectDefaultAction": "allow",
+				"clientConnectExceptions": [],
+				"publicTopicExceptions": [],
+				"subscribeTopicExceptions": [
+				  "test/>"
+				]
+			  }
+			},
+			{
+			  "clientUsername": "stg-jet-pcdr-outbound-pub",
+			  "guaranteedEndpointPermissionOverrideEnabled": false,
+			  "passwordToken": "k4/qoNKjsIKVGATb2C++4g==XkMakLP3WwJuIFqbAZloBiFqKtLlfaq/TKaHipQiaA==",
+			  "enabled": true,
+			  "clientProfile": {
+				"allowGuaranteedMsgSendEnabled": true,
+				"allowGuaranteedMsgReceiveEnabled": false,
+				"maxConnectionCountPerClientUsername": 40,
+				"maxEgressFlowCount": 40,
+				"maxEndpointCountPerClientUsername": 0,
+				"maxIngressFlowCount": 40,
+				"maxMsgsPerTransaction": 256,
+				"maxSubscriptionCount": 250,
+				"maxTransactedSessionCount": 0,
+				"maxTransactionCount": 0,
+				"serviceSmfMaxConnectionCountPerClientUsername": 40,
+				"serviceWebMaxConnectionCountPerClientUsername": 0
+			  },
+			  "aclProfile": {
+				"clientConnectDefaultAction": "allow",
+				"publishTopicDefaultAction":"allow",
+				"clientConnectExceptions": [],
+				"publicTopicExceptions": [],
+				"subscribeTopicExceptions": [
+				  "test/>"
+				]
+			  }
+			},
+			{
+			  "clientUsername": "dev-jet-fm-crew-pub",
+			  "guaranteedEndpointPermissionOverrideEnabled": false,
+			  "passwordToken": "WHZzCJLFADfuoMTDh0QrqQ==5st2XX/v7KVUj/dvDEGQhf7DcFKsZuK8p9M=",
+			  "enabled": true,
+			  "clientProfile": {
+				"allowGuaranteedMsgSendEnabled": true,
+				"maxConnectionCountPerClientUsername": 40,
+				"maxEgressFlowCount": 40,
+				"maxEndpointCountPerClientUsername": 0,
+				"maxIngressFlowCount": 40,
+				"maxMsgsPerTransaction": 256,
+				"maxSubscriptionCount": 250,
+				"maxTransactedSessionCount": 0,
+				"maxTransactionCount": 0,
+				"serviceSmfMaxConnectionCountPerClientUsername": 40,
+				"serviceWebMaxConnectionCountPerClientUsername": 0
+			  },
+			  "aclProfile": {
+				"clientConnectDefaultAction": "allow",
+				"clientConnectExceptions": [],
+				"publicTopicExceptions": ["UAL/DEV/ATW/JET/CREW/FLIGHT/>"],
+				"subscribeTopicExceptions": [
+				  "test/>"
+				]
+			  }
+			},
+			{
+			  "clientUsername": "dev-jet-fm-crew-pubsub",
+			  "guaranteedEndpointPermissionOverrideEnabled": false,
+			  "passwordToken": "PA9VWdZx6e13Wlt+xecaTQ==hZrFzxHkg/GVFbjvTi3NQrx6xcQcwD59iK8=",
+			  "enabled": true,
+			  "clientProfile": {
+				"allowGuaranteedMsgSendEnabled": true,
+				"allowGuaranteedMsgReceiveEnabled": true,
+				"maxConnectionCountPerClientUsername": 40,
+				"maxEgressFlowCount": 40,
+				"maxEndpointCountPerClientUsername": 0,
+				"maxIngressFlowCount": 40,
+				"maxMsgsPerTransaction": 256,
+				"maxSubscriptionCount": 250,
+				"maxTransactedSessionCount": 0,
+				"maxTransactionCount": 0,
+				"serviceSmfMaxConnectionCountPerClientUsername": 40,
+				"serviceWebMaxConnectionCountPerClientUsername": 0
+			  },
+			  "aclProfile": {
+			  "clientConnectDefaultAction": "allow",
+				"subscribeTopicDefaultAction": "allow",
+				"clientConnectExceptions": [],
+				"publicTopicExceptions": ["UAL/DEV/ATW/JET/CREW/FLIGHT/>"],
+				"subscribeTopicExceptions": [
+				  "test/>"
+				]
+			  }
+			},
+			{
+			  "clientUsername": "dev-jet-fm-prnvalidation-sub",
+			  "guaranteedEndpointPermissionOverrideEnabled": false,
+			  "passwordToken": "2VzxYhk0CdYnE/FX5b6e6Q==A23YWhRzZknjeo/Bv/mbERlSutVfCUt/Fvo=",
+			  "enabled": true,
+			  "clientProfile": {
+				"allowGuaranteedMsgReceiveEnabled": true,
+				"maxConnectionCountPerClientUsername": 40,
+				"maxEgressFlowCount": 40,
+				"maxEndpointCountPerClientUsername": 0,
+				"maxIngressFlowCount": 40,
+				"maxMsgsPerTransaction": 256,
+				"maxSubscriptionCount": 250,
+				"maxTransactedSessionCount": 0,
+				"maxTransactionCount": 0,
+				"serviceSmfMaxConnectionCountPerClientUsername": 40,
+				"serviceWebMaxConnectionCountPerClientUsername": 0
+			  },
+			  "aclProfile": {
+				"clientConnectDefaultAction": "allow",
+				"publishTopicDefaultAction":"allow",
+				"clientConnectExceptions": [],
+				"publicTopicExceptions": [],
+				"subscribeTopicExceptions": [
+				  "test/>"
+				]
+			  }
+			},
+			{
+			  "clientUsername": "qa-jet-fm-prnvalidation-sub",
+			  "guaranteedEndpointPermissionOverrideEnabled": false,
+			  "passwordToken": "2ygD4o4CrCmj2aSW9R41Eg==aJvDhmyPczK2T8ec0r1joHa2HFc/GR/Iwho=",
+			  "enabled": true,
+			  "clientProfile": {
+				"allowGuaranteedMsgReceiveEnabled": true,
+				"maxConnectionCountPerClientUsername": 40,
+				"maxEgressFlowCount": 40,
+				"maxEndpointCountPerClientUsername": 0,
+				"maxIngressFlowCount": 40,
+				"maxMsgsPerTransaction": 256,
+				"maxSubscriptionCount": 250,
+				"maxTransactedSessionCount": 0,
+				"maxTransactionCount": 0,
+				"serviceSmfMaxConnectionCountPerClientUsername": 40,
+				"serviceWebMaxConnectionCountPerClientUsername": 0
+			  },
+			  "aclProfile": {
+				"clientConnectDefaultAction": "allow",
+				"publishTopicDefaultAction":"allow",
+				"clientConnectExceptions": [],
+				"publicTopicExceptions": [],
+				"subscribeTopicExceptions": [
+				  "test/>"
+				]
+			  }
+			},{
+				"clientUsername": "qa-uds-wb-events-sub",
+				"guaranteedEndpointPermissionOverrideEnabled": false,
+				"passwordToken": "iOsAhcimYX6YS4z0sEpN1A==Y0UZFiyYX1WpIw+cjnJOIXTmA+0kwK8zaM8=",
+				"enabled": true,
+				"clientProfile": {
+				  "allowGuaranteedMsgReceiveEnabled": true,
+				  "maxConnectionCountPerClientUsername": 40,
+				  "maxEgressFlowCount": 40,
+				  "maxEndpointCountPerClientUsername": 0,
+				  "maxIngressFlowCount": 40,
+				  "maxMsgsPerTransaction": 256,
+				  "maxSubscriptionCount": 250,
+				  "maxTransactedSessionCount": 100,
+				  "maxTransactionCount": 100,
+				  "serviceSmfMaxConnectionCountPerClientUsername": 40,
+				  "serviceWebMaxConnectionCountPerClientUsername": 0,
+				  "allowTransactedSessionsEnabled": true
+				},
+				"aclProfile": {
+				"clientConnectDefaultAction": "allow",
+				  "publishTopicDefaultAction":"disallow",
+				  "subscribeTopicDefaultAction": "allow",
+				  "clientConnectExceptions": [],
+				  "publicTopicExceptions": [],
+				  "subscribeTopicExceptions": [
+					"test/>"
+				  ]
+				}
+			  },
+			  {
+				"clientUsername": "qa-uds-wb-events-pub",
+				"guaranteedEndpointPermissionOverrideEnabled": false,
+				"passwordToken": "qFyYR5Agym4aX8N5HUtB9A==SxcyRsfqErL04TP49i2biooUXtTnox1Q6cM=",
+				"enabled": true,
+				"clientProfile": {
+				  "allowGuaranteedMsgSendEnabled": true,
+				  "maxConnectionCountPerClientUsername": 40,
+				  "maxEgressFlowCount": 40,
+				  "maxEndpointCountPerClientUsername": 0,
+				  "maxIngressFlowCount": 40,
+				  "maxMsgsPerTransaction": 256,
+				  "maxSubscriptionCount": 250,
+				  "maxTransactedSessionCount": 100,
+				  "maxTransactionCount": 100,
+				  "serviceSmfMaxConnectionCountPerClientUsername": 40,
+				  "serviceWebMaxConnectionCountPerClientUsername": 0,
+				  "allowTransactedSessionsEnabled": true
+				},
+				"aclProfile": {
+				  "clientConnectDefaultAction": "allow",
+				  "subscribeTopicDefaultAction": "disallow",
+				  "clientConnectExceptions": [],
+				  "publicTopicExceptions": ["UAL/ATW/UDS/WB/QA/V1/WTRESTINFO/>","UAL/ATW/UDS/WB/QA/V1/TailTip/>"],
+				  "subscribeTopicExceptions": []
+				}
+			  },
+			  {
+				"clientUsername": "dev-jet-boarding-seat-sub",
+				"guaranteedEndpointPermissionOverrideEnabled": false,
+				"passwordToken": "E3kd/CSlD8rbs/Hfj2Cckg==s6F7KcmYsXROJWK5QQSDB+IE+QPJmhramXI=",
+				"enabled": true,
+				"clientProfile": {
+				  "allowGuaranteedMsgReceiveEnabled": true,
+				  "maxConnectionCountPerClientUsername": 40,
+				  "maxEgressFlowCount": 40,
+				  "maxEndpointCountPerClientUsername": 0,
+				  "maxIngressFlowCount": 40,
+				  "maxMsgsPerTransaction": 256,
+				  "maxSubscriptionCount": 250,
+				  "maxTransactedSessionCount": 0,
+				  "maxTransactionCount": 0,
+				  "serviceSmfMaxConnectionCountPerClientUsername": 40,
+				  "serviceWebMaxConnectionCountPerClientUsername": 0
+				},
+				"aclProfile": {
+					"clientConnectDefaultAction": "allow",
+					  "publishTopicDefaultAction":"disallow",
+					  "subscribeTopicDefaultAction": "allow",
+					  "clientConnectExceptions": [],
+					  "publicTopicExceptions": [],
+					  "subscribeTopicExceptions": [
+						"test/>"
+				  ]
+				}
+			  },
+			  {
+				"clientUsername": "qa-jet-boarding-seat-sub",
+				"guaranteedEndpointPermissionOverrideEnabled": false,
+				"passwordToken": "XB0hOj6ZIQQXLoSYl9aLSw==P20OeDIAbP1xQ3Ctwmsm7a6HOSBbYpXm/rs=",
+				"enabled": true,
+				"clientProfile": {
+				  "allowGuaranteedMsgReceiveEnabled": true,
+				  "maxConnectionCountPerClientUsername": 40,
+				  "maxEgressFlowCount": 40,
+				  "maxEndpointCountPerClientUsername": 0,
+				  "maxIngressFlowCount": 40,
+				  "maxMsgsPerTransaction": 256,
+				  "maxSubscriptionCount": 250,
+				  "maxTransactedSessionCount": 0,
+				  "maxTransactionCount": 0,
+				  "serviceSmfMaxConnectionCountPerClientUsername": 40,
+				  "serviceWebMaxConnectionCountPerClientUsername": 0
+				},
+				"aclProfile": {
+					"clientConnectDefaultAction": "allow",
+					  "publishTopicDefaultAction":"disallow",
+					  "subscribeTopicDefaultAction": "allow",
+					  "clientConnectExceptions": [],
+					  "publicTopicExceptions": [],
+					  "subscribeTopicExceptions": [
+						"test/>"
+				  ]
+				}
+			  }
+
+
+
+
+	],
+	"queues": [
+	  {
+		"accessType": "non-exclusive",
+		"egressEnabled": true,
+		"eventMsgSpoolUsageThreshold": {
+		  "clearPercent": 5,
+		  "setPercent": 10
+		},
+		"ingressEnabled": true,
+		"maxMsgSpoolUsage": 240000,
+		"maxRedeliveryCount": 10,
+		"respectTtlEnabled": true,
+		"maxTtl": 300,
+		"partitionCount": 100,
+		"permission": "consume",
+		"owner": "dev-jet-ucd-sub",
+		"queueName": "DEV.JET.UCD",
+		"subscriptionTopics": [
+		  "UAL/QA/UCD/PNR/*/*/V1/*/*/>",
+		  "UAL/QA/UCD/ACI/*/*/V1/*/*/>",
+		  "UAL/QA/UCD/TKT/*/*/V1/*/*/>",
+		  "UAL/QA/UCD/CHKINORCH/*/*/V1/*/*/>",
+		  "UAL/QA/UCD/CHKINELIG/*/*/V1/*/*/>"
+		]
+	  },{
+		"accessType": "non-exclusive",
+		"egressEnabled": true,
+		"eventMsgSpoolUsageThreshold": {
+		  "clearPercent": 5,
+		  "setPercent": 10
+		},
+		"ingressEnabled": true,
+		"maxMsgSpoolUsage": 240000,
+		"maxRedeliveryCount": 10,
+		"respectTtlEnabled": true,
+		"maxTtl": 300,
+		"partitionCount": 100,
+		"permission": "consume",
+		"owner": "qa-jet-ucd-sub",
+		"queueName": "QA.JET.UCD",
+		"subscriptionTopics": [
+		  "UAL/QA/UCD/PNR/*/*/V1/*/*/>",
+		  "UAL/QA/UCD/ACI/*/*/V1/*/*/>",
+		  "UAL/QA/UCD/TKT/*/*/V1/*/*/>",
+		  "UAL/QA/UCD/CHKINORCH/*/*/V1/*/*/>",
+		  "UAL/QA/UCD/CHKINELIG/*/*/V1/*/*/>"
+		]
+	  },
+	  {
+		"accessType": "non-exclusive",
+		"egressEnabled": true,
+		"eventMsgSpoolUsageThreshold": {
+		  "clearPercent": 5,
+		  "setPercent": 10
+		},
+		"ingressEnabled": true,
+		"maxMsgSpoolUsage": 240000,
+		"maxRedeliveryCount": 10,
+		"respectTtlEnabled": true,
+		"maxTtl": 300,
+		"partitionCount": 100,
+		"permission": "consume",
+		"owner": "dev-gsapp-ucd-sub",
+		"queueName": "DEV.GSAPP.UCD",
+		"subscriptionTopics": [
+		  "UAL/QA/UCD/PNR/*/*/V1/*/*/>",
+		  "UAL/QA/UCD/ACI/*/*/V1/*/*/>",
+		  "UAL/QA/UCD/TKT/*/*/V1/*/*/>",
+		  "UAL/QA/UCD/CHKINORCH/*/*/V1/*/*/>",
+		  "UAL/QA/UCD/CHKINELIG/*/*/V1/*/*/>"
+		]
+	  },
+	  {
+		"accessType": "non-exclusive",
+		"egressEnabled": true,
+		"eventMsgSpoolUsageThreshold": {
+		  "clearPercent": 5,
+		  "setPercent": 10
+		},
+		"ingressEnabled": true,
+		"maxMsgSpoolUsage": 240000,
+		"maxRedeliveryCount": 10,
+		"respectTtlEnabled": true,
+		"maxTtl": 300,
+		"permission": "consume",
+		"owner": "qa-gsapp-ucd-sub",
+		"queueName": "QA.GSAPP.UCD",
+		"subscriptionTopics": [
+		  "UAL/QA/UCD/PNR/*/*/V1/*/*/>",
+		  "UAL/QA/UCD/ACI/*/*/V1/*/*/>",
+		  "UAL/QA/UCD/TKT/*/*/V1/*/*/>",
+		  "UAL/QA/UCD/CHKINORCH/*/*/V1/*/*/>",
+		  "UAL/QA/UCD/CHKINELIG/*/*/V1/*/*/>"
+		]
+	  },
+	  {
+		"accessType": "non-exclusive",
+		"egressEnabled": true,
+		"eventMsgSpoolUsageThreshold": {
+		  "clearPercent": 5,
+		  "setPercent": 10
+		},
+		"ingressEnabled": true,
+		"maxMsgSpoolUsage": 240000,
+		"maxRedeliveryCount": 10,
+		"respectTtlEnabled": true,
+		"maxTtl": 300,
+		"permission": "consume",
+		"owner": "dev-gsapp-ucd-sub",
+		"queueName": "STG.GSAPP.UCD",
+		"subscriptionTopics": [
+		  "UAL/QA/UCD/PNR/*/*/V1/*/*/>",
+		  "UAL/QA/UCD/ACI/*/*/V1/*/*/>",
+		  "UAL/QA/UCD/TKT/*/*/V1/*/*/>",
+		  "UAL/QA/UCD/CHKINORCH/*/*/V1/*/*/>",
+		  "UAL/QA/UCD/CHKINELIG/*/*/V1/*/*/>"
+		]
+	  },
+	  {
+		"accessType": "non-exclusive",
+		"egressEnabled": true,
+		"eventMsgSpoolUsageThreshold": {
+		  "clearPercent": 5,
+		  "setPercent": 10
+		},
+		"ingressEnabled": true,
+		"maxMsgSpoolUsage": 240000,
+		"maxRedeliveryCount": 10,
+		"respectTtlEnabled": true,
+		"maxTtl": 300,
+		"permission": "consume",
+		"owner": "dev-jet-flifo-sub",
+		"queueName": "DEV.JET.FLIFO",
+		"subscriptionTopics": [
+			"UAL/STG/CWO/PNFLIFO/*/*/*/*/*/*/*/*/*/*/*/*/*/*/1", "UAL/STG/CWO/UFOUT/*/*/XML/3"
+		]
+	  },
+	  {
+		"accessType": "non-exclusive",
+		"egressEnabled": true,
+		"eventMsgSpoolUsageThreshold": {
+		  "clearPercent": 5,
+		  "setPercent": 10
+		},
+		"ingressEnabled": true,
+		"maxMsgSpoolUsage": 240000,
+		"maxRedeliveryCount": 10,
+		"respectTtlEnabled": true,
+		"maxTtl": 300,
+		"permission": "consume",
+		"owner": "dev-jet-collab-sub",
+		"queueName": "DEV.JET.COLLAB",
+		"subscriptionTopics": [
+			"UAL/OPS/COLLAB/ALERTS/ETA/*/*/*/1", "UAL/OPS/COLLAB/ALERTS/ETD/*/*/*/1", "UAL/OPS/COLLAB/ALERTS/CNCL/*/*/*/1", "UAL/OPS/COLLAB/ALERTS/GATE_ARR_A120/*/*/*/1", "UAL/OPS/COLLAB/ALERTS/GATE_ARR_A30/*/*/*/1", "UAL/OPS/COLLAB/ALERTS/GATE_ARR_A60/*/*/*/1", "UAL/OPS/COLLAB/ALERTS/GATE_ARR_A90/*/*/*/1", "UAL/OPS/COLLAB/ALERTS/GATE_ARR_NRW_A30/*/*/*/1", "UAL/OPS/COLLAB/ALERTS/GATE_ARR_WD_A30/*/*/*/1", "UAL/OPS/COLLAB/ALERTS/EQUIP_CHG_120/*/*/*/1", "UAL/OPS/COLLAB/ALERTS/EQUIP_CHG_240/*/*/*/1", "UAL/OPS/COLLAB/ALERTS/EQUIP_CHG_90/*/*/*/1", "UAL/OPS/COLLAB/ALERTS/EQUIP_CHG_60/*/*/*/1", "UAL/OPS/COLLAB/ALERTS/GATE_DEP_D120/*/*/*/1", "UAL/OPS/COLLAB/ALERTS/GATE_DEP_D60/*/*/*/1", "UAL/OPS/COLLAB/ALERTS/GATE_DEP_D90/*/*/*/1", "UAL/OPS/COLLAB/ALERTS/GATE_DEP_NRW_D60/*/*/*/1", "UAL/OPS/COLLAB/ALERTS/GATE_DEP_WD_D90/*/*/*/1", "UAL/OPS/COLLAB/ALERTS/NOSE_CHG_D120/*/*/*/1", "UAL/OPS/COLLAB/ALERTS/NOSE_CHG_D240/*/*/*/1", "UAL/OPS/COLLAB/ALERTS/NOSE_CHG_D90/*/*/*/1", "UAL/OPS/COLLAB/ALERTS/RTBL/*/*/*/1", "UAL/OPS/COLLAB/ALERTS/RTFL/*/*/*/1", "UAL/OPS/COLLAB/ALERTS/FLEET_CHG_60/*/*/*/1", "UAL/OPS/COLLAB/ALERTS/FLEET_CHG_90/*/*/*/1", "UAL/OPS/COLLAB/ALERTS/FLEET_CHG_120/*/*/*/1", "UAL/OPS/COLLAB/ALERTS/FLEET_CHG_240/*/*/*/1", "UAL/OPS/COLLAB/ALERTS/FLEET_CHG_120_EXCLD_757_767/*/*/*/1", "UAL/OPS/COLLAB/ALERTS/MAXHOLD_CUSTOMERHOLD/*/*/*/1", "UAL/OPS/COLLAB/ALERTS/MAXHOLD_PSGR_EQ_0/*/*/*/1", "UAL/OPS/COLLAB/ALERTS/MAXHOLD_PSGR_GT_0/*/*/*/1", "UAL/OPS/COLLAB/ALERTS/MAXHOLD_CANCEL/*/*/*/1", "UAL/OPS/COLLAB/ALERTS/CUST_STORY/*/*/*/1", "UAL/OPS/COLLAB/ALERTS/CUST_STORY_DUE/*/*/*/1", "UAL/OPS/COLLAB/ALERTS/CUST_STRY_DUE_DLY/*/*/*/1", "UAL/OPS/COLLAB/ALERTS/CUST_STRY_ELG/*/*/*/1"
+		]
+	  },
+	  {
+		"accessType": "exclusive",
+		"egressEnabled": true,
+		"eventMsgSpoolUsageThreshold": {
+		  "clearPercent": 5,
+		  "setPercent": 10
+		},
+		"ingressEnabled": true,
+		"maxMsgSpoolUsage": 240000,
+		"maxRedeliveryCount": 10,
+		"respectTtlEnabled": true,
+		"maxTtl": 300,
+		"permission": "consume",
+		"owner": "dev-jet-pcdr-inbound-sub",
+		"queueName": "DEV.JET.PCDRFEED.INBOUND",
+		"subscriptionTopics": [
+			"UAL/DEV/ATW/PCDR/INBOUND/V1"
+		]
+	  },
+	  {
+		"accessType": "exclusive",
+		"egressEnabled": true,
+		"eventMsgSpoolUsageThreshold": {
+		  "clearPercent": 5,
+		  "setPercent": 10
+		},
+		"ingressEnabled": true,
+		"maxMsgSpoolUsage": 240000,
+		"maxRedeliveryCount": 10,
+		"respectTtlEnabled": true,
+		"maxTtl": 300,
+		"permission": "consume",
+		"owner": "dev-jet-pcdr-outbound-shares-sub",
+		"queueName": "DEV.JET.PCDROUTBOUND.SHARES",
+		"subscriptionTopics": [
+			"UAL/DEV/ATW/PCDR/OUTBOUND/SHARES/V1"
+		]
+	  },
+	  {
+		"accessType": "non-exclusive",
+		"egressEnabled": true,
+		"eventMsgSpoolUsageThreshold": {
+		  "clearPercent": 5,
+		  "setPercent": 10
+		},
+		"ingressEnabled": true,
+		"maxMsgSpoolUsage": 240000,
+		"maxRedeliveryCount": 10,
+		"respectTtlEnabled": true,
+		"maxTtl": 300,
+		"permission": "consume",
+		"owner": "dev-jet-pcdr-outbound-tm-sub",
+		"queueName": "DEV.JET.PCDROUTBOUND.TURNMETRICS",
+		"subscriptionTopics": [
+			"UAL/DEV/ATW/PCDR/OUTBOUND/TURNMETRICS/V1"
+		]
+	  },
+	  {
+		"accessType": "non-exclusive",
+		"egressEnabled": true,
+		"eventMsgSpoolUsageThreshold": {
+		  "clearPercent": 5,
+		  "setPercent": 10
+		},
+		"ingressEnabled": true,
+		"maxMsgSpoolUsage": 240000,
+		"maxRedeliveryCount": 10,
+		"respectTtlEnabled": true,
+		"maxTtl": 300,
+		"permission": "consume",
+		"owner": "qa-jet-flifo-sub",
+		"queueName": "QA.JET.FLIFO",
+		"subscriptionTopics": [
+			"UAL/STG/CWO/PNFLIFO/*/*/*/*/*/*/*/*/*/*/*/*/*/*/1", "UAL/STG/CWO/UFOUT/*/*/XML/3"
+		]
+	  },
+	  {
+		"accessType": "non-exclusive",
+		"egressEnabled": true,
+		"eventMsgSpoolUsageThreshold": {
+		  "clearPercent": 5,
+		  "setPercent": 10
+		},
+		"ingressEnabled": true,
+		"maxMsgSpoolUsage": 240000,
+		"maxRedeliveryCount": 10,
+		"respectTtlEnabled": true,
+		"maxTtl": 300,
+		"permission": "consume",
+		"owner": "qa-jet-collab-sub",
+		"queueName": "QA.JET.COLLAB",
+		"subscriptionTopics": [
+			"UAL/DEV/ATW/COLLAB/>"
+		]
+	  },
+	  {
+		"accessType": "exclusive",
+		"egressEnabled": true,
+		"eventMsgSpoolUsageThreshold": {
+		  "clearPercent": 5,
+		  "setPercent": 10
+		},
+		"ingressEnabled": true,
+		"maxMsgSpoolUsage": 240000,
+		"maxRedeliveryCount": 10,
+		"respectTtlEnabled": true,
+		"maxTtl": 300,
+		"permission": "consume",
+		"owner": "qa-jet-pcdr-inbound-sub",
+		"queueName": "QA.JET.PCDRFEED.INBOUND",
+		"subscriptionTopics": [
+			"UAL/DEV/ATW/PCDR/INBOUND/V1"
+		]
+	  },
+	  {
+		"accessType": "exclusive",
+		"egressEnabled": true,
+		"eventMsgSpoolUsageThreshold": {
+		  "clearPercent": 5,
+		  "setPercent": 10
+		},
+		"ingressEnabled": true,
+		"maxMsgSpoolUsage": 240000,
+		"maxRedeliveryCount": 10,
+		"respectTtlEnabled": true,
+		"maxTtl": 300,
+		"permission": "consume",
+		"owner": "qa-jet-pcdr-outbound-shares-sub",
+		"queueName": "QA.JET.PCDROUTBOUND.SHARES",
+		"subscriptionTopics": [
+			"UAL/QA/ATW/PCDR/OUTBOUND/SHARES/V1"
+		]
+	  },
+	  {
+		"accessType": "non-exclusive",
+		"egressEnabled": true,
+		"eventMsgSpoolUsageThreshold": {
+		  "clearPercent": 5,
+		  "setPercent": 10
+		},
+		"ingressEnabled": true,
+		"maxMsgSpoolUsage": 240000,
+		"maxRedeliveryCount": 10,
+		"respectTtlEnabled": true,
+		"maxTtl": 300,
+		"permission": "consume",
+		"owner": "qa-jet-pcdr-outbound-tm-sub",
+		"queueName": "QA.JET.PCDROUTBOUND.TURNMETRICS",
+		"subscriptionTopics": [
+			"UAL/QA/ATW/PCDR/OUTBOUND/TURNMETRICS/V1"
+		]
+	  },
+
+	  {
+		"accessType": "non-exclusive",
+		"egressEnabled": true,
+		"eventMsgSpoolUsageThreshold": {
+		  "clearPercent": 5,
+		  "setPercent": 10
+		},
+		"ingressEnabled": true,
+		"maxMsgSpoolUsage": 240000,
+		"maxRedeliveryCount": 10,
+		"respectTtlEnabled": true,
+		"maxTtl": 300,
+		"permission": "consume",
+		"owner": "dev-uds-flifo-sub",
+		"queueName": "DEV.UDS.FLIFO",
+		"subscriptionTopics": ["UAL/STG/CWO/UFOUT/*/BAGCLAIM/XML/3", "UAL/STG/CWO/UFOUT/*/BOARDSTATUS/XML/3", "UAL/STG/CWO/UFOUT/*/BUS.BAGCLAIM/XML/3", "UAL/STG/CWO/UFOUT/*/BUS.BOARDSTATUS/XML/3", "UAL/STG/CWO/UFOUT/*/BUS.CNCL/XML/3", "UAL/STG/CWO/UFOUT/*/BUS.CNCL.BUFF/XML/3", "UAL/STG/CWO/UFOUT/*/BUS.CNCLRS/XML/3", "UAL/STG/CWO/UFOUT/*/BUS.CNCLRS.BUFF/XML/3", "UAL/STG/CWO/UFOUT/*/BUS.EON/XML/3", "UAL/STG/CWO/UFOUT/*/BUS.EQUIP/XML/3", "UAL/STG/CWO/UFOUT/*/BUS.ETA/XML/3", "UAL/STG/CWO/UFOUT/*/BUS.ETA.BUFF/XML/3", "UAL/STG/CWO/UFOUT/*/BUS.ETD/XML/3", "UAL/STG/CWO/UFOUT/*/BUS.ETD.BUFF/XML/3", "UAL/STG/CWO/UFOUT/*/BUS.GATE/XML/3", "UAL/STG/CWO/UFOUT/*/BUS.IN/XML/3", "UAL/STG/CWO/UFOUT/*/BUS.MFRADD/XML/3", "UAL/STG/CWO/UFOUT/*/BUS.MFRCHG/XML/3", "UAL/STG/CWO/UFOUT/*/BUS.MFRDEL/XML/3", "UAL/STG/CWO/UFOUT/*/BUS.OFF/XML/3", "UAL/STG/CWO/UFOUT/*/BUS.ON/XML/3", "UAL/STG/CWO/UFOUT/*/BUS.OUT/XML/3", "UAL/STG/CWO/UFOUT/*/BUS.RCVRY/XML/3", "UAL/STG/CWO/UFOUT/*/BUS.RCVRY.GIDS/XML/3", "UAL/STG/CWO/UFOUT/*/BUS.TAILASGN/XML/3", "UAL/STG/CWO/UFOUT/*/BUS.UNDOIN/XML/3", "UAL/STG/CWO/UFOUT/*/BUS.UNDOOFF/XML/3", "UAL/STG/CWO/UFOUT/*/BUS.UNDOON/XML/3", "UAL/STG/CWO/UFOUT/*/BUS.UNDOOUT/XML/3", "UAL/STG/CWO/UFOUT/*/CNCL/XML/3", "UAL/STG/CWO/UFOUT/*/CNCL.BUFF/XML/3", "UAL/STG/CWO/UFOUT/*/CNCLER/XML/3", "UAL/STG/CWO/UFOUT/*/CNCLER.BUFF/XML/3", "UAL/STG/CWO/UFOUT/*/CNCLRS/XML/3", "UAL/STG/CWO/UFOUT/*/CNCLRS.BUFF/XML/3", "UAL/STG/CWO/UFOUT/*/CTACIBOARDBEGIN/XML/3", "UAL/STG/CWO/UFOUT/*/CTARRIVEDATGATE/XML/3", "UAL/STG/CWO/UFOUT/*/CTCLEANINGEND/XML/3", "UAL/STG/CWO/UFOUT/*/CTCLEANINGSTART/XML/3", "UAL/STG/CWO/UFOUT/*/CTREFRESH/XML/3", "UAL/STG/CWO/UFOUT/*/CUSTOMERSTORY.BUFF/XML/3", "UAL/STG/CWO/UFOUT/*/DVRT/XML/3", "UAL/STG/CWO/UFOUT/*/EON/XML/3", "UAL/STG/CWO/UFOUT/*/EQUIP/XML/3", "UAL/STG/CWO/UFOUT/*/ETA/XML/3", "UAL/STG/CWO/UFOUT/*/ETA.BUFF/XML/3", "UAL/STG/CWO/UFOUT/*/ETD/XML/3", "UAL/STG/CWO/UFOUT/*/ETD.BUFF/XML/3", "UAL/STG/CWO/UFOUT/*/FLTRG:STD-120/XML/3", "UAL/STG/CWO/UFOUT/*/FLTRG:STD-2160/XML/3", "UAL/STG/CWO/UFOUT/*/GATE/XML/3", "UAL/STG/CWO/UFOUT/*/IN/XML/3", "UAL/STG/CWO/UFOUT/*/INCORR/XML/3", "UAL/STG/CWO/UFOUT/*/MFRADD/XML/3", "UAL/STG/CWO/UFOUT/*/MFRCHG/XML/3", "UAL/STG/CWO/UFOUT/*/MFRDEL/XML/3", "UAL/STG/CWO/UFOUT/*/NOSE/XML/3", "UAL/STG/CWO/UFOUT/*/NSTP/XML/3", "UAL/STG/CWO/UFOUT/*/OFF/XML/3", "UAL/STG/CWO/UFOUT/*/OFFCORR/XML/3", "UAL/STG/CWO/UFOUT/*/ON/XML/3", "UAL/STG/CWO/UFOUT/*/ONCORR/XML/3", "UAL/STG/CWO/UFOUT/*/ONIN/XML/3", "UAL/STG/CWO/UFOUT/*/ONINCORR/XML/3", "UAL/STG/CWO/UFOUT/*/ONLDVRT/XML/3", "UAL/STG/CWO/UFOUT/*/OUT/XML/3", "UAL/STG/CWO/UFOUT/*/OUTCORR/XML/3", "UAL/STG/CWO/UFOUT/*/OUTOFF/XML/3", "UAL/STG/CWO/UFOUT/*/OUTOFFCORR/XML/3", "UAL/STG/CWO/UFOUT/*/RCVRY/XML/3", "UAL/STG/CWO/UFOUT/*/RTBL/XML/3", "UAL/STG/CWO/UFOUT/*/RTFL/XML/3", "UAL/STG/CWO/UFOUT/*/STARCORR/XML/3", "UAL/STG/CWO/UFOUT/*/UA.BOARDINGTIME/XML/3", "UAL/STG/CWO/UFOUT/*/UA.RCVRY.GIDS/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.BAGCLAIM/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.BOARDINGTIME/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.BOARDSTATUS/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.CNCL/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.CNCL.BUFF/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.CNCLRS/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.CNCLRS.BUFF/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.CTACIBOARDBEGIN/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.CTARRIVEDATGATE/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.CTCLEANINGEND/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.CTCLEANINGSTART/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.CTREFRESH/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.CUSTOMERSTORY.BUFF/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.DVRT/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.EON/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.EQUIP/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.ETA/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.ETA.BUFF/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.ETD/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.ETD.BUFF/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.GATE/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.IN/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.INCORR/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.MFRADD/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.MFRCHG/XML/3 ", "UAL/STG/CWO/UFOUT/*/UAX.NSTP/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.OFF/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.OFFCORR/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.ON/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.ONCORR/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.ONLDVRT/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.OUT/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.OUTCORR/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.RCVRY/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.RCVRY.GIDS/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.RTBL/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.RTFL/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.STARCORR/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.TAILASGN/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.UNDOCTCLEANINGEND/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.UNDOIN/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.UNDOOFF/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.UNDOON/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.UNDOOUT/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.XSTP/XML/3", "UAL/STG/CWO/UFOUT/*/UNDOCTCLEANINGEND/XML/3", "UAL/STG/CWO/UFOUT/*/UNDOIN/XML/3", "UAL/STG/CWO/UFOUT/*/UNDOOFF/XML/3", "UAL/STG/CWO/UFOUT/*/UNDOON/XML/3", "UAL/STG/CWO/UFOUT/*/UNDOOUT/XML/3", "UAL/STG/CWO/UFOUT/*/XSTP/XML/3", "UAL/STG/CWO/UFOUT/*/XSTP.ORIG/XML/3", "UAL/STG/CWO/UFOUT/*/BOARDINGTIME/XML/3", "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.CNCL/*/*/*/*/*/*/*/*/1", "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.CNCLRS/*/*/*/*/*/*/*/*/1", "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.DCSN/*/*/*/*/*/*/*/*/1", "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.DVRT/*/*/*/*/*/*/*/*/1", "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.EOG/*/*/*/*/*/*/*/*/1", "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.EQUIP/*/*/*/*/*/*/*/*/1", "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.ETA/*/*/*/*/*/*/*/*/1", "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.ETD/*/*/*/*/*/*/*/*/1", "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.IN/*/*/*/*/*/*/*/*/1", "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.MFRADD/*/*/*/*/*/*/*/*/1", "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.MFRCHG/*/*/*/*/*/*/*/*/1", "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.MFRDEL/*/*/*/*/*/*/*/*/1", "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.OFF/*/*/*/*/*/*/*/*/1", "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.ON/*/*/*/*/*/*/*/*/1", "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.ONIN/*/*/*/*/*/*/*/*/1", "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.OUT/*/*/*/*/*/*/*/*/1", "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.OUTOFF/*/*/*/*/*/*/*/*/1", "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.RTBL/*/*/*/*/*/*/*/*/1", "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.GATE/*/*/*/*/*/*/*/*/1","UAL/STG/CWO/UFOUT/*/PASSCNT_FINAL/XML/3","UAL/STG/CWO/UFOUT/*/BAGFIN/XML/3","UAL/STG/CWO/UFOUT/*/QTCHG/XML/3","UAL/STG/CWO/UFOUT/*/UAX.QTCHG/XML/3"]
+	  },
+	  {
+		"accessType": "non-exclusive",
+		"egressEnabled": true,
+		"eventMsgSpoolUsageThreshold": {
+		  "clearPercent": 5,
+		  "setPercent": 10
+		},
+		"ingressEnabled": true,
+		"maxMsgSpoolUsage": 240000,
+		"maxRedeliveryCount": 10,
+		"respectTtlEnabled": true,
+		"maxTtl": 300,
+		"permission": "consume",
+		"owner": "qa-uds-flifo-sub",
+		"queueName": "QA.UDS.FLIFO",
+		"subscriptionTopics": ["UAL/STG/CWO/UFOUT/*/BAGCLAIM/XML/3", "UAL/STG/CWO/UFOUT/*/BOARDSTATUS/XML/3", "UAL/STG/CWO/UFOUT/*/BUS.BAGCLAIM/XML/3", "UAL/STG/CWO/UFOUT/*/BUS.BOARDSTATUS/XML/3", "UAL/STG/CWO/UFOUT/*/BUS.CNCL/XML/3", "UAL/STG/CWO/UFOUT/*/BUS.CNCL.BUFF/XML/3", "UAL/STG/CWO/UFOUT/*/BUS.CNCLRS/XML/3", "UAL/STG/CWO/UFOUT/*/BUS.CNCLRS.BUFF/XML/3", "UAL/STG/CWO/UFOUT/*/BUS.EON/XML/3", "UAL/STG/CWO/UFOUT/*/BUS.EQUIP/XML/3", "UAL/STG/CWO/UFOUT/*/BUS.ETA/XML/3", "UAL/STG/CWO/UFOUT/*/BUS.ETA.BUFF/XML/3", "UAL/STG/CWO/UFOUT/*/BUS.ETD/XML/3", "UAL/STG/CWO/UFOUT/*/BUS.ETD.BUFF/XML/3", "UAL/STG/CWO/UFOUT/*/BUS.GATE/XML/3", "UAL/STG/CWO/UFOUT/*/BUS.IN/XML/3", "UAL/STG/CWO/UFOUT/*/BUS.MFRADD/XML/3", "UAL/STG/CWO/UFOUT/*/BUS.MFRCHG/XML/3", "UAL/STG/CWO/UFOUT/*/BUS.MFRDEL/XML/3", "UAL/STG/CWO/UFOUT/*/BUS.OFF/XML/3", "UAL/STG/CWO/UFOUT/*/BUS.ON/XML/3", "UAL/STG/CWO/UFOUT/*/BUS.OUT/XML/3", "UAL/STG/CWO/UFOUT/*/BUS.RCVRY/XML/3", "UAL/STG/CWO/UFOUT/*/BUS.RCVRY.GIDS/XML/3", "UAL/STG/CWO/UFOUT/*/BUS.TAILASGN/XML/3", "UAL/STG/CWO/UFOUT/*/BUS.UNDOIN/XML/3", "UAL/STG/CWO/UFOUT/*/BUS.UNDOOFF/XML/3", "UAL/STG/CWO/UFOUT/*/BUS.UNDOON/XML/3", "UAL/STG/CWO/UFOUT/*/BUS.UNDOOUT/XML/3", "UAL/STG/CWO/UFOUT/*/CNCL/XML/3", "UAL/STG/CWO/UFOUT/*/CNCL.BUFF/XML/3", "UAL/STG/CWO/UFOUT/*/CNCLER/XML/3", "UAL/STG/CWO/UFOUT/*/CNCLER.BUFF/XML/3", "UAL/STG/CWO/UFOUT/*/CNCLRS/XML/3", "UAL/STG/CWO/UFOUT/*/CNCLRS.BUFF/XML/3", "UAL/STG/CWO/UFOUT/*/CTACIBOARDBEGIN/XML/3", "UAL/STG/CWO/UFOUT/*/CTARRIVEDATGATE/XML/3", "UAL/STG/CWO/UFOUT/*/CTCLEANINGEND/XML/3", "UAL/STG/CWO/UFOUT/*/CTCLEANINGSTART/XML/3", "UAL/STG/CWO/UFOUT/*/CTREFRESH/XML/3", "UAL/STG/CWO/UFOUT/*/CUSTOMERSTORY.BUFF/XML/3", "UAL/STG/CWO/UFOUT/*/DVRT/XML/3", "UAL/STG/CWO/UFOUT/*/EON/XML/3", "UAL/STG/CWO/UFOUT/*/EQUIP/XML/3", "UAL/STG/CWO/UFOUT/*/ETA/XML/3", "UAL/STG/CWO/UFOUT/*/ETA.BUFF/XML/3", "UAL/STG/CWO/UFOUT/*/ETD/XML/3", "UAL/STG/CWO/UFOUT/*/ETD.BUFF/XML/3", "UAL/STG/CWO/UFOUT/*/FLTRG:STD-120/XML/3", "UAL/STG/CWO/UFOUT/*/FLTRG:STD-2160/XML/3", "UAL/STG/CWO/UFOUT/*/GATE/XML/3", "UAL/STG/CWO/UFOUT/*/IN/XML/3", "UAL/STG/CWO/UFOUT/*/INCORR/XML/3", "UAL/STG/CWO/UFOUT/*/MFRADD/XML/3", "UAL/STG/CWO/UFOUT/*/MFRCHG/XML/3", "UAL/STG/CWO/UFOUT/*/MFRDEL/XML/3", "UAL/STG/CWO/UFOUT/*/NOSE/XML/3", "UAL/STG/CWO/UFOUT/*/NSTP/XML/3", "UAL/STG/CWO/UFOUT/*/OFF/XML/3", "UAL/STG/CWO/UFOUT/*/OFFCORR/XML/3", "UAL/STG/CWO/UFOUT/*/ON/XML/3", "UAL/STG/CWO/UFOUT/*/ONCORR/XML/3", "UAL/STG/CWO/UFOUT/*/ONIN/XML/3", "UAL/STG/CWO/UFOUT/*/ONINCORR/XML/3", "UAL/STG/CWO/UFOUT/*/ONLDVRT/XML/3", "UAL/STG/CWO/UFOUT/*/OUT/XML/3", "UAL/STG/CWO/UFOUT/*/OUTCORR/XML/3", "UAL/STG/CWO/UFOUT/*/OUTOFF/XML/3", "UAL/STG/CWO/UFOUT/*/OUTOFFCORR/XML/3", "UAL/STG/CWO/UFOUT/*/RCVRY/XML/3", "UAL/STG/CWO/UFOUT/*/RTBL/XML/3", "UAL/STG/CWO/UFOUT/*/RTFL/XML/3", "UAL/STG/CWO/UFOUT/*/STARCORR/XML/3", "UAL/STG/CWO/UFOUT/*/UA.BOARDINGTIME/XML/3", "UAL/STG/CWO/UFOUT/*/UA.RCVRY.GIDS/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.BAGCLAIM/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.BOARDINGTIME/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.BOARDSTATUS/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.CNCL/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.CNCL.BUFF/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.CNCLRS/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.CNCLRS.BUFF/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.CTACIBOARDBEGIN/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.CTARRIVEDATGATE/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.CTCLEANINGEND/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.CTCLEANINGSTART/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.CTREFRESH/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.CUSTOMERSTORY.BUFF/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.DVRT/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.EON/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.EQUIP/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.ETA/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.ETA.BUFF/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.ETD/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.ETD.BUFF/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.GATE/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.IN/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.INCORR/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.MFRADD/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.MFRCHG/XML/3 ", "UAL/STG/CWO/UFOUT/*/UAX.NSTP/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.OFF/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.OFFCORR/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.ON/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.ONCORR/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.ONLDVRT/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.OUT/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.OUTCORR/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.RCVRY/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.RCVRY.GIDS/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.RTBL/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.RTFL/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.STARCORR/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.TAILASGN/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.UNDOCTCLEANINGEND/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.UNDOIN/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.UNDOOFF/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.UNDOON/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.UNDOOUT/XML/3", "UAL/STG/CWO/UFOUT/*/UAX.XSTP/XML/3", "UAL/STG/CWO/UFOUT/*/UNDOCTCLEANINGEND/XML/3", "UAL/STG/CWO/UFOUT/*/UNDOIN/XML/3", "UAL/STG/CWO/UFOUT/*/UNDOOFF/XML/3", "UAL/STG/CWO/UFOUT/*/UNDOON/XML/3", "UAL/STG/CWO/UFOUT/*/UNDOOUT/XML/3", "UAL/STG/CWO/UFOUT/*/XSTP/XML/3", "UAL/STG/CWO/UFOUT/*/XSTP.ORIG/XML/3", "UAL/STG/CWO/UFOUT/*/BOARDINGTIME/XML/3", "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.CNCL/*/*/*/*/*/*/*/*/1", "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.CNCLRS/*/*/*/*/*/*/*/*/1", "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.DCSN/*/*/*/*/*/*/*/*/1", "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.DVRT/*/*/*/*/*/*/*/*/1", "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.EOG/*/*/*/*/*/*/*/*/1", "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.EQUIP/*/*/*/*/*/*/*/*/1", "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.ETA/*/*/*/*/*/*/*/*/1", "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.ETD/*/*/*/*/*/*/*/*/1", "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.IN/*/*/*/*/*/*/*/*/1", "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.MFRADD/*/*/*/*/*/*/*/*/1", "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.MFRCHG/*/*/*/*/*/*/*/*/1", "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.MFRDEL/*/*/*/*/*/*/*/*/1", "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.OFF/*/*/*/*/*/*/*/*/1", "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.ON/*/*/*/*/*/*/*/*/1", "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.ONIN/*/*/*/*/*/*/*/*/1", "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.OUT/*/*/*/*/*/*/*/*/1", "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.OUTOFF/*/*/*/*/*/*/*/*/1", "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.RTBL/*/*/*/*/*/*/*/*/1", "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.GATE/*/*/*/*/*/*/*/*/1","UAL/STG/CWO/UFOUT/*/PASSCNT_FINAL/XML/3","UAL/STG/CWO/UFOUT/*/BAGFIN/XML/3","UAL/STG/CWO/UFOUT/*/QTCHG/XML/3","UAL/STG/CWO/UFOUT/*/UAX.QTCHG/XML/3"]
+	  },
+	  {
+		"accessType": "non-exclusive",
+		"egressEnabled": true,
+		"eventMsgSpoolUsageThreshold": {
+		  "clearPercent": 5,
+		  "setPercent": 10
+		},
+		"ingressEnabled": true,
+		"maxMsgSpoolUsage": 240000,
+		"maxRedeliveryCount": 10,
+		"respectTtlEnabled": true,
+		"maxTtl": 300,
+		"permission": "consume",
+		"owner": "dev-uds-ezfidsgate-sub",
+		"queueName": "DEV.UDS.EZFIDSGATE",
+		"subscriptionTopics": ["UAL/DEV/UDS/EZFIDSGATE/>"]
+	  },
+	  {
+		"accessType": "non-exclusive",
+		"egressEnabled": true,
+		"eventMsgSpoolUsageThreshold": {
+		  "clearPercent": 5,
+		  "setPercent": 10
+		},
+		"ingressEnabled": true,
+		"maxMsgSpoolUsage": 240000,
+		"maxRedeliveryCount": 10,
+		"respectTtlEnabled": true,
+		"maxTtl": 300,
+		"permission": "consume",
+		"owner": "qa-uds-ezfidsgate-sub",
+		"queueName": "QA.UDS.EZFIDSGATE",
+		"subscriptionTopics": ["UAL/QA/UDS/EZFIDSGATE/>"]
+	  },
+	  {
+		"accessType": "non-exclusive",
+		"egressEnabled": true,
+		"eventMsgSpoolUsageThreshold": {
+		  "clearPercent": 5,
+		  "setPercent": 10
+		},
+		"ingressEnabled": true,
+		"maxMsgSpoolUsage": 240000,
+		"maxRedeliveryCount": 10,
+		"respectTtlEnabled": true,
+		"maxTtl": 300,
+		"permission": "consume",
+		"owner": "dev-uds-bagscan-sub",
+		"queueName": "DEV.UDS.BAGSCAN",
+		"subscriptionTopics": ["UAL/DEV/UDS/BAGSCAN/>"]
+	  },
+	  {
+		"accessType": "non-exclusive",
+		"egressEnabled": true,
+		"eventMsgSpoolUsageThreshold": {
+		  "clearPercent": 5,
+		  "setPercent": 10
+		},
+		"ingressEnabled": true,
+		"maxMsgSpoolUsage": 240000,
+		"maxRedeliveryCount": 10,
+		"respectTtlEnabled": true,
+		"maxTtl": 300,
+		"permission": "consume",
+		"owner": "dev-cux-waittimes-sub",
+		"queueName": "DEV.CUX.WAITTIMES",
+		"subscriptionTopics": ["UAL/DEV/ATW/UIA/WAITTIMES/>"]
+	  },
+
+	  {
+		"accessType": "non-exclusive",
+		"egressEnabled": true,
+		"eventMsgSpoolUsageThreshold": {
+		  "clearPercent": 5,
+		  "setPercent": 10
+		},
+		"ingressEnabled": true,
+		"maxMsgSpoolUsage": 240000,
+		"maxRedeliveryCount": 10,
+		"respectTtlEnabled": true,
+		"maxTtl": 300,
+		"permission": "consume",
+		"owner": "dev-cxp-flifo-sub",
+		"queueName": "DEV.CXP.FLIFO",
+		"subscriptionTopics": ["UAL/DEV/ATW/FLIFO/*/RTBL/>","UAL/DEV/ATW/FLIFO/*/STAR.RTBL/>","UAL/DEV/ATW/FLIFO/*/RTFL/>","UAL/DEV/ATW/FLIFO/*/STAR.RTFL/>","UAL/DEV/ATW/FLIFO/*/DVRT/>","UAL/DEV/ATW/FLIFO/*/STAR.DVRT/>","UAL/DEV/ATW/FLIFO/*/CNCL/>","UAL/DEV/ATW/FLIFO/*/STAR.CNCL/>","UAL/DEV/ATW/FLIFO/*/ETD/>","UAL/DEV/ATW/FLIFO/*/STAR.ETD/>","UAL/DEV/ATW/FLIFO/*/ETA/>","UAL/DEV/ATW/FLIFO/*/STAR.ETA/>","UAL/DEV/ATW/FLIFO/*/OUT/>","UAL/DEV/ATW/FLIFO/*/STAR.OUT/>","UAL/DEV/ATW/FLIFO/*/IN/>","UAL/DEV/ATW/FLIFO/*/STAR.IN/>", "UAL/DEV/ATW/CXP/FLIFO/>"
+	]
+	  },
+	  {
+		"accessType": "non-exclusive",
+		"egressEnabled": true,
+		"eventMsgSpoolUsageThreshold": {
+		  "clearPercent": 5,
+		  "setPercent": 10
+		},
+		"ingressEnabled": true,
+		"maxMsgSpoolUsage": 240000,
+		"maxRedeliveryCount": 10,
+		"respectTtlEnabled": false,
+		"permission": "consume",
+		"owner": "dev-uds-bagpier-sub",
+		"queueName": "DEV.UDS.BAGPIER",
+		"subscriptionTopics": ["UAL/DEV/UDS/BAGPIER/>"]
+	  },
+	  {
+		"accessType": "non-exclusive",
+		"egressEnabled": true,
+		"eventMsgSpoolUsageThreshold": {
+		  "clearPercent": 5,
+		  "setPercent": 10
+		},
+		"ingressEnabled": true,
+		"maxMsgSpoolUsage": 240000,
+		"maxRedeliveryCount": 10,
+		"respectTtlEnabled": true,
+		"maxTtl": 300,
+		"permission": "consume",
+		"owner": "dev-jet-fm-ucd-sub",
+		"queueName": "DEV.JET.FM.UCD",
+		"subscriptionTopics": [
+		  "UAL/QA/UCD/PNR/*/*/V1/*/*/>",
+		  "UAL/QA/UCD/ACI/*/*/V1/*/*/>",
+		  "UAL/QA/UCD/TKT/*/*/V1/*/*/>"
+		]
+	  },
+	  {
+		"accessType": "non-exclusive",
+		"egressEnabled": true,
+		"eventMsgSpoolUsageThreshold": {
+		  "clearPercent": 5,
+		  "setPercent": 10
+		},
+		"ingressEnabled": true,
+		"maxMsgSpoolUsage": 240000,
+		"maxRedeliveryCount": 10,
+		"deliveryCountEnabled":true,
+		"deliveryDelay":0,
+		"respectTtlEnabled": true,
+		"maxTtl": 7200,
+		"permission": "consume",
+		"owner": "dev-jet-fm-boarding-pubsub",
+		"queueName": "DEV.JET.FM.BOARDING",
+		"subscriptionTopics": ["UAL/DEV/ATW/JET/BOARDING/FLIGHT/>"]
+	  },
+	  {
+		"accessType": "non-exclusive",
+		"egressEnabled": true,
+		"eventMsgSpoolUsageThreshold": {
+		  "clearPercent": 5,
+		  "setPercent": 10
+		},
+		"ingressEnabled": true,
+		"maxMsgSpoolUsage": 240000,
+		"maxRedeliveryCount": 10,
+		"deliveryCountEnabled":true,
+		"deliveryDelay":0,
+		"respectTtlEnabled": true,
+		"maxTtl": 300,
+		"permission": "consume",
+		"owner": "dev-uds-fwdbags-sub",
+		"queueName": "DEV.UDS.FWDBAGS",
+		"subscriptionTopics": ["UAL/DEV/ATW/UDS/FWDBAGS/>"]
+	  },
+	  {
+		"accessType": "non-exclusive",
+		"egressEnabled": true,
+		"eventMsgSpoolUsageThreshold": {
+		  "clearPercent": 5,
+		  "setPercent": 10
+		},
+		"ingressEnabled": true,
+		"maxMsgSpoolUsage": 240000,
+		"maxRedeliveryCount": 10,
+		"deliveryCountEnabled":true,
+		"deliveryDelay":0,
+		"respectTtlEnabled": true,
+		"maxTtl": 300,
+		"permission": "consume",
+		"owner": "dev-uds-bagclaim-sub",
+		"queueName": "DEV.UDS.BAGCLAIM",
+		"subscriptionTopics": ["UAL/DEV/ATW/UDS/BAGCLAIM/>"]
+	  } ,
+	  {
+		"accessType": "non-exclusive",
+		"egressEnabled": true,
+		"eventMsgSpoolUsageThreshold": {
+		  "clearPercent": 5,
+		  "setPercent": 10
+		},
+		"ingressEnabled": true,
+		"maxMsgSpoolUsage": 240000,
+		"maxRedeliveryCount": 10,
+		"deliveryCountEnabled":true,
+		"deliveryDelay":0,
+		"respectTtlEnabled": true,
+		"maxTtl": 300,
+		"permission": "consume",
+		"owner": "dev-uds-bagclaimetaevt-sub",
+		"queueName": "DEV.UDS.BAGCLAIMETAEVT",
+		"subscriptionTopics": ["UAL/DEV/ATW/UDS/BAGCLAIMETAEVT/>"]
+	  } ,
+	  {
+		"accessType": "non-exclusive",
+		"egressEnabled": true,
+		"eventMsgSpoolUsageThreshold": {
+		  "clearPercent": 5,
+		  "setPercent": 10
+		},
+		"ingressEnabled": true,
+		"maxMsgSpoolUsage": 240000,
+		"maxRedeliveryCount": 10,
+		"deliveryCountEnabled":true,
+		"deliveryDelay":0,
+		"respectTtlEnabled": true,
+		"maxTtl": 300,
+		"permission": "consume",
+		"owner": "dev-uds-lightdetectalerts-sub",
+		"queueName": "DEV.UDS.LIGHTDETECTALERTS",
+		"subscriptionTopics": ["UAL/OPS/COLLAB/ALERTS/LHTNG_ALL_CLEAR/*/*/*/1","UAL/OPS/COLLAB/ALERTS/LHTNG_NOTIFICATION/*/*/*/1","UAL/OPS/COLLAB/ALERTS/LHTNG_PREP_TO_RESUME/*/*/*/1","UAL/OPS/COLLAB/ALERTS/LHTNG_WARNING/*/*/*/1"]
+	  },{
+		"accessType": "non-exclusive",
+		"egressEnabled": true,
+		"eventMsgSpoolUsageThreshold": {
+		  "clearPercent": 5,
+		  "setPercent": 10
+		},
+		"ingressEnabled": true,
+		"maxMsgSpoolUsage": 240000,
+		"maxRedeliveryCount": 10,
+		"deliveryCountEnabled":true,
+		"deliveryDelay":0,
+		"respectTtlEnabled": true,
+		"maxTtl": 300,
+		"permission": "consume",
+		"owner": "dev-uds-lightdetectalerts-sub",
+		"queueName": "DEV.UDS.LIGHTDETECTALERTS.NETBRIDGE",
+		"subscriptionTopics": ["UAL/DEV/ATW/UDS/LIGHTDETECTALERTS/>"]
+	  },
+	  {
+		"accessType": "non-exclusive",
+		"egressEnabled": true,
+		"eventMsgSpoolUsageThreshold": {
+		  "clearPercent": 5,
+		  "setPercent": 10
+		},
+		"ingressEnabled": true,
+		"maxMsgSpoolUsage": 240000,
+		"maxRedeliveryCount": 10,
+		"respectTtlEnabled": true,
+		"maxTtl": 300,
+		"permission": "consume",
+		"owner": "dev-epo-ucd-sub",
+		"queueName": "DEV.EPO.UCD",
+		"subscriptionTopics":  [
+		  "UAL/QA/UCD/PNR/*/*/V1/*/*/>",
+		  "UAL/QA/UCD/ACI/*/*/V1/*/*/>",
+		  "UAL/QA/UCD/CHKINORCH/*/*/V1/*/*/>"
+		]
+	  },
+	  {
+		"accessType": "non-exclusive",
+		"egressEnabled": true,
+		"eventMsgSpoolUsageThreshold": {
+		  "clearPercent": 5,
+		  "setPercent": 10
+		},
+		"ingressEnabled": true,
+		"maxMsgSpoolUsage": 240000,
+		"maxRedeliveryCount": 10,
+		"respectTtlEnabled": true,
+		"maxTtl": 300,
+		"permission": "consume",
+		"owner": "qa-epo-ucd-sub",
+		"queueName": "QA.EPO.UCD",
+		"subscriptionTopics":  [
+		  "UAL/QA/UCD/PNR/*/*/V1/*/*/>",
+		  "UAL/QA/UCD/ACI/*/*/V1/*/*/>",
+		  "UAL/QA/UCD/CHKINORCH/*/*/V1/*/*/>"
+		]
+	  },
+	  {
+		"accessType": "non-exclusive",
+		"egressEnabled": true,
+		"eventMsgSpoolUsageThreshold": {
+		  "clearPercent": 5,
+		  "setPercent": 10
+		},
+		"ingressEnabled": true,
+		"maxMsgSpoolUsage": 240000,
+		"maxRedeliveryCount": 10,
+		"deliveryCountEnabled":true,
+		"deliveryDelay":0,
+		"respectTtlEnabled": true,
+		"maxTtl": 7200,
+		"permission": "consume",
+		"owner": "qa-jet-fm-boarding-pubsub",
+		"queueName": "QA.JET.FM.BOARDING",
+		"subscriptionTopics": ["UAL/QA/ATW/JET/BOARDING/FLIGHT/>"]
+	  },
+	  {
+		"accessType": "non-exclusive",
+		"egressEnabled": true,
+		"eventMsgSpoolUsageThreshold": {
+		  "clearPercent": 5,
+		  "setPercent": 10
+		},
+		"ingressEnabled": true,
+		"maxMsgSpoolUsage": 240000,
+		"maxRedeliveryCount": 10,
+		"respectTtlEnabled": false,
+		"permission": "consume",
+		"owner": "qa-uds-bagpier-sub",
+		"queueName": "QA.UDS.BAGPIER",
+		"subscriptionTopics": ["UAL/QA/UDS/BAGPIER/>"]
+	  },
+	  {
+		"accessType": "non-exclusive",
+		"egressEnabled": true,
+		"eventMsgSpoolUsageThreshold": {
+		  "clearPercent": 5,
+		  "setPercent": 10
+		},
+		"ingressEnabled": true,
+		"maxMsgSpoolUsage": 240000,
+		"maxRedeliveryCount": 10,
+		"deliveryCountEnabled":true,
+		"deliveryDelay":0,
+		"respectTtlEnabled": false,
+		"permission": "no-access",
+		"owner": "dev-uds-formtr-notify-sub",
+		"queueName": "DEV.UDS.FORMTR.NOTIFY",
+		"subscriptionTopics": ["UAL/DEV/UDS/FORMTR/NOTIFY/>"]
+	  },
+	  {
+		"accessType": "non-exclusive",
+		"egressEnabled": true,
+		"eventMsgSpoolUsageThreshold": {
+		  "clearPercent": 5,
+		  "setPercent": 10
+		},
+		"ingressEnabled": true,
+		"maxMsgSpoolUsage": 240000,
+		"maxRedeliveryCount": 10,
+		"deliveryCountEnabled":true,
+		"deliveryDelay":0,
+		"respectTtlEnabled": false,
+		"permission": "no-access",
+		"owner": "dev-uds-gids-render-efids-sub",
+		"queueName": "DEV.UDS.GIDS.RENDER.EFIDS",
+		"subscriptionTopics": ["UAL/DEV/UDS/GIDS/RENDER/EFIDS/>"]
+	  },
+	  {
+		"accessType": "non-exclusive",
+		"egressEnabled": true,
+		"eventMsgSpoolUsageThreshold": {
+		  "clearPercent": 5,
+		  "setPercent": 10
+		},
+		"ingressEnabled": true,
+		"maxMsgSpoolUsage": 240000,
+		"maxRedeliveryCount": 10,
+		"deliveryCountEnabled":true,
+		"deliveryDelay":0,
+		"respectTtlEnabled": true,
+		"maxTtl": 300,
+		"permission": "consume",
+		"owner": "qa-uds-bagclaim-sub",
+		"queueName": "QA.UDS.BAGCLAIM",
+		"subscriptionTopics": ["UAL/QA/ATW/UDS/BAGCLAIM/>"]
+	  },
+	  {
+		"accessType": "non-exclusive",
+		"egressEnabled": true,
+		"eventMsgSpoolUsageThreshold": {
+		  "clearPercent": 5,
+		  "setPercent": 10
+		},
+		"ingressEnabled": true,
+		"maxMsgSpoolUsage": 240000,
+		"maxRedeliveryCount": 10,
+		"deliveryCountEnabled":true,
+		"deliveryDelay":0,
+		"respectTtlEnabled": true,
+		"maxTtl": 300,
+		"permission": "consume",
+		"owner": "qa-uds-bagclaimetaevt-sub",
+		"queueName": "QA.UDS.BAGCLAIMETAEVT",
+		"subscriptionTopics": ["UAL/QA/ATW/UDS/BAGCLAIMETAEVT/>"]
+	  },
+	  {
+		"accessType": "non-exclusive",
+		"egressEnabled": true,
+		"eventMsgSpoolUsageThreshold": {
+		  "clearPercent": 5,
+		  "setPercent": 10
+		},
+		"ingressEnabled": true,
+		"maxMsgSpoolUsage": 240000,
+		"maxRedeliveryCount": 10,
+		"respectTtlEnabled": true,
+		"maxTtl": 300,
+		"permission": "consume",
+		"owner": "qa-uds-bagscan-sub",
+		"queueName": "QA.UDS.BAGSCAN",
+		"subscriptionTopics": ["UAL/QA/UDS/BAGSCAN/>"]
+	  },
+	  {
+		"accessType": "non-exclusive",
+		"egressEnabled": true,
+		"eventMsgSpoolUsageThreshold": {
+		  "clearPercent": 5,
+		  "setPercent": 10
+		},
+		"ingressEnabled": true,
+		"maxMsgSpoolUsage": 240000,
+		"maxRedeliveryCount": 10,
+		"deliveryCountEnabled":true,
+		"deliveryDelay":0,
+		"respectTtlEnabled": true,
+		"maxTtl": 300,
+		"permission": "consume",
+		"owner": "qa-uds-fwdbags-sub",
+		"queueName": "QA.UDS.FWDBAGS",
+		"subscriptionTopics": ["UAL/QA/ATW/UDS/FWDBAGS/>"]
+	  },
+	  {
+		"accessType": "non-exclusive",
+		"egressEnabled": true,
+		"eventMsgSpoolUsageThreshold": {
+		  "clearPercent": 5,
+		  "setPercent": 10
+		},
+		"ingressEnabled": true,
+		"maxMsgSpoolUsage": 240000,
+		"maxRedeliveryCount": 10,
+		"deliveryCountEnabled":true,
+		"deliveryDelay":0,
+		"respectTtlEnabled": true,
+		"maxTtl": 300,
+		"permission": "consume",
+		"owner": "dev-uds-hotbag-sub",
+		"queueName": "DEV.UDS.HOTBAG",
+		"subscriptionTopics": ["UAL/DEV/ATW/UDS/HOTBAG/>"]
+	  },
+	  {
+		"accessType": "non-exclusive",
+		"egressEnabled": true,
+		"eventMsgSpoolUsageThreshold": {
+		  "clearPercent": 5,
+		  "setPercent": 10
+		},
+		"ingressEnabled": true,
+		"maxMsgSpoolUsage": 240000,
+		"maxRedeliveryCount": 10,
+		"deliveryCountEnabled":true,
+		"deliveryDelay":0,
+		"respectTtlEnabled": true,
+		"maxTtl": 300,
+		"permission": "consume",
+		"owner": "qa-uds-hotbag-sub",
+		"queueName": "QA.UDS.HOTBAG",
+		"subscriptionTopics": ["UAL/QA/ATW/UDS/HOTBAG/>"]
+	  },
+	  {
+		"accessType": "non-exclusive",
+		"egressEnabled": true,
+		"eventMsgSpoolUsageThreshold": {
+		  "clearPercent": 5,
+		  "setPercent": 10
+		},
+		"ingressEnabled": true,
+		"maxMsgSpoolUsage": 240000,
+		"maxRedeliveryCount": 10,
+		"deliveryCountEnabled":true,
+		"deliveryDelay":10,
+		"respectTtlEnabled": true,
+		"maxTtl": 7200,
+		"permission": "consume",
+		"owner": "dev-jet-fm-autorefresh-pubsub",
+		"queueName": "DEV.JET.FM.AUTOREFRESH",
+		"subscriptionTopics": ["UAL/DEV/ATW/JET/FLIGHT/>"]
+	  },
+	  {
+	  "accessType": "non-exclusive",
+	  "egressEnabled": true,
+	  "eventMsgSpoolUsageThreshold": {
+		"clearPercent": 5,
+		"setPercent": 10
+	  },
+	  "ingressEnabled": true,
+	  "maxMsgSpoolUsage": 240000,
+	  "maxRedeliveryCount": 10,
+	  "deliveryCountEnabled":true,
+	  "deliveryDelay":0,
+	  "respectTtlEnabled": true,
+	  "maxTtl": 300,
+	  "permission": "consume",
+	  "owner": "dev-jet-fm-bjb-pcdr-events-sub",
+	  "queueName": "DEV.JET.FM.BJB.PCDR.EVENTS",
+	  "subscriptionTopics": ["UAL/DEV/ATW/PCDR/INBOUND/>","UAL/DEV/ATW/PCDR/OUTBOUND/TURNMETRICS/>"]
+	  },
+	  {
+		"accessType": "non-exclusive",
+		"egressEnabled": true,
+		"eventMsgSpoolUsageThreshold": {
+		  "clearPercent": 5,
+		  "setPercent": 10
+		},
+		"ingressEnabled": true,
+		"maxMsgSpoolUsage": 240000,
+		"maxRedeliveryCount": 10,
+		"deliveryCountEnabled":true,
+		"deliveryDelay":10,
+		"respectTtlEnabled": true,
+		"maxTtl": 7200,
+		"permission": "consume",
+		"owner": "qa-jet-fm-autorefresh-pubsub",
+		"queueName": "QA.JET.FM.AUTOREFRESH",
+		"subscriptionTopics": ["UAL/QA/ATW/JET/FLIGHT/>"]
+	  },
+	  {
+		"accessType": "non-exclusive",
+		"egressEnabled": true,
+		"eventMsgSpoolUsageThreshold": {
+		  "clearPercent": 5,
+		  "setPercent": 10
+		},
+		"ingressEnabled": true,
+		"maxMsgSpoolUsage": 240000,
+		"maxRedeliveryCount": 10,
+		"deliveryCountEnabled":true,
+		"deliveryDelay":0,
+		"respectTtlEnabled": true,
+		"maxTtl": 300,
+		"permission": "consume",
+		"owner": "qa-jet-fm-bjb-pcdr-events-sub",
+		"queueName": "QA.JET.FM.BJB.PCDR.EVENTS",
+		"subscriptionTopics": ["UAL/QA/ATW/PCDR/INBOUND/>","UAL/QA/ATW/PCDR/OUTBOUND/TURNMETRICS/>"]
+	  },
+	  {
+		"accessType": "non-exclusive",
+		"egressEnabled": true,
+		"eventMsgSpoolUsageThreshold": {
+		  "clearPercent": 5,
+		  "setPercent": 10
+		},
+		"ingressEnabled": true,
+		"maxMsgSpoolUsage": 240000,
+		"maxRedeliveryCount": 10,
+		"deliveryCountEnabled":true,
+		"deliveryDelay":0,
+		"respectTtlEnabled": true,
+		"maxTtl": 300,
+		"permission": "consume",
+		"owner": "qa-uds-lightdetectalerts-sub",
+		"queueName": "QA.UDS.LIGHTDETECTALERTS",
+		"subscriptionTopics": ["UAL/OPS/COLLAB/ALERTS/LHTNG_ALL_CLEAR/*/*/*/1","UAL/OPS/COLLAB/ALERTS/LHTNG_NOTIFICATION/*/*/*/1","UAL/OPS/COLLAB/ALERTS/LHTNG_PREP_TO_RESUME/*/*/*/1","UAL/OPS/COLLAB/ALERTS/LHTNG_WARNING/*/*/*/1"]
+	  },
+	  {
+		"accessType": "non-exclusive",
+		"egressEnabled": true,
+		"eventMsgSpoolUsageThreshold": {
+		  "clearPercent": 5,
+		  "setPercent": 10
+		},
+		"ingressEnabled": true,
+		"maxMsgSpoolUsage": 240000,
+		"maxRedeliveryCount": 10,
+		"respectTtlEnabled": true,
+		"maxTtl": 300,
+		"permission": "consume",
+		"owner": "qa-cux-waittimes-sub",
+		"queueName": "QA.CUX.WAITTIMES",
+		"subscriptionTopics": ["UAL/QA/ATW/UIA/WAITTIMES/>"]
+	  },
+	  {
+		"accessType": "non-exclusive",
+		"egressEnabled": true,
+		"eventMsgSpoolUsageThreshold": {
+		  "clearPercent": 5,
+		  "setPercent": 10
+		},
+		"ingressEnabled": true,
+		"maxMsgSpoolUsage": 240000,
+		"maxRedeliveryCount": 10,
+		"respectTtlEnabled": true,
+		"maxTtl": 300,
+		"permission": "consume",
+		"owner": "qa-cxp-flifo-sub",
+		"queueName": "QA.CXP.FLIFO",
+		"subscriptionTopics": ["UAL/DEV/ATW/FLIFO/*/RTBL/>","UAL/DEV/ATW/FLIFO/*/STAR.RTBL/>","UAL/DEV/ATW/FLIFO/*/RTFL/>","UAL/DEV/ATW/FLIFO/*/STAR.RTFL/>","UAL/DEV/ATW/FLIFO/*/DVRT/>","UAL/DEV/ATW/FLIFO/*/STAR.DVRT/>","UAL/DEV/ATW/FLIFO/*/CNCL/>","UAL/DEV/ATW/FLIFO/*/STAR.CNCL/>","UAL/DEV/ATW/FLIFO/*/ETD/>","UAL/DEV/ATW/FLIFO/*/STAR.ETD/>","UAL/DEV/ATW/FLIFO/*/ETA/>","UAL/DEV/ATW/FLIFO/*/STAR.ETA/>","UAL/DEV/ATW/FLIFO/*/OUT/>","UAL/DEV/ATW/FLIFO/*/STAR.OUT/>","UAL/DEV/ATW/FLIFO/*/IN/>","UAL/DEV/ATW/FLIFO/*/STAR.IN/>", "UAL/DEV/ATW/CXP/FLIFO/>"
+	]
+	  },
+	  {
+		"accessType": "non-exclusive",
+		"egressEnabled": true,
+		"eventMsgSpoolUsageThreshold": {
+		  "clearPercent": 5,
+		  "setPercent": 10
+		},
+		"ingressEnabled": true,
+		"maxMsgSpoolUsage": 240000,
+		"maxRedeliveryCount": 10,
+		"respectTtlEnabled": true,
+		"maxTtl": 300,
+		"permission": "consume",
+		"owner": "qa-jet-fm-ucd-sub",
+		"queueName": "QA.JET.FM.UCD",
+		"subscriptionTopics": [
+		  "UAL/QA/UCD/PNR/*/*/V1/*/*/>",
+		  "UAL/QA/UCD/ACI/*/*/V1/*/*/>",
+		  "UAL/QA/UCD/TKT/*/*/V1/*/*/>"
+		]
+	  },
+	  {
+		"accessType": "non-exclusive",
+		"egressEnabled": true,
+		"eventMsgSpoolUsageThreshold": {
+		  "clearPercent": 5,
+		  "setPercent": 10
+		},
+		"ingressEnabled": true,
+		"maxMsgSpoolUsage": 240000,
+		"maxRedeliveryCount": 10,
+		"deliveryCountEnabled":true,
+		"deliveryDelay":0,
+		"respectTtlEnabled": true,
+		"maxTtl": 300,
+		"permission": "no-access",
+		"owner": "dev-uia-bagcount-sub",
+		"queueName": "DEV.ATW.UIA.BAGCOUNT",
+		"subscriptionTopics": ["UAL/ATW/BOS/BAGCOUNT/DEV/>"]
+	  },
+	  {
+		"accessType": "non-exclusive",
+		"egressEnabled": true,
+		"eventMsgSpoolUsageThreshold": {
+		  "clearPercent": 5,
+		  "setPercent": 10
+		},
+		"ingressEnabled": true,
+		"maxMsgSpoolUsage": 240000,
+		"maxRedeliveryCount": 10,
+		"respectTtlEnabled": true,
+		"maxTtl": 300,
+		"permission": "no-access",
+		"owner": "dev-etj-edifact-out-tsa-sub",
+		"queueName": "DEV.ETJ.EDIFACT.OUT.TSA",
+		"subscriptionTopics": ["UAL/TSEC/ETJ/OUT/DEV/EDIFACT/>"]
+	  },
+	  {
+		"accessType": "non-exclusive",
+		"egressEnabled": true,
+		"eventMsgSpoolUsageThreshold": {
+		  "clearPercent": 5,
+		  "setPercent": 10
+		},
+		"ingressEnabled": true,
+		"maxMsgSpoolUsage": 240000,
+		"maxRedeliveryCount": 10,
+		"respectTtlEnabled": true,
+		"maxTtl": 300,
+		"permission": "no-access",
+		"owner": "qa-etj-edifact-out-tsa-sub",
+		"queueName": "QA.ETJ.EDIFACT.OUT.TSA",
+		"subscriptionTopics": ["UAL/TSEC/ETJ/OUT/QA/EDIFACT/>"]
+	  },
+	  {
+		"accessType": "non-exclusive",
+		"egressEnabled": true,
+		"eventMsgSpoolUsageThreshold": {
+		  "clearPercent": 5,
+		  "setPercent": 10
+		},
+		"ingressEnabled": true,
+		"maxMsgSpoolUsage": 240000,
+		"maxRedeliveryCount": 10,
+		"respectTtlEnabled": true,
+		"maxTtl": 300,
+		"permission": "no-access",
+		"owner": "poc-aap-jumpseat-sub",
+		"queueName": "POC.AAP.JUMPSEAT",
+		"subscriptionTopics": ["UAL/POC/AAP/JUMPSEAT/>"]
+	  },{
+		"accessType": "non-exclusive",
+		"egressEnabled": true,
+		"eventMsgSpoolUsageThreshold": {
+		  "clearPercent": 5,
+		  "setPercent": 10
+		},
+		"ingressEnabled": true,
+		"maxMsgSpoolUsage": 240000,
+		"maxRedeliveryCount": 10,
+		"respectTtlEnabled": true,
+		"maxTtl": 300,
+		"permission": "consume",
+		"owner": "stg-jet-fm-ucd-sub",
+		"queueName": "STG.JET.FM.UCD",
+		"subscriptionTopics": [
+		  "UAL/QA/UCD/PNR/*/*/V1/*/*/>",
+		  "UAL/QA/UCD/ACI/*/*/V1/*/*/>",
+		  "UAL/QA/UCD/TKT/*/*/V1/*/*/>"
+		]
+	  },{
+		"accessType": "non-exclusive",
+		"egressEnabled": true,
+		"eventMsgSpoolUsageThreshold": {
+		  "clearPercent": 5,
+		  "setPercent": 10
+		},
+		"ingressEnabled": true,
+		"maxMsgSpoolUsage": 240000,
+		"maxRedeliveryCount": 10,
+		"deliveryCountEnabled":true,
+		"deliveryDelay":0,
+		"respectTtlEnabled": true,
+		"maxTtl": 300,
+		"permission": "no-access",
+		"owner": "dev-uds-wb-events-sub",
+		"queueName": "DEV.UDS.WB.EVENTS",
+		"subscriptionTopics": ["UAL/ATW/UDS/WB/DEV/V1/WTRESTINFO/>","UAL/ATW/UDS/WB/DEV/V1/WTRESTINFO","UAL/ATW/UDS/WB/DEV/V1/TailTip/>"]
+	  },{
+		"accessType": "non-exclusive",
+		"egressEnabled": true,
+		"eventMsgSpoolUsageThreshold": {
+		  "clearPercent": 5,
+		  "setPercent": 10
+		},
+		"ingressEnabled": true,
+		"maxMsgSpoolUsage": 240000,
+		"maxRedeliveryCount": 10,
+		"deliveryCountEnabled":true,
+		"deliveryDelay":10,
+		"respectTtlEnabled": true,
+		"maxTtl": 7200,
+		"permission": "consume",
+		"owner": "stg-jet-fm-autorefresh-pubsub",
+		"queueName": "STG.JET.FM.AUTOREFRESH",
+		"subscriptionTopics": ["UAL/STG/ATW/JET/FLIGHT/>"]
+	  },
+	  {
+		"accessType": "non-exclusive",
+		"egressEnabled": true,
+		"eventMsgSpoolUsageThreshold": {
+		  "clearPercent": 5,
+		  "setPercent": 10
+		},
+		"ingressEnabled": true,
+		"maxMsgSpoolUsage": 240000,
+		"maxRedeliveryCount": 10,
+		"deliveryCountEnabled":true,
+		"deliveryDelay":0,
+		"respectTtlEnabled": true,
+		"maxTtl": 300,
+		"permission": "consume",
+		"owner": "stg-jet-fm-bjb-pcdr-events-sub",
+		"queueName": "STG.JET.FM.BJB.PCDR.EVENTS",
+		"subscriptionTopics": ["UAL/STG/ATW/PCDR/INBOUND/>","UAL/STG/ATW/PCDR/OUTBOUND/TURNMETRICS/>"]
+		},
+		{
+		  "accessType": "exclusive",
+		  "egressEnabled": true,
+		  "eventMsgSpoolUsageThreshold": {
+			"clearPercent": 5,
+			"setPercent": 10
+		  },
+		  "ingressEnabled": true,
+		  "maxMsgSpoolUsage": 240000,
+		  "maxRedeliveryCount": 10,
+		  "respectTtlEnabled": true,
+		  "maxTtl": 300,
+		  "permission": "consume",
+		  "owner": "stg-jet-pcdr-inbound-sub",
+		  "queueName": "STG.JET.PCDRFEED.INBOUND",
+		  "subscriptionTopics": [
+			  "UAL/STG/ATW/PCDR/INBOUND/V1"
+		  ]
+		},
+		{
+		  "accessType": "non-exclusive",
+		  "egressEnabled": true,
+		  "eventMsgSpoolUsageThreshold": {
+			"clearPercent": 5,
+			"setPercent": 10
+		  },
+		  "ingressEnabled": true,
+		  "maxMsgSpoolUsage": 240000,
+		  "maxRedeliveryCount": 10,
+		  "deliveryCountEnabled":true,
+		  "deliveryDelay":0,
+		  "respectTtlEnabled": true,
+		  "maxTtl": 7200,
+		  "permission": "consume",
+		  "owner": "stg-jet-fm-boarding-pubsub",
+		  "queueName": "STG.JET.FM.BOARDING",
+		  "subscriptionTopics": ["UAL/STG/ATW/JET/BOARDING/FLIGHT/>"]
+		},
+		{
+		  "accessType": "non-exclusive",
+		  "egressEnabled": true,
+		  "eventMsgSpoolUsageThreshold": {
+			"clearPercent": 5,
+			"setPercent": 10
+		  },
+		  "ingressEnabled": true,
+		  "maxMsgSpoolUsage": 240000,
+		  "maxRedeliveryCount": 10,
+		  "respectTtlEnabled": true,
+		  "maxTtl": 300,
+		  "permission": "consume",
+		  "owner": "stg-jet-fm-ucd-sub",
+		  "queueName": "STG.JET.FM.UCD",
+		  "subscriptionTopics": [
+			"UAL/QA/UCD/PNR/*/*/V1/*/*/>",
+			"UAL/QA/UCD/ACI/*/*/V1/*/*/>",
+			"UAL/QA/UCD/TKT/*/*/V1/*/*/>"
+		  ]
+		},
+		{
+		  "accessType": "exclusive",
+		  "egressEnabled": true,
+		  "eventMsgSpoolUsageThreshold": {
+			"clearPercent": 5,
+			"setPercent": 10
+		  },
+		  "ingressEnabled": true,
+		  "maxMsgSpoolUsage": 240000,
+		  "maxRedeliveryCount": 10,
+		  "respectTtlEnabled": true,
+		  "maxTtl": 300,
+		  "permission": "consume",
+		  "owner": "stg-jet-pcdr-outbound-shares-sub",
+		  "queueName": "STG.JET.PCDROUTBOUND.SHARES",
+		  "subscriptionTopics": [
+			  "UAL/STG/ATW/PCDR/OUTBOUND/SHARES/V1"
+		  ]
+		},
+		{
+		  "accessType": "non-exclusive",
+		  "egressEnabled": true,
+		  "eventMsgSpoolUsageThreshold": {
+			"clearPercent": 5,
+			"setPercent": 10
+		  },
+		  "ingressEnabled": true,
+		  "maxMsgSpoolUsage": 240000,
+		  "maxRedeliveryCount": 10,
+		  "respectTtlEnabled": true,
+		  "maxTtl": 300,
+		  "permission": "consume",
+		  "owner": "stg-jet-pcdr-outbound-tm-sub",
+		  "queueName": "STG.JET.PCDROUTBOUND.TURNMETRICS",
+		  "subscriptionTopics": [
+			  "UAL/STG/ATW/PCDR/OUTBOUND/TURNMETRICS/V1"
+		  ]
+		},
+		{
+		  "accessType": "non-exclusive",
+		  "egressEnabled": true,
+		  "eventMsgSpoolUsageThreshold": {
+			"clearPercent": 5,
+			"setPercent": 10
+		  },
+		  "ingressEnabled": true,
+		  "maxMsgSpoolUsage": 240000,
+		  "maxRedeliveryCount": 10,
+		  "deliveryCountEnabled":true,
+		  "deliveryDelay":0,
+		  "respectTtlEnabled": true,
+		  "maxTtl": 120,
+		  "permission": "consume",
+		  "owner": "dev-jet-fm-crew-pubsub",
+		  "queueName": "DEV.JET.FM.CREW",
+		  "subscriptionTopics": ["UAL/DEV/ATW/JET/CREW/FLIGHT/>"]
+		},
+		{
+		"accessType": "non-exclusive",
+		"egressEnabled": true,
+		"eventMsgSpoolUsageThreshold": {
+		  "clearPercent": 5,
+		  "setPercent": 10
+		},
+		"ingressEnabled": true,
+		"maxMsgSpoolUsage": 240000,
+		"maxRedeliveryCount": 10,
+		"deliveryCountEnabled":true,
+		"deliveryDelay":15,
+		"respectTtlEnabled": true,
+		"maxTtl": 300,
+		"permission": "consume",
+		"owner": "dev-jet-fm-prnvalidation-sub",
+		"queueName": "DEV.JET.FM.PRNVALIDATION",
+		"subscriptionTopics": ["UAL/DEV/ATW/PCDR/OUTBOUND/SHARES/V1"]
+		},
+		{
+		"accessType": "non-exclusive",
+		"egressEnabled": true,
+		"eventMsgSpoolUsageThreshold": {
+		  "clearPercent": 5,
+		  "setPercent": 10
+		},
+		"ingressEnabled": true,
+		"maxMsgSpoolUsage": 240000,
+		"maxRedeliveryCount": 10,
+		"deliveryCountEnabled":true,
+		"deliveryDelay":15,
+		"respectTtlEnabled": true,
+		"maxTtl": 300,
+		"permission": "consume",
+		"owner": "qa-jet-fm-prnvalidation-sub",
+		"queueName": "QA.JET.FM.PRNVALIDATION",
+		"subscriptionTopics": ["UAL/QA/ATW/PCDR/OUTBOUND/SHARES/V1"]
+		},
+		{
+			"accessType": "non-exclusive",
+			"egressEnabled": true,
+			"eventMsgSpoolUsageThreshold": {
+			  "clearPercent": 5,
+			  "setPercent": 10
+			},
+			"ingressEnabled": true,
+			"maxMsgSpoolUsage": 240000,
+			"maxRedeliveryCount": 10,
+			"deliveryCountEnabled":true,
+			"deliveryDelay":0,
+			"respectTtlEnabled": true,
+			"maxTtl": 300,
+			"permission": "no-access",
+			"owner": "qa-uds-wb-events-sub",
+			"queueName": "QA.UDS.WB.EVENTS",
+			"subscriptionTopics": ["UAL/ATW/UDS/WB/QA/V1/WTRESTINFO/>","UAL/ATW/UDS/WB/QA/V1/WTRESTINFO","UAL/ATW/UDS/WB/QA/V1/TailTip/>"]
+		  },
+
+		  {
+			"accessType": "non-exclusive",
+			"egressEnabled": true,
+			"eventMsgSpoolUsageThreshold": {
+			  "clearPercent": 5,
+			  "setPercent": 10
+			},
+			"ingressEnabled": true,
+			"maxMsgSpoolUsage": 240000,
+			"maxRedeliveryCount": 10,
+			"deliveryCountEnabled":true,
+			"deliveryDelay":0,
+			"respectTtlEnabled": true,
+			"maxTtl": 300,
+			"permission": "no-access",
+			"owner": "dev-jet-boarding-seat-sub",
+			"queueName": "DEV.JET.BOARDING.SEAT",
+			"subscriptionTopics": [
+			  "UAL/CWE/PNR/ORDER/SEAT/DEV/>","UAL/CWE/PNR/ORDER/SEAT/QA/>"
+
+			]
+		  },
+		  {
+			"accessType": "non-exclusive",
+			"egressEnabled": true,
+			"eventMsgSpoolUsageThreshold": {
+			  "clearPercent": 5,
+			  "setPercent": 10
+			},
+			"ingressEnabled": true,
+			"maxMsgSpoolUsage": 240000,
+			"maxRedeliveryCount": 10,
+			"deliveryCountEnabled":true,
+			"deliveryDelay":0,
+			"respectTtlEnabled": true,
+			"maxTtl": 300,
+			"permission": "no-access",
+			"owner": "qa-jet-boarding-seat-sub",
+			"queueName": "QA.JET.BOARDING.SEAT",
+			"subscriptionTopics": [
+			  "UAL/CWE/PNR/ORDER/SEAT/QA/>"
+
+			]
+		  }
+
+
+
+
+	],
+	"kafkaBridge": {
+        "recievers": [
+            {
+                "bootstrapAddressList": "b-1.cweordermskuseast1dev.ym4ind.c24.kafka.us-east-1.amazonaws.com:9094,b-2.cweordermskuseast1dev.ym4ind.c24.kafka.us-east-1.amazonaws.com:9094,b-3.cweordermskuseast1dev.ym4ind.c24.kafka.us-east-1.amazonaws.com:9094",
+                "enabled": true,
+                "kafkaReceiverName": "cwe-duz-dev-use1-inbound",
+                "transportTlsEnabled": true,
+                "groupId": "dev-duz-cwe-solace-bridge",
+                "topicBindings":
+                    [{
+                        "enabled": true,
+                        "localTopic": "UAL/CWE/PNR/ORDER/SEAT/DEV/V1",
+                        "localKey": "${kafkaPartitionKeyAsString()}",
+                        "initialOffset": "end",
+                        "topicName": "cwe-pnr-order-publisher-topic-dev"
+                    }]
+            },
+			{
+                "bootstrapAddressList": "b-1.cwe-order-msk-qa-kafk.59p5j5.c24.kafka.us-east-1.amazonaws.com:9094,b-2.cwe-order-msk-qa-kafk.59p5j5.c24.kafka.us-east-1.amazonaws.com:9094,b-3.cwe-order-msk-qa-kafk.59p5j5.c24.kafka.us-east-1.amazonaws.com:9094",
+                "enabled": true,
+                "kafkaReceiverName": "cwe-duz-qa-use1-inbound",
+                "transportTlsEnabled": true,
+                "groupId": "qa-duz-cwe-solace-bridge",
+                "topicBindings":
+                    [{
+                        "enabled": true,
+                        "localTopic": "UAL/CWE/PNR/ORDER/SEAT/QA/V1",
+                        "localKey": "${kafkaPartitionKeyAsString()}",
+                        "initialOffset": "end",
+                        "topicName": "cwe-pnr-order-publisher-topic-qa"
+                    }]
+            }
+
+
+        ]
+
+    },
+	"replicatedTopics": [
+        {
+        "replicationMode": "async",
+        "replicatedTopic": "TEST/>"
+        },
+        {
+        "replicationMode": "async",
+        "replicatedTopic": ">"
+        },
+        {
+        "replicationMode": "async",
+        "replicatedTopic": "#P2P/>"
+        }
+    ],
+	"replayLog": {
+	  "egressEnabled": true,
+	  "ingressEnabled": true,
+	  "maxSpoolUsage": 500000,
+	  "TopicFilterSubscriptions": [
+		"test/>"
+	  ]
+	}
+  }
