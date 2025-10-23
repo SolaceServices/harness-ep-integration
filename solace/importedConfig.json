@@ -535,6 +535,24 @@
             ]
         },
         {
+            "aclProfileName": "notification_direct_consumer",
+            "clientConnectDefaultAction": "allow",
+            "clientConnectExceptions": [],
+            "publishTopicExceptions": [],
+            "subscribeTopicExceptions": [
+                "ua/notifications/delivered"
+            ]
+        },
+        {
+            "aclProfileName": "notification_direct_producer",
+            "clientConnectDefaultAction": "allow",
+            "clientConnectExceptions": [],
+            "publishTopicExceptions": [
+                "ua/notifications/delivered"
+            ],
+            "subscribeTopicExceptions": []
+        },
+        {
             "aclProfileName": "poc-aap-jumpseat-pub",
             "clientConnectDefaultAction": "allow",
             "clientConnectExceptions": [],
@@ -1798,6 +1816,32 @@
             "maxTransactedSessionCount": 100,
             "maxTransactionCount": 100,
             "serviceSmfMaxConnectionCountPerClientUsername": 4,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "clientProfileName": "notification_direct_consumer_cp",
+            "maxConnectionCountPerClientUsername": 20,
+            "maxEgressFlowCount": 20,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 20,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 20,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "clientProfileName": "notification_direct_producer_cp",
+            "maxConnectionCountPerClientUsername": 20,
+            "maxEgressFlowCount": 20,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 20,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 20,
             "serviceWebMaxConnectionCountPerClientUsername": 0
         },
         {
@@ -4481,6 +4525,40 @@
             "passwordToken": "<UNKNOWN>"
         },
         {
+            "clientUsername": "dqndevappuser",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "clientUsername": "dqnqaappuser",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "clientUsername": "loyaltydevuser",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "notification_direct_consumer",
+            "clientProfileName": "notification_direct_consumer_cp",
+            "clientUsername": "notification_direct_consumer",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "notification_direct_producer",
+            "clientProfileName": "notification_direct_producer_cp",
+            "clientUsername": "notification_direct_producer",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "clientUsername": "odmsdevuser",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
             "aclProfileName": "poc-aap-jumpseat-pub",
             "clientProfileName": "poc-aap-jumpseat-pub",
             "clientUsername": "poc-aap-jumpseat-pub",
@@ -4869,6 +4947,11 @@
             "aclProfileName": "stg-jet-pcdr-outbound-tm-sub",
             "clientProfileName": "stg-jet-pcdr-outbound-tm-sub",
             "clientUsername": "stg-jet-pcdr-outbound-tm-sub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "clientUsername": "test",
             "enabled": true,
             "passwordToken": "<UNKNOWN>"
         }
