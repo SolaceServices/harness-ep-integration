@@ -538,7 +538,10 @@
             "aclProfileName": "notification_direct_consumer",
             "clientConnectDefaultAction": "allow",
             "clientConnectExceptions": [],
+            "publishTopicDefaultAction": "disallow",
             "publishTopicExceptions": [],
+            "subscribeShareNameDefaultAction": "allow",
+            "subscribeTopicDefaultAction": "disallow",
             "subscribeTopicExceptions": [
                 "ua/notifications/delivered"
             ]
@@ -547,9 +550,12 @@
             "aclProfileName": "notification_direct_producer",
             "clientConnectDefaultAction": "allow",
             "clientConnectExceptions": [],
+            "publishTopicDefaultAction": "disallow",
             "publishTopicExceptions": [
                 "ua/notifications/delivered"
             ],
+            "subscribeShareNameDefaultAction": "allow",
+            "subscribeTopicDefaultAction": "disallow",
             "subscribeTopicExceptions": []
         },
         {
@@ -1825,6 +1831,7 @@
             "maxEgressFlowCount": 20,
             "maxEndpointCountPerClientUsername": 0,
             "maxIngressFlowCount": 20,
+            "maxMsgsPerTransaction": 256,
             "maxSubscriptionCount": 250,
             "maxTransactedSessionCount": 0,
             "maxTransactionCount": 0,
@@ -1838,6 +1845,7 @@
             "maxEgressFlowCount": 20,
             "maxEndpointCountPerClientUsername": 0,
             "maxIngressFlowCount": 20,
+            "maxMsgsPerTransaction": 256,
             "maxSubscriptionCount": 250,
             "maxTransactedSessionCount": 0,
             "maxTransactionCount": 0,
@@ -2669,23 +2677,23 @@
             "queueName": "DEV.CXP.FLIFO",
             "respectTtlEnabled": true,
             "subscriptionTopics": [
-                "UAL/DEV/ATW/FLIFO/*/RTBL/>",
-                "UAL/DEV/ATW/FLIFO/*/STAR.RTBL/>",
-                "UAL/DEV/ATW/FLIFO/*/RTFL/>",
-                "UAL/DEV/ATW/FLIFO/*/STAR.RTFL/>",
-                "UAL/DEV/ATW/FLIFO/*/DVRT/>",
-                "UAL/DEV/ATW/FLIFO/*/STAR.DVRT/>",
+                "UAL/DEV/ATW/CXP/FLIFO/>",
                 "UAL/DEV/ATW/FLIFO/*/CNCL/>",
-                "UAL/DEV/ATW/FLIFO/*/STAR.CNCL/>",
-                "UAL/DEV/ATW/FLIFO/*/ETD/>",
-                "UAL/DEV/ATW/FLIFO/*/STAR.ETD/>",
+                "UAL/DEV/ATW/FLIFO/*/DVRT/>",
                 "UAL/DEV/ATW/FLIFO/*/ETA/>",
-                "UAL/DEV/ATW/FLIFO/*/STAR.ETA/>",
-                "UAL/DEV/ATW/FLIFO/*/OUT/>",
-                "UAL/DEV/ATW/FLIFO/*/STAR.OUT/>",
+                "UAL/DEV/ATW/FLIFO/*/ETD/>",
                 "UAL/DEV/ATW/FLIFO/*/IN/>",
+                "UAL/DEV/ATW/FLIFO/*/OUT/>",
+                "UAL/DEV/ATW/FLIFO/*/RTBL/>",
+                "UAL/DEV/ATW/FLIFO/*/RTFL/>",
+                "UAL/DEV/ATW/FLIFO/*/STAR.CNCL/>",
+                "UAL/DEV/ATW/FLIFO/*/STAR.DVRT/>",
+                "UAL/DEV/ATW/FLIFO/*/STAR.ETA/>",
+                "UAL/DEV/ATW/FLIFO/*/STAR.ETD/>",
                 "UAL/DEV/ATW/FLIFO/*/STAR.IN/>",
-                "UAL/DEV/ATW/CXP/FLIFO/>"
+                "UAL/DEV/ATW/FLIFO/*/STAR.OUT/>",
+                "UAL/DEV/ATW/FLIFO/*/STAR.RTBL/>",
+                "UAL/DEV/ATW/FLIFO/*/STAR.RTFL/>"
             ]
         },
         {
@@ -2700,9 +2708,9 @@
             "queueName": "DEV.EPO.UCD",
             "respectTtlEnabled": true,
             "subscriptionTopics": [
-                "UAL/QA/UCD/PNR/*/*/V1/*/*/>",
                 "UAL/QA/UCD/ACI/*/*/V1/*/*/>",
-                "UAL/QA/UCD/CHKINORCH/*/*/V1/*/*/>"
+                "UAL/QA/UCD/CHKINORCH/*/*/V1/*/*/>",
+                "UAL/QA/UCD/PNR/*/*/V1/*/*/>"
             ]
         },
         {
@@ -2732,11 +2740,11 @@
             "queueName": "DEV.GSAPP.UCD",
             "respectTtlEnabled": true,
             "subscriptionTopics": [
-                "UAL/QA/UCD/PNR/*/*/V1/*/*/>",
                 "UAL/QA/UCD/ACI/*/*/V1/*/*/>",
-                "UAL/QA/UCD/TKT/*/*/V1/*/*/>",
+                "UAL/QA/UCD/CHKINELIG/*/*/V1/*/*/>",
                 "UAL/QA/UCD/CHKINORCH/*/*/V1/*/*/>",
-                "UAL/QA/UCD/CHKINELIG/*/*/V1/*/*/>"
+                "UAL/QA/UCD/PNR/*/*/V1/*/*/>",
+                "UAL/QA/UCD/TKT/*/*/V1/*/*/>"
             ]
         },
         {
@@ -2767,42 +2775,42 @@
             "queueName": "DEV.JET.COLLAB",
             "respectTtlEnabled": true,
             "subscriptionTopics": [
+                "UAL/OPS/COLLAB/ALERTS/CNCL/*/*/*/1",
+                "UAL/OPS/COLLAB/ALERTS/CUST_STORY/*/*/*/1",
+                "UAL/OPS/COLLAB/ALERTS/CUST_STORY_DUE/*/*/*/1",
+                "UAL/OPS/COLLAB/ALERTS/CUST_STRY_DUE_DLY/*/*/*/1",
+                "UAL/OPS/COLLAB/ALERTS/CUST_STRY_ELG/*/*/*/1",
+                "UAL/OPS/COLLAB/ALERTS/EQUIP_CHG_120/*/*/*/1",
+                "UAL/OPS/COLLAB/ALERTS/EQUIP_CHG_240/*/*/*/1",
+                "UAL/OPS/COLLAB/ALERTS/EQUIP_CHG_60/*/*/*/1",
+                "UAL/OPS/COLLAB/ALERTS/EQUIP_CHG_90/*/*/*/1",
                 "UAL/OPS/COLLAB/ALERTS/ETA/*/*/*/1",
                 "UAL/OPS/COLLAB/ALERTS/ETD/*/*/*/1",
-                "UAL/OPS/COLLAB/ALERTS/CNCL/*/*/*/1",
+                "UAL/OPS/COLLAB/ALERTS/FLEET_CHG_120/*/*/*/1",
+                "UAL/OPS/COLLAB/ALERTS/FLEET_CHG_120_EXCLD_757_767/*/*/*/1",
+                "UAL/OPS/COLLAB/ALERTS/FLEET_CHG_240/*/*/*/1",
+                "UAL/OPS/COLLAB/ALERTS/FLEET_CHG_60/*/*/*/1",
+                "UAL/OPS/COLLAB/ALERTS/FLEET_CHG_90/*/*/*/1",
                 "UAL/OPS/COLLAB/ALERTS/GATE_ARR_A120/*/*/*/1",
                 "UAL/OPS/COLLAB/ALERTS/GATE_ARR_A30/*/*/*/1",
                 "UAL/OPS/COLLAB/ALERTS/GATE_ARR_A60/*/*/*/1",
                 "UAL/OPS/COLLAB/ALERTS/GATE_ARR_A90/*/*/*/1",
                 "UAL/OPS/COLLAB/ALERTS/GATE_ARR_NRW_A30/*/*/*/1",
                 "UAL/OPS/COLLAB/ALERTS/GATE_ARR_WD_A30/*/*/*/1",
-                "UAL/OPS/COLLAB/ALERTS/EQUIP_CHG_120/*/*/*/1",
-                "UAL/OPS/COLLAB/ALERTS/EQUIP_CHG_240/*/*/*/1",
-                "UAL/OPS/COLLAB/ALERTS/EQUIP_CHG_90/*/*/*/1",
-                "UAL/OPS/COLLAB/ALERTS/EQUIP_CHG_60/*/*/*/1",
                 "UAL/OPS/COLLAB/ALERTS/GATE_DEP_D120/*/*/*/1",
                 "UAL/OPS/COLLAB/ALERTS/GATE_DEP_D60/*/*/*/1",
                 "UAL/OPS/COLLAB/ALERTS/GATE_DEP_D90/*/*/*/1",
                 "UAL/OPS/COLLAB/ALERTS/GATE_DEP_NRW_D60/*/*/*/1",
                 "UAL/OPS/COLLAB/ALERTS/GATE_DEP_WD_D90/*/*/*/1",
+                "UAL/OPS/COLLAB/ALERTS/MAXHOLD_CANCEL/*/*/*/1",
+                "UAL/OPS/COLLAB/ALERTS/MAXHOLD_CUSTOMERHOLD/*/*/*/1",
+                "UAL/OPS/COLLAB/ALERTS/MAXHOLD_PSGR_EQ_0/*/*/*/1",
+                "UAL/OPS/COLLAB/ALERTS/MAXHOLD_PSGR_GT_0/*/*/*/1",
                 "UAL/OPS/COLLAB/ALERTS/NOSE_CHG_D120/*/*/*/1",
                 "UAL/OPS/COLLAB/ALERTS/NOSE_CHG_D240/*/*/*/1",
                 "UAL/OPS/COLLAB/ALERTS/NOSE_CHG_D90/*/*/*/1",
                 "UAL/OPS/COLLAB/ALERTS/RTBL/*/*/*/1",
-                "UAL/OPS/COLLAB/ALERTS/RTFL/*/*/*/1",
-                "UAL/OPS/COLLAB/ALERTS/FLEET_CHG_60/*/*/*/1",
-                "UAL/OPS/COLLAB/ALERTS/FLEET_CHG_90/*/*/*/1",
-                "UAL/OPS/COLLAB/ALERTS/FLEET_CHG_120/*/*/*/1",
-                "UAL/OPS/COLLAB/ALERTS/FLEET_CHG_240/*/*/*/1",
-                "UAL/OPS/COLLAB/ALERTS/FLEET_CHG_120_EXCLD_757_767/*/*/*/1",
-                "UAL/OPS/COLLAB/ALERTS/MAXHOLD_CUSTOMERHOLD/*/*/*/1",
-                "UAL/OPS/COLLAB/ALERTS/MAXHOLD_PSGR_EQ_0/*/*/*/1",
-                "UAL/OPS/COLLAB/ALERTS/MAXHOLD_PSGR_GT_0/*/*/*/1",
-                "UAL/OPS/COLLAB/ALERTS/MAXHOLD_CANCEL/*/*/*/1",
-                "UAL/OPS/COLLAB/ALERTS/CUST_STORY/*/*/*/1",
-                "UAL/OPS/COLLAB/ALERTS/CUST_STORY_DUE/*/*/*/1",
-                "UAL/OPS/COLLAB/ALERTS/CUST_STRY_DUE_DLY/*/*/*/1",
-                "UAL/OPS/COLLAB/ALERTS/CUST_STRY_ELG/*/*/*/1"
+                "UAL/OPS/COLLAB/ALERTS/RTFL/*/*/*/1"
             ]
         },
         {
@@ -2916,8 +2924,8 @@
             "queueName": "DEV.JET.FM.UCD",
             "respectTtlEnabled": true,
             "subscriptionTopics": [
-                "UAL/QA/UCD/PNR/*/*/V1/*/*/>",
                 "UAL/QA/UCD/ACI/*/*/V1/*/*/>",
+                "UAL/QA/UCD/PNR/*/*/V1/*/*/>",
                 "UAL/QA/UCD/TKT/*/*/V1/*/*/>"
             ]
         },
@@ -2977,11 +2985,11 @@
             "queueName": "DEV.JET.UCD",
             "respectTtlEnabled": true,
             "subscriptionTopics": [
-                "UAL/QA/UCD/PNR/*/*/V1/*/*/>",
                 "UAL/QA/UCD/ACI/*/*/V1/*/*/>",
-                "UAL/QA/UCD/TKT/*/*/V1/*/*/>",
+                "UAL/QA/UCD/CHKINELIG/*/*/V1/*/*/>",
                 "UAL/QA/UCD/CHKINORCH/*/*/V1/*/*/>",
-                "UAL/QA/UCD/CHKINELIG/*/*/V1/*/*/>"
+                "UAL/QA/UCD/PNR/*/*/V1/*/*/>",
+                "UAL/QA/UCD/TKT/*/*/V1/*/*/>"
             ]
         },
         {
@@ -3071,20 +3079,41 @@
             "queueName": "DEV.UDS.FLIFO",
             "respectTtlEnabled": true,
             "subscriptionTopics": [
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.CNCL/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.CNCLRS/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.DCSN/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.DVRT/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.EOG/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.EQUIP/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.ETA/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.ETD/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.GATE/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.IN/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.MFRADD/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.MFRCHG/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.MFRDEL/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.OFF/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.ON/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.ONIN/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.OUT/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.OUTOFF/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.RTBL/*/*/*/*/*/*/*/*/1",
                 "UAL/STG/CWO/UFOUT/*/BAGCLAIM/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BAGFIN/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BOARDINGTIME/XML/3",
                 "UAL/STG/CWO/UFOUT/*/BOARDSTATUS/XML/3",
                 "UAL/STG/CWO/UFOUT/*/BUS.BAGCLAIM/XML/3",
                 "UAL/STG/CWO/UFOUT/*/BUS.BOARDSTATUS/XML/3",
-                "UAL/STG/CWO/UFOUT/*/BUS.CNCL/XML/3",
                 "UAL/STG/CWO/UFOUT/*/BUS.CNCL.BUFF/XML/3",
-                "UAL/STG/CWO/UFOUT/*/BUS.CNCLRS/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BUS.CNCL/XML/3",
                 "UAL/STG/CWO/UFOUT/*/BUS.CNCLRS.BUFF/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BUS.CNCLRS/XML/3",
                 "UAL/STG/CWO/UFOUT/*/BUS.EON/XML/3",
                 "UAL/STG/CWO/UFOUT/*/BUS.EQUIP/XML/3",
-                "UAL/STG/CWO/UFOUT/*/BUS.ETA/XML/3",
                 "UAL/STG/CWO/UFOUT/*/BUS.ETA.BUFF/XML/3",
-                "UAL/STG/CWO/UFOUT/*/BUS.ETD/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BUS.ETA/XML/3",
                 "UAL/STG/CWO/UFOUT/*/BUS.ETD.BUFF/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BUS.ETD/XML/3",
                 "UAL/STG/CWO/UFOUT/*/BUS.GATE/XML/3",
                 "UAL/STG/CWO/UFOUT/*/BUS.IN/XML/3",
                 "UAL/STG/CWO/UFOUT/*/BUS.MFRADD/XML/3",
@@ -3093,19 +3122,19 @@
                 "UAL/STG/CWO/UFOUT/*/BUS.OFF/XML/3",
                 "UAL/STG/CWO/UFOUT/*/BUS.ON/XML/3",
                 "UAL/STG/CWO/UFOUT/*/BUS.OUT/XML/3",
-                "UAL/STG/CWO/UFOUT/*/BUS.RCVRY/XML/3",
                 "UAL/STG/CWO/UFOUT/*/BUS.RCVRY.GIDS/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BUS.RCVRY/XML/3",
                 "UAL/STG/CWO/UFOUT/*/BUS.TAILASGN/XML/3",
                 "UAL/STG/CWO/UFOUT/*/BUS.UNDOIN/XML/3",
                 "UAL/STG/CWO/UFOUT/*/BUS.UNDOOFF/XML/3",
                 "UAL/STG/CWO/UFOUT/*/BUS.UNDOON/XML/3",
                 "UAL/STG/CWO/UFOUT/*/BUS.UNDOOUT/XML/3",
-                "UAL/STG/CWO/UFOUT/*/CNCL/XML/3",
                 "UAL/STG/CWO/UFOUT/*/CNCL.BUFF/XML/3",
-                "UAL/STG/CWO/UFOUT/*/CNCLER/XML/3",
+                "UAL/STG/CWO/UFOUT/*/CNCL/XML/3",
                 "UAL/STG/CWO/UFOUT/*/CNCLER.BUFF/XML/3",
-                "UAL/STG/CWO/UFOUT/*/CNCLRS/XML/3",
+                "UAL/STG/CWO/UFOUT/*/CNCLER/XML/3",
                 "UAL/STG/CWO/UFOUT/*/CNCLRS.BUFF/XML/3",
+                "UAL/STG/CWO/UFOUT/*/CNCLRS/XML/3",
                 "UAL/STG/CWO/UFOUT/*/CTACIBOARDBEGIN/XML/3",
                 "UAL/STG/CWO/UFOUT/*/CTARRIVEDATGATE/XML/3",
                 "UAL/STG/CWO/UFOUT/*/CTCLEANINGEND/XML/3",
@@ -3115,10 +3144,10 @@
                 "UAL/STG/CWO/UFOUT/*/DVRT/XML/3",
                 "UAL/STG/CWO/UFOUT/*/EON/XML/3",
                 "UAL/STG/CWO/UFOUT/*/EQUIP/XML/3",
-                "UAL/STG/CWO/UFOUT/*/ETA/XML/3",
                 "UAL/STG/CWO/UFOUT/*/ETA.BUFF/XML/3",
-                "UAL/STG/CWO/UFOUT/*/ETD/XML/3",
+                "UAL/STG/CWO/UFOUT/*/ETA/XML/3",
                 "UAL/STG/CWO/UFOUT/*/ETD.BUFF/XML/3",
+                "UAL/STG/CWO/UFOUT/*/ETD/XML/3",
                 "UAL/STG/CWO/UFOUT/*/FLTRG:STD-120/XML/3",
                 "UAL/STG/CWO/UFOUT/*/FLTRG:STD-2160/XML/3",
                 "UAL/STG/CWO/UFOUT/*/GATE/XML/3",
@@ -3140,6 +3169,8 @@
                 "UAL/STG/CWO/UFOUT/*/OUTCORR/XML/3",
                 "UAL/STG/CWO/UFOUT/*/OUTOFF/XML/3",
                 "UAL/STG/CWO/UFOUT/*/OUTOFFCORR/XML/3",
+                "UAL/STG/CWO/UFOUT/*/PASSCNT_FINAL/XML/3",
+                "UAL/STG/CWO/UFOUT/*/QTCHG/XML/3",
                 "UAL/STG/CWO/UFOUT/*/RCVRY/XML/3",
                 "UAL/STG/CWO/UFOUT/*/RTBL/XML/3",
                 "UAL/STG/CWO/UFOUT/*/RTFL/XML/3",
@@ -3149,10 +3180,10 @@
                 "UAL/STG/CWO/UFOUT/*/UAX.BAGCLAIM/XML/3",
                 "UAL/STG/CWO/UFOUT/*/UAX.BOARDINGTIME/XML/3",
                 "UAL/STG/CWO/UFOUT/*/UAX.BOARDSTATUS/XML/3",
-                "UAL/STG/CWO/UFOUT/*/UAX.CNCL/XML/3",
                 "UAL/STG/CWO/UFOUT/*/UAX.CNCL.BUFF/XML/3",
-                "UAL/STG/CWO/UFOUT/*/UAX.CNCLRS/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.CNCL/XML/3",
                 "UAL/STG/CWO/UFOUT/*/UAX.CNCLRS.BUFF/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.CNCLRS/XML/3",
                 "UAL/STG/CWO/UFOUT/*/UAX.CTACIBOARDBEGIN/XML/3",
                 "UAL/STG/CWO/UFOUT/*/UAX.CTARRIVEDATGATE/XML/3",
                 "UAL/STG/CWO/UFOUT/*/UAX.CTCLEANINGEND/XML/3",
@@ -3162,10 +3193,10 @@
                 "UAL/STG/CWO/UFOUT/*/UAX.DVRT/XML/3",
                 "UAL/STG/CWO/UFOUT/*/UAX.EON/XML/3",
                 "UAL/STG/CWO/UFOUT/*/UAX.EQUIP/XML/3",
-                "UAL/STG/CWO/UFOUT/*/UAX.ETA/XML/3",
                 "UAL/STG/CWO/UFOUT/*/UAX.ETA.BUFF/XML/3",
-                "UAL/STG/CWO/UFOUT/*/UAX.ETD/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.ETA/XML/3",
                 "UAL/STG/CWO/UFOUT/*/UAX.ETD.BUFF/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.ETD/XML/3",
                 "UAL/STG/CWO/UFOUT/*/UAX.GATE/XML/3",
                 "UAL/STG/CWO/UFOUT/*/UAX.IN/XML/3",
                 "UAL/STG/CWO/UFOUT/*/UAX.INCORR/XML/3",
@@ -3179,8 +3210,9 @@
                 "UAL/STG/CWO/UFOUT/*/UAX.ONLDVRT/XML/3",
                 "UAL/STG/CWO/UFOUT/*/UAX.OUT/XML/3",
                 "UAL/STG/CWO/UFOUT/*/UAX.OUTCORR/XML/3",
-                "UAL/STG/CWO/UFOUT/*/UAX.RCVRY/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.QTCHG/XML/3",
                 "UAL/STG/CWO/UFOUT/*/UAX.RCVRY.GIDS/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.RCVRY/XML/3",
                 "UAL/STG/CWO/UFOUT/*/UAX.RTBL/XML/3",
                 "UAL/STG/CWO/UFOUT/*/UAX.RTFL/XML/3",
                 "UAL/STG/CWO/UFOUT/*/UAX.STARCORR/XML/3",
@@ -3196,32 +3228,8 @@
                 "UAL/STG/CWO/UFOUT/*/UNDOOFF/XML/3",
                 "UAL/STG/CWO/UFOUT/*/UNDOON/XML/3",
                 "UAL/STG/CWO/UFOUT/*/UNDOOUT/XML/3",
-                "UAL/STG/CWO/UFOUT/*/XSTP/XML/3",
                 "UAL/STG/CWO/UFOUT/*/XSTP.ORIG/XML/3",
-                "UAL/STG/CWO/UFOUT/*/BOARDINGTIME/XML/3",
-                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.CNCL/*/*/*/*/*/*/*/*/1",
-                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.CNCLRS/*/*/*/*/*/*/*/*/1",
-                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.DCSN/*/*/*/*/*/*/*/*/1",
-                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.DVRT/*/*/*/*/*/*/*/*/1",
-                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.EOG/*/*/*/*/*/*/*/*/1",
-                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.EQUIP/*/*/*/*/*/*/*/*/1",
-                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.ETA/*/*/*/*/*/*/*/*/1",
-                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.ETD/*/*/*/*/*/*/*/*/1",
-                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.IN/*/*/*/*/*/*/*/*/1",
-                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.MFRADD/*/*/*/*/*/*/*/*/1",
-                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.MFRCHG/*/*/*/*/*/*/*/*/1",
-                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.MFRDEL/*/*/*/*/*/*/*/*/1",
-                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.OFF/*/*/*/*/*/*/*/*/1",
-                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.ON/*/*/*/*/*/*/*/*/1",
-                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.ONIN/*/*/*/*/*/*/*/*/1",
-                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.OUT/*/*/*/*/*/*/*/*/1",
-                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.OUTOFF/*/*/*/*/*/*/*/*/1",
-                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.RTBL/*/*/*/*/*/*/*/*/1",
-                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.GATE/*/*/*/*/*/*/*/*/1",
-                "UAL/STG/CWO/UFOUT/*/PASSCNT_FINAL/XML/3",
-                "UAL/STG/CWO/UFOUT/*/BAGFIN/XML/3",
-                "UAL/STG/CWO/UFOUT/*/QTCHG/XML/3",
-                "UAL/STG/CWO/UFOUT/*/UAX.QTCHG/XML/3"
+                "UAL/STG/CWO/UFOUT/*/XSTP/XML/3"
             ]
         },
         {
@@ -3329,9 +3337,9 @@
             "queueName": "DEV.UDS.WB.EVENTS",
             "respectTtlEnabled": true,
             "subscriptionTopics": [
-                "UAL/ATW/UDS/WB/DEV/V1/WTRESTINFO/>",
                 "UAL/ATW/UDS/WB/DEV/V1/TailTip/>",
-                "UAL/ATW/UDS/WB/DEV/V1/WTRESTINFO"
+                "UAL/ATW/UDS/WB/DEV/V1/WTRESTINFO",
+                "UAL/ATW/UDS/WB/DEV/V1/WTRESTINFO/>"
             ]
         },
         {
@@ -3346,6 +3354,32 @@
             "respectTtlEnabled": true,
             "subscriptionTopics": [
                 "UAL/POC/AAP/JUMPSEAT/>"
+            ]
+        },
+        {
+            "accessType": "exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'Q.UaNotificationsDelivered'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "maxMsgSpoolUsage": 5000,
+            "owner": "notification_direct_consumer",
+            "permission": "no-access",
+            "queueName": "Q.UaNotificationsDelivered",
+            "subscriptionTopics": [
+                "ua/notifications/delivered"
+            ]
+        },
+        {
+            "accessType": "exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'Q.UaNotificationsDelivered_CP'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "maxMsgSpoolUsage": 5000,
+            "owner": "notification_direct_consumer",
+            "permission": "no-access",
+            "queueName": "Q.UaNotificationsDelivered_CP",
+            "subscriptionTopics": [
+                "ua/notifications/delivered"
             ]
         },
         {
@@ -3375,23 +3409,23 @@
             "queueName": "QA.CXP.FLIFO",
             "respectTtlEnabled": true,
             "subscriptionTopics": [
-                "UAL/DEV/ATW/FLIFO/*/RTBL/>",
-                "UAL/DEV/ATW/FLIFO/*/STAR.RTBL/>",
-                "UAL/DEV/ATW/FLIFO/*/RTFL/>",
-                "UAL/DEV/ATW/FLIFO/*/STAR.RTFL/>",
-                "UAL/DEV/ATW/FLIFO/*/DVRT/>",
-                "UAL/DEV/ATW/FLIFO/*/STAR.DVRT/>",
+                "UAL/DEV/ATW/CXP/FLIFO/>",
                 "UAL/DEV/ATW/FLIFO/*/CNCL/>",
-                "UAL/DEV/ATW/FLIFO/*/STAR.CNCL/>",
-                "UAL/DEV/ATW/FLIFO/*/ETD/>",
-                "UAL/DEV/ATW/FLIFO/*/STAR.ETD/>",
+                "UAL/DEV/ATW/FLIFO/*/DVRT/>",
                 "UAL/DEV/ATW/FLIFO/*/ETA/>",
-                "UAL/DEV/ATW/FLIFO/*/STAR.ETA/>",
-                "UAL/DEV/ATW/FLIFO/*/OUT/>",
-                "UAL/DEV/ATW/FLIFO/*/STAR.OUT/>",
+                "UAL/DEV/ATW/FLIFO/*/ETD/>",
                 "UAL/DEV/ATW/FLIFO/*/IN/>",
+                "UAL/DEV/ATW/FLIFO/*/OUT/>",
+                "UAL/DEV/ATW/FLIFO/*/RTBL/>",
+                "UAL/DEV/ATW/FLIFO/*/RTFL/>",
+                "UAL/DEV/ATW/FLIFO/*/STAR.CNCL/>",
+                "UAL/DEV/ATW/FLIFO/*/STAR.DVRT/>",
+                "UAL/DEV/ATW/FLIFO/*/STAR.ETA/>",
+                "UAL/DEV/ATW/FLIFO/*/STAR.ETD/>",
                 "UAL/DEV/ATW/FLIFO/*/STAR.IN/>",
-                "UAL/DEV/ATW/CXP/FLIFO/>"
+                "UAL/DEV/ATW/FLIFO/*/STAR.OUT/>",
+                "UAL/DEV/ATW/FLIFO/*/STAR.RTBL/>",
+                "UAL/DEV/ATW/FLIFO/*/STAR.RTFL/>"
             ]
         },
         {
@@ -3406,9 +3440,9 @@
             "queueName": "QA.EPO.UCD",
             "respectTtlEnabled": true,
             "subscriptionTopics": [
-                "UAL/QA/UCD/PNR/*/*/V1/*/*/>",
                 "UAL/QA/UCD/ACI/*/*/V1/*/*/>",
-                "UAL/QA/UCD/CHKINORCH/*/*/V1/*/*/>"
+                "UAL/QA/UCD/CHKINORCH/*/*/V1/*/*/>",
+                "UAL/QA/UCD/PNR/*/*/V1/*/*/>"
             ]
         },
         {
@@ -3437,11 +3471,11 @@
             "queueName": "QA.GSAPP.UCD",
             "respectTtlEnabled": true,
             "subscriptionTopics": [
-                "UAL/QA/UCD/PNR/*/*/V1/*/*/>",
                 "UAL/QA/UCD/ACI/*/*/V1/*/*/>",
-                "UAL/QA/UCD/TKT/*/*/V1/*/*/>",
+                "UAL/QA/UCD/CHKINELIG/*/*/V1/*/*/>",
                 "UAL/QA/UCD/CHKINORCH/*/*/V1/*/*/>",
-                "UAL/QA/UCD/CHKINELIG/*/*/V1/*/*/>"
+                "UAL/QA/UCD/PNR/*/*/V1/*/*/>",
+                "UAL/QA/UCD/TKT/*/*/V1/*/*/>"
             ]
         },
         {
@@ -3569,8 +3603,8 @@
             "queueName": "QA.JET.FM.UCD",
             "respectTtlEnabled": true,
             "subscriptionTopics": [
-                "UAL/QA/UCD/PNR/*/*/V1/*/*/>",
                 "UAL/QA/UCD/ACI/*/*/V1/*/*/>",
+                "UAL/QA/UCD/PNR/*/*/V1/*/*/>",
                 "UAL/QA/UCD/TKT/*/*/V1/*/*/>"
             ]
         },
@@ -3630,11 +3664,11 @@
             "queueName": "QA.JET.UCD",
             "respectTtlEnabled": true,
             "subscriptionTopics": [
-                "UAL/QA/UCD/PNR/*/*/V1/*/*/>",
                 "UAL/QA/UCD/ACI/*/*/V1/*/*/>",
-                "UAL/QA/UCD/TKT/*/*/V1/*/*/>",
+                "UAL/QA/UCD/CHKINELIG/*/*/V1/*/*/>",
                 "UAL/QA/UCD/CHKINORCH/*/*/V1/*/*/>",
-                "UAL/QA/UCD/CHKINELIG/*/*/V1/*/*/>"
+                "UAL/QA/UCD/PNR/*/*/V1/*/*/>",
+                "UAL/QA/UCD/TKT/*/*/V1/*/*/>"
             ]
         },
         {
@@ -3724,20 +3758,41 @@
             "queueName": "QA.UDS.FLIFO",
             "respectTtlEnabled": true,
             "subscriptionTopics": [
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.CNCL/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.CNCLRS/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.DCSN/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.DVRT/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.EOG/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.EQUIP/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.ETA/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.ETD/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.GATE/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.IN/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.MFRADD/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.MFRCHG/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.MFRDEL/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.OFF/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.ON/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.ONIN/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.OUT/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.OUTOFF/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.RTBL/*/*/*/*/*/*/*/*/1",
                 "UAL/STG/CWO/UFOUT/*/BAGCLAIM/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BAGFIN/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BOARDINGTIME/XML/3",
                 "UAL/STG/CWO/UFOUT/*/BOARDSTATUS/XML/3",
                 "UAL/STG/CWO/UFOUT/*/BUS.BAGCLAIM/XML/3",
                 "UAL/STG/CWO/UFOUT/*/BUS.BOARDSTATUS/XML/3",
-                "UAL/STG/CWO/UFOUT/*/BUS.CNCL/XML/3",
                 "UAL/STG/CWO/UFOUT/*/BUS.CNCL.BUFF/XML/3",
-                "UAL/STG/CWO/UFOUT/*/BUS.CNCLRS/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BUS.CNCL/XML/3",
                 "UAL/STG/CWO/UFOUT/*/BUS.CNCLRS.BUFF/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BUS.CNCLRS/XML/3",
                 "UAL/STG/CWO/UFOUT/*/BUS.EON/XML/3",
                 "UAL/STG/CWO/UFOUT/*/BUS.EQUIP/XML/3",
-                "UAL/STG/CWO/UFOUT/*/BUS.ETA/XML/3",
                 "UAL/STG/CWO/UFOUT/*/BUS.ETA.BUFF/XML/3",
-                "UAL/STG/CWO/UFOUT/*/BUS.ETD/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BUS.ETA/XML/3",
                 "UAL/STG/CWO/UFOUT/*/BUS.ETD.BUFF/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BUS.ETD/XML/3",
                 "UAL/STG/CWO/UFOUT/*/BUS.GATE/XML/3",
                 "UAL/STG/CWO/UFOUT/*/BUS.IN/XML/3",
                 "UAL/STG/CWO/UFOUT/*/BUS.MFRADD/XML/3",
@@ -3746,19 +3801,19 @@
                 "UAL/STG/CWO/UFOUT/*/BUS.OFF/XML/3",
                 "UAL/STG/CWO/UFOUT/*/BUS.ON/XML/3",
                 "UAL/STG/CWO/UFOUT/*/BUS.OUT/XML/3",
-                "UAL/STG/CWO/UFOUT/*/BUS.RCVRY/XML/3",
                 "UAL/STG/CWO/UFOUT/*/BUS.RCVRY.GIDS/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BUS.RCVRY/XML/3",
                 "UAL/STG/CWO/UFOUT/*/BUS.TAILASGN/XML/3",
                 "UAL/STG/CWO/UFOUT/*/BUS.UNDOIN/XML/3",
                 "UAL/STG/CWO/UFOUT/*/BUS.UNDOOFF/XML/3",
                 "UAL/STG/CWO/UFOUT/*/BUS.UNDOON/XML/3",
                 "UAL/STG/CWO/UFOUT/*/BUS.UNDOOUT/XML/3",
-                "UAL/STG/CWO/UFOUT/*/CNCL/XML/3",
                 "UAL/STG/CWO/UFOUT/*/CNCL.BUFF/XML/3",
-                "UAL/STG/CWO/UFOUT/*/CNCLER/XML/3",
+                "UAL/STG/CWO/UFOUT/*/CNCL/XML/3",
                 "UAL/STG/CWO/UFOUT/*/CNCLER.BUFF/XML/3",
-                "UAL/STG/CWO/UFOUT/*/CNCLRS/XML/3",
+                "UAL/STG/CWO/UFOUT/*/CNCLER/XML/3",
                 "UAL/STG/CWO/UFOUT/*/CNCLRS.BUFF/XML/3",
+                "UAL/STG/CWO/UFOUT/*/CNCLRS/XML/3",
                 "UAL/STG/CWO/UFOUT/*/CTACIBOARDBEGIN/XML/3",
                 "UAL/STG/CWO/UFOUT/*/CTARRIVEDATGATE/XML/3",
                 "UAL/STG/CWO/UFOUT/*/CTCLEANINGEND/XML/3",
@@ -3768,10 +3823,10 @@
                 "UAL/STG/CWO/UFOUT/*/DVRT/XML/3",
                 "UAL/STG/CWO/UFOUT/*/EON/XML/3",
                 "UAL/STG/CWO/UFOUT/*/EQUIP/XML/3",
-                "UAL/STG/CWO/UFOUT/*/ETA/XML/3",
                 "UAL/STG/CWO/UFOUT/*/ETA.BUFF/XML/3",
-                "UAL/STG/CWO/UFOUT/*/ETD/XML/3",
+                "UAL/STG/CWO/UFOUT/*/ETA/XML/3",
                 "UAL/STG/CWO/UFOUT/*/ETD.BUFF/XML/3",
+                "UAL/STG/CWO/UFOUT/*/ETD/XML/3",
                 "UAL/STG/CWO/UFOUT/*/FLTRG:STD-120/XML/3",
                 "UAL/STG/CWO/UFOUT/*/FLTRG:STD-2160/XML/3",
                 "UAL/STG/CWO/UFOUT/*/GATE/XML/3",
@@ -3793,6 +3848,8 @@
                 "UAL/STG/CWO/UFOUT/*/OUTCORR/XML/3",
                 "UAL/STG/CWO/UFOUT/*/OUTOFF/XML/3",
                 "UAL/STG/CWO/UFOUT/*/OUTOFFCORR/XML/3",
+                "UAL/STG/CWO/UFOUT/*/PASSCNT_FINAL/XML/3",
+                "UAL/STG/CWO/UFOUT/*/QTCHG/XML/3",
                 "UAL/STG/CWO/UFOUT/*/RCVRY/XML/3",
                 "UAL/STG/CWO/UFOUT/*/RTBL/XML/3",
                 "UAL/STG/CWO/UFOUT/*/RTFL/XML/3",
@@ -3802,10 +3859,10 @@
                 "UAL/STG/CWO/UFOUT/*/UAX.BAGCLAIM/XML/3",
                 "UAL/STG/CWO/UFOUT/*/UAX.BOARDINGTIME/XML/3",
                 "UAL/STG/CWO/UFOUT/*/UAX.BOARDSTATUS/XML/3",
-                "UAL/STG/CWO/UFOUT/*/UAX.CNCL/XML/3",
                 "UAL/STG/CWO/UFOUT/*/UAX.CNCL.BUFF/XML/3",
-                "UAL/STG/CWO/UFOUT/*/UAX.CNCLRS/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.CNCL/XML/3",
                 "UAL/STG/CWO/UFOUT/*/UAX.CNCLRS.BUFF/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.CNCLRS/XML/3",
                 "UAL/STG/CWO/UFOUT/*/UAX.CTACIBOARDBEGIN/XML/3",
                 "UAL/STG/CWO/UFOUT/*/UAX.CTARRIVEDATGATE/XML/3",
                 "UAL/STG/CWO/UFOUT/*/UAX.CTCLEANINGEND/XML/3",
@@ -3815,10 +3872,10 @@
                 "UAL/STG/CWO/UFOUT/*/UAX.DVRT/XML/3",
                 "UAL/STG/CWO/UFOUT/*/UAX.EON/XML/3",
                 "UAL/STG/CWO/UFOUT/*/UAX.EQUIP/XML/3",
-                "UAL/STG/CWO/UFOUT/*/UAX.ETA/XML/3",
                 "UAL/STG/CWO/UFOUT/*/UAX.ETA.BUFF/XML/3",
-                "UAL/STG/CWO/UFOUT/*/UAX.ETD/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.ETA/XML/3",
                 "UAL/STG/CWO/UFOUT/*/UAX.ETD.BUFF/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.ETD/XML/3",
                 "UAL/STG/CWO/UFOUT/*/UAX.GATE/XML/3",
                 "UAL/STG/CWO/UFOUT/*/UAX.IN/XML/3",
                 "UAL/STG/CWO/UFOUT/*/UAX.INCORR/XML/3",
@@ -3832,8 +3889,9 @@
                 "UAL/STG/CWO/UFOUT/*/UAX.ONLDVRT/XML/3",
                 "UAL/STG/CWO/UFOUT/*/UAX.OUT/XML/3",
                 "UAL/STG/CWO/UFOUT/*/UAX.OUTCORR/XML/3",
-                "UAL/STG/CWO/UFOUT/*/UAX.RCVRY/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.QTCHG/XML/3",
                 "UAL/STG/CWO/UFOUT/*/UAX.RCVRY.GIDS/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.RCVRY/XML/3",
                 "UAL/STG/CWO/UFOUT/*/UAX.RTBL/XML/3",
                 "UAL/STG/CWO/UFOUT/*/UAX.RTFL/XML/3",
                 "UAL/STG/CWO/UFOUT/*/UAX.STARCORR/XML/3",
@@ -3849,32 +3907,8 @@
                 "UAL/STG/CWO/UFOUT/*/UNDOOFF/XML/3",
                 "UAL/STG/CWO/UFOUT/*/UNDOON/XML/3",
                 "UAL/STG/CWO/UFOUT/*/UNDOOUT/XML/3",
-                "UAL/STG/CWO/UFOUT/*/XSTP/XML/3",
                 "UAL/STG/CWO/UFOUT/*/XSTP.ORIG/XML/3",
-                "UAL/STG/CWO/UFOUT/*/BOARDINGTIME/XML/3",
-                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.CNCL/*/*/*/*/*/*/*/*/1",
-                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.CNCLRS/*/*/*/*/*/*/*/*/1",
-                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.DCSN/*/*/*/*/*/*/*/*/1",
-                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.DVRT/*/*/*/*/*/*/*/*/1",
-                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.EOG/*/*/*/*/*/*/*/*/1",
-                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.EQUIP/*/*/*/*/*/*/*/*/1",
-                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.ETA/*/*/*/*/*/*/*/*/1",
-                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.ETD/*/*/*/*/*/*/*/*/1",
-                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.IN/*/*/*/*/*/*/*/*/1",
-                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.MFRADD/*/*/*/*/*/*/*/*/1",
-                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.MFRCHG/*/*/*/*/*/*/*/*/1",
-                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.MFRDEL/*/*/*/*/*/*/*/*/1",
-                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.OFF/*/*/*/*/*/*/*/*/1",
-                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.ON/*/*/*/*/*/*/*/*/1",
-                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.ONIN/*/*/*/*/*/*/*/*/1",
-                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.OUT/*/*/*/*/*/*/*/*/1",
-                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.OUTOFF/*/*/*/*/*/*/*/*/1",
-                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.RTBL/*/*/*/*/*/*/*/*/1",
-                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.GATE/*/*/*/*/*/*/*/*/1",
-                "UAL/STG/CWO/UFOUT/*/PASSCNT_FINAL/XML/3",
-                "UAL/STG/CWO/UFOUT/*/BAGFIN/XML/3",
-                "UAL/STG/CWO/UFOUT/*/QTCHG/XML/3",
-                "UAL/STG/CWO/UFOUT/*/UAX.QTCHG/XML/3"
+                "UAL/STG/CWO/UFOUT/*/XSTP/XML/3"
             ]
         },
         {
@@ -3940,9 +3974,9 @@
             "queueName": "QA.UDS.WB.EVENTS",
             "respectTtlEnabled": true,
             "subscriptionTopics": [
-                "UAL/ATW/UDS/WB/QA/V1/WTRESTINFO/>",
                 "UAL/ATW/UDS/WB/QA/V1/TailTip/>",
-                "UAL/ATW/UDS/WB/QA/V1/WTRESTINFO"
+                "UAL/ATW/UDS/WB/QA/V1/WTRESTINFO",
+                "UAL/ATW/UDS/WB/QA/V1/WTRESTINFO/>"
             ]
         },
         {
@@ -3957,11 +3991,11 @@
             "queueName": "STG.GSAPP.UCD",
             "respectTtlEnabled": true,
             "subscriptionTopics": [
-                "UAL/QA/UCD/PNR/*/*/V1/*/*/>",
                 "UAL/QA/UCD/ACI/*/*/V1/*/*/>",
-                "UAL/QA/UCD/TKT/*/*/V1/*/*/>",
+                "UAL/QA/UCD/CHKINELIG/*/*/V1/*/*/>",
                 "UAL/QA/UCD/CHKINORCH/*/*/V1/*/*/>",
-                "UAL/QA/UCD/CHKINELIG/*/*/V1/*/*/>"
+                "UAL/QA/UCD/PNR/*/*/V1/*/*/>",
+                "UAL/QA/UCD/TKT/*/*/V1/*/*/>"
             ]
         },
         {
@@ -4026,8 +4060,8 @@
             "queueName": "STG.JET.FM.UCD",
             "respectTtlEnabled": true,
             "subscriptionTopics": [
-                "UAL/QA/UCD/PNR/*/*/V1/*/*/>",
                 "UAL/QA/UCD/ACI/*/*/V1/*/*/>",
+                "UAL/QA/UCD/PNR/*/*/V1/*/*/>",
                 "UAL/QA/UCD/TKT/*/*/V1/*/*/>"
             ]
         },
@@ -4072,6 +4106,936 @@
             "respectTtlEnabled": true,
             "subscriptionTopics": [
                 "UAL/STG/ATW/PCDR/OUTBOUND/TURNMETRICS/V1"
+            ]
+        },
+        {
+            "accessType": "exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'TEST.QUEUE_1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "maxMsgSpoolUsage": 5000,
+            "owner": "notification_direct_consumer",
+            "permission": "no-access",
+            "queueName": "TEST.QUEUE_1",
+            "subscriptionTopics": [
+                "ua/notifications/>"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.CCE.PRETRAVEL.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.CCE.PRETRAVEL.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/CCE/PTP/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.COLLAB.NOTIFY.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.COLLAB.NOTIFY.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/ENR/VDR/FLTFEED/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.CONTACTPREF.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.CONTACTPREF.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/*/CONTACTPREF/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.EMAIL.FDBK.PERSIST.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.EMAIL.FDBK.PERSIST.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/EMAIL_FDBK_API/OUT/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.EMAIL.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.EMAIL.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/ENR/VDR/EMAIL/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.ENRICHER.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.ENRICHER.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/CONTACTPREF/ENR/NONVOICE/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.ERROR.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.ERROR.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/*/ERROR/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.FDBK.CALLBACK.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.FDBK.CALLBACK.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/EMAIL_FDBK_PERSIST/OUT/*/*/*/*/1",
+                "UAL/DEV/DQN/PUSH_FDBK_PERSIST/OUT/*/*/*/*/1",
+                "UAL/DEV/DQN/SMS_FDBK_PERSIST/OUT/*/*/*/*/1",
+                "UAL/DEV/DQN/VOICE_FDBK_PERSIST/OUT/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.FDBK.UCLD.DLV.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.FDBK.UCLD.DLV.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/EMAIL_FDBK_PERSIST/OUT/*/BOUNCE/*/*/1",
+                "UAL/DEV/DQN/EMAIL_FDBK_PERSIST/OUT/*/DELIVERED/*/*/1",
+                "UAL/DEV/DQN/EMAIL_FDBK_PERSIST/OUT/*/DROPPED/*/*/1",
+                "UAL/DEV/DQN/PUSH_FDBK_PERSIST/OUT/*/INBOX_MESSAGE_DELIVERED/*/*/1",
+                "UAL/DEV/DQN/PUSH_FDBK_PERSIST/OUT/*/NOTIFICATION_RECEIVED/*/*/1",
+                "UAL/DEV/DQN/SMS_FDBK_PERSIST/OUT/*/DELIVERED/*/*/1",
+                "UAL/DEV/DQN/SMS_FDBK_PERSIST/OUT/*/FAILED/*/*/1",
+                "UAL/DEV/DQN/SMS_FDBK_PERSIST/OUT/*/UNDELIVERED/*/*/1",
+                "UAL/DEV/DQN/VOICE_FDBK_PERSIST/OUT/*/BUSY/*/*/1",
+                "UAL/DEV/DQN/VOICE_FDBK_PERSIST/OUT/*/COMPLETED/*/*/1",
+                "UAL/DEV/DQN/VOICE_FDBK_PERSIST/OUT/*/FAILED/*/*/1",
+                "UAL/DEV/DQN/VOICE_FDBK_PERSIST/OUT/*/NO_ANSWER/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.FDBK.UCLD.INTR.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.FDBK.UCLD.INTR.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/EMAIL_FDBK_PERSIST/OUT/*/CLICK/*/*/1",
+                "UAL/DEV/DQN/EMAIL_FDBK_PERSIST/OUT/*/OPEN/*/*/1",
+                "UAL/DEV/DQN/PUSH_FDBK_PERSIST/OUT/*/INBOX_MESSAGE_OPENED/*/*/1/*/*/1",
+                "UAL/DEV/DQN/PUSH_FDBK_PERSIST/OUT/*/NOTIFICATION_OPENED/*/*/1",
+                "UAL/DEV/DQN/SMS_FDBK_PERSIST/OUT/*/CLICK/*/*/1",
+                "UAL/DEV/DQN/SMS_FDBK_PERSIST/OUT/*/PREVIEW/*/*/1",
+                "UAL/DEV/DQN/VOICE_FDBK_PERSIST/OUT/*/COMPLETED/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.FDBK.UPDATE.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.FDBK.UPDATE.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/EMAIL_FDBK_PERSIST/OUT/*/BOUNCE/*/*/1",
+                "UAL/DEV/DQN/EMAIL_FDBK_PERSIST/OUT/*/DROPPED/*/*/1",
+                "UAL/DEV/DQN/PUSH_FDBK_PERSIST/OUT/RETRIABLE/FAILED_TO_SEND_NOTIFICATION/*/*/1",
+                "UAL/DEV/DQN/PUSH_FDBK_PERSIST/OUT/RETRIABLE/NO_DEVICES_FOUND/*/*/1",
+                "UAL/DEV/DQN/PUSH_FDBK_PERSIST/OUT/RETRIABLE/OPT_OUT/*/*/1",
+                "UAL/DEV/DQN/SMS_FDBK_PERSIST/OUT/*/FAILED/*/*/1",
+                "UAL/DEV/DQN/SMS_FDBK_PERSIST/OUT/*/UNDELIVERED/*/*/1",
+                "UAL/DEV/DQN/VOICE_FDBK_PERSIST/OUT/*/FAILED/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.KAFKA.COMM.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.KAFKA.COMM.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/EMAIL_PROC/PERSIST/*/*/RAVENODMS/*/1",
+                "UAL/DEV/DQN/PUSH_PROC/PERSIST/*/*/RAVENODMS/*/1",
+                "UAL/DEV/DQN/RCS_PROC/PERSIST/*/*/RAVENODMS/*/1",
+                "UAL/DEV/DQN/SMS_PROC/PERSIST/*/*/RAVENODMS/*/1",
+                "UAL/DEV/DQN/VOICE_PROC/PERSIST/*/*/RAVENODMS/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.LYLT.CHASE.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.LYLT.CHASE.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/LYT/CHS/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.LYLT.MILEPLAY.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.LYLT.MILEPLAY.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/*/MILEPLAY/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.LYLT.MILESPOOLING.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.LYLT.MILESPOOLING.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/LYLT/MILESPOOLING/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.LYLT.PPR.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.LYLT.PPR.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/LYLT/PPR/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.LYLT.PUG.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.LYLT.PUG.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/LYT/PUG/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.MAILHOG.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.MAILHOG.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/VDR/MAILHOG/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.ODMS.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.ODMS.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/*/ODMS/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.PERSIST.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.PERSIST.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/EMAIL_PROC/PERSIST/*/FAILURE/*/*/1",
+                "UAL/DEV/DQN/EMAIL_PROC/PERSIST/*/SUCCESS/*/*/1",
+                "UAL/DEV/DQN/PUSH_PROC/PERSIST/*/FAILURE/*/*/1",
+                "UAL/DEV/DQN/PUSH_PROC/PERSIST/*/SUCCESS/*/*/1",
+                "UAL/DEV/DQN/RCS_PROC/PERSIST/*/FAILURE/*/*/1",
+                "UAL/DEV/DQN/RCS_PROC/PERSIST/*/SUCCESS/*/*/1",
+                "UAL/DEV/DQN/SMS_PROC/PERSIST/*/FAILURE/*/*/1",
+                "UAL/DEV/DQN/SMS_PROC/PERSIST/*/SUCCESS/*/*/1",
+                "UAL/DEV/DQN/VOICE_PROC/PERSIST/*/FAILURE/*/*/1",
+                "UAL/DEV/DQN/VOICE_PROC/PERSIST/*/SUCCESS/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.PHONEVERIFY.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.PHONEVERIFY.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/CONTACTPREF/ENR/VOICE/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.PUSH.FDBK.PERSIST.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.PUSH.FDBK.PERSIST.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/PUSH_FDBK_API/OUT/PERSIST/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.PUSH.FDBK.UCLD.COMM.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.PUSH.FDBK.UCLD.COMM.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/PUSH_FDBK_API/OUT/*/FAILED_TO_SEND_NOTIFICATION/*/*/1",
+                "UAL/DEV/DQN/PUSH_FDBK_API/OUT/*/INBOX_MESSAGE_DELIVERED/*/*/1",
+                "UAL/DEV/DQN/PUSH_FDBK_API/OUT/*/INBOX_MESSAGE_DELIVERY_FAILED/*/*/1",
+                "UAL/DEV/DQN/PUSH_FDBK_API/OUT/*/NOTIFICATION_SENT/*/*/1",
+                "UAL/DEV/DQN/PUSH_FDBK_API/OUT/*/OPT_OUT/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.PUSH.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.PUSH.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/ENR/VDR/PUSH/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.RCS.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.RCS.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/ENR/VDR/RCS/*/*/*/1",
+                "UAL/DEV/DQN/ENR/VDR/WHATSAPP/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.REPROCESS.ERROR.OUT.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.REPROCESS.ERROR.OUT.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/*/REPROCESS/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.SMS.FDBK.PERSIST.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.SMS.FDBK.PERSIST.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/SMS_FDBK_API/OUT/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.SMS.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.SMS.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/ENR/VDR/SMS/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.UCLD.COMM.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.UCLD.COMM.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/EMAIL_PROC/PERSIST/*/*/*/*/1",
+                "UAL/DEV/DQN/RCS_PROC/PERSIST/*/*/*/*/1",
+                "UAL/DEV/DQN/SMS_PROC/PERSIST/*/*/*/*/1",
+                "UAL/DEV/DQN/VOICE_PROC/PERSIST/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.VOICE.FDBK.PERSIST.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.VOICE.FDBK.PERSIST.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/VOICE_FDBK_API/OUT/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.VOICE.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.VOICE.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/ENR/VDR/VOICE/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.CCE.PRETRAVEL.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqnqaappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.QA.DQN.CCE.PRETRAVEL.IN.1",
+            "subscriptionTopics": [
+                "DEMO/TEST/DEMO1",
+                "DEMO/TEST/EP/*/MSG",
+                "UAL/QA/DQN/CCE/PTP/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.COLLAB.NOTIFY.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqnqaappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.QA.DQN.COLLAB.NOTIFY.IN.1",
+            "subscriptionTopics": [
+                "UAL/QA/DQN/ENR/VDR/FLTFEED/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.CONTACTPREF.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqnqaappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.QA.DQN.CONTACTPREF.IN.1",
+            "subscriptionTopics": [
+                "UAL/QA/DQN/*/CONTACTPREF/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.EMAIL.FDBK.PERSIST.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqnqaappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.QA.DQN.EMAIL.FDBK.PERSIST.IN.1",
+            "subscriptionTopics": [
+                "UAL/QA/DQN/EMAIL_FDBK_API/OUT/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.EMAIL.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqnqaappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.QA.DQN.EMAIL.IN.1",
+            "subscriptionTopics": [
+                "UAL/QA/DQN/ENR/VDR/EMAIL/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.ENRICHER.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqnqaappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.QA.DQN.ENRICHER.IN.1",
+            "subscriptionTopics": [
+                "UAL/QA/DQN/CONTACTPREF/ENR/NONVOICE/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.ERROR.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqnqaappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.QA.DQN.ERROR.IN.1",
+            "subscriptionTopics": [
+                "UAL/QA/DQN/*/ERROR/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.FDBK.CALLBACK.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqnqaappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.QA.DQN.FDBK.CALLBACK.IN.1",
+            "subscriptionTopics": [
+                "UAL/QA/DQN/EMAIL_FDBK_PERSIST/OUT/*/*/*/*/1",
+                "UAL/QA/DQN/PUSH_FDBK_PERSIST/OUT/*/*/*/*/1",
+                "UAL/QA/DQN/SMS_FDBK_PERSIST/OUT/*/*/*/*/1",
+                "UAL/QA/DQN/VOICE_FDBK_PERSIST/OUT/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.FDBK.UCLD.DLV.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqnqaappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.QA.DQN.FDBK.UCLD.DLV.IN.1",
+            "subscriptionTopics": [
+                "UAL/QA/DQN/EMAIL_FDBK_PERSIST/OUT/*/BOUNCE/*/*/1",
+                "UAL/QA/DQN/EMAIL_FDBK_PERSIST/OUT/*/DELIVERED/*/*/1",
+                "UAL/QA/DQN/EMAIL_FDBK_PERSIST/OUT/*/DROPPED/*/*/1",
+                "UAL/QA/DQN/PUSH_FDBK_PERSIST/OUT/*/INBOX_MESSAGE_DELIVERED/*/*/1",
+                "UAL/QA/DQN/PUSH_FDBK_PERSIST/OUT/*/NOTIFICATION_RECEIVED/*/*/1",
+                "UAL/QA/DQN/SMS_FDBK_PERSIST/OUT/*/DELIVERED/*/*/1",
+                "UAL/QA/DQN/SMS_FDBK_PERSIST/OUT/*/FAILED/*/*/1",
+                "UAL/QA/DQN/SMS_FDBK_PERSIST/OUT/*/UNDELIVERED/*/*/1",
+                "UAL/QA/DQN/VOICE_FDBK_PERSIST/OUT/*/BUSY/*/*/1",
+                "UAL/QA/DQN/VOICE_FDBK_PERSIST/OUT/*/COMPLETED/*/*/1",
+                "UAL/QA/DQN/VOICE_FDBK_PERSIST/OUT/*/FAILED/*/*/1",
+                "UAL/QA/DQN/VOICE_FDBK_PERSIST/OUT/*/NO_ANSWER/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.FDBK.UCLD.INTR.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqnqaappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.QA.DQN.FDBK.UCLD.INTR.IN.1",
+            "subscriptionTopics": [
+                "UAL/QA/DQN/EMAIL_FDBK_PERSIST/OUT/*/CLICK/*/*/1",
+                "UAL/QA/DQN/EMAIL_FDBK_PERSIST/OUT/*/OPEN/*/*/1",
+                "UAL/QA/DQN/PUSH_FDBK_PERSIST/OUT/*/INBOX_MESSAGE_OPENED/*/*/1",
+                "UAL/QA/DQN/PUSH_FDBK_PERSIST/OUT/*/NOTIFICATION_OPENED/*/*/1",
+                "UAL/QA/DQN/SMS_FDBK_PERSIST/OUT/*/CLICK/*/*/1",
+                "UAL/QA/DQN/SMS_FDBK_PERSIST/OUT/*/PREVIEW/*/*/1",
+                "UAL/QA/DQN/VOICE_FDBK_PERSIST/OUT/*/COMPLETED/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.FDBK.UPDATE.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqnqaappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.QA.DQN.FDBK.UPDATE.IN.1",
+            "subscriptionTopics": [
+                "UAL/QA/DQN/EMAIL_FDBK_PERSIST/OUT/*/BOUNCE/*/*/1",
+                "UAL/QA/DQN/EMAIL_FDBK_PERSIST/OUT/*/DROPPED/*/*/1",
+                "UAL/QA/DQN/PUSH_FDBK_PERSIST/OUT/RETRIABLE/FAILED_TO_SEND_NOTIFICATION/*/*/1",
+                "UAL/QA/DQN/PUSH_FDBK_PERSIST/OUT/RETRIABLE/NO_DEVICES_FOUND/*/*/1",
+                "UAL/QA/DQN/PUSH_FDBK_PERSIST/OUT/RETRIABLE/OPT_OUT/*/*/1",
+                "UAL/QA/DQN/SMS_FDBK_PERSIST/OUT/*/FAILED/*/*/1",
+                "UAL/QA/DQN/SMS_FDBK_PERSIST/OUT/*/UNDELIVERED/*/*/1",
+                "UAL/QA/DQN/VOICE_FDBK_PERSIST/OUT/*/FAILED/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.KAFKA.COMM.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqnqaappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.QA.DQN.KAFKA.COMM.IN.1",
+            "subscriptionTopics": [
+                "UAL/QA/DQN/EMAIL_PROC/PERSIST/*/*/RAVENODMS/*/1",
+                "UAL/QA/DQN/PUSH_PROC/PERSIST/*/*/RAVENODMS/*/1",
+                "UAL/QA/DQN/RCS_PROC/PERSIST/*/*/RAVENODMS/*/1",
+                "UAL/QA/DQN/SMS_PROC/PERSIST/*/*/RAVENODMS/*/1",
+                "UAL/QA/DQN/VOICE_PROC/PERSIST/*/*/RAVENODMS/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.LYLT.CHASE.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqnqaappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.QA.DQN.LYLT.CHASE.IN.1",
+            "subscriptionTopics": [
+                "UAL/QA/DQN/LYT/CHS/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.LYLT.MILEPLAY.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqnqaappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.QA.DQN.LYLT.MILEPLAY.IN.1",
+            "subscriptionTopics": [
+                "UAL/QA/DQN/*/MILEPLAY/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.LYLT.MILESPOOLING.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqnqaappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.QA.DQN.LYLT.MILESPOOLING.IN.1",
+            "subscriptionTopics": [
+                "UAL/QA/DQN/LYLT/MILESPOOLING/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.LYLT.PPR.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqnqaappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.QA.DQN.LYLT.PPR.IN.1",
+            "subscriptionTopics": [
+                "UAL/QA/DQN/LYLT/PPR/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.LYLT.PUG.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqnqaappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.QA.DQN.LYLT.PUG.IN.1",
+            "subscriptionTopics": [
+                "UAL/QA/DQN/LYT/PUG/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.MAILHOG.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqnqaappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.QA.DQN.MAILHOG.IN.1",
+            "subscriptionTopics": [
+                "UAL/QA/DQN/VDR/MAILHOG/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.ODMS.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqnqaappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.QA.DQN.ODMS.IN.1",
+            "subscriptionTopics": [
+                "UAL/QA/DQN/*/ODMS/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.PERSIST.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqnqaappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.QA.DQN.PERSIST.IN.1",
+            "subscriptionTopics": [
+                "UAL/QA/DQN/EMAIL_PROC/PERSIST/*/FAILURE/*/*/1",
+                "UAL/QA/DQN/EMAIL_PROC/PERSIST/*/SUCCESS/*/*/1",
+                "UAL/QA/DQN/PUSH_PROC/PERSIST/*/FAILURE/*/*/1",
+                "UAL/QA/DQN/PUSH_PROC/PERSIST/*/SUCCESS/*/*/1",
+                "UAL/QA/DQN/RCS_PROC/PERSIST/*/FAILURE/*/*/1",
+                "UAL/QA/DQN/RCS_PROC/PERSIST/*/SUCCESS/*/*/1",
+                "UAL/QA/DQN/SMS_PROC/PERSIST/*/FAILURE/*/*/1",
+                "UAL/QA/DQN/SMS_PROC/PERSIST/*/SUCCESS/*/*/1",
+                "UAL/QA/DQN/VOICE_PROC/PERSIST/*/FAILURE/*/*/1",
+                "UAL/QA/DQN/VOICE_PROC/PERSIST/*/SUCCESS/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.PHONEVERIFY.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqnqaappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.QA.DQN.PHONEVERIFY.IN.1",
+            "subscriptionTopics": [
+                "UAL/QA/DQN/CONTACTPREF/ENR/VOICE/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.PUSH.FDBK.PERSIST.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqnqaappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.QA.DQN.PUSH.FDBK.PERSIST.IN.1",
+            "subscriptionTopics": [
+                "UAL/QA/DQN/PUSH_FDBK_API/OUT/PERSIST/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.PUSH.FDBK.UCLD.COMM.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqnqaappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.QA.DQN.PUSH.FDBK.UCLD.COMM.IN.1",
+            "subscriptionTopics": [
+                "UAL/QA/DQN/PUSH_FDBK_API/OUT/*/FAILED_TO_SEND_NOTIFICATION/*/*/1",
+                "UAL/QA/DQN/PUSH_FDBK_API/OUT/*/INBOX_MESSAGE_DELIVERED/*/*/1",
+                "UAL/QA/DQN/PUSH_FDBK_API/OUT/*/INBOX_MESSAGE_DELIVERY_FAILED/*/*/1",
+                "UAL/QA/DQN/PUSH_FDBK_API/OUT/*/NOTIFICATION_SENT/*/*/1",
+                "UAL/QA/DQN/PUSH_FDBK_API/OUT/*/OPT_OUT/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.PUSH.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqnqaappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.QA.DQN.PUSH.IN.1",
+            "subscriptionTopics": [
+                "UAL/QA/DQN/ENR/VDR/PUSH/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.RCS.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqnqaappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.QA.DQN.RCS.IN.1",
+            "subscriptionTopics": [
+                "UAL/QA/DQN/ENR/VDR/RCS/*/*/*/1",
+                "UAL/QA/DQN/ENR/VDR/WHATSAPP/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.REPROCESS.ERROR.OUT.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.QA.DQN.REPROCESS.ERROR.OUT.1",
+            "subscriptionTopics": [
+                "UAL/QA/DQN/*/REPROCESS/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.SMS.FDBK.PERSIST.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqnqaappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.QA.DQN.SMS.FDBK.PERSIST.IN.1",
+            "subscriptionTopics": [
+                "UAL/QA/DQN/SMS_FDBK_API/OUT/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.SMS.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqnqaappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.QA.DQN.SMS.IN.1",
+            "subscriptionTopics": [
+                "UAL/QA/DQN/ENR/VDR/SMS/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.UCLD.COMM.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqnqaappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.QA.DQN.UCLD.COMM.IN.1",
+            "subscriptionTopics": [
+                "UAL/QA/DQN/EMAIL_PROC/PERSIST/*/*/*/*/1",
+                "UAL/QA/DQN/RCS_PROC/PERSIST/*/*/*/*/1",
+                "UAL/QA/DQN/SMS_PROC/PERSIST/*/*/*/*/1",
+                "UAL/QA/DQN/VOICE_PROC/PERSIST/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.VOICE.FDBK.PERSIST.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqnqaappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.QA.DQN.VOICE.FDBK.PERSIST.IN.1",
+            "subscriptionTopics": [
+                "UAL/QA/DQN/VOICE_FDBK_API/OUT/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.VOICE.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqnqaappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.QA.DQN.VOICE.IN.1",
+            "subscriptionTopics": [
+                "UAL/QA/DQN/ENR/VDR/VOICE/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'new queue'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "maxMsgSpoolUsage": 5000,
+            "owner": "notification_direct_consumer",
+            "permission": "no-access",
+            "queueName": "new queue",
+            "subscriptionTopics": [
+                "them/test"
             ]
         }
     ],
@@ -4477,17 +5441,26 @@
             "passwordToken": "ToaY2qw7iRSinoVbcz3YFA==EuxMAQBFEQK+HqoYAfKSzZymkw=="
         },
         {
+            "aclProfileName": "default",
+            "clientProfileName": "default",
             "clientUsername": "dqndevappuser",
+            "documentation": "This user was imported from Event Portal for app 'DqndevappuserApp'.",
             "enabled": true,
             "password": "password"
         },
         {
+            "aclProfileName": "default",
+            "clientProfileName": "default",
             "clientUsername": "dqnqaappuser",
+            "documentation": "This user was imported from Event Portal for app 'DQN_QA_AppUser'.",
             "enabled": true,
             "password": "password"
         },
         {
+            "aclProfileName": "default",
+            "clientProfileName": "default",
             "clientUsername": "loyaltydevuser",
+            "documentation": "This user was imported from Event Portal for app 'LoyaltydevuserApp'.",
             "enabled": true,
             "password": "password"
         },
@@ -4495,6 +5468,7 @@
             "aclProfileName": "notification_direct_consumer",
             "clientProfileName": "notification_direct_consumer_cp",
             "clientUsername": "notification_direct_consumer",
+            "documentation": "This user was imported from Event Portal for app 'NotificationDirectConsumerApp'.",
             "enabled": true,
             "password": "password"
         },
@@ -4502,11 +5476,15 @@
             "aclProfileName": "notification_direct_producer",
             "clientProfileName": "notification_direct_producer_cp",
             "clientUsername": "notification_direct_producer",
+            "documentation": "This user was imported from Event Portal for app 'NotificationDirectProducerApp'.",
             "enabled": true,
             "password": "password"
         },
         {
+            "aclProfileName": "default",
+            "clientProfileName": "default",
             "clientUsername": "odmsdevuser",
+            "documentation": "This user was imported from Event Portal for app 'OdmsdevuserApp'.",
             "enabled": true,
             "password": "password"
         },
@@ -4903,7 +5881,10 @@
             "passwordToken": "bAwzrtMdgllw+aZMJ8uv1w==1EwVoty0Yzpa+eGnLoXH7+mBYqxP74rfm7UqUkbSnUCU"
         },
         {
+            "aclProfileName": "default",
+            "clientProfileName": "default",
             "clientUsername": "test",
+            "documentation": "This user was imported from Event Portal for app 'TestApp'.",
             "enabled": true,
             "password": "password"
         }
