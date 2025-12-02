@@ -14,8 +14,8 @@
                 "cluster": {
                         "name": "united-ep-tools-cluster"
                 },
-        				"GlobalAdminUser": "cicd_admin",
-        				"GlobalAdminToken": "p6tWgBCe1F28+uzZySK2rg==nM2KSsk=",
+        				"GlobalAdminUser": "mission-control-manager",
+        				"GlobalAdminToken": "6TnKVY8wEvU+nFuZkexC+Q==fBM0ple3rcHrnjnQ7x+QLtmLiCTzytbWpYBWrd4omg==",
         				"createDNSEntry": false,
         				"uploadCustomCerts": true,
         				"shellCommandsForWindows": false,
