@@ -3,38 +3,23 @@
         "__ep_applications": {
             "__DQN_QA_AppUser": {
                 "clientUsername": "dqnqaappuser",
-                "id": "mdx0q0bqof1",
+                "id": "pov8fegbyji",
                 "name": "DQN_QA_AppUser"
             },
             "__DqndevappuserApp": {
                 "clientUsername": "dqndevappuser",
-                "id": "6zq2o05m3in",
+                "id": "vopxm4b63y5",
                 "name": "DqndevappuserApp"
-            },
-            "__LoyaltydevuserApp": {
-                "clientUsername": "loyaltydevuser",
-                "id": "fu0t47hedlp",
-                "name": "LoyaltydevuserApp"
             },
             "__NotificationDirectConsumerApp": {
                 "clientUsername": "notification_direct_consumer",
-                "id": "5bbhe78i05t",
+                "id": "ta2r59ruqn5",
                 "name": "NotificationDirectConsumerApp"
             },
             "__NotificationDirectProducerApp": {
                 "clientUsername": "notification_direct_producer",
-                "id": "wl2hus6u9q6",
+                "id": "2ssmpb364c1",
                 "name": "NotificationDirectProducerApp"
-            },
-            "__OdmsdevuserApp": {
-                "clientUsername": "odmsdevuser",
-                "id": "rcijhqoviop",
-                "name": "OdmsdevuserApp"
-            },
-            "__TestApp": {
-                "clientUsername": "test",
-                "id": "6cfbz2r30dq",
-                "name": "TestApp"
             }
         }
     },
@@ -43,9 +28,7 @@
             "aclProfileName": "notification_direct_producer",
             "clientConnectDefaultAction": "allow",
             "publishTopicDefaultAction": "disallow",
-            "publishTopicExceptions": [
-                "ua/notifications/delivered"
-            ],
+            "publishTopicExceptions": [],
             "subscribeShareNameDefaultAction": "allow",
             "subscribeTopicDefaultAction": "disallow",
             "subscribeTopicExceptions": []
@@ -57,9 +40,7 @@
             "publishTopicExceptions": [],
             "subscribeShareNameDefaultAction": "allow",
             "subscribeTopicDefaultAction": "disallow",
-            "subscribeTopicExceptions": [
-                "ua/notifications/delivered"
-            ]
+            "subscribeTopicExceptions": []
         }
     ],
     "clientProfiles": [
@@ -95,19 +76,6 @@
     "queues": [
         {
             "accessType": "exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'new queue'.",
-            "egressEnabled": true,
-            "ingressEnabled": true,
-            "maxMsgSpoolUsage": 5000,
-            "owner": "notification_direct_consumer",
-            "permission": "no-access",
-            "queueName": "new queue",
-            "subscriptionTopics": [
-                "them/test"
-            ]
-        },
-        {
-            "accessType": "exclusive",
             "documentation": "This queue was imported from Event Portal for app 'Q.UaNotificationsDelivered'.",
             "egressEnabled": true,
             "ingressEnabled": true,
@@ -133,19 +101,6 @@
             ]
         },
         {
-            "accessType": "exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'TEST.QUEUE_1'.",
-            "egressEnabled": true,
-            "ingressEnabled": true,
-            "maxMsgSpoolUsage": 5000,
-            "owner": "notification_direct_consumer",
-            "permission": "no-access",
-            "queueName": "TEST.QUEUE_1",
-            "subscriptionTopics": [
-                "ua/notifications/>"
-            ]
-        },
-        {
             "accessType": "non-exclusive",
             "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.CCE.PRETRAVEL.IN.1'.",
             "egressEnabled": true,
@@ -155,8 +110,6 @@
             "permission": "consume",
             "queueName": "UAL.QA.DQN.CCE.PRETRAVEL.IN.1",
             "subscriptionTopics": [
-                "DEMO/TEST/DEMO1",
-                "DEMO/TEST/EP/*/MSG",
                 "UAL/QA/DQN/CCE/PTP/*/*/*/*/1"
             ]
         },
@@ -1082,30 +1035,6 @@
             "documentation": "This user was imported from Event Portal for app 'DqndevappuserApp'.",
             "enabled": true,
             "password": "dqndevappuser"
-        },
-        {
-            "aclProfileName": "default",
-            "clientProfileName": "default",
-            "clientUsername": "loyaltydevuser",
-            "documentation": "This user was imported from Event Portal for app 'LoyaltydevuserApp'.",
-            "enabled": true,
-            "password": "loyaltydevuser"
-        },
-        {
-            "aclProfileName": "default",
-            "clientProfileName": "default",
-            "clientUsername": "odmsdevuser",
-            "documentation": "This user was imported from Event Portal for app 'OdmsdevuserApp'.",
-            "enabled": true,
-            "password": "odmsdevuser"
-        },
-        {
-            "aclProfileName": "default",
-            "clientProfileName": "default",
-            "clientUsername": "test",
-            "documentation": "This user was imported from Event Portal for app 'TestApp'.",
-            "enabled": true,
-            "password": "test"
         }
     ]
 }
