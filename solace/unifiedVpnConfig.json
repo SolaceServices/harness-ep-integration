@@ -2,10 +2,7 @@
     "aclProfiles": [
         {
             "aclProfileName": "abc123",
-            "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
-            "publishTopicExceptions": [],
-            "subscribeTopicExceptions": []
+            "clientConnectDefaultAction": "allow"
         },
         {
             "aclProfileName": "default",
@@ -19,17 +16,13 @@
         {
             "aclProfileName": "dev-bos-bagcount-pub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
             "publishTopicExceptions": [
                 "UAL/ATW/BOS/BAGCOUNT/DEV/>"
-            ],
-            "subscribeTopicExceptions": []
+            ]
         },
         {
             "aclProfileName": "dev-cux-waittimes-sub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
-            "publishTopicExceptions": [],
             "subscribeTopicExceptions": [
                 "test/>"
             ]
@@ -37,18 +30,14 @@
         {
             "aclProfileName": "dev-cxp-flifo-pub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
             "publishTopicExceptions": [
                 "UAL/DEV/ATW/CXP/FLIFO/>"
-            ],
-            "subscribeTopicExceptions": []
+            ]
         },
         {
             "aclProfileName": "dev-cxp-flifo-sub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
             "publishTopicDefaultAction": "allow",
-            "publishTopicExceptions": [],
             "subscribeTopicExceptions": [
                 "test/>"
             ]
@@ -56,8 +45,6 @@
         {
             "aclProfileName": "dev-epo-ucd-sub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
-            "publishTopicExceptions": [],
             "subscribeTopicExceptions": [
                 "test/>"
             ]
@@ -65,17 +52,13 @@
         {
             "aclProfileName": "dev-etj-edifact-out-tsa-pub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
             "publishTopicExceptions": [
                 "UAL/TSEC/ETJ/OUT/DEV/EDIFACT/>"
-            ],
-            "subscribeTopicExceptions": []
+            ]
         },
         {
             "aclProfileName": "dev-etj-edifact-out-tsa-sub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
-            "publishTopicExceptions": [],
             "subscribeTopicDefaultAction": "allow",
             "subscribeTopicExceptions": [
                 "test/>"
@@ -84,8 +67,6 @@
         {
             "aclProfileName": "dev-gsapp-ucd-sub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
-            "publishTopicExceptions": [],
             "subscribeTopicExceptions": [
                 "test/>"
             ]
@@ -93,8 +74,6 @@
         {
             "aclProfileName": "dev-jet-boarding-seat-sub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
-            "publishTopicExceptions": [],
             "subscribeTopicDefaultAction": "allow",
             "subscribeTopicExceptions": [
                 "test/>"
@@ -103,9 +82,7 @@
         {
             "aclProfileName": "dev-jet-collab-pub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
             "publishTopicDefaultAction": "allow",
-            "publishTopicExceptions": [],
             "subscribeTopicExceptions": [
                 "test/>"
             ]
@@ -113,8 +90,6 @@
         {
             "aclProfileName": "dev-jet-collab-sub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
-            "publishTopicExceptions": [],
             "subscribeTopicExceptions": [
                 "test/>"
             ]
@@ -122,9 +97,7 @@
         {
             "aclProfileName": "dev-jet-flifo-pub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
             "publishTopicDefaultAction": "allow",
-            "publishTopicExceptions": [],
             "subscribeTopicExceptions": [
                 "test/>"
             ]
@@ -132,8 +105,6 @@
         {
             "aclProfileName": "dev-jet-flifo-sub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
-            "publishTopicExceptions": [],
             "subscribeTopicExceptions": [
                 "test/>"
             ]
@@ -141,16 +112,13 @@
         {
             "aclProfileName": "dev-jet-fm-autorefresh-pub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
             "publishTopicExceptions": [
                 "UAL/DEV/ATW/JET/FLIGHT/>"
-            ],
-            "subscribeTopicExceptions": []
+            ]
         },
         {
             "aclProfileName": "dev-jet-fm-autorefresh-pubsub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
             "publishTopicExceptions": [
                 "UAL/DEV/ATW/JET/FLIGHT/>"
             ],
@@ -162,8 +130,6 @@
         {
             "aclProfileName": "dev-jet-fm-bjb-pcdr-events-sub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
-            "publishTopicExceptions": [],
             "subscribeTopicDefaultAction": "allow",
             "subscribeTopicExceptions": [
                 "test/>"
@@ -172,7 +138,6 @@
         {
             "aclProfileName": "dev-jet-fm-boarding-pub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
             "publishTopicExceptions": [
                 "UAL/DEV/ATW/JET/BOARDING/>"
             ],
@@ -183,7 +148,6 @@
         {
             "aclProfileName": "dev-jet-fm-boarding-pubsub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
             "publishTopicExceptions": [
                 "UAL/DEV/ATW/JET/BOARDING/>"
             ],
@@ -195,7 +159,6 @@
         {
             "aclProfileName": "dev-jet-fm-crew-pub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
             "publishTopicExceptions": [
                 "UAL/DEV/ATW/JET/CREW/FLIGHT/>"
             ],
@@ -206,7 +169,6 @@
         {
             "aclProfileName": "dev-jet-fm-crew-pubsub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
             "publishTopicExceptions": [
                 "UAL/DEV/ATW/JET/CREW/FLIGHT/>"
             ],
@@ -218,9 +180,7 @@
         {
             "aclProfileName": "dev-jet-fm-prnvalidation-sub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
             "publishTopicDefaultAction": "allow",
-            "publishTopicExceptions": [],
             "subscribeTopicExceptions": [
                 "test/>"
             ]
@@ -228,8 +188,6 @@
         {
             "aclProfileName": "dev-jet-fm-ucd-sub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
-            "publishTopicExceptions": [],
             "subscribeTopicExceptions": [
                 "test/>"
             ]
@@ -237,9 +195,7 @@
         {
             "aclProfileName": "dev-jet-pcdr-inbound-pub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
             "publishTopicDefaultAction": "allow",
-            "publishTopicExceptions": [],
             "subscribeTopicExceptions": [
                 "test/>"
             ]
@@ -247,8 +203,6 @@
         {
             "aclProfileName": "dev-jet-pcdr-inbound-sub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
-            "publishTopicExceptions": [],
             "subscribeTopicExceptions": [
                 "test/>"
             ]
@@ -256,9 +210,7 @@
         {
             "aclProfileName": "dev-jet-pcdr-outbound-pub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
             "publishTopicDefaultAction": "allow",
-            "publishTopicExceptions": [],
             "subscribeTopicExceptions": [
                 "test/>"
             ]
@@ -266,9 +218,7 @@
         {
             "aclProfileName": "dev-jet-pcdr-outbound-shares-sub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
             "publishTopicDefaultAction": "allow",
-            "publishTopicExceptions": [],
             "subscribeTopicExceptions": [
                 "test/>"
             ]
@@ -276,8 +226,6 @@
         {
             "aclProfileName": "dev-jet-pcdr-outbound-tm-sub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
-            "publishTopicExceptions": [],
             "subscribeTopicExceptions": [
                 "test/>"
             ]
@@ -285,8 +233,6 @@
         {
             "aclProfileName": "dev-jet-ucd-sub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
-            "publishTopicExceptions": [],
             "subscribeTopicExceptions": [
                 "test/>"
             ]
@@ -294,17 +240,13 @@
         {
             "aclProfileName": "dev-uds-bagclaim-pub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
             "publishTopicExceptions": [
                 "UAL/DEV/ATW/UDS/BAGCLAIM/>"
-            ],
-            "subscribeTopicExceptions": []
+            ]
         },
         {
             "aclProfileName": "dev-uds-bagclaim-sub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
-            "publishTopicExceptions": [],
             "subscribeTopicDefaultAction": "allow",
             "subscribeTopicExceptions": [
                 "test/>"
@@ -313,17 +255,13 @@
         {
             "aclProfileName": "dev-uds-bagclaimetaevt-pub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
             "publishTopicExceptions": [
                 "UAL/DEV/ATW/UDS/BAGCLAIMETAEVT/>"
-            ],
-            "subscribeTopicExceptions": []
+            ]
         },
         {
             "aclProfileName": "dev-uds-bagclaimetaevt-sub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
-            "publishTopicExceptions": [],
             "subscribeTopicDefaultAction": "allow",
             "subscribeTopicExceptions": [
                 "test/>"
@@ -332,18 +270,14 @@
         {
             "aclProfileName": "dev-uds-bagpier-pub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
             "publishTopicExceptions": [
                 "UAL/DEV/UDS/BAGPIER/>"
-            ],
-            "subscribeTopicExceptions": []
+            ]
         },
         {
             "aclProfileName": "dev-uds-bagpier-sub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
             "publishTopicDefaultAction": "allow",
-            "publishTopicExceptions": [],
             "subscribeTopicExceptions": [
                 "UAL/DEV/UDS/BAGPIER/>"
             ]
@@ -351,9 +285,7 @@
         {
             "aclProfileName": "dev-uds-bagscan-pub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
             "publishTopicDefaultAction": "allow",
-            "publishTopicExceptions": [],
             "subscribeTopicExceptions": [
                 "test/>"
             ]
@@ -361,9 +293,7 @@
         {
             "aclProfileName": "dev-uds-bagscan-sub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
             "publishTopicDefaultAction": "allow",
-            "publishTopicExceptions": [],
             "subscribeTopicExceptions": [
                 "test/>"
             ]
@@ -371,9 +301,7 @@
         {
             "aclProfileName": "dev-uds-ezfidsgate-pub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
             "publishTopicDefaultAction": "allow",
-            "publishTopicExceptions": [],
             "subscribeTopicExceptions": [
                 "test/>"
             ]
@@ -381,9 +309,7 @@
         {
             "aclProfileName": "dev-uds-ezfidsgate-sub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
             "publishTopicDefaultAction": "allow",
-            "publishTopicExceptions": [],
             "subscribeTopicExceptions": [
                 "test/>"
             ]
@@ -391,9 +317,7 @@
         {
             "aclProfileName": "dev-uds-flifo-sub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
             "publishTopicDefaultAction": "allow",
-            "publishTopicExceptions": [],
             "subscribeTopicExceptions": [
                 "test/>"
             ]
@@ -401,17 +325,13 @@
         {
             "aclProfileName": "dev-uds-formtr-notify-pub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
             "publishTopicExceptions": [
                 "UAL/DEV/UDS/FORMTR/NOTIFY>"
-            ],
-            "subscribeTopicExceptions": []
+            ]
         },
         {
             "aclProfileName": "dev-uds-formtr-notify-sub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
-            "publishTopicExceptions": [],
             "subscribeTopicDefaultAction": "allow",
             "subscribeTopicExceptions": [
                 "test/>"
@@ -420,17 +340,13 @@
         {
             "aclProfileName": "dev-uds-fwdbags-pub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
             "publishTopicExceptions": [
                 "UAL/DEV/ATW/UDS/FWDBAGS/>"
-            ],
-            "subscribeTopicExceptions": []
+            ]
         },
         {
             "aclProfileName": "dev-uds-fwdbags-sub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
-            "publishTopicExceptions": [],
             "subscribeTopicDefaultAction": "allow",
             "subscribeTopicExceptions": [
                 "test/>"
@@ -439,17 +355,13 @@
         {
             "aclProfileName": "dev-uds-gids-render-efids-pub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
             "publishTopicExceptions": [
                 "UAL/DEV/UDS/GIDS/RENDER/EFIDS>"
-            ],
-            "subscribeTopicExceptions": []
+            ]
         },
         {
             "aclProfileName": "dev-uds-gids-render-efids-sub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
-            "publishTopicExceptions": [],
             "subscribeTopicDefaultAction": "allow",
             "subscribeTopicExceptions": [
                 "test/>"
@@ -458,17 +370,13 @@
         {
             "aclProfileName": "dev-uds-hotbag-pub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
             "publishTopicExceptions": [
                 "UAL/DEV/ATW/UDS/HOTBAG/>"
-            ],
-            "subscribeTopicExceptions": []
+            ]
         },
         {
             "aclProfileName": "dev-uds-hotbag-sub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
-            "publishTopicExceptions": [],
             "subscribeTopicDefaultAction": "allow",
             "subscribeTopicExceptions": [
                 "test/>"
@@ -477,17 +385,13 @@
         {
             "aclProfileName": "dev-uds-lightdetectalerts-pub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
             "publishTopicExceptions": [
                 "UAL/DEV/ATW/UDS/LIGHTDETECTALERTS/>"
-            ],
-            "subscribeTopicExceptions": []
+            ]
         },
         {
             "aclProfileName": "dev-uds-lightdetectalerts-sub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
-            "publishTopicExceptions": [],
             "subscribeTopicDefaultAction": "allow",
             "subscribeTopicExceptions": [
                 "test/>"
@@ -496,18 +400,14 @@
         {
             "aclProfileName": "dev-uds-wb-events-pub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
             "publishTopicExceptions": [
                 "UAL/ATW/UDS/WB/DEV/V1/TailTip/>",
                 "UAL/ATW/UDS/WB/DEV/V1/WTRESTINFO/>"
-            ],
-            "subscribeTopicExceptions": []
+            ]
         },
         {
             "aclProfileName": "dev-uds-wb-events-sub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
-            "publishTopicExceptions": [],
             "subscribeTopicDefaultAction": "allow",
             "subscribeTopicExceptions": [
                 "test/>"
@@ -516,8 +416,6 @@
         {
             "aclProfileName": "dev-uia-bagcount-sub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
-            "publishTopicExceptions": [],
             "subscribeTopicDefaultAction": "allow",
             "subscribeTopicExceptions": [
                 "test/>"
@@ -526,7 +424,6 @@
         {
             "aclProfileName": "dev-uia-waittimes-pub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
             "publishTopicExceptions": [
                 "UAL/DEV/ATW/UIA/WAITTIMES/>"
             ],
@@ -537,11 +434,6 @@
         {
             "aclProfileName": "notification_direct_consumer",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
-            "publishTopicDefaultAction": "disallow",
-            "publishTopicExceptions": [],
-            "subscribeShareNameDefaultAction": "allow",
-            "subscribeTopicDefaultAction": "disallow",
             "subscribeTopicExceptions": [
                 "ua/notifications/delivered"
             ]
@@ -549,29 +441,20 @@
         {
             "aclProfileName": "notification_direct_producer",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
-            "publishTopicDefaultAction": "disallow",
             "publishTopicExceptions": [
                 "ua/notifications/delivered"
-            ],
-            "subscribeShareNameDefaultAction": "allow",
-            "subscribeTopicDefaultAction": "disallow",
-            "subscribeTopicExceptions": []
+            ]
         },
         {
             "aclProfileName": "poc-aap-jumpseat-pub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
             "publishTopicExceptions": [
                 "UAL/POC/AAP/JUMPSEAT/>"
-            ],
-            "subscribeTopicExceptions": []
+            ]
         },
         {
             "aclProfileName": "poc-aap-jumpseat-sub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
-            "publishTopicExceptions": [],
             "subscribeTopicDefaultAction": "allow",
             "subscribeTopicExceptions": [
                 "test/>"
@@ -580,8 +463,6 @@
         {
             "aclProfileName": "qa-cux-waittimes-sub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
-            "publishTopicExceptions": [],
             "subscribeTopicExceptions": [
                 "test/>"
             ]
@@ -589,18 +470,14 @@
         {
             "aclProfileName": "qa-cxp-flifo-pub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
             "publishTopicExceptions": [
                 "UAL/QA/ATW/CXP/FLIFO/>"
-            ],
-            "subscribeTopicExceptions": []
+            ]
         },
         {
             "aclProfileName": "qa-cxp-flifo-sub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
             "publishTopicDefaultAction": "allow",
-            "publishTopicExceptions": [],
             "subscribeTopicExceptions": [
                 "test/>"
             ]
@@ -608,8 +485,6 @@
         {
             "aclProfileName": "qa-epo-ucd-sub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
-            "publishTopicExceptions": [],
             "subscribeTopicExceptions": [
                 "test/>"
             ]
@@ -617,17 +492,13 @@
         {
             "aclProfileName": "qa-etj-edifact-out-tsa-pub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
             "publishTopicExceptions": [
                 "UAL/TSEC/ETJ/OUT/QA/EDIFACT/>"
-            ],
-            "subscribeTopicExceptions": []
+            ]
         },
         {
             "aclProfileName": "qa-etj-edifact-out-tsa-sub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
-            "publishTopicExceptions": [],
             "subscribeTopicDefaultAction": "allow",
             "subscribeTopicExceptions": [
                 "test/>"
@@ -636,8 +507,6 @@
         {
             "aclProfileName": "qa-gsapp-ucd-sub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
-            "publishTopicExceptions": [],
             "subscribeTopicExceptions": [
                 "test/>"
             ]
@@ -645,8 +514,6 @@
         {
             "aclProfileName": "qa-jet-boarding-seat-sub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
-            "publishTopicExceptions": [],
             "subscribeTopicDefaultAction": "allow",
             "subscribeTopicExceptions": [
                 "test/>"
@@ -655,9 +522,7 @@
         {
             "aclProfileName": "qa-jet-collab-pub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
             "publishTopicDefaultAction": "allow",
-            "publishTopicExceptions": [],
             "subscribeTopicExceptions": [
                 "test/>"
             ]
@@ -665,8 +530,6 @@
         {
             "aclProfileName": "qa-jet-collab-sub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
-            "publishTopicExceptions": [],
             "subscribeTopicExceptions": [
                 "test/>"
             ]
@@ -674,9 +537,7 @@
         {
             "aclProfileName": "qa-jet-flifo-pub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
             "publishTopicDefaultAction": "allow",
-            "publishTopicExceptions": [],
             "subscribeTopicExceptions": [
                 "test/>"
             ]
@@ -684,8 +545,6 @@
         {
             "aclProfileName": "qa-jet-flifo-sub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
-            "publishTopicExceptions": [],
             "subscribeTopicExceptions": [
                 "test/>"
             ]
@@ -693,16 +552,13 @@
         {
             "aclProfileName": "qa-jet-fm-autorefresh-pub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
             "publishTopicExceptions": [
                 "UAL/QA/ATW/JET/FLIGHT/>"
-            ],
-            "subscribeTopicExceptions": []
+            ]
         },
         {
             "aclProfileName": "qa-jet-fm-autorefresh-pubsub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
             "publishTopicExceptions": [
                 "UAL/QA/ATW/JET/FLIGHT/>"
             ],
@@ -714,8 +570,6 @@
         {
             "aclProfileName": "qa-jet-fm-bjb-pcdr-events-sub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
-            "publishTopicExceptions": [],
             "subscribeTopicDefaultAction": "allow",
             "subscribeTopicExceptions": [
                 "test/>"
@@ -724,7 +578,6 @@
         {
             "aclProfileName": "qa-jet-fm-boarding-pub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
             "publishTopicExceptions": [
                 "UAL/QA/ATW/JET/BOARDING/>"
             ],
@@ -735,7 +588,6 @@
         {
             "aclProfileName": "qa-jet-fm-boarding-pubsub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
             "publishTopicExceptions": [
                 "UAL/QA/ATW/JET/BOARDING/>"
             ],
@@ -747,9 +599,7 @@
         {
             "aclProfileName": "qa-jet-fm-prnvalidation-sub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
             "publishTopicDefaultAction": "allow",
-            "publishTopicExceptions": [],
             "subscribeTopicExceptions": [
                 "test/>"
             ]
@@ -757,8 +607,6 @@
         {
             "aclProfileName": "qa-jet-fm-ucd-sub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
-            "publishTopicExceptions": [],
             "subscribeTopicExceptions": [
                 "test/>"
             ]
@@ -766,9 +614,7 @@
         {
             "aclProfileName": "qa-jet-pcdr-inbound-pub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
             "publishTopicDefaultAction": "allow",
-            "publishTopicExceptions": [],
             "subscribeTopicExceptions": [
                 "test/>"
             ]
@@ -776,8 +622,6 @@
         {
             "aclProfileName": "qa-jet-pcdr-inbound-sub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
-            "publishTopicExceptions": [],
             "subscribeTopicExceptions": [
                 "test/>"
             ]
@@ -785,9 +629,7 @@
         {
             "aclProfileName": "qa-jet-pcdr-outbound-shares-sub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
             "publishTopicDefaultAction": "allow",
-            "publishTopicExceptions": [],
             "subscribeTopicExceptions": [
                 "test/>"
             ]
@@ -795,8 +637,6 @@
         {
             "aclProfileName": "qa-jet-pcdr-outbound-tm-sub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
-            "publishTopicExceptions": [],
             "subscribeTopicExceptions": [
                 "test/>"
             ]
@@ -804,8 +644,6 @@
         {
             "aclProfileName": "qa-jet-ucd-sub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
-            "publishTopicExceptions": [],
             "subscribeTopicExceptions": [
                 "test/>"
             ]
@@ -813,17 +651,13 @@
         {
             "aclProfileName": "qa-uds-bagclaim-pub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
             "publishTopicExceptions": [
                 "UAL/QA/ATW/UDS/BAGCLAIM/>"
-            ],
-            "subscribeTopicExceptions": []
+            ]
         },
         {
             "aclProfileName": "qa-uds-bagclaim-sub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
-            "publishTopicExceptions": [],
             "subscribeTopicDefaultAction": "allow",
             "subscribeTopicExceptions": [
                 "test/>"
@@ -832,17 +666,13 @@
         {
             "aclProfileName": "qa-uds-bagclaimetaevt-pub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
             "publishTopicExceptions": [
                 "UAL/QA/ATW/UDS/BAGCLAIMETAEVT/>"
-            ],
-            "subscribeTopicExceptions": []
+            ]
         },
         {
             "aclProfileName": "qa-uds-bagclaimetaevt-sub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
-            "publishTopicExceptions": [],
             "subscribeTopicDefaultAction": "allow",
             "subscribeTopicExceptions": [
                 "test/>"
@@ -851,18 +681,14 @@
         {
             "aclProfileName": "qa-uds-bagpier-pub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
             "publishTopicExceptions": [
                 "UAL/QA/UDS/BAGPIER/>"
-            ],
-            "subscribeTopicExceptions": []
+            ]
         },
         {
             "aclProfileName": "qa-uds-bagpier-sub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
             "publishTopicDefaultAction": "allow",
-            "publishTopicExceptions": [],
             "subscribeTopicExceptions": [
                 "UAL/QA/UDS/BAGPIER/>"
             ]
@@ -870,9 +696,7 @@
         {
             "aclProfileName": "qa-uds-bagscan-pub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
             "publishTopicDefaultAction": "allow",
-            "publishTopicExceptions": [],
             "subscribeTopicExceptions": [
                 "test/>"
             ]
@@ -880,9 +704,7 @@
         {
             "aclProfileName": "qa-uds-bagscan-sub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
             "publishTopicDefaultAction": "allow",
-            "publishTopicExceptions": [],
             "subscribeTopicExceptions": [
                 "test/>"
             ]
@@ -890,9 +712,7 @@
         {
             "aclProfileName": "qa-uds-ezfidsgate-pub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
             "publishTopicDefaultAction": "allow",
-            "publishTopicExceptions": [],
             "subscribeTopicExceptions": [
                 "test/>"
             ]
@@ -900,9 +720,7 @@
         {
             "aclProfileName": "qa-uds-ezfidsgate-sub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
             "publishTopicDefaultAction": "allow",
-            "publishTopicExceptions": [],
             "subscribeTopicExceptions": [
                 "test/>"
             ]
@@ -910,9 +728,7 @@
         {
             "aclProfileName": "qa-uds-flifo-sub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
             "publishTopicDefaultAction": "allow",
-            "publishTopicExceptions": [],
             "subscribeTopicExceptions": [
                 "test/>"
             ]
@@ -920,17 +736,13 @@
         {
             "aclProfileName": "qa-uds-fwdbags-pub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
             "publishTopicExceptions": [
                 "UAL/QA/ATW/UDS/FWDBAGS/>"
-            ],
-            "subscribeTopicExceptions": []
+            ]
         },
         {
             "aclProfileName": "qa-uds-fwdbags-sub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
-            "publishTopicExceptions": [],
             "subscribeTopicDefaultAction": "allow",
             "subscribeTopicExceptions": [
                 "test/>"
@@ -939,17 +751,13 @@
         {
             "aclProfileName": "qa-uds-hotbag-pub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
             "publishTopicExceptions": [
                 "UAL/QA/ATW/UDS/HOTBAG/>"
-            ],
-            "subscribeTopicExceptions": []
+            ]
         },
         {
             "aclProfileName": "qa-uds-hotbag-sub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
-            "publishTopicExceptions": [],
             "subscribeTopicDefaultAction": "allow",
             "subscribeTopicExceptions": [
                 "test/>"
@@ -958,17 +766,13 @@
         {
             "aclProfileName": "qa-uds-lightdetectalerts-pub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
             "publishTopicExceptions": [
                 "UAL/QA/ATW/UDS/LIGHTDETECTALERTS/>"
-            ],
-            "subscribeTopicExceptions": []
+            ]
         },
         {
             "aclProfileName": "qa-uds-lightdetectalerts-sub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
-            "publishTopicExceptions": [],
             "subscribeTopicDefaultAction": "allow",
             "subscribeTopicExceptions": [
                 "test/>"
@@ -977,18 +781,14 @@
         {
             "aclProfileName": "qa-uds-wb-events-pub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
             "publishTopicExceptions": [
                 "UAL/ATW/UDS/WB/QA/V1/TailTip/>",
                 "UAL/ATW/UDS/WB/QA/V1/WTRESTINFO/>"
-            ],
-            "subscribeTopicExceptions": []
+            ]
         },
         {
             "aclProfileName": "qa-uds-wb-events-sub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
-            "publishTopicExceptions": [],
             "subscribeTopicDefaultAction": "allow",
             "subscribeTopicExceptions": [
                 "test/>"
@@ -997,7 +797,6 @@
         {
             "aclProfileName": "qa-uia-waittimes-pub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
             "publishTopicExceptions": [
                 "UAL/QA/ATW/UIA/WAITTIMES/>"
             ],
@@ -1008,16 +807,13 @@
         {
             "aclProfileName": "stg-jet-fm-autorefresh-pub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
             "publishTopicExceptions": [
                 "UAL/STG/ATW/JET/FLIGHT/>"
-            ],
-            "subscribeTopicExceptions": []
+            ]
         },
         {
             "aclProfileName": "stg-jet-fm-autorefresh-pubsub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
             "publishTopicExceptions": [
                 "UAL/STG/ATW/JET/FLIGHT/>"
             ],
@@ -1029,8 +825,6 @@
         {
             "aclProfileName": "stg-jet-fm-bjb-pcdr-events-sub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
-            "publishTopicExceptions": [],
             "subscribeTopicDefaultAction": "allow",
             "subscribeTopicExceptions": [
                 "test/>"
@@ -1039,7 +833,6 @@
         {
             "aclProfileName": "stg-jet-fm-boarding-pubsub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
             "publishTopicExceptions": [
                 "UAL/STG/ATW/JET/BOARDING/FLIGHT/>"
             ],
@@ -1051,8 +844,6 @@
         {
             "aclProfileName": "stg-jet-fm-ucd-sub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
-            "publishTopicExceptions": [],
             "subscribeTopicExceptions": [
                 "test/>"
             ]
@@ -1060,9 +851,7 @@
         {
             "aclProfileName": "stg-jet-pcdr-inbound-pub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
             "publishTopicDefaultAction": "allow",
-            "publishTopicExceptions": [],
             "subscribeTopicExceptions": [
                 "test/>"
             ]
@@ -1070,8 +859,6 @@
         {
             "aclProfileName": "stg-jet-pcdr-inbound-sub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
-            "publishTopicExceptions": [],
             "subscribeTopicExceptions": [
                 "test/>"
             ]
@@ -1079,9 +866,7 @@
         {
             "aclProfileName": "stg-jet-pcdr-outbound-pub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
             "publishTopicDefaultAction": "allow",
-            "publishTopicExceptions": [],
             "subscribeTopicExceptions": [
                 "test/>"
             ]
@@ -1089,9 +874,7 @@
         {
             "aclProfileName": "stg-jet-pcdr-outbound-shares-sub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
             "publishTopicDefaultAction": "allow",
-            "publishTopicExceptions": [],
             "subscribeTopicExceptions": [
                 "test/>"
             ]
@@ -1099,8 +882,6 @@
         {
             "aclProfileName": "stg-jet-pcdr-outbound-tm-sub",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
-            "publishTopicExceptions": [],
             "subscribeTopicExceptions": [
                 "test/>"
             ]
@@ -1831,7 +1612,6 @@
             "maxEgressFlowCount": 20,
             "maxEndpointCountPerClientUsername": 0,
             "maxIngressFlowCount": 20,
-            "maxMsgsPerTransaction": 256,
             "maxSubscriptionCount": 250,
             "maxTransactedSessionCount": 0,
             "maxTransactionCount": 0,
@@ -1845,7 +1625,6 @@
             "maxEgressFlowCount": 20,
             "maxEndpointCountPerClientUsername": 0,
             "maxIngressFlowCount": 20,
-            "maxMsgsPerTransaction": 256,
             "maxSubscriptionCount": 250,
             "maxTransactedSessionCount": 0,
             "maxTransactionCount": 0,
@@ -3201,7 +2980,7 @@
                 "UAL/STG/CWO/UFOUT/*/UAX.IN/XML/3",
                 "UAL/STG/CWO/UFOUT/*/UAX.INCORR/XML/3",
                 "UAL/STG/CWO/UFOUT/*/UAX.MFRADD/XML/3",
-                "UAL/STG/CWO/UFOUT/*/UAX.MFRCHG/XML/3 ",
+                "UAL/STG/CWO/UFOUT/*/UAX.MFRCHG/XML/3",
                 "UAL/STG/CWO/UFOUT/*/UAX.NSTP/XML/3",
                 "UAL/STG/CWO/UFOUT/*/UAX.OFF/XML/3",
                 "UAL/STG/CWO/UFOUT/*/UAX.OFFCORR/XML/3",
@@ -3357,26 +3136,18 @@
             ]
         },
         {
-            "accessType": "exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'Q.UaNotificationsDelivered'.",
             "egressEnabled": true,
             "ingressEnabled": true,
-            "maxMsgSpoolUsage": 5000,
             "owner": "notification_direct_consumer",
-            "permission": "no-access",
             "queueName": "Q.UaNotificationsDelivered",
             "subscriptionTopics": [
                 "ua/notifications/delivered"
             ]
         },
         {
-            "accessType": "exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'Q.UaNotificationsDelivered_CP'.",
             "egressEnabled": true,
             "ingressEnabled": true,
-            "maxMsgSpoolUsage": 5000,
             "owner": "notification_direct_consumer",
-            "permission": "no-access",
             "queueName": "Q.UaNotificationsDelivered_CP",
             "subscriptionTopics": [
                 "ua/notifications/delivered"
@@ -3490,7 +3261,8 @@
             "queueName": "QA.JET.BOARDING.SEAT",
             "respectTtlEnabled": true,
             "subscriptionTopics": [
-                "UAL/CWE/PNR/ORDER/SEAT/QA/>"
+                "UAL/CWE/PNR/ORDER/SEAT/QA/>",
+                "UAL/CWE/PNR/ORDER/SEAT/QAD2/>"
             ]
         },
         {
@@ -3880,7 +3652,7 @@
                 "UAL/STG/CWO/UFOUT/*/UAX.IN/XML/3",
                 "UAL/STG/CWO/UFOUT/*/UAX.INCORR/XML/3",
                 "UAL/STG/CWO/UFOUT/*/UAX.MFRADD/XML/3",
-                "UAL/STG/CWO/UFOUT/*/UAX.MFRCHG/XML/3 ",
+                "UAL/STG/CWO/UFOUT/*/UAX.MFRCHG/XML/3",
                 "UAL/STG/CWO/UFOUT/*/UAX.NSTP/XML/3",
                 "UAL/STG/CWO/UFOUT/*/UAX.OFF/XML/3",
                 "UAL/STG/CWO/UFOUT/*/UAX.OFFCORR/XML/3",
@@ -4109,13 +3881,9 @@
             ]
         },
         {
-            "accessType": "exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'TEST.QUEUE_1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
-            "maxMsgSpoolUsage": 5000,
             "owner": "notification_direct_consumer",
-            "permission": "no-access",
             "queueName": "TEST.QUEUE_1",
             "subscriptionTopics": [
                 "ua/notifications/>"
@@ -4123,7 +3891,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.CCE.PRETRAVEL.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqndevappuser",
@@ -4136,7 +3903,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.COLLAB.NOTIFY.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqndevappuser",
@@ -4149,7 +3915,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.CONTACTPREF.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqndevappuser",
@@ -4162,7 +3927,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.EMAIL.FDBK.PERSIST.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqndevappuser",
@@ -4175,7 +3939,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.EMAIL.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqndevappuser",
@@ -4188,7 +3951,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.ENRICHER.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqndevappuser",
@@ -4201,7 +3963,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.ERROR.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqndevappuser",
@@ -4214,7 +3975,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.FDBK.CALLBACK.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqndevappuser",
@@ -4230,7 +3990,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.FDBK.UCLD.DLV.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqndevappuser",
@@ -4254,7 +4013,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.FDBK.UCLD.INTR.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqndevappuser",
@@ -4273,7 +4031,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.FDBK.UPDATE.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqndevappuser",
@@ -4293,7 +4050,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.KAFKA.COMM.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqndevappuser",
@@ -4310,7 +4066,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.LYLT.CHASE.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqndevappuser",
@@ -4323,7 +4078,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.LYLT.MILEPLAY.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqndevappuser",
@@ -4336,7 +4090,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.LYLT.MILESPOOLING.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqndevappuser",
@@ -4349,7 +4102,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.LYLT.PPR.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqndevappuser",
@@ -4362,7 +4114,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.LYLT.PUG.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqndevappuser",
@@ -4375,7 +4126,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.MAILHOG.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqndevappuser",
@@ -4388,7 +4138,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.ODMS.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqndevappuser",
@@ -4401,7 +4150,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.PERSIST.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqndevappuser",
@@ -4423,7 +4171,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.PHONEVERIFY.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqndevappuser",
@@ -4436,7 +4183,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.PUSH.FDBK.PERSIST.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqndevappuser",
@@ -4449,7 +4195,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.PUSH.FDBK.UCLD.COMM.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqndevappuser",
@@ -4466,7 +4211,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.PUSH.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqndevappuser",
@@ -4479,7 +4223,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.RCS.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqndevappuser",
@@ -4493,7 +4236,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.REPROCESS.ERROR.OUT.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqndevappuser",
@@ -4506,7 +4248,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.SMS.FDBK.PERSIST.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqndevappuser",
@@ -4519,7 +4260,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.SMS.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqndevappuser",
@@ -4532,7 +4272,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.UCLD.COMM.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqndevappuser",
@@ -4548,7 +4287,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.VOICE.FDBK.PERSIST.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqndevappuser",
@@ -4561,7 +4299,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.VOICE.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqndevappuser",
@@ -4574,7 +4311,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.CCE.PRETRAVEL.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqnqaappuser",
@@ -4589,7 +4325,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.COLLAB.NOTIFY.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqnqaappuser",
@@ -4602,7 +4337,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.CONTACTPREF.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqnqaappuser",
@@ -4615,7 +4349,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.EMAIL.FDBK.PERSIST.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqnqaappuser",
@@ -4628,7 +4361,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.EMAIL.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqnqaappuser",
@@ -4641,7 +4373,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.ENRICHER.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqnqaappuser",
@@ -4654,7 +4385,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.ERROR.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqnqaappuser",
@@ -4667,7 +4397,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.FDBK.CALLBACK.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqnqaappuser",
@@ -4683,7 +4412,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.FDBK.UCLD.DLV.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqnqaappuser",
@@ -4707,7 +4435,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.FDBK.UCLD.INTR.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqnqaappuser",
@@ -4726,7 +4453,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.FDBK.UPDATE.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqnqaappuser",
@@ -4746,7 +4472,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.KAFKA.COMM.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqnqaappuser",
@@ -4763,7 +4488,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.LYLT.CHASE.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqnqaappuser",
@@ -4776,7 +4500,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.LYLT.MILEPLAY.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqnqaappuser",
@@ -4789,7 +4512,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.LYLT.MILESPOOLING.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqnqaappuser",
@@ -4802,7 +4524,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.LYLT.PPR.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqnqaappuser",
@@ -4815,7 +4536,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.LYLT.PUG.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqnqaappuser",
@@ -4828,7 +4548,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.MAILHOG.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqnqaappuser",
@@ -4841,7 +4560,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.ODMS.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqnqaappuser",
@@ -4854,7 +4572,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.PERSIST.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqnqaappuser",
@@ -4876,7 +4593,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.PHONEVERIFY.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqnqaappuser",
@@ -4889,7 +4605,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.PUSH.FDBK.PERSIST.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqnqaappuser",
@@ -4902,7 +4617,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.PUSH.FDBK.UCLD.COMM.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqnqaappuser",
@@ -4919,7 +4633,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.PUSH.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqnqaappuser",
@@ -4932,7 +4645,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.RCS.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqnqaappuser",
@@ -4946,7 +4658,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.REPROCESS.ERROR.OUT.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqndevappuser",
@@ -4959,7 +4670,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.SMS.FDBK.PERSIST.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqnqaappuser",
@@ -4972,7 +4682,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.SMS.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqnqaappuser",
@@ -4985,7 +4694,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.UCLD.COMM.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqnqaappuser",
@@ -5001,7 +4709,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.VOICE.FDBK.PERSIST.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqnqaappuser",
@@ -5014,7 +4721,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.VOICE.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqnqaappuser",
@@ -5026,13 +4732,9 @@
             ]
         },
         {
-            "accessType": "exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'new queue'.",
             "egressEnabled": true,
             "ingressEnabled": true,
-            "maxMsgSpoolUsage": 5000,
             "owner": "notification_direct_consumer",
-            "permission": "no-access",
             "queueName": "new queue",
             "subscriptionTopics": [
                 "them/test"
@@ -5067,7 +4769,7 @@
             "aclProfileName": "abc123",
             "clientUsername": "abc123",
             "enabled": true,
-            "password": "abc123"
+            "passwordToken": "ECvGeULMZdf0i/ZWtwNwmw==uDGC/AhVsRxNp+Q="
         },
         {
             "aclProfileName": "dev-bos-bagcount-pub",
@@ -5441,52 +5143,38 @@
             "passwordToken": "ToaY2qw7iRSinoVbcz3YFA==EuxMAQBFEQK+HqoYAfKSzZymkw=="
         },
         {
-            "aclProfileName": "default",
-            "clientProfileName": "default",
             "clientUsername": "dqndevappuser",
-            "documentation": "This user was imported from Event Portal for app 'DqndevappuserApp'.",
             "enabled": true,
-            "password": "password"
+            "passwordToken": "S1bekqD+ytqKEzOS+mA3UA==croHI2g8rYgOMsYx/g=="
         },
         {
-            "aclProfileName": "default",
-            "clientProfileName": "default",
             "clientUsername": "dqnqaappuser",
-            "documentation": "This user was imported from Event Portal for app 'DQN_QA_AppUser'.",
             "enabled": true,
-            "password": "password"
+            "passwordToken": "lWLHJgo8ozhWX/noMDhI0w==YinrDqivqgalX0qsIw=="
         },
         {
-            "aclProfileName": "default",
-            "clientProfileName": "default",
             "clientUsername": "loyaltydevuser",
-            "documentation": "This user was imported from Event Portal for app 'LoyaltydevuserApp'.",
             "enabled": true,
-            "password": "password"
+            "passwordToken": "R4z/qdjloinUv/qRBrlXnw==34s/IMt22DDndKS0mQ=="
         },
         {
             "aclProfileName": "notification_direct_consumer",
             "clientProfileName": "notification_direct_consumer_cp",
             "clientUsername": "notification_direct_consumer",
-            "documentation": "This user was imported from Event Portal for app 'NotificationDirectConsumerApp'.",
             "enabled": true,
-            "password": "password"
+            "passwordToken": "hskOIFaG2iyaYUQGzWT7tg==KsRTPqMxmWPGHBADrA=="
         },
         {
             "aclProfileName": "notification_direct_producer",
             "clientProfileName": "notification_direct_producer_cp",
             "clientUsername": "notification_direct_producer",
-            "documentation": "This user was imported from Event Portal for app 'NotificationDirectProducerApp'.",
             "enabled": true,
-            "password": "password"
+            "passwordToken": "UPLK/itLhys1IN7wPDHqvQ==8jv1xTEJLTQ2GIY6yA=="
         },
         {
-            "aclProfileName": "default",
-            "clientProfileName": "default",
             "clientUsername": "odmsdevuser",
-            "documentation": "This user was imported from Event Portal for app 'OdmsdevuserApp'.",
             "enabled": true,
-            "password": "password"
+            "passwordToken": "ImofBYxkawgG1+ujy00KrA==Vpet8TsAohIDAqG5tA=="
         },
         {
             "aclProfileName": "poc-aap-jumpseat-pub",
@@ -5881,12 +5569,9 @@
             "passwordToken": "bAwzrtMdgllw+aZMJ8uv1w==1EwVoty0Yzpa+eGnLoXH7+mBYqxP74rfm7UqUkbSnUCU"
         },
         {
-            "aclProfileName": "default",
-            "clientProfileName": "default",
             "clientUsername": "test",
-            "documentation": "This user was imported from Event Portal for app 'TestApp'.",
             "enabled": true,
-            "password": "password"
+            "passwordToken": "yRLZFKGctWgVEG0byS2EhA==NjuV3+GqQ6xC19gQbg=="
         }
     ]
 }
