@@ -1,23 +1,19 @@
 {
     "eventPortal": {
         "documentation": "Lists things pulled from event portal",
-        "applicationDomain": "MikeAppDomain",
+        "applicationDomain": "eFSF",
         "applications": [
             {
-                "applicationName": "NotificationDirectProducerApp",
-                "version": "0.0.1"
+                "applicationName": "ODS",
+                "version": "0.1.0"
             },
             {
-                "applicationName": "NotificationDirectConsumerApp",
-                 "version": "0.0.1"
+                "applicationName": "Fuel Automation Engine",
+                 "version": "0.1.0"
             },
             {
-                "applicationName": "DQN_QA_AppUser",
-                 "version": "0.0.1"
-            },
-            {
-                "applicationName": "DqndevappuserApp",
-                 "version": "0.0.1"
+                "applicationName": "QT",
+                 "version": "0.1.0"
             }
         ]
     },
@@ -25,30 +21,25 @@
         "documentation": "User settings to be overlaid ontop of client username settings from event portal",
       	"users": [
       		{
-      			"clientUsername": "notification_direct_producer",
-      			"clientProfileName": "notification_direct_producer_cp",
-      			"password": "notification_direct_producer_pwd"
+      			"clientUsername": "ods_user",
+      			"clientProfileName": "ods_cp",
+      			"password": "ods_user"
       		},
       		{
-      			"clientUsername": "notification_direct_consumer",
-      			"clientProfileName": "notification_direct_consumer_cp",
-      			"password": "notification_direct_consumer_pwd"
+      			"clientUsername": "fae_user",
+      			"clientProfileName": "fae_cp",
+      			"password": "fae_user"
       		},
             {
-                "clientUsername": "dqnqaappuser",
-                "password": "dqnqaappuser",
-                "aclProfileName": "default"
-            },
-            {
-                "clientUsername": "dqndevappuser",
-                "password": "dqndevappuser",
-                "aclProfileName": "default"
+                "clientUsername": "qt_user",
+                "password": "qt_pwd",
+                "clientProfileName": "qt_cp"
             }
       	]
       },
       "clientProfiles": [
           {
-              "clientProfileName": "notification_direct_producer_cp",
+              "clientProfileName": "ods_cp",
               "allowGuaranteedMsgReceiveEnabled": true,
               "maxConnectionCountPerClientUsername": 20,
               "maxEgressFlowCount": 20,
@@ -62,7 +53,21 @@
               "serviceWebMaxConnectionCountPerClientUsername": 0
           },
           {
-              "clientProfileName": "notification_direct_consumer_cp",
+              "clientProfileName": "fae_cp",
+              "allowGuaranteedMsgReceiveEnabled": true,
+              "maxConnectionCountPerClientUsername": 20,
+              "maxEgressFlowCount": 20,
+              "maxEndpointCountPerClientUsername": 0,
+              "maxIngressFlowCount": 20,
+              "maxMsgsPerTransaction": 256,
+              "maxSubscriptionCount": 250,
+              "maxTransactedSessionCount": 0,
+              "maxTransactionCount": 0,
+              "serviceSmfMaxConnectionCountPerClientUsername": 20,
+              "serviceWebMaxConnectionCountPerClientUsername": 0
+          },
+          {
+              "clientProfileName": "qt_cp",
               "allowGuaranteedMsgReceiveEnabled": true,
               "maxConnectionCountPerClientUsername": 20,
               "maxEgressFlowCount": 20,

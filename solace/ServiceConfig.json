@@ -1,6 +1,6 @@
 {
         "common": {
-                "msgVpnName": "united-ep-tools-primary-v3",
+                "msgVpnName": "fuel-vpn",
                 "serviceTypeId": "enterprise-standalone",
                 "serviceClassId": "enterprise-10k-standalone",
                 "eventBrokerVersion": "10.25",
@@ -14,17 +14,17 @@
                 "cluster": {
                         "name": "united-ep-tools-cluster"
                 },
-        				"GlobalAdminUser": "mission-control-manager",
-        				"GlobalAdminToken": "6TnKVY8wEvU+nFuZkexC+Q==fBM0ple3rcHrnjnQ7x+QLtmLiCTzytbWpYBWrd4omg==",
-        				"createDNSEntry": false,
-        				"uploadCustomCerts": true,
-        				"shellCommandsForWindows": false,
-        				"enableSSO": false,
-        				"DRBridgeRejectWhenSyncIneligible": true,
-        				"DRBridgeCompressed": false
-		    },
+                "GlobalAdminUser": "mission-control-manager",
+                "GlobalAdminToken": "mKiOYNuPLi5tkWA0zTgsYQ==I7zNoOsLfrV2UFPWUwN1fKOlj5jOEV/uaXhyBUx6lg==",
+                "createDNSEntry": false,
+                "uploadCustomCerts": true,
+                "shellCommandsForWindows": false,
+                "enableSSO": false,
+                "DRBridgeRejectWhenSyncIneligible": true,
+                "DRBridgeCompressed": false
+        },
         "primary": {
-                "serviceName": "united-ep-tools-primary-v3",
+                "serviceName": "FUEL",
                 "datacenterId": "unitedsolaceservices-eks-us-east-1",
                 "k8s": {
                         "namespace": "kube-system",
