@@ -1,7 +1,7 @@
 {
     "eventPortal": {
         "documentation": "Lists things pulled from event portal",
-        "applicationDomain": "EZM_OneEvtPerQSub",
+        "applicationDomain": "MikeAppDomain",
         "applications": [
             {
                 "applicationName": "NotificationDirectProducerApp",
@@ -17,18 +17,6 @@
             },
             {
                 "applicationName": "DqndevappuserApp",
-                 "version": "0.0.1"
-            },
-            {
-                "applicationName": "LoyaltydevuserApp",
-                 "version": "0.0.1"
-            },
-            {
-                "applicationName": "OdmsdevuserApp",
-                 "version": "0.0.1"
-            },
-            {
-                "applicationName": "TestApp",
                  "version": "0.0.1"
             }
         ]
@@ -54,21 +42,6 @@
             {
                 "clientUsername": "dqndevappuser",
                 "password": "dqndevappuser",
-                "aclProfileName": "default"
-            },
-            {
-                "clientUsername": "test",
-                "password": "test",
-                "aclProfileName": "default"
-            },
-            {
-                "clientUsername": "odmsdevuser",
-                "password": "odmsdevuser",
-                "aclProfileName": "default"
-            },
-            {
-                "clientUsername": "loyaltydevuser",
-                "password": "loyaltydevuser",
                 "aclProfileName": "default"
             }
       	]
