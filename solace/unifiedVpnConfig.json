@@ -14,11 +14,5 @@
     "queues": [],
     "replicatedTopics": [],
     "topicEndpoints": [],
-    "users": [
-        {
-            "clientUsername": "solace-cloud-client",
-            "enabled": true,
-            "passwordToken": "<UNKNOWN>"
-        }
-    ]
+    "users": []
 }
