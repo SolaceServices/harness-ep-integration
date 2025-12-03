@@ -1,0 +1,18 @@
+{
+    "aclProfiles": [],
+    "clientProfiles": [],
+    "jndi": {
+        "connectionFactories": [],
+        "queues": []
+    },
+    "kafkaBridge": {
+        "recievers": [],
+        "redundantRecievers": [],
+        "senders": []
+    },
+    "msgVpnName": "fuel-vpn",
+    "queues": [],
+    "replicatedTopics": [],
+    "topicEndpoints": [],
+    "users": []
+}
