@@ -1,7 +1,26 @@
 {
+    "__event-portal": {
+        "__ep_applications": {
+            "__Fuel Automation Engine": {
+                "clientUsername": "fae_user",
+                "id": "91w9ccrzbcg",
+                "name": "Fuel Automation Engine"
+            },
+            "__ODS": {
+                "clientUsername": "ods_user",
+                "id": "c2gc4x22rmh",
+                "name": "ODS"
+            },
+            "__QT": {
+                "clientUsername": "qt_user",
+                "id": "iscu0a8c9d2",
+                "name": "QT"
+            }
+        }
+    },
     "aclProfiles": [
         {
-            "aclProfileName": "fae_user",
+            "aclProfileName": "ods_user",
             "clientConnectDefaultAction": "allow",
             "publishTopicDefaultAction": "disallow",
             "publishTopicExceptions": [
@@ -12,7 +31,7 @@
             "subscribeTopicExceptions": []
         },
         {
-            "aclProfileName": "ods_user",
+            "aclProfileName": "fae_user",
             "clientConnectDefaultAction": "allow",
             "publishTopicDefaultAction": "disallow",
             "publishTopicExceptions": [
@@ -37,7 +56,7 @@
     "clientProfiles": [
         {
             "allowGuaranteedMsgReceiveEnabled": true,
-            "clientProfileName": "fae_cp",
+            "clientProfileName": "ods_cp",
             "maxConnectionCountPerClientUsername": 20,
             "maxEgressFlowCount": 20,
             "maxEndpointCountPerClientUsername": 0,
@@ -51,7 +70,7 @@
         },
         {
             "allowGuaranteedMsgReceiveEnabled": true,
-            "clientProfileName": "ods_cp",
+            "clientProfileName": "fae_cp",
             "maxConnectionCountPerClientUsername": 20,
             "maxEgressFlowCount": 20,
             "maxEndpointCountPerClientUsername": 0,
@@ -78,28 +97,7 @@
             "serviceWebMaxConnectionCountPerClientUsername": 0
         }
     ],
-    "jndi": {
-        "connectionFactories": [],
-        "queues": []
-    },
-    "kafkaBridge": {
-        "recievers": [],
-        "redundantRecievers": [],
-        "senders": []
-    },
-    "msgVpnName": "fuel-vpn",
     "queues": [
-        {
-            "accessType": "exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'Fuel_Automation_Engine_ODS_Heartbeat'.",
-            "egressEnabled": true,
-            "ingressEnabled": true,
-            "maxMsgSpoolUsage": 5000,
-            "owner": "fae_user",
-            "permission": "no-access",
-            "queueName": "Fuel_Automation_Engine_ODS_Heartbeat",
-            "subscriptionTopics": []
-        },
         {
             "accessType": "exclusive",
             "documentation": "This queue was imported from Event Portal for app 'ODS_FAE_to_ODS_Heartbeat'.",
@@ -109,6 +107,17 @@
             "owner": "ods_user",
             "permission": "no-access",
             "queueName": "ODS_FAE_to_ODS_Heartbeat",
+            "subscriptionTopics": []
+        },
+        {
+            "accessType": "exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'Fuel_Automation_Engine_ODS_Heartbeat'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "maxMsgSpoolUsage": 5000,
+            "owner": "fae_user",
+            "permission": "no-access",
+            "queueName": "Fuel_Automation_Engine_ODS_Heartbeat",
             "subscriptionTopics": []
         },
         {
@@ -123,17 +132,7 @@
             "subscriptionTopics": []
         }
     ],
-    "replicatedTopics": [],
-    "topicEndpoints": [],
     "users": [
-        {
-            "aclProfileName": "fae_user",
-            "clientProfileName": "fae_cp",
-            "clientUsername": "fae_user",
-            "documentation": "This user was imported from Event Portal for app 'Fuel Automation Engine'.",
-            "enabled": true,
-            "password": "fae_user"
-        },
         {
             "aclProfileName": "ods_user",
             "clientProfileName": "ods_cp",
@@ -141,6 +140,14 @@
             "documentation": "This user was imported from Event Portal for app 'ODS'.",
             "enabled": true,
             "password": "ods_user"
+        },
+        {
+            "aclProfileName": "fae_user",
+            "clientProfileName": "fae_cp",
+            "clientUsername": "fae_user",
+            "documentation": "This user was imported from Event Portal for app 'Fuel Automation Engine'.",
+            "enabled": true,
+            "password": "fae_user"
         },
         {
             "aclProfileName": "qt_user",
