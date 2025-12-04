@@ -1,0 +1,79 @@
+{
+    "eventPortal": {
+        "documentation": "Lists things pulled from event portal",
+        "applicationDomain": "MikeAppDomain",
+        "applications": [
+            {
+                "applicationName": "NotificationDirectProducerApp",
+                "version": "0.0.1"
+            },
+            {
+                "applicationName": "NotificationDirectConsumerApp",
+                 "version": "0.0.1"
+            },
+            {
+                "applicationName": "DQN_QA_AppUser",
+                 "version": "0.0.1"
+            },
+            {
+                "applicationName": "DqndevappuserApp",
+                 "version": "0.0.1"
+            }
+        ]
+    },
+    "eventPortalOverlays": {
+        "documentation": "User settings to be overlaid ontop of client username settings from event portal",
+      	"users": [
+      		{
+      			"clientUsername": "notification_direct_producer",
+      			"clientProfileName": "notification_direct_producer_cp",
+      			"password": "notification_direct_producer_pwd"
+      		},
+      		{
+      			"clientUsername": "notification_direct_consumer",
+      			"clientProfileName": "notification_direct_consumer_cp",
+      			"password": "notification_direct_consumer_pwd"
+      		},
+            {
+                "clientUsername": "dqnqaappuser",
+                "password": "dqnqaappuser",
+                "aclProfileName": "default"
+            },
+            {
+                "clientUsername": "dqndevappuser",
+                "password": "dqndevappuser",
+                "aclProfileName": "default"
+            }
+      	]
+      },
+      "clientProfiles": [
+          {
+              "clientProfileName": "notification_direct_producer_cp",
+              "allowGuaranteedMsgReceiveEnabled": true,
+              "maxConnectionCountPerClientUsername": 20,
+              "maxEgressFlowCount": 20,
+              "maxEndpointCountPerClientUsername": 0,
+              "maxIngressFlowCount": 20,
+              "maxMsgsPerTransaction": 256,
+              "maxSubscriptionCount": 250,
+              "maxTransactedSessionCount": 0,
+              "maxTransactionCount": 0,
+              "serviceSmfMaxConnectionCountPerClientUsername": 20,
+              "serviceWebMaxConnectionCountPerClientUsername": 0
+          },
+          {
+              "clientProfileName": "notification_direct_consumer_cp",
+              "allowGuaranteedMsgReceiveEnabled": true,
+              "maxConnectionCountPerClientUsername": 20,
+              "maxEgressFlowCount": 20,
+              "maxEndpointCountPerClientUsername": 0,
+              "maxIngressFlowCount": 20,
+              "maxMsgsPerTransaction": 256,
+              "maxSubscriptionCount": 250,
+              "maxTransactedSessionCount": 0,
+              "maxTransactionCount": 0,
+              "serviceSmfMaxConnectionCountPerClientUsername": 20,
+              "serviceWebMaxConnectionCountPerClientUsername": 0
+          }
+      ]
+  }

@@ -1,0 +1,4715 @@
+{
+    "aclProfiles": [
+        {
+            "aclProfileName": "abc123",
+            "clientConnectDefaultAction": "allow"
+        },
+        {
+            "aclProfileName": "dev-bos-bagcount-pub",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicExceptions": [
+                "UAL/ATW/BOS/BAGCOUNT/DEV/>"
+            ]
+        },
+        {
+            "aclProfileName": "dev-cux-waittimes-sub",
+            "clientConnectDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "dev-cxp-flifo-pub",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicExceptions": [
+                "UAL/DEV/ATW/CXP/FLIFO/>"
+            ]
+        },
+        {
+            "aclProfileName": "dev-cxp-flifo-sub",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "dev-epo-ucd-sub",
+            "clientConnectDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "dev-etj-edifact-out-tsa-pub",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicExceptions": [
+                "UAL/TSEC/ETJ/OUT/DEV/EDIFACT/>"
+            ]
+        },
+        {
+            "aclProfileName": "dev-etj-edifact-out-tsa-sub",
+            "clientConnectDefaultAction": "allow",
+            "subscribeTopicDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "dev-gsapp-ucd-sub",
+            "clientConnectDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "dev-jet-boarding-seat-sub",
+            "clientConnectDefaultAction": "allow",
+            "subscribeTopicDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "dev-jet-collab-pub",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "dev-jet-collab-sub",
+            "clientConnectDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "dev-jet-flifo-pub",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "dev-jet-flifo-sub",
+            "clientConnectDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "dev-jet-fm-autorefresh-pub",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicExceptions": [
+                "UAL/DEV/ATW/JET/FLIGHT/>"
+            ]
+        },
+        {
+            "aclProfileName": "dev-jet-fm-autorefresh-pubsub",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicExceptions": [
+                "UAL/DEV/ATW/JET/FLIGHT/>"
+            ],
+            "subscribeTopicDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "dev-jet-fm-bjb-pcdr-events-sub",
+            "clientConnectDefaultAction": "allow",
+            "subscribeTopicDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "dev-jet-fm-boarding-pub",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicExceptions": [
+                "UAL/DEV/ATW/JET/BOARDING/>"
+            ],
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "dev-jet-fm-boarding-pubsub",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicExceptions": [
+                "UAL/DEV/ATW/JET/BOARDING/>"
+            ],
+            "subscribeTopicDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "dev-jet-fm-crew-pub",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicExceptions": [
+                "UAL/DEV/ATW/JET/CREW/FLIGHT/>"
+            ],
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "dev-jet-fm-crew-pubsub",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicExceptions": [
+                "UAL/DEV/ATW/JET/CREW/FLIGHT/>"
+            ],
+            "subscribeTopicDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "dev-jet-fm-prnvalidation-sub",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "dev-jet-fm-ucd-sub",
+            "clientConnectDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "dev-jet-pcdr-inbound-pub",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "dev-jet-pcdr-inbound-sub",
+            "clientConnectDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "dev-jet-pcdr-outbound-pub",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "dev-jet-pcdr-outbound-shares-sub",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "dev-jet-pcdr-outbound-tm-sub",
+            "clientConnectDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "dev-jet-ucd-sub",
+            "clientConnectDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "dev-uds-bagclaim-pub",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicExceptions": [
+                "UAL/DEV/ATW/UDS/BAGCLAIM/>"
+            ]
+        },
+        {
+            "aclProfileName": "dev-uds-bagclaim-sub",
+            "clientConnectDefaultAction": "allow",
+            "subscribeTopicDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "dev-uds-bagclaimetaevt-pub",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicExceptions": [
+                "UAL/DEV/ATW/UDS/BAGCLAIMETAEVT/>"
+            ]
+        },
+        {
+            "aclProfileName": "dev-uds-bagclaimetaevt-sub",
+            "clientConnectDefaultAction": "allow",
+            "subscribeTopicDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "dev-uds-bagpier-pub",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicExceptions": [
+                "UAL/DEV/UDS/BAGPIER/>"
+            ]
+        },
+        {
+            "aclProfileName": "dev-uds-bagpier-sub",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "UAL/DEV/UDS/BAGPIER/>"
+            ]
+        },
+        {
+            "aclProfileName": "dev-uds-bagscan-pub",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "dev-uds-bagscan-sub",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "dev-uds-ezfidsgate-pub",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "dev-uds-ezfidsgate-sub",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "dev-uds-flifo-sub",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "dev-uds-formtr-notify-pub",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicExceptions": [
+                "UAL/DEV/UDS/FORMTR/NOTIFY>"
+            ]
+        },
+        {
+            "aclProfileName": "dev-uds-formtr-notify-sub",
+            "clientConnectDefaultAction": "allow",
+            "subscribeTopicDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "dev-uds-fwdbags-pub",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicExceptions": [
+                "UAL/DEV/ATW/UDS/FWDBAGS/>"
+            ]
+        },
+        {
+            "aclProfileName": "dev-uds-fwdbags-sub",
+            "clientConnectDefaultAction": "allow",
+            "subscribeTopicDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "dev-uds-gids-render-efids-pub",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicExceptions": [
+                "UAL/DEV/UDS/GIDS/RENDER/EFIDS>"
+            ]
+        },
+        {
+            "aclProfileName": "dev-uds-gids-render-efids-sub",
+            "clientConnectDefaultAction": "allow",
+            "subscribeTopicDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "dev-uds-hotbag-pub",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicExceptions": [
+                "UAL/DEV/ATW/UDS/HOTBAG/>"
+            ]
+        },
+        {
+            "aclProfileName": "dev-uds-hotbag-sub",
+            "clientConnectDefaultAction": "allow",
+            "subscribeTopicDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "dev-uds-lightdetectalerts-pub",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicExceptions": [
+                "UAL/DEV/ATW/UDS/LIGHTDETECTALERTS/>"
+            ]
+        },
+        {
+            "aclProfileName": "dev-uds-lightdetectalerts-sub",
+            "clientConnectDefaultAction": "allow",
+            "subscribeTopicDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "dev-uds-wb-events-pub",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicExceptions": [
+                "UAL/ATW/UDS/WB/DEV/V1/TailTip/>",
+                "UAL/ATW/UDS/WB/DEV/V1/WTRESTINFO/>"
+            ]
+        },
+        {
+            "aclProfileName": "dev-uds-wb-events-sub",
+            "clientConnectDefaultAction": "allow",
+            "subscribeTopicDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "dev-uia-bagcount-sub",
+            "clientConnectDefaultAction": "allow",
+            "subscribeTopicDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "dev-uia-waittimes-pub",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicExceptions": [
+                "UAL/DEV/ATW/UIA/WAITTIMES/>"
+            ],
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "notification_direct_consumer",
+            "clientConnectDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "ua/notifications/delivered"
+            ]
+        },
+        {
+            "aclProfileName": "notification_direct_producer",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicExceptions": [
+                "ua/notifications/delivered"
+            ]
+        },
+        {
+            "aclProfileName": "poc-aap-jumpseat-pub",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicExceptions": [
+                "UAL/POC/AAP/JUMPSEAT/>"
+            ]
+        },
+        {
+            "aclProfileName": "poc-aap-jumpseat-sub",
+            "clientConnectDefaultAction": "allow",
+            "subscribeTopicDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "qa-cux-waittimes-sub",
+            "clientConnectDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "qa-cxp-flifo-pub",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicExceptions": [
+                "UAL/QA/ATW/CXP/FLIFO/>"
+            ]
+        },
+        {
+            "aclProfileName": "qa-cxp-flifo-sub",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "qa-epo-ucd-sub",
+            "clientConnectDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "qa-etj-edifact-out-tsa-pub",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicExceptions": [
+                "UAL/TSEC/ETJ/OUT/QA/EDIFACT/>"
+            ]
+        },
+        {
+            "aclProfileName": "qa-etj-edifact-out-tsa-sub",
+            "clientConnectDefaultAction": "allow",
+            "subscribeTopicDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "qa-gsapp-ucd-sub",
+            "clientConnectDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "qa-jet-boarding-seat-sub",
+            "clientConnectDefaultAction": "allow",
+            "subscribeTopicDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "qa-jet-collab-pub",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "qa-jet-collab-sub",
+            "clientConnectDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "qa-jet-flifo-pub",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "qa-jet-flifo-sub",
+            "clientConnectDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "qa-jet-fm-autorefresh-pub",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicExceptions": [
+                "UAL/QA/ATW/JET/FLIGHT/>"
+            ]
+        },
+        {
+            "aclProfileName": "qa-jet-fm-autorefresh-pubsub",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicExceptions": [
+                "UAL/QA/ATW/JET/FLIGHT/>"
+            ],
+            "subscribeTopicDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "qa-jet-fm-bjb-pcdr-events-sub",
+            "clientConnectDefaultAction": "allow",
+            "subscribeTopicDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "qa-jet-fm-boarding-pub",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicExceptions": [
+                "UAL/QA/ATW/JET/BOARDING/>"
+            ],
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "qa-jet-fm-boarding-pubsub",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicExceptions": [
+                "UAL/QA/ATW/JET/BOARDING/>"
+            ],
+            "subscribeTopicDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "qa-jet-fm-prnvalidation-sub",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "qa-jet-fm-ucd-sub",
+            "clientConnectDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "qa-jet-pcdr-inbound-pub",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "qa-jet-pcdr-inbound-sub",
+            "clientConnectDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "qa-jet-pcdr-outbound-shares-sub",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "qa-jet-pcdr-outbound-tm-sub",
+            "clientConnectDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "qa-jet-ucd-sub",
+            "clientConnectDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "qa-uds-bagclaim-pub",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicExceptions": [
+                "UAL/QA/ATW/UDS/BAGCLAIM/>"
+            ]
+        },
+        {
+            "aclProfileName": "qa-uds-bagclaim-sub",
+            "clientConnectDefaultAction": "allow",
+            "subscribeTopicDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "qa-uds-bagclaimetaevt-pub",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicExceptions": [
+                "UAL/QA/ATW/UDS/BAGCLAIMETAEVT/>"
+            ]
+        },
+        {
+            "aclProfileName": "qa-uds-bagclaimetaevt-sub",
+            "clientConnectDefaultAction": "allow",
+            "subscribeTopicDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "qa-uds-bagpier-pub",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicExceptions": [
+                "UAL/QA/UDS/BAGPIER/>"
+            ]
+        },
+        {
+            "aclProfileName": "qa-uds-bagpier-sub",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "UAL/QA/UDS/BAGPIER/>"
+            ]
+        },
+        {
+            "aclProfileName": "qa-uds-bagscan-pub",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "qa-uds-bagscan-sub",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "qa-uds-ezfidsgate-pub",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "qa-uds-ezfidsgate-sub",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "qa-uds-flifo-sub",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "qa-uds-fwdbags-pub",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicExceptions": [
+                "UAL/QA/ATW/UDS/FWDBAGS/>"
+            ]
+        },
+        {
+            "aclProfileName": "qa-uds-fwdbags-sub",
+            "clientConnectDefaultAction": "allow",
+            "subscribeTopicDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "qa-uds-hotbag-pub",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicExceptions": [
+                "UAL/QA/ATW/UDS/HOTBAG/>"
+            ]
+        },
+        {
+            "aclProfileName": "qa-uds-hotbag-sub",
+            "clientConnectDefaultAction": "allow",
+            "subscribeTopicDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "qa-uds-lightdetectalerts-pub",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicExceptions": [
+                "UAL/QA/ATW/UDS/LIGHTDETECTALERTS/>"
+            ]
+        },
+        {
+            "aclProfileName": "qa-uds-lightdetectalerts-sub",
+            "clientConnectDefaultAction": "allow",
+            "subscribeTopicDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "qa-uds-wb-events-pub",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicExceptions": [
+                "UAL/ATW/UDS/WB/QA/V1/TailTip/>",
+                "UAL/ATW/UDS/WB/QA/V1/WTRESTINFO/>"
+            ]
+        },
+        {
+            "aclProfileName": "qa-uds-wb-events-sub",
+            "clientConnectDefaultAction": "allow",
+            "subscribeTopicDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "qa-uia-waittimes-pub",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicExceptions": [
+                "UAL/QA/ATW/UIA/WAITTIMES/>"
+            ],
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "stg-jet-fm-autorefresh-pub",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicExceptions": [
+                "UAL/STG/ATW/JET/FLIGHT/>"
+            ]
+        },
+        {
+            "aclProfileName": "stg-jet-fm-autorefresh-pubsub",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicExceptions": [
+                "UAL/STG/ATW/JET/FLIGHT/>"
+            ],
+            "subscribeTopicDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "stg-jet-fm-bjb-pcdr-events-sub",
+            "clientConnectDefaultAction": "allow",
+            "subscribeTopicDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "stg-jet-fm-boarding-pubsub",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicExceptions": [
+                "UAL/STG/ATW/JET/BOARDING/FLIGHT/>"
+            ],
+            "subscribeTopicDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "stg-jet-fm-ucd-sub",
+            "clientConnectDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "stg-jet-pcdr-inbound-pub",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "stg-jet-pcdr-inbound-sub",
+            "clientConnectDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "stg-jet-pcdr-outbound-pub",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "stg-jet-pcdr-outbound-shares-sub",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        },
+        {
+            "aclProfileName": "stg-jet-pcdr-outbound-tm-sub",
+            "clientConnectDefaultAction": "allow",
+            "subscribeTopicExceptions": [
+                "test/>"
+            ]
+        }
+    ],
+    "clientProfiles": [
+        {
+            "allowGuaranteedMsgSendEnabled": true,
+            "clientProfileName": "dev-bos-bagcount-pub",
+            "maxConnectionCountPerClientUsername": 6,
+            "maxEgressFlowCount": 6,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 6,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 6,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "allowTransactedSessionsEnabled": true,
+            "clientProfileName": "dev-cux-waittimes-sub",
+            "maxConnectionCountPerClientUsername": 4,
+            "maxEgressFlowCount": 4,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 4,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 100,
+            "maxTransactionCount": 100,
+            "serviceSmfMaxConnectionCountPerClientUsername": 4,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgSendEnabled": true,
+            "clientProfileName": "dev-cxp-flifo-pub",
+            "maxConnectionCountPerClientUsername": 40,
+            "maxEgressFlowCount": 4,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 4,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 40,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "clientProfileName": "dev-cxp-flifo-sub",
+            "maxConnectionCountPerClientUsername": 40,
+            "maxEgressFlowCount": 40,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 40,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 40,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "clientProfileName": "dev-epo-ucd-sub",
+            "maxConnectionCountPerClientUsername": 40,
+            "maxEgressFlowCount": 40,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 40,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 40,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgSendEnabled": true,
+            "clientProfileName": "dev-etj-edifact-out-tsa-pub",
+            "maxConnectionCountPerClientUsername": 20,
+            "maxEgressFlowCount": 20,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 20,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 20,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "clientProfileName": "dev-etj-edifact-out-tsa-sub",
+            "maxConnectionCountPerClientUsername": 20,
+            "maxEgressFlowCount": 20,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 20,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 20,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "clientProfileName": "dev-gsapp-ucd-sub",
+            "maxConnectionCountPerClientUsername": 40,
+            "maxEgressFlowCount": 40,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 40,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 40,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "clientProfileName": "dev-jet-boarding-seat-sub",
+            "maxConnectionCountPerClientUsername": 40,
+            "maxEgressFlowCount": 40,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 40,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 40,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgSendEnabled": true,
+            "clientProfileName": "dev-jet-collab-pub",
+            "maxConnectionCountPerClientUsername": 40,
+            "maxEgressFlowCount": 40,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 40,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 40,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "clientProfileName": "dev-jet-collab-sub",
+            "maxConnectionCountPerClientUsername": 40,
+            "maxEgressFlowCount": 40,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 40,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 40,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgSendEnabled": true,
+            "clientProfileName": "dev-jet-flifo-pub",
+            "maxConnectionCountPerClientUsername": 40,
+            "maxEgressFlowCount": 40,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 40,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 40,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "clientProfileName": "dev-jet-flifo-sub",
+            "maxConnectionCountPerClientUsername": 40,
+            "maxEgressFlowCount": 40,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 40,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 40,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgSendEnabled": true,
+            "clientProfileName": "dev-jet-fm-autorefresh-pub",
+            "maxConnectionCountPerClientUsername": 100,
+            "maxEgressFlowCount": 100,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 100,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 100,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "allowGuaranteedMsgSendEnabled": true,
+            "clientProfileName": "dev-jet-fm-autorefresh-pubsub",
+            "maxConnectionCountPerClientUsername": 100,
+            "maxEgressFlowCount": 100,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 100,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 100,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "clientProfileName": "dev-jet-fm-bjb-pcdr-events-sub",
+            "maxConnectionCountPerClientUsername": 6,
+            "maxEgressFlowCount": 6,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 6,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 6,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgSendEnabled": true,
+            "clientProfileName": "dev-jet-fm-boarding-pub",
+            "maxConnectionCountPerClientUsername": 100,
+            "maxEgressFlowCount": 100,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 100,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 100,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "allowGuaranteedMsgSendEnabled": true,
+            "clientProfileName": "dev-jet-fm-boarding-pubsub",
+            "maxConnectionCountPerClientUsername": 100,
+            "maxEgressFlowCount": 100,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 100,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 100,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgSendEnabled": true,
+            "clientProfileName": "dev-jet-fm-crew-pub",
+            "maxConnectionCountPerClientUsername": 40,
+            "maxEgressFlowCount": 40,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 40,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 40,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "allowGuaranteedMsgSendEnabled": true,
+            "clientProfileName": "dev-jet-fm-crew-pubsub",
+            "maxConnectionCountPerClientUsername": 40,
+            "maxEgressFlowCount": 40,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 40,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 40,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "clientProfileName": "dev-jet-fm-prnvalidation-sub",
+            "maxConnectionCountPerClientUsername": 40,
+            "maxEgressFlowCount": 40,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 40,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 40,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "clientProfileName": "dev-jet-fm-ucd-sub",
+            "maxConnectionCountPerClientUsername": 40,
+            "maxEgressFlowCount": 40,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 40,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 40,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgSendEnabled": true,
+            "clientProfileName": "dev-jet-pcdr-inbound-pub",
+            "maxConnectionCountPerClientUsername": 40,
+            "maxEgressFlowCount": 40,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 40,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 40,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "clientProfileName": "dev-jet-pcdr-inbound-sub",
+            "maxConnectionCountPerClientUsername": 40,
+            "maxEgressFlowCount": 40,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 40,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 40,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgSendEnabled": true,
+            "clientProfileName": "dev-jet-pcdr-outbound-pub",
+            "maxConnectionCountPerClientUsername": 40,
+            "maxEgressFlowCount": 40,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 40,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 40,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "clientProfileName": "dev-jet-pcdr-outbound-shares-sub",
+            "maxConnectionCountPerClientUsername": 40,
+            "maxEgressFlowCount": 40,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 40,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 40,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "clientProfileName": "dev-jet-pcdr-outbound-tm-sub",
+            "maxConnectionCountPerClientUsername": 40,
+            "maxEgressFlowCount": 40,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 40,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 40,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "clientProfileName": "dev-jet-ucd-sub",
+            "maxConnectionCountPerClientUsername": 40,
+            "maxEgressFlowCount": 40,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 40,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 40,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgSendEnabled": true,
+            "clientProfileName": "dev-uds-bagclaim-pub",
+            "maxConnectionCountPerClientUsername": 6,
+            "maxEgressFlowCount": 6,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 6,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 6,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "clientProfileName": "dev-uds-bagclaim-sub",
+            "maxConnectionCountPerClientUsername": 6,
+            "maxEgressFlowCount": 6,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 6,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 6,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgSendEnabled": true,
+            "clientProfileName": "dev-uds-bagclaimetaevt-pub",
+            "maxConnectionCountPerClientUsername": 6,
+            "maxEgressFlowCount": 6,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 6,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 6,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "clientProfileName": "dev-uds-bagclaimetaevt-sub",
+            "maxConnectionCountPerClientUsername": 6,
+            "maxEgressFlowCount": 6,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 6,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 6,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgSendEnabled": true,
+            "clientProfileName": "dev-uds-bagpier-pub",
+            "maxConnectionCountPerClientUsername": 40,
+            "maxEgressFlowCount": 4,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 4,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 40,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "clientProfileName": "dev-uds-bagpier-sub",
+            "maxConnectionCountPerClientUsername": 40,
+            "maxEgressFlowCount": 4,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 4,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 40,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgSendEnabled": true,
+            "clientProfileName": "dev-uds-bagscan-pub",
+            "maxConnectionCountPerClientUsername": 4,
+            "maxEgressFlowCount": 4,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 4,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 4,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "clientProfileName": "dev-uds-bagscan-sub",
+            "maxConnectionCountPerClientUsername": 4,
+            "maxEgressFlowCount": 4,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 4,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 4,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgSendEnabled": true,
+            "clientProfileName": "dev-uds-ezfidsgate-pub",
+            "maxConnectionCountPerClientUsername": 10,
+            "maxEgressFlowCount": 10,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 10,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 10,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "clientProfileName": "dev-uds-ezfidsgate-sub",
+            "maxConnectionCountPerClientUsername": 10,
+            "maxEgressFlowCount": 10,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 10,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 10,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "clientProfileName": "dev-uds-flifo-sub",
+            "maxConnectionCountPerClientUsername": 40,
+            "maxEgressFlowCount": 40,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 40,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 40,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgSendEnabled": true,
+            "allowTransactedSessionsEnabled": true,
+            "clientProfileName": "dev-uds-formtr-notify-pub",
+            "maxConnectionCountPerClientUsername": 6,
+            "maxEgressFlowCount": 6,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 6,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 100,
+            "maxTransactionCount": 100,
+            "serviceSmfMaxConnectionCountPerClientUsername": 6,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "allowTransactedSessionsEnabled": true,
+            "clientProfileName": "dev-uds-formtr-notify-sub",
+            "maxConnectionCountPerClientUsername": 6,
+            "maxEgressFlowCount": 6,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 6,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 100,
+            "maxTransactionCount": 100,
+            "serviceSmfMaxConnectionCountPerClientUsername": 6,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgSendEnabled": true,
+            "clientProfileName": "dev-uds-fwdbags-pub",
+            "maxConnectionCountPerClientUsername": 6,
+            "maxEgressFlowCount": 6,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 6,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 6,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "clientProfileName": "dev-uds-fwdbags-sub",
+            "maxConnectionCountPerClientUsername": 6,
+            "maxEgressFlowCount": 6,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 6,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 6,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgSendEnabled": true,
+            "allowTransactedSessionsEnabled": true,
+            "clientProfileName": "dev-uds-gids-render-efids-pub",
+            "maxConnectionCountPerClientUsername": 6,
+            "maxEgressFlowCount": 6,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 6,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 100,
+            "maxTransactionCount": 100,
+            "serviceSmfMaxConnectionCountPerClientUsername": 6,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "allowTransactedSessionsEnabled": true,
+            "clientProfileName": "dev-uds-gids-render-efids-sub",
+            "maxConnectionCountPerClientUsername": 6,
+            "maxEgressFlowCount": 6,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 6,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 100,
+            "maxTransactionCount": 100,
+            "serviceSmfMaxConnectionCountPerClientUsername": 6,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgSendEnabled": true,
+            "allowTransactedSessionsEnabled": true,
+            "clientProfileName": "dev-uds-hotbag-pub",
+            "maxConnectionCountPerClientUsername": 4,
+            "maxEgressFlowCount": 4,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 4,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 100,
+            "maxTransactionCount": 100,
+            "serviceSmfMaxConnectionCountPerClientUsername": 4,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "allowTransactedSessionsEnabled": true,
+            "clientProfileName": "dev-uds-hotbag-sub",
+            "maxConnectionCountPerClientUsername": 4,
+            "maxEgressFlowCount": 4,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 4,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 100,
+            "maxTransactionCount": 100,
+            "serviceSmfMaxConnectionCountPerClientUsername": 4,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgSendEnabled": true,
+            "clientProfileName": "dev-uds-lightdetectalerts-pub",
+            "maxConnectionCountPerClientUsername": 6,
+            "maxEgressFlowCount": 6,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 6,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 6,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "clientProfileName": "dev-uds-lightdetectalerts-sub",
+            "maxConnectionCountPerClientUsername": 6,
+            "maxEgressFlowCount": 6,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 6,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 6,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgSendEnabled": true,
+            "allowTransactedSessionsEnabled": true,
+            "clientProfileName": "dev-uds-wb-events-pub",
+            "maxConnectionCountPerClientUsername": 20,
+            "maxEgressFlowCount": 20,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 20,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 100,
+            "maxTransactionCount": 100,
+            "serviceSmfMaxConnectionCountPerClientUsername": 20,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "allowTransactedSessionsEnabled": true,
+            "clientProfileName": "dev-uds-wb-events-sub",
+            "maxConnectionCountPerClientUsername": 20,
+            "maxEgressFlowCount": 20,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 20,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 100,
+            "maxTransactionCount": 100,
+            "serviceSmfMaxConnectionCountPerClientUsername": 20,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "clientProfileName": "dev-uia-bagcount-sub",
+            "maxConnectionCountPerClientUsername": 6,
+            "maxEgressFlowCount": 6,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 6,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 6,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgSendEnabled": true,
+            "allowTransactedSessionsEnabled": true,
+            "clientProfileName": "dev-uia-waittimes-pub",
+            "maxConnectionCountPerClientUsername": 4,
+            "maxEgressFlowCount": 4,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 4,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 100,
+            "maxTransactionCount": 100,
+            "serviceSmfMaxConnectionCountPerClientUsername": 4,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "clientProfileName": "notification_direct_consumer_cp",
+            "maxConnectionCountPerClientUsername": 20,
+            "maxEgressFlowCount": 20,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 20,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 20,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "clientProfileName": "notification_direct_producer_cp",
+            "maxConnectionCountPerClientUsername": 20,
+            "maxEgressFlowCount": 20,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 20,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 20,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgSendEnabled": true,
+            "clientProfileName": "poc-aap-jumpseat-pub",
+            "maxConnectionCountPerClientUsername": 20,
+            "maxEgressFlowCount": 20,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 20,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 20,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "clientProfileName": "poc-aap-jumpseat-sub",
+            "maxConnectionCountPerClientUsername": 20,
+            "maxEgressFlowCount": 20,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 20,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 20,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "allowTransactedSessionsEnabled": true,
+            "clientProfileName": "qa-cux-waittimes-sub",
+            "maxConnectionCountPerClientUsername": 4,
+            "maxEgressFlowCount": 4,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 4,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 100,
+            "maxTransactionCount": 100,
+            "serviceSmfMaxConnectionCountPerClientUsername": 4,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgSendEnabled": true,
+            "clientProfileName": "qa-cxp-flifo-pub",
+            "maxConnectionCountPerClientUsername": 40,
+            "maxEgressFlowCount": 4,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 4,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 40,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "clientProfileName": "qa-cxp-flifo-sub",
+            "maxConnectionCountPerClientUsername": 40,
+            "maxEgressFlowCount": 40,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 40,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 40,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "clientProfileName": "qa-epo-ucd-sub",
+            "maxConnectionCountPerClientUsername": 40,
+            "maxEgressFlowCount": 40,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 40,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 40,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgSendEnabled": true,
+            "clientProfileName": "qa-etj-edifact-out-tsa-pub",
+            "maxConnectionCountPerClientUsername": 20,
+            "maxEgressFlowCount": 20,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 20,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 20,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "clientProfileName": "qa-etj-edifact-out-tsa-sub",
+            "maxConnectionCountPerClientUsername": 20,
+            "maxEgressFlowCount": 20,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 20,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 20,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "clientProfileName": "qa-gsapp-ucd-sub",
+            "maxConnectionCountPerClientUsername": 40,
+            "maxEgressFlowCount": 40,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 40,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 40,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "clientProfileName": "qa-jet-boarding-seat-sub",
+            "maxConnectionCountPerClientUsername": 40,
+            "maxEgressFlowCount": 40,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 40,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 40,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgSendEnabled": true,
+            "clientProfileName": "qa-jet-collab-pub",
+            "maxConnectionCountPerClientUsername": 40,
+            "maxEgressFlowCount": 40,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 40,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 40,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "clientProfileName": "qa-jet-collab-sub",
+            "maxConnectionCountPerClientUsername": 40,
+            "maxEgressFlowCount": 40,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 40,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 40,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgSendEnabled": true,
+            "clientProfileName": "qa-jet-flifo-pub",
+            "maxConnectionCountPerClientUsername": 40,
+            "maxEgressFlowCount": 40,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 40,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 40,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "clientProfileName": "qa-jet-flifo-sub",
+            "maxConnectionCountPerClientUsername": 40,
+            "maxEgressFlowCount": 40,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 40,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 40,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgSendEnabled": true,
+            "clientProfileName": "qa-jet-fm-autorefresh-pub",
+            "maxConnectionCountPerClientUsername": 100,
+            "maxEgressFlowCount": 100,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 100,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 100,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "allowGuaranteedMsgSendEnabled": true,
+            "clientProfileName": "qa-jet-fm-autorefresh-pubsub",
+            "maxConnectionCountPerClientUsername": 100,
+            "maxEgressFlowCount": 100,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 100,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 100,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "clientProfileName": "qa-jet-fm-bjb-pcdr-events-sub",
+            "maxConnectionCountPerClientUsername": 6,
+            "maxEgressFlowCount": 6,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 6,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 6,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgSendEnabled": true,
+            "clientProfileName": "qa-jet-fm-boarding-pub",
+            "maxConnectionCountPerClientUsername": 100,
+            "maxEgressFlowCount": 100,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 100,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 100,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "allowGuaranteedMsgSendEnabled": true,
+            "clientProfileName": "qa-jet-fm-boarding-pubsub",
+            "maxConnectionCountPerClientUsername": 100,
+            "maxEgressFlowCount": 100,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 100,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 100,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "clientProfileName": "qa-jet-fm-prnvalidation-sub",
+            "maxConnectionCountPerClientUsername": 40,
+            "maxEgressFlowCount": 40,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 40,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 40,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "clientProfileName": "qa-jet-fm-ucd-sub",
+            "maxConnectionCountPerClientUsername": 40,
+            "maxEgressFlowCount": 40,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 40,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 40,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgSendEnabled": true,
+            "clientProfileName": "qa-jet-pcdr-inbound-pub",
+            "maxConnectionCountPerClientUsername": 40,
+            "maxEgressFlowCount": 40,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 40,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 40,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "clientProfileName": "qa-jet-pcdr-inbound-sub",
+            "maxConnectionCountPerClientUsername": 40,
+            "maxEgressFlowCount": 40,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 40,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 40,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "clientProfileName": "qa-jet-pcdr-outbound-shares-sub",
+            "maxConnectionCountPerClientUsername": 40,
+            "maxEgressFlowCount": 40,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 40,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 40,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "clientProfileName": "qa-jet-pcdr-outbound-tm-sub",
+            "maxConnectionCountPerClientUsername": 40,
+            "maxEgressFlowCount": 40,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 40,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 40,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "clientProfileName": "qa-jet-ucd-sub",
+            "maxConnectionCountPerClientUsername": 40,
+            "maxEgressFlowCount": 40,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 40,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 40,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgSendEnabled": true,
+            "clientProfileName": "qa-uds-bagclaim-pub",
+            "maxConnectionCountPerClientUsername": 6,
+            "maxEgressFlowCount": 6,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 6,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 6,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "clientProfileName": "qa-uds-bagclaim-sub",
+            "maxConnectionCountPerClientUsername": 6,
+            "maxEgressFlowCount": 6,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 6,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 6,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgSendEnabled": true,
+            "clientProfileName": "qa-uds-bagclaimetaevt-pub",
+            "maxConnectionCountPerClientUsername": 6,
+            "maxEgressFlowCount": 6,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 6,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 6,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "clientProfileName": "qa-uds-bagclaimetaevt-sub",
+            "maxConnectionCountPerClientUsername": 6,
+            "maxEgressFlowCount": 6,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 6,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 6,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgSendEnabled": true,
+            "clientProfileName": "qa-uds-bagpier-pub",
+            "maxConnectionCountPerClientUsername": 40,
+            "maxEgressFlowCount": 4,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 4,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 40,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "clientProfileName": "qa-uds-bagpier-sub",
+            "maxConnectionCountPerClientUsername": 40,
+            "maxEgressFlowCount": 4,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 4,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 40,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgSendEnabled": true,
+            "clientProfileName": "qa-uds-bagscan-pub",
+            "maxConnectionCountPerClientUsername": 30,
+            "maxEgressFlowCount": 30,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 30,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 30,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "clientProfileName": "qa-uds-bagscan-sub",
+            "maxConnectionCountPerClientUsername": 30,
+            "maxEgressFlowCount": 30,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 30,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 30,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgSendEnabled": true,
+            "clientProfileName": "qa-uds-ezfidsgate-pub",
+            "maxConnectionCountPerClientUsername": 10,
+            "maxEgressFlowCount": 10,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 10,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 10,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "clientProfileName": "qa-uds-ezfidsgate-sub",
+            "maxConnectionCountPerClientUsername": 10,
+            "maxEgressFlowCount": 10,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 10,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 10,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "clientProfileName": "qa-uds-flifo-sub",
+            "maxConnectionCountPerClientUsername": 40,
+            "maxEgressFlowCount": 40,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 40,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 40,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgSendEnabled": true,
+            "clientProfileName": "qa-uds-fwdbags-pub",
+            "maxConnectionCountPerClientUsername": 6,
+            "maxEgressFlowCount": 6,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 6,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 6,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "clientProfileName": "qa-uds-fwdbags-sub",
+            "maxConnectionCountPerClientUsername": 6,
+            "maxEgressFlowCount": 6,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 6,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 6,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgSendEnabled": true,
+            "allowTransactedSessionsEnabled": true,
+            "clientProfileName": "qa-uds-hotbag-pub",
+            "maxConnectionCountPerClientUsername": 4,
+            "maxEgressFlowCount": 4,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 4,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 100,
+            "maxTransactionCount": 100,
+            "serviceSmfMaxConnectionCountPerClientUsername": 4,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "allowTransactedSessionsEnabled": true,
+            "clientProfileName": "qa-uds-hotbag-sub",
+            "maxConnectionCountPerClientUsername": 4,
+            "maxEgressFlowCount": 4,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 4,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 100,
+            "maxTransactionCount": 100,
+            "serviceSmfMaxConnectionCountPerClientUsername": 4,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgSendEnabled": true,
+            "clientProfileName": "qa-uds-lightdetectalerts-pub",
+            "maxConnectionCountPerClientUsername": 6,
+            "maxEgressFlowCount": 6,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 6,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 6,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "clientProfileName": "qa-uds-lightdetectalerts-sub",
+            "maxConnectionCountPerClientUsername": 6,
+            "maxEgressFlowCount": 6,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 6,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 6,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgSendEnabled": true,
+            "allowTransactedSessionsEnabled": true,
+            "clientProfileName": "qa-uds-wb-events-pub",
+            "maxConnectionCountPerClientUsername": 40,
+            "maxEgressFlowCount": 40,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 40,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 100,
+            "maxTransactionCount": 100,
+            "serviceSmfMaxConnectionCountPerClientUsername": 40,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "allowTransactedSessionsEnabled": true,
+            "clientProfileName": "qa-uds-wb-events-sub",
+            "maxConnectionCountPerClientUsername": 40,
+            "maxEgressFlowCount": 40,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 40,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 100,
+            "maxTransactionCount": 100,
+            "serviceSmfMaxConnectionCountPerClientUsername": 40,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgSendEnabled": true,
+            "allowTransactedSessionsEnabled": true,
+            "clientProfileName": "qa-uia-waittimes-pub",
+            "maxConnectionCountPerClientUsername": 4,
+            "maxEgressFlowCount": 4,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 4,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 100,
+            "maxTransactionCount": 100,
+            "serviceSmfMaxConnectionCountPerClientUsername": 4,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgSendEnabled": true,
+            "clientProfileName": "stg-jet-fm-autorefresh-pub",
+            "maxConnectionCountPerClientUsername": 100,
+            "maxEgressFlowCount": 100,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 100,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 100,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "allowGuaranteedMsgSendEnabled": true,
+            "clientProfileName": "stg-jet-fm-autorefresh-pubsub",
+            "maxConnectionCountPerClientUsername": 100,
+            "maxEgressFlowCount": 100,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 100,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 100,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "clientProfileName": "stg-jet-fm-bjb-pcdr-events-sub",
+            "maxConnectionCountPerClientUsername": 6,
+            "maxEgressFlowCount": 6,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 6,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 6,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "allowGuaranteedMsgSendEnabled": true,
+            "clientProfileName": "stg-jet-fm-boarding-pubsub",
+            "maxConnectionCountPerClientUsername": 100,
+            "maxEgressFlowCount": 100,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 100,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 100,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "clientProfileName": "stg-jet-fm-ucd-sub",
+            "maxConnectionCountPerClientUsername": 40,
+            "maxEgressFlowCount": 40,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 40,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 40,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgSendEnabled": true,
+            "clientProfileName": "stg-jet-pcdr-inbound-pub",
+            "maxConnectionCountPerClientUsername": 40,
+            "maxEgressFlowCount": 40,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 40,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 40,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "clientProfileName": "stg-jet-pcdr-inbound-sub",
+            "maxConnectionCountPerClientUsername": 40,
+            "maxEgressFlowCount": 40,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 40,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 40,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgSendEnabled": true,
+            "clientProfileName": "stg-jet-pcdr-outbound-pub",
+            "maxConnectionCountPerClientUsername": 40,
+            "maxEgressFlowCount": 40,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 40,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 40,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "clientProfileName": "stg-jet-pcdr-outbound-shares-sub",
+            "maxConnectionCountPerClientUsername": 40,
+            "maxEgressFlowCount": 40,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 40,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 40,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "clientProfileName": "stg-jet-pcdr-outbound-tm-sub",
+            "maxConnectionCountPerClientUsername": 40,
+            "maxEgressFlowCount": 40,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 40,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 40,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        }
+    ],
+    "jndi": {
+        "connectionFactories": [],
+        "queues": []
+    },
+    "kafkaBridge": {
+        "recievers": [
+            {
+                "bootstrapAddressList": "b-1.cweordermskuseast1dev.ym4ind.c24.kafka.us-east-1.amazonaws.com:9094,b-2.cweordermskuseast1dev.ym4ind.c24.kafka.us-east-1.amazonaws.com:9094,b-3.cweordermskuseast1dev.ym4ind.c24.kafka.us-east-1.amazonaws.com:9094",
+                "enabled": true,
+                "groupId": "dev-duz-cwe-solace-bridge",
+                "kafkaReceiverName": "cwe-duz-dev-use1-inbound",
+                "topicBindings": [
+                    {
+                        "enabled": true,
+                        "localKey": "${kafkaPartitionKeyAsString()}",
+                        "localTopic": "UAL/CWE/PNR/ORDER/SEAT/DEV/V1",
+                        "topicName": "cwe-pnr-order-publisher-topic-dev"
+                    }
+                ],
+                "transportTlsEnabled": true
+            },
+            {
+                "bootstrapAddressList": "b-1.cwe-order-msk-qa-kafk.59p5j5.c24.kafka.us-east-1.amazonaws.com:9094,b-2.cwe-order-msk-qa-kafk.59p5j5.c24.kafka.us-east-1.amazonaws.com:9094,b-3.cwe-order-msk-qa-kafk.59p5j5.c24.kafka.us-east-1.amazonaws.com:9094",
+                "enabled": true,
+                "groupId": "qa-duz-cwe-solace-bridge",
+                "kafkaReceiverName": "cwe-duz-qa-use1-inbound",
+                "topicBindings": [
+                    {
+                        "enabled": true,
+                        "localKey": "${kafkaPartitionKeyAsString()}",
+                        "localTopic": "UAL/CWE/PNR/ORDER/SEAT/QA/V1",
+                        "topicName": "cwe-pnr-order-publisher-topic-qa"
+                    }
+                ],
+                "transportTlsEnabled": true
+            }
+        ],
+        "redundantRecievers": [],
+        "senders": []
+    },
+    "msgVpnName": "united-ep-tools-primary-v3",
+    "queues": [
+        {
+            "accessType": "non-exclusive",
+            "deliveryCountEnabled": true,
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "maxMsgSpoolUsage": 240000,
+            "maxRedeliveryCount": 10,
+            "maxTtl": 300,
+            "owner": "dev-uds-bagclaimetaevt-sub",
+            "permission": "consume",
+            "queueName": "DEV.UDS.BAGCLAIMETAEVT",
+            "respectTtlEnabled": true,
+            "subscriptionTopics": [
+                "UAL/DEV/ATW/UDS/BAGCLAIMETAEVT/>"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "maxMsgSpoolUsage": 240000,
+            "maxRedeliveryCount": 10,
+            "owner": "dev-uds-bagpier-sub",
+            "permission": "consume",
+            "queueName": "DEV.UDS.BAGPIER",
+            "subscriptionTopics": [
+                "UAL/DEV/UDS/BAGPIER/>"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "maxMsgSpoolUsage": 240000,
+            "maxRedeliveryCount": 10,
+            "maxTtl": 300,
+            "owner": "dev-uds-bagscan-sub",
+            "permission": "consume",
+            "queueName": "DEV.UDS.BAGSCAN",
+            "respectTtlEnabled": true,
+            "subscriptionTopics": [
+                "UAL/DEV/UDS/BAGSCAN/>"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "maxMsgSpoolUsage": 240000,
+            "maxRedeliveryCount": 10,
+            "maxTtl": 300,
+            "owner": "dev-uds-ezfidsgate-sub",
+            "permission": "consume",
+            "queueName": "DEV.UDS.EZFIDSGATE",
+            "respectTtlEnabled": true,
+            "subscriptionTopics": [
+                "UAL/DEV/UDS/EZFIDSGATE/>"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "maxMsgSpoolUsage": 240000,
+            "maxRedeliveryCount": 10,
+            "maxTtl": 300,
+            "owner": "dev-uds-flifo-sub",
+            "permission": "consume",
+            "queueName": "DEV.UDS.FLIFO",
+            "respectTtlEnabled": true,
+            "subscriptionTopics": [
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.CNCL/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.CNCLRS/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.DCSN/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.DVRT/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.EOG/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.EQUIP/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.ETA/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.ETD/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.GATE/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.IN/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.MFRADD/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.MFRCHG/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.MFRDEL/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.OFF/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.ON/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.ONIN/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.OUT/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.OUTOFF/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.RTBL/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/UFOUT/*/BAGCLAIM/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BAGFIN/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BOARDINGTIME/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BOARDSTATUS/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BUS.BAGCLAIM/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BUS.BOARDSTATUS/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BUS.CNCL.BUFF/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BUS.CNCL/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BUS.CNCLRS.BUFF/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BUS.CNCLRS/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BUS.EON/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BUS.EQUIP/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BUS.ETA.BUFF/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BUS.ETA/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BUS.ETD.BUFF/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BUS.ETD/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BUS.GATE/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BUS.IN/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BUS.MFRADD/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BUS.MFRCHG/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BUS.MFRDEL/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BUS.OFF/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BUS.ON/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BUS.OUT/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BUS.RCVRY.GIDS/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BUS.RCVRY/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BUS.TAILASGN/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BUS.UNDOIN/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BUS.UNDOOFF/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BUS.UNDOON/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BUS.UNDOOUT/XML/3",
+                "UAL/STG/CWO/UFOUT/*/CNCL.BUFF/XML/3",
+                "UAL/STG/CWO/UFOUT/*/CNCL/XML/3",
+                "UAL/STG/CWO/UFOUT/*/CNCLER.BUFF/XML/3",
+                "UAL/STG/CWO/UFOUT/*/CNCLER/XML/3",
+                "UAL/STG/CWO/UFOUT/*/CNCLRS.BUFF/XML/3",
+                "UAL/STG/CWO/UFOUT/*/CNCLRS/XML/3",
+                "UAL/STG/CWO/UFOUT/*/CTACIBOARDBEGIN/XML/3",
+                "UAL/STG/CWO/UFOUT/*/CTARRIVEDATGATE/XML/3",
+                "UAL/STG/CWO/UFOUT/*/CTCLEANINGEND/XML/3",
+                "UAL/STG/CWO/UFOUT/*/CTCLEANINGSTART/XML/3",
+                "UAL/STG/CWO/UFOUT/*/CTREFRESH/XML/3",
+                "UAL/STG/CWO/UFOUT/*/CUSTOMERSTORY.BUFF/XML/3",
+                "UAL/STG/CWO/UFOUT/*/DVRT/XML/3",
+                "UAL/STG/CWO/UFOUT/*/EON/XML/3",
+                "UAL/STG/CWO/UFOUT/*/EQUIP/XML/3",
+                "UAL/STG/CWO/UFOUT/*/ETA.BUFF/XML/3",
+                "UAL/STG/CWO/UFOUT/*/ETA/XML/3",
+                "UAL/STG/CWO/UFOUT/*/ETD.BUFF/XML/3",
+                "UAL/STG/CWO/UFOUT/*/ETD/XML/3",
+                "UAL/STG/CWO/UFOUT/*/FLTRG:STD-120/XML/3",
+                "UAL/STG/CWO/UFOUT/*/FLTRG:STD-2160/XML/3",
+                "UAL/STG/CWO/UFOUT/*/GATE/XML/3",
+                "UAL/STG/CWO/UFOUT/*/IN/XML/3",
+                "UAL/STG/CWO/UFOUT/*/INCORR/XML/3",
+                "UAL/STG/CWO/UFOUT/*/MFRADD/XML/3",
+                "UAL/STG/CWO/UFOUT/*/MFRCHG/XML/3",
+                "UAL/STG/CWO/UFOUT/*/MFRDEL/XML/3",
+                "UAL/STG/CWO/UFOUT/*/NOSE/XML/3",
+                "UAL/STG/CWO/UFOUT/*/NSTP/XML/3",
+                "UAL/STG/CWO/UFOUT/*/OFF/XML/3",
+                "UAL/STG/CWO/UFOUT/*/OFFCORR/XML/3",
+                "UAL/STG/CWO/UFOUT/*/ON/XML/3",
+                "UAL/STG/CWO/UFOUT/*/ONCORR/XML/3",
+                "UAL/STG/CWO/UFOUT/*/ONIN/XML/3",
+                "UAL/STG/CWO/UFOUT/*/ONINCORR/XML/3",
+                "UAL/STG/CWO/UFOUT/*/ONLDVRT/XML/3",
+                "UAL/STG/CWO/UFOUT/*/OUT/XML/3",
+                "UAL/STG/CWO/UFOUT/*/OUTCORR/XML/3",
+                "UAL/STG/CWO/UFOUT/*/OUTOFF/XML/3",
+                "UAL/STG/CWO/UFOUT/*/OUTOFFCORR/XML/3",
+                "UAL/STG/CWO/UFOUT/*/PASSCNT_FINAL/XML/3",
+                "UAL/STG/CWO/UFOUT/*/QTCHG/XML/3",
+                "UAL/STG/CWO/UFOUT/*/RCVRY/XML/3",
+                "UAL/STG/CWO/UFOUT/*/RTBL/XML/3",
+                "UAL/STG/CWO/UFOUT/*/RTFL/XML/3",
+                "UAL/STG/CWO/UFOUT/*/STARCORR/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UA.BOARDINGTIME/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UA.RCVRY.GIDS/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.BAGCLAIM/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.BOARDINGTIME/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.BOARDSTATUS/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.CNCL.BUFF/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.CNCL/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.CNCLRS.BUFF/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.CNCLRS/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.CTACIBOARDBEGIN/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.CTARRIVEDATGATE/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.CTCLEANINGEND/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.CTCLEANINGSTART/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.CTREFRESH/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.CUSTOMERSTORY.BUFF/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.DVRT/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.EON/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.EQUIP/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.ETA.BUFF/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.ETA/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.ETD.BUFF/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.ETD/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.GATE/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.IN/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.INCORR/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.MFRADD/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.MFRCHG/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.NSTP/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.OFF/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.OFFCORR/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.ON/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.ONCORR/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.ONLDVRT/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.OUT/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.OUTCORR/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.QTCHG/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.RCVRY.GIDS/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.RCVRY/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.RTBL/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.RTFL/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.STARCORR/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.TAILASGN/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.UNDOCTCLEANINGEND/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.UNDOIN/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.UNDOOFF/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.UNDOON/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.UNDOOUT/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.XSTP/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UNDOCTCLEANINGEND/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UNDOIN/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UNDOOFF/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UNDOON/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UNDOOUT/XML/3",
+                "UAL/STG/CWO/UFOUT/*/XSTP.ORIG/XML/3",
+                "UAL/STG/CWO/UFOUT/*/XSTP/XML/3"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "deliveryCountEnabled": true,
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "maxMsgSpoolUsage": 240000,
+            "maxRedeliveryCount": 10,
+            "owner": "dev-uds-formtr-notify-sub",
+            "queueName": "DEV.UDS.FORMTR.NOTIFY",
+            "subscriptionTopics": [
+                "UAL/DEV/UDS/FORMTR/NOTIFY/>"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "deliveryCountEnabled": true,
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "maxMsgSpoolUsage": 240000,
+            "maxRedeliveryCount": 10,
+            "maxTtl": 300,
+            "owner": "dev-uds-fwdbags-sub",
+            "permission": "consume",
+            "queueName": "DEV.UDS.FWDBAGS",
+            "respectTtlEnabled": true,
+            "subscriptionTopics": [
+                "UAL/DEV/ATW/UDS/FWDBAGS/>"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "deliveryCountEnabled": true,
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "maxMsgSpoolUsage": 240000,
+            "maxRedeliveryCount": 10,
+            "owner": "dev-uds-gids-render-efids-sub",
+            "queueName": "DEV.UDS.GIDS.RENDER.EFIDS",
+            "subscriptionTopics": [
+                "UAL/DEV/UDS/GIDS/RENDER/EFIDS/>"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "deliveryCountEnabled": true,
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "maxMsgSpoolUsage": 240000,
+            "maxRedeliveryCount": 10,
+            "maxTtl": 300,
+            "owner": "dev-uds-hotbag-sub",
+            "permission": "consume",
+            "queueName": "DEV.UDS.HOTBAG",
+            "respectTtlEnabled": true,
+            "subscriptionTopics": [
+                "UAL/DEV/ATW/UDS/HOTBAG/>"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "deliveryCountEnabled": true,
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "maxMsgSpoolUsage": 240000,
+            "maxRedeliveryCount": 10,
+            "maxTtl": 300,
+            "owner": "dev-uds-lightdetectalerts-sub",
+            "permission": "consume",
+            "queueName": "DEV.UDS.LIGHTDETECTALERTS",
+            "respectTtlEnabled": true,
+            "subscriptionTopics": [
+                "UAL/OPS/COLLAB/ALERTS/LHTNG_ALL_CLEAR/*/*/*/1",
+                "UAL/OPS/COLLAB/ALERTS/LHTNG_NOTIFICATION/*/*/*/1",
+                "UAL/OPS/COLLAB/ALERTS/LHTNG_PREP_TO_RESUME/*/*/*/1",
+                "UAL/OPS/COLLAB/ALERTS/LHTNG_WARNING/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "deliveryCountEnabled": true,
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "maxMsgSpoolUsage": 240000,
+            "maxRedeliveryCount": 10,
+            "maxTtl": 300,
+            "owner": "dev-uds-lightdetectalerts-sub",
+            "permission": "consume",
+            "queueName": "DEV.UDS.LIGHTDETECTALERTS.NETBRIDGE",
+            "respectTtlEnabled": true,
+            "subscriptionTopics": [
+                "UAL/DEV/ATW/UDS/LIGHTDETECTALERTS/>"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "deliveryCountEnabled": true,
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "maxMsgSpoolUsage": 240000,
+            "maxRedeliveryCount": 10,
+            "maxTtl": 300,
+            "owner": "dev-uds-wb-events-sub",
+            "queueName": "DEV.UDS.WB.EVENTS",
+            "respectTtlEnabled": true,
+            "subscriptionTopics": [
+                "UAL/ATW/UDS/WB/DEV/V1/TailTip/>",
+                "UAL/ATW/UDS/WB/DEV/V1/WTRESTINFO",
+                "UAL/ATW/UDS/WB/DEV/V1/WTRESTINFO/>"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "maxMsgSpoolUsage": 240000,
+            "maxRedeliveryCount": 10,
+            "maxTtl": 300,
+            "owner": "poc-aap-jumpseat-sub",
+            "queueName": "POC.AAP.JUMPSEAT",
+            "respectTtlEnabled": true,
+            "subscriptionTopics": [
+                "UAL/POC/AAP/JUMPSEAT/>"
+            ]
+        },
+        {
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "notification_direct_consumer",
+            "queueName": "Q.UaNotificationsDelivered",
+            "subscriptionTopics": [
+                "ua/notifications/delivered"
+            ]
+        },
+        {
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "notification_direct_consumer",
+            "queueName": "Q.UaNotificationsDelivered_CP",
+            "subscriptionTopics": [
+                "ua/notifications/delivered"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "maxMsgSpoolUsage": 240000,
+            "maxRedeliveryCount": 10,
+            "maxTtl": 300,
+            "owner": "qa-cux-waittimes-sub",
+            "permission": "consume",
+            "queueName": "QA.CUX.WAITTIMES",
+            "respectTtlEnabled": true,
+            "subscriptionTopics": [
+                "UAL/QA/ATW/UIA/WAITTIMES/>"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "maxMsgSpoolUsage": 240000,
+            "maxRedeliveryCount": 10,
+            "maxTtl": 300,
+            "owner": "qa-cxp-flifo-sub",
+            "permission": "consume",
+            "queueName": "QA.CXP.FLIFO",
+            "respectTtlEnabled": true,
+            "subscriptionTopics": [
+                "UAL/DEV/ATW/CXP/FLIFO/>",
+                "UAL/DEV/ATW/FLIFO/*/CNCL/>",
+                "UAL/DEV/ATW/FLIFO/*/DVRT/>",
+                "UAL/DEV/ATW/FLIFO/*/ETA/>",
+                "UAL/DEV/ATW/FLIFO/*/ETD/>",
+                "UAL/DEV/ATW/FLIFO/*/IN/>",
+                "UAL/DEV/ATW/FLIFO/*/OUT/>",
+                "UAL/DEV/ATW/FLIFO/*/RTBL/>",
+                "UAL/DEV/ATW/FLIFO/*/RTFL/>",
+                "UAL/DEV/ATW/FLIFO/*/STAR.CNCL/>",
+                "UAL/DEV/ATW/FLIFO/*/STAR.DVRT/>",
+                "UAL/DEV/ATW/FLIFO/*/STAR.ETA/>",
+                "UAL/DEV/ATW/FLIFO/*/STAR.ETD/>",
+                "UAL/DEV/ATW/FLIFO/*/STAR.IN/>",
+                "UAL/DEV/ATW/FLIFO/*/STAR.OUT/>",
+                "UAL/DEV/ATW/FLIFO/*/STAR.RTBL/>",
+                "UAL/DEV/ATW/FLIFO/*/STAR.RTFL/>"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "maxMsgSpoolUsage": 240000,
+            "maxRedeliveryCount": 10,
+            "maxTtl": 300,
+            "owner": "qa-epo-ucd-sub",
+            "permission": "consume",
+            "queueName": "QA.EPO.UCD",
+            "respectTtlEnabled": true,
+            "subscriptionTopics": [
+                "UAL/QA/UCD/ACI/*/*/V1/*/*/>",
+                "UAL/QA/UCD/CHKINORCH/*/*/V1/*/*/>",
+                "UAL/QA/UCD/PNR/*/*/V1/*/*/>"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "maxMsgSpoolUsage": 240000,
+            "maxRedeliveryCount": 10,
+            "maxTtl": 300,
+            "owner": "qa-etj-edifact-out-tsa-sub",
+            "queueName": "QA.ETJ.EDIFACT.OUT.TSA",
+            "respectTtlEnabled": true,
+            "subscriptionTopics": [
+                "UAL/TSEC/ETJ/OUT/QA/EDIFACT/>"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "maxMsgSpoolUsage": 240000,
+            "maxRedeliveryCount": 10,
+            "maxTtl": 300,
+            "owner": "qa-gsapp-ucd-sub",
+            "permission": "consume",
+            "queueName": "QA.GSAPP.UCD",
+            "respectTtlEnabled": true,
+            "subscriptionTopics": [
+                "UAL/QA/UCD/ACI/*/*/V1/*/*/>",
+                "UAL/QA/UCD/CHKINELIG/*/*/V1/*/*/>",
+                "UAL/QA/UCD/CHKINORCH/*/*/V1/*/*/>",
+                "UAL/QA/UCD/PNR/*/*/V1/*/*/>",
+                "UAL/QA/UCD/TKT/*/*/V1/*/*/>"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "deliveryCountEnabled": true,
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "maxMsgSpoolUsage": 240000,
+            "maxRedeliveryCount": 10,
+            "maxTtl": 300,
+            "owner": "qa-jet-boarding-seat-sub",
+            "queueName": "QA.JET.BOARDING.SEAT",
+            "respectTtlEnabled": true,
+            "subscriptionTopics": [
+                "UAL/CWE/PNR/ORDER/SEAT/QA/>",
+                "UAL/CWE/PNR/ORDER/SEAT/QAD2/>"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "maxMsgSpoolUsage": 240000,
+            "maxRedeliveryCount": 10,
+            "maxTtl": 300,
+            "owner": "qa-jet-collab-sub",
+            "permission": "consume",
+            "queueName": "QA.JET.COLLAB",
+            "respectTtlEnabled": true,
+            "subscriptionTopics": [
+                "UAL/DEV/ATW/COLLAB/>"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "maxMsgSpoolUsage": 240000,
+            "maxRedeliveryCount": 10,
+            "maxTtl": 300,
+            "owner": "qa-jet-flifo-sub",
+            "permission": "consume",
+            "queueName": "QA.JET.FLIFO",
+            "respectTtlEnabled": true,
+            "subscriptionTopics": [
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/*/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/UFOUT/*/*/XML/3"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "deliveryCountEnabled": true,
+            "deliveryDelay": 10,
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "maxMsgSpoolUsage": 240000,
+            "maxRedeliveryCount": 10,
+            "maxTtl": 7200,
+            "owner": "qa-jet-fm-autorefresh-pubsub",
+            "permission": "consume",
+            "queueName": "QA.JET.FM.AUTOREFRESH",
+            "respectTtlEnabled": true,
+            "subscriptionTopics": [
+                "UAL/QA/ATW/JET/FLIGHT/>"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "deliveryCountEnabled": true,
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "maxMsgSpoolUsage": 240000,
+            "maxRedeliveryCount": 10,
+            "maxTtl": 300,
+            "owner": "qa-jet-fm-bjb-pcdr-events-sub",
+            "permission": "consume",
+            "queueName": "QA.JET.FM.BJB.PCDR.EVENTS",
+            "respectTtlEnabled": true,
+            "subscriptionTopics": [
+                "UAL/QA/ATW/PCDR/INBOUND/>",
+                "UAL/QA/ATW/PCDR/OUTBOUND/TURNMETRICS/>"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "deliveryCountEnabled": true,
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "maxMsgSpoolUsage": 240000,
+            "maxRedeliveryCount": 10,
+            "maxTtl": 7200,
+            "owner": "qa-jet-fm-boarding-pubsub",
+            "permission": "consume",
+            "queueName": "QA.JET.FM.BOARDING",
+            "respectTtlEnabled": true,
+            "subscriptionTopics": [
+                "UAL/QA/ATW/JET/BOARDING/FLIGHT/>"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "deliveryCountEnabled": true,
+            "deliveryDelay": 15,
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "maxMsgSpoolUsage": 240000,
+            "maxRedeliveryCount": 10,
+            "maxTtl": 300,
+            "owner": "qa-jet-fm-prnvalidation-sub",
+            "permission": "consume",
+            "queueName": "QA.JET.FM.PRNVALIDATION",
+            "respectTtlEnabled": true,
+            "subscriptionTopics": [
+                "UAL/QA/ATW/PCDR/OUTBOUND/SHARES/V1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "maxMsgSpoolUsage": 240000,
+            "maxRedeliveryCount": 10,
+            "maxTtl": 300,
+            "owner": "qa-jet-fm-ucd-sub",
+            "permission": "consume",
+            "queueName": "QA.JET.FM.UCD",
+            "respectTtlEnabled": true,
+            "subscriptionTopics": [
+                "UAL/QA/UCD/ACI/*/*/V1/*/*/>",
+                "UAL/QA/UCD/PNR/*/*/V1/*/*/>",
+                "UAL/QA/UCD/TKT/*/*/V1/*/*/>"
+            ]
+        },
+        {
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "maxMsgSpoolUsage": 240000,
+            "maxRedeliveryCount": 10,
+            "maxTtl": 300,
+            "owner": "qa-jet-pcdr-inbound-sub",
+            "permission": "consume",
+            "queueName": "QA.JET.PCDRFEED.INBOUND",
+            "respectTtlEnabled": true,
+            "subscriptionTopics": [
+                "UAL/DEV/ATW/PCDR/INBOUND/V1"
+            ]
+        },
+        {
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "maxMsgSpoolUsage": 240000,
+            "maxRedeliveryCount": 10,
+            "maxTtl": 300,
+            "owner": "qa-jet-pcdr-outbound-shares-sub",
+            "permission": "consume",
+            "queueName": "QA.JET.PCDROUTBOUND.SHARES",
+            "respectTtlEnabled": true,
+            "subscriptionTopics": [
+                "UAL/QA/ATW/PCDR/OUTBOUND/SHARES/V1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "maxMsgSpoolUsage": 240000,
+            "maxRedeliveryCount": 10,
+            "maxTtl": 300,
+            "owner": "qa-jet-pcdr-outbound-tm-sub",
+            "permission": "consume",
+            "queueName": "QA.JET.PCDROUTBOUND.TURNMETRICS",
+            "respectTtlEnabled": true,
+            "subscriptionTopics": [
+                "UAL/QA/ATW/PCDR/OUTBOUND/TURNMETRICS/V1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "maxMsgSpoolUsage": 240000,
+            "maxRedeliveryCount": 10,
+            "maxTtl": 300,
+            "owner": "qa-jet-ucd-sub",
+            "partitionCount": 100,
+            "permission": "consume",
+            "queueName": "QA.JET.UCD",
+            "respectTtlEnabled": true,
+            "subscriptionTopics": [
+                "UAL/QA/UCD/ACI/*/*/V1/*/*/>",
+                "UAL/QA/UCD/CHKINELIG/*/*/V1/*/*/>",
+                "UAL/QA/UCD/CHKINORCH/*/*/V1/*/*/>",
+                "UAL/QA/UCD/PNR/*/*/V1/*/*/>",
+                "UAL/QA/UCD/TKT/*/*/V1/*/*/>"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "deliveryCountEnabled": true,
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "maxMsgSpoolUsage": 240000,
+            "maxRedeliveryCount": 10,
+            "maxTtl": 300,
+            "owner": "qa-uds-bagclaim-sub",
+            "permission": "consume",
+            "queueName": "QA.UDS.BAGCLAIM",
+            "respectTtlEnabled": true,
+            "subscriptionTopics": [
+                "UAL/QA/ATW/UDS/BAGCLAIM/>"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "deliveryCountEnabled": true,
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "maxMsgSpoolUsage": 240000,
+            "maxRedeliveryCount": 10,
+            "maxTtl": 300,
+            "owner": "qa-uds-bagclaimetaevt-sub",
+            "permission": "consume",
+            "queueName": "QA.UDS.BAGCLAIMETAEVT",
+            "respectTtlEnabled": true,
+            "subscriptionTopics": [
+                "UAL/QA/ATW/UDS/BAGCLAIMETAEVT/>"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "maxMsgSpoolUsage": 240000,
+            "maxRedeliveryCount": 10,
+            "owner": "qa-uds-bagpier-sub",
+            "permission": "consume",
+            "queueName": "QA.UDS.BAGPIER",
+            "subscriptionTopics": [
+                "UAL/QA/UDS/BAGPIER/>"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "maxMsgSpoolUsage": 240000,
+            "maxRedeliveryCount": 10,
+            "maxTtl": 300,
+            "owner": "qa-uds-bagscan-sub",
+            "permission": "consume",
+            "queueName": "QA.UDS.BAGSCAN",
+            "respectTtlEnabled": true,
+            "subscriptionTopics": [
+                "UAL/QA/UDS/BAGSCAN/>"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "maxMsgSpoolUsage": 240000,
+            "maxRedeliveryCount": 10,
+            "maxTtl": 300,
+            "owner": "qa-uds-ezfidsgate-sub",
+            "permission": "consume",
+            "queueName": "QA.UDS.EZFIDSGATE",
+            "respectTtlEnabled": true,
+            "subscriptionTopics": [
+                "UAL/QA/UDS/EZFIDSGATE/>"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "maxMsgSpoolUsage": 240000,
+            "maxRedeliveryCount": 10,
+            "maxTtl": 300,
+            "owner": "qa-uds-flifo-sub",
+            "permission": "consume",
+            "queueName": "QA.UDS.FLIFO",
+            "respectTtlEnabled": true,
+            "subscriptionTopics": [
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.CNCL/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.CNCLRS/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.DCSN/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.DVRT/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.EOG/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.EQUIP/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.ETA/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.ETD/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.GATE/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.IN/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.MFRADD/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.MFRCHG/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.MFRDEL/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.OFF/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.ON/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.ONIN/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.OUT/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.OUTOFF/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/PNFLIFO/*/*/*/*/*/STAR.RTBL/*/*/*/*/*/*/*/*/1",
+                "UAL/STG/CWO/UFOUT/*/BAGCLAIM/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BAGFIN/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BOARDINGTIME/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BOARDSTATUS/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BUS.BAGCLAIM/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BUS.BOARDSTATUS/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BUS.CNCL.BUFF/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BUS.CNCL/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BUS.CNCLRS.BUFF/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BUS.CNCLRS/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BUS.EON/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BUS.EQUIP/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BUS.ETA.BUFF/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BUS.ETA/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BUS.ETD.BUFF/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BUS.ETD/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BUS.GATE/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BUS.IN/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BUS.MFRADD/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BUS.MFRCHG/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BUS.MFRDEL/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BUS.OFF/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BUS.ON/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BUS.OUT/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BUS.RCVRY.GIDS/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BUS.RCVRY/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BUS.TAILASGN/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BUS.UNDOIN/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BUS.UNDOOFF/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BUS.UNDOON/XML/3",
+                "UAL/STG/CWO/UFOUT/*/BUS.UNDOOUT/XML/3",
+                "UAL/STG/CWO/UFOUT/*/CNCL.BUFF/XML/3",
+                "UAL/STG/CWO/UFOUT/*/CNCL/XML/3",
+                "UAL/STG/CWO/UFOUT/*/CNCLER.BUFF/XML/3",
+                "UAL/STG/CWO/UFOUT/*/CNCLER/XML/3",
+                "UAL/STG/CWO/UFOUT/*/CNCLRS.BUFF/XML/3",
+                "UAL/STG/CWO/UFOUT/*/CNCLRS/XML/3",
+                "UAL/STG/CWO/UFOUT/*/CTACIBOARDBEGIN/XML/3",
+                "UAL/STG/CWO/UFOUT/*/CTARRIVEDATGATE/XML/3",
+                "UAL/STG/CWO/UFOUT/*/CTCLEANINGEND/XML/3",
+                "UAL/STG/CWO/UFOUT/*/CTCLEANINGSTART/XML/3",
+                "UAL/STG/CWO/UFOUT/*/CTREFRESH/XML/3",
+                "UAL/STG/CWO/UFOUT/*/CUSTOMERSTORY.BUFF/XML/3",
+                "UAL/STG/CWO/UFOUT/*/DVRT/XML/3",
+                "UAL/STG/CWO/UFOUT/*/EON/XML/3",
+                "UAL/STG/CWO/UFOUT/*/EQUIP/XML/3",
+                "UAL/STG/CWO/UFOUT/*/ETA.BUFF/XML/3",
+                "UAL/STG/CWO/UFOUT/*/ETA/XML/3",
+                "UAL/STG/CWO/UFOUT/*/ETD.BUFF/XML/3",
+                "UAL/STG/CWO/UFOUT/*/ETD/XML/3",
+                "UAL/STG/CWO/UFOUT/*/FLTRG:STD-120/XML/3",
+                "UAL/STG/CWO/UFOUT/*/FLTRG:STD-2160/XML/3",
+                "UAL/STG/CWO/UFOUT/*/GATE/XML/3",
+                "UAL/STG/CWO/UFOUT/*/IN/XML/3",
+                "UAL/STG/CWO/UFOUT/*/INCORR/XML/3",
+                "UAL/STG/CWO/UFOUT/*/MFRADD/XML/3",
+                "UAL/STG/CWO/UFOUT/*/MFRCHG/XML/3",
+                "UAL/STG/CWO/UFOUT/*/MFRDEL/XML/3",
+                "UAL/STG/CWO/UFOUT/*/NOSE/XML/3",
+                "UAL/STG/CWO/UFOUT/*/NSTP/XML/3",
+                "UAL/STG/CWO/UFOUT/*/OFF/XML/3",
+                "UAL/STG/CWO/UFOUT/*/OFFCORR/XML/3",
+                "UAL/STG/CWO/UFOUT/*/ON/XML/3",
+                "UAL/STG/CWO/UFOUT/*/ONCORR/XML/3",
+                "UAL/STG/CWO/UFOUT/*/ONIN/XML/3",
+                "UAL/STG/CWO/UFOUT/*/ONINCORR/XML/3",
+                "UAL/STG/CWO/UFOUT/*/ONLDVRT/XML/3",
+                "UAL/STG/CWO/UFOUT/*/OUT/XML/3",
+                "UAL/STG/CWO/UFOUT/*/OUTCORR/XML/3",
+                "UAL/STG/CWO/UFOUT/*/OUTOFF/XML/3",
+                "UAL/STG/CWO/UFOUT/*/OUTOFFCORR/XML/3",
+                "UAL/STG/CWO/UFOUT/*/PASSCNT_FINAL/XML/3",
+                "UAL/STG/CWO/UFOUT/*/QTCHG/XML/3",
+                "UAL/STG/CWO/UFOUT/*/RCVRY/XML/3",
+                "UAL/STG/CWO/UFOUT/*/RTBL/XML/3",
+                "UAL/STG/CWO/UFOUT/*/RTFL/XML/3",
+                "UAL/STG/CWO/UFOUT/*/STARCORR/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UA.BOARDINGTIME/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UA.RCVRY.GIDS/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.BAGCLAIM/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.BOARDINGTIME/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.BOARDSTATUS/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.CNCL.BUFF/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.CNCL/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.CNCLRS.BUFF/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.CNCLRS/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.CTACIBOARDBEGIN/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.CTARRIVEDATGATE/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.CTCLEANINGEND/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.CTCLEANINGSTART/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.CTREFRESH/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.CUSTOMERSTORY.BUFF/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.DVRT/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.EON/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.EQUIP/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.ETA.BUFF/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.ETA/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.ETD.BUFF/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.ETD/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.GATE/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.IN/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.INCORR/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.MFRADD/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.MFRCHG/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.NSTP/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.OFF/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.OFFCORR/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.ON/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.ONCORR/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.ONLDVRT/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.OUT/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.OUTCORR/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.QTCHG/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.RCVRY.GIDS/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.RCVRY/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.RTBL/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.RTFL/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.STARCORR/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.TAILASGN/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.UNDOCTCLEANINGEND/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.UNDOIN/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.UNDOOFF/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.UNDOON/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.UNDOOUT/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UAX.XSTP/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UNDOCTCLEANINGEND/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UNDOIN/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UNDOOFF/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UNDOON/XML/3",
+                "UAL/STG/CWO/UFOUT/*/UNDOOUT/XML/3",
+                "UAL/STG/CWO/UFOUT/*/XSTP.ORIG/XML/3",
+                "UAL/STG/CWO/UFOUT/*/XSTP/XML/3"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "deliveryCountEnabled": true,
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "maxMsgSpoolUsage": 240000,
+            "maxRedeliveryCount": 10,
+            "maxTtl": 300,
+            "owner": "qa-uds-fwdbags-sub",
+            "permission": "consume",
+            "queueName": "QA.UDS.FWDBAGS",
+            "respectTtlEnabled": true,
+            "subscriptionTopics": [
+                "UAL/QA/ATW/UDS/FWDBAGS/>"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "deliveryCountEnabled": true,
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "maxMsgSpoolUsage": 240000,
+            "maxRedeliveryCount": 10,
+            "maxTtl": 300,
+            "owner": "qa-uds-hotbag-sub",
+            "permission": "consume",
+            "queueName": "QA.UDS.HOTBAG",
+            "respectTtlEnabled": true,
+            "subscriptionTopics": [
+                "UAL/QA/ATW/UDS/HOTBAG/>"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "deliveryCountEnabled": true,
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "maxMsgSpoolUsage": 240000,
+            "maxRedeliveryCount": 10,
+            "maxTtl": 300,
+            "owner": "qa-uds-lightdetectalerts-sub",
+            "permission": "consume",
+            "queueName": "QA.UDS.LIGHTDETECTALERTS",
+            "respectTtlEnabled": true,
+            "subscriptionTopics": [
+                "UAL/OPS/COLLAB/ALERTS/LHTNG_ALL_CLEAR/*/*/*/1",
+                "UAL/OPS/COLLAB/ALERTS/LHTNG_NOTIFICATION/*/*/*/1",
+                "UAL/OPS/COLLAB/ALERTS/LHTNG_PREP_TO_RESUME/*/*/*/1",
+                "UAL/OPS/COLLAB/ALERTS/LHTNG_WARNING/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "deliveryCountEnabled": true,
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "maxMsgSpoolUsage": 240000,
+            "maxRedeliveryCount": 10,
+            "maxTtl": 300,
+            "owner": "qa-uds-wb-events-sub",
+            "queueName": "QA.UDS.WB.EVENTS",
+            "respectTtlEnabled": true,
+            "subscriptionTopics": [
+                "UAL/ATW/UDS/WB/QA/V1/TailTip/>",
+                "UAL/ATW/UDS/WB/QA/V1/WTRESTINFO",
+                "UAL/ATW/UDS/WB/QA/V1/WTRESTINFO/>"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "maxMsgSpoolUsage": 240000,
+            "maxRedeliveryCount": 10,
+            "maxTtl": 300,
+            "owner": "dev-gsapp-ucd-sub",
+            "permission": "consume",
+            "queueName": "STG.GSAPP.UCD",
+            "respectTtlEnabled": true,
+            "subscriptionTopics": [
+                "UAL/QA/UCD/ACI/*/*/V1/*/*/>",
+                "UAL/QA/UCD/CHKINELIG/*/*/V1/*/*/>",
+                "UAL/QA/UCD/CHKINORCH/*/*/V1/*/*/>",
+                "UAL/QA/UCD/PNR/*/*/V1/*/*/>",
+                "UAL/QA/UCD/TKT/*/*/V1/*/*/>"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "deliveryCountEnabled": true,
+            "deliveryDelay": 10,
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "maxMsgSpoolUsage": 240000,
+            "maxRedeliveryCount": 10,
+            "maxTtl": 7200,
+            "owner": "stg-jet-fm-autorefresh-pubsub",
+            "permission": "consume",
+            "queueName": "STG.JET.FM.AUTOREFRESH",
+            "respectTtlEnabled": true,
+            "subscriptionTopics": [
+                "UAL/STG/ATW/JET/FLIGHT/>"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "deliveryCountEnabled": true,
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "maxMsgSpoolUsage": 240000,
+            "maxRedeliveryCount": 10,
+            "maxTtl": 300,
+            "owner": "stg-jet-fm-bjb-pcdr-events-sub",
+            "permission": "consume",
+            "queueName": "STG.JET.FM.BJB.PCDR.EVENTS",
+            "respectTtlEnabled": true,
+            "subscriptionTopics": [
+                "UAL/STG/ATW/PCDR/INBOUND/>",
+                "UAL/STG/ATW/PCDR/OUTBOUND/TURNMETRICS/>"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "deliveryCountEnabled": true,
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "maxMsgSpoolUsage": 240000,
+            "maxRedeliveryCount": 10,
+            "maxTtl": 7200,
+            "owner": "stg-jet-fm-boarding-pubsub",
+            "permission": "consume",
+            "queueName": "STG.JET.FM.BOARDING",
+            "respectTtlEnabled": true,
+            "subscriptionTopics": [
+                "UAL/STG/ATW/JET/BOARDING/FLIGHT/>"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "maxMsgSpoolUsage": 240000,
+            "maxRedeliveryCount": 10,
+            "maxTtl": 300,
+            "owner": "stg-jet-fm-ucd-sub",
+            "permission": "consume",
+            "queueName": "STG.JET.FM.UCD",
+            "respectTtlEnabled": true,
+            "subscriptionTopics": [
+                "UAL/QA/UCD/ACI/*/*/V1/*/*/>",
+                "UAL/QA/UCD/PNR/*/*/V1/*/*/>",
+                "UAL/QA/UCD/TKT/*/*/V1/*/*/>"
+            ]
+        },
+        {
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "maxMsgSpoolUsage": 240000,
+            "maxRedeliveryCount": 10,
+            "maxTtl": 300,
+            "owner": "stg-jet-pcdr-inbound-sub",
+            "permission": "consume",
+            "queueName": "STG.JET.PCDRFEED.INBOUND",
+            "respectTtlEnabled": true,
+            "subscriptionTopics": [
+                "UAL/STG/ATW/PCDR/INBOUND/V1"
+            ]
+        },
+        {
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "maxMsgSpoolUsage": 240000,
+            "maxRedeliveryCount": 10,
+            "maxTtl": 300,
+            "owner": "stg-jet-pcdr-outbound-shares-sub",
+            "permission": "consume",
+            "queueName": "STG.JET.PCDROUTBOUND.SHARES",
+            "respectTtlEnabled": true,
+            "subscriptionTopics": [
+                "UAL/STG/ATW/PCDR/OUTBOUND/SHARES/V1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "maxMsgSpoolUsage": 240000,
+            "maxRedeliveryCount": 10,
+            "maxTtl": 300,
+            "owner": "stg-jet-pcdr-outbound-tm-sub",
+            "permission": "consume",
+            "queueName": "STG.JET.PCDROUTBOUND.TURNMETRICS",
+            "respectTtlEnabled": true,
+            "subscriptionTopics": [
+                "UAL/STG/ATW/PCDR/OUTBOUND/TURNMETRICS/V1"
+            ]
+        },
+        {
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "notification_direct_consumer",
+            "queueName": "TEST.QUEUE_1",
+            "subscriptionTopics": [
+                "ua/notifications/>"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.CCE.PRETRAVEL.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/CCE/PTP/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.COLLAB.NOTIFY.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/ENR/VDR/FLTFEED/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.CONTACTPREF.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/*/CONTACTPREF/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.EMAIL.FDBK.PERSIST.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/EMAIL_FDBK_API/OUT/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.EMAIL.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/ENR/VDR/EMAIL/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.ENRICHER.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/CONTACTPREF/ENR/NONVOICE/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.ERROR.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/*/ERROR/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.FDBK.CALLBACK.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/EMAIL_FDBK_PERSIST/OUT/*/*/*/*/1",
+                "UAL/DEV/DQN/PUSH_FDBK_PERSIST/OUT/*/*/*/*/1",
+                "UAL/DEV/DQN/SMS_FDBK_PERSIST/OUT/*/*/*/*/1",
+                "UAL/DEV/DQN/VOICE_FDBK_PERSIST/OUT/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.FDBK.UCLD.DLV.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/EMAIL_FDBK_PERSIST/OUT/*/BOUNCE/*/*/1",
+                "UAL/DEV/DQN/EMAIL_FDBK_PERSIST/OUT/*/DELIVERED/*/*/1",
+                "UAL/DEV/DQN/EMAIL_FDBK_PERSIST/OUT/*/DROPPED/*/*/1",
+                "UAL/DEV/DQN/PUSH_FDBK_PERSIST/OUT/*/INBOX_MESSAGE_DELIVERED/*/*/1",
+                "UAL/DEV/DQN/PUSH_FDBK_PERSIST/OUT/*/NOTIFICATION_RECEIVED/*/*/1",
+                "UAL/DEV/DQN/SMS_FDBK_PERSIST/OUT/*/DELIVERED/*/*/1",
+                "UAL/DEV/DQN/SMS_FDBK_PERSIST/OUT/*/FAILED/*/*/1",
+                "UAL/DEV/DQN/SMS_FDBK_PERSIST/OUT/*/UNDELIVERED/*/*/1",
+                "UAL/DEV/DQN/VOICE_FDBK_PERSIST/OUT/*/BUSY/*/*/1",
+                "UAL/DEV/DQN/VOICE_FDBK_PERSIST/OUT/*/COMPLETED/*/*/1",
+                "UAL/DEV/DQN/VOICE_FDBK_PERSIST/OUT/*/FAILED/*/*/1",
+                "UAL/DEV/DQN/VOICE_FDBK_PERSIST/OUT/*/NO_ANSWER/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.FDBK.UCLD.INTR.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/EMAIL_FDBK_PERSIST/OUT/*/CLICK/*/*/1",
+                "UAL/DEV/DQN/EMAIL_FDBK_PERSIST/OUT/*/OPEN/*/*/1",
+                "UAL/DEV/DQN/PUSH_FDBK_PERSIST/OUT/*/INBOX_MESSAGE_OPENED/*/*/1/*/*/1",
+                "UAL/DEV/DQN/PUSH_FDBK_PERSIST/OUT/*/NOTIFICATION_OPENED/*/*/1",
+                "UAL/DEV/DQN/SMS_FDBK_PERSIST/OUT/*/CLICK/*/*/1",
+                "UAL/DEV/DQN/SMS_FDBK_PERSIST/OUT/*/PREVIEW/*/*/1",
+                "UAL/DEV/DQN/VOICE_FDBK_PERSIST/OUT/*/COMPLETED/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.FDBK.UPDATE.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/EMAIL_FDBK_PERSIST/OUT/*/BOUNCE/*/*/1",
+                "UAL/DEV/DQN/EMAIL_FDBK_PERSIST/OUT/*/DROPPED/*/*/1",
+                "UAL/DEV/DQN/PUSH_FDBK_PERSIST/OUT/RETRIABLE/FAILED_TO_SEND_NOTIFICATION/*/*/1",
+                "UAL/DEV/DQN/PUSH_FDBK_PERSIST/OUT/RETRIABLE/NO_DEVICES_FOUND/*/*/1",
+                "UAL/DEV/DQN/PUSH_FDBK_PERSIST/OUT/RETRIABLE/OPT_OUT/*/*/1",
+                "UAL/DEV/DQN/SMS_FDBK_PERSIST/OUT/*/FAILED/*/*/1",
+                "UAL/DEV/DQN/SMS_FDBK_PERSIST/OUT/*/UNDELIVERED/*/*/1",
+                "UAL/DEV/DQN/VOICE_FDBK_PERSIST/OUT/*/FAILED/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.KAFKA.COMM.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/EMAIL_PROC/PERSIST/*/*/RAVENODMS/*/1",
+                "UAL/DEV/DQN/PUSH_PROC/PERSIST/*/*/RAVENODMS/*/1",
+                "UAL/DEV/DQN/RCS_PROC/PERSIST/*/*/RAVENODMS/*/1",
+                "UAL/DEV/DQN/SMS_PROC/PERSIST/*/*/RAVENODMS/*/1",
+                "UAL/DEV/DQN/VOICE_PROC/PERSIST/*/*/RAVENODMS/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.LYLT.CHASE.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/LYT/CHS/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.LYLT.MILEPLAY.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/*/MILEPLAY/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.LYLT.MILESPOOLING.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/LYLT/MILESPOOLING/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.LYLT.PPR.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/LYLT/PPR/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.LYLT.PUG.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/LYT/PUG/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.MAILHOG.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/VDR/MAILHOG/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.ODMS.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/*/ODMS/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.PERSIST.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/EMAIL_PROC/PERSIST/*/FAILURE/*/*/1",
+                "UAL/DEV/DQN/EMAIL_PROC/PERSIST/*/SUCCESS/*/*/1",
+                "UAL/DEV/DQN/PUSH_PROC/PERSIST/*/FAILURE/*/*/1",
+                "UAL/DEV/DQN/PUSH_PROC/PERSIST/*/SUCCESS/*/*/1",
+                "UAL/DEV/DQN/RCS_PROC/PERSIST/*/FAILURE/*/*/1",
+                "UAL/DEV/DQN/RCS_PROC/PERSIST/*/SUCCESS/*/*/1",
+                "UAL/DEV/DQN/SMS_PROC/PERSIST/*/FAILURE/*/*/1",
+                "UAL/DEV/DQN/SMS_PROC/PERSIST/*/SUCCESS/*/*/1",
+                "UAL/DEV/DQN/VOICE_PROC/PERSIST/*/FAILURE/*/*/1",
+                "UAL/DEV/DQN/VOICE_PROC/PERSIST/*/SUCCESS/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.PHONEVERIFY.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/CONTACTPREF/ENR/VOICE/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.PUSH.FDBK.PERSIST.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/PUSH_FDBK_API/OUT/PERSIST/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.PUSH.FDBK.UCLD.COMM.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/PUSH_FDBK_API/OUT/*/FAILED_TO_SEND_NOTIFICATION/*/*/1",
+                "UAL/DEV/DQN/PUSH_FDBK_API/OUT/*/INBOX_MESSAGE_DELIVERED/*/*/1",
+                "UAL/DEV/DQN/PUSH_FDBK_API/OUT/*/INBOX_MESSAGE_DELIVERY_FAILED/*/*/1",
+                "UAL/DEV/DQN/PUSH_FDBK_API/OUT/*/NOTIFICATION_SENT/*/*/1",
+                "UAL/DEV/DQN/PUSH_FDBK_API/OUT/*/OPT_OUT/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.PUSH.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/ENR/VDR/PUSH/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.RCS.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/ENR/VDR/RCS/*/*/*/1",
+                "UAL/DEV/DQN/ENR/VDR/WHATSAPP/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.REPROCESS.ERROR.OUT.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/*/REPROCESS/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.SMS.FDBK.PERSIST.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/SMS_FDBK_API/OUT/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.SMS.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/ENR/VDR/SMS/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.UCLD.COMM.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/EMAIL_PROC/PERSIST/*/*/*/*/1",
+                "UAL/DEV/DQN/RCS_PROC/PERSIST/*/*/*/*/1",
+                "UAL/DEV/DQN/SMS_PROC/PERSIST/*/*/*/*/1",
+                "UAL/DEV/DQN/VOICE_PROC/PERSIST/*/*/*/*/1"
+            ]
+        }
+    ],
+    "replicatedTopics": [
+        {
+            "replicatedTopic": "#P2P/>",
+            "replicationMode": "async"
+        },
+        {
+            "replicatedTopic": ">",
+            "replicationMode": "async"
+        },
+        {
+            "replicatedTopic": "TEST/>",
+            "replicationMode": "async"
+        }
+    ],
+    "topicEndpoints": [],
+    "users": [
+        {
+            "aclProfileName": "abc123",
+            "clientUsername": "abc123",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "dev-bos-bagcount-pub",
+            "clientProfileName": "dev-bos-bagcount-pub",
+            "clientUsername": "dev-bos-bagcount-pub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "dev-cux-waittimes-sub",
+            "clientProfileName": "dev-cux-waittimes-sub",
+            "clientUsername": "dev-cux-waittimes-sub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "dev-cxp-flifo-pub",
+            "clientProfileName": "dev-cxp-flifo-pub",
+            "clientUsername": "dev-cxp-flifo-pub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "dev-cxp-flifo-sub",
+            "clientProfileName": "dev-cxp-flifo-sub",
+            "clientUsername": "dev-cxp-flifo-sub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "dev-epo-ucd-sub",
+            "clientProfileName": "dev-epo-ucd-sub",
+            "clientUsername": "dev-epo-ucd-sub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "dev-etj-edifact-out-tsa-pub",
+            "clientProfileName": "dev-etj-edifact-out-tsa-pub",
+            "clientUsername": "dev-etj-edifact-out-tsa-pub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "dev-etj-edifact-out-tsa-sub",
+            "clientProfileName": "dev-etj-edifact-out-tsa-sub",
+            "clientUsername": "dev-etj-edifact-out-tsa-sub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "dev-gsapp-ucd-sub",
+            "clientProfileName": "dev-gsapp-ucd-sub",
+            "clientUsername": "dev-gsapp-ucd-sub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "dev-jet-boarding-seat-sub",
+            "clientProfileName": "dev-jet-boarding-seat-sub",
+            "clientUsername": "dev-jet-boarding-seat-sub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "dev-jet-collab-pub",
+            "clientProfileName": "dev-jet-collab-pub",
+            "clientUsername": "dev-jet-collab-pub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "dev-jet-collab-sub",
+            "clientProfileName": "dev-jet-collab-sub",
+            "clientUsername": "dev-jet-collab-sub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "dev-jet-flifo-pub",
+            "clientProfileName": "dev-jet-flifo-pub",
+            "clientUsername": "dev-jet-flifo-pub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "dev-jet-flifo-sub",
+            "clientProfileName": "dev-jet-flifo-sub",
+            "clientUsername": "dev-jet-flifo-sub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "dev-jet-fm-autorefresh-pub",
+            "clientProfileName": "dev-jet-fm-autorefresh-pub",
+            "clientUsername": "dev-jet-fm-autorefresh-pub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "dev-jet-fm-autorefresh-pubsub",
+            "clientProfileName": "dev-jet-fm-autorefresh-pubsub",
+            "clientUsername": "dev-jet-fm-autorefresh-pubsub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "dev-jet-fm-bjb-pcdr-events-sub",
+            "clientProfileName": "dev-jet-fm-bjb-pcdr-events-sub",
+            "clientUsername": "dev-jet-fm-bjb-pcdr-events-sub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "dev-jet-fm-boarding-pub",
+            "clientProfileName": "dev-jet-fm-boarding-pub",
+            "clientUsername": "dev-jet-fm-boarding-pub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "dev-jet-fm-boarding-pubsub",
+            "clientProfileName": "dev-jet-fm-boarding-pubsub",
+            "clientUsername": "dev-jet-fm-boarding-pubsub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "dev-jet-fm-crew-pub",
+            "clientProfileName": "dev-jet-fm-crew-pub",
+            "clientUsername": "dev-jet-fm-crew-pub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "dev-jet-fm-crew-pubsub",
+            "clientProfileName": "dev-jet-fm-crew-pubsub",
+            "clientUsername": "dev-jet-fm-crew-pubsub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "dev-jet-fm-prnvalidation-sub",
+            "clientProfileName": "dev-jet-fm-prnvalidation-sub",
+            "clientUsername": "dev-jet-fm-prnvalidation-sub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "dev-jet-fm-ucd-sub",
+            "clientProfileName": "dev-jet-fm-ucd-sub",
+            "clientUsername": "dev-jet-fm-ucd-sub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "dev-jet-pcdr-inbound-pub",
+            "clientProfileName": "dev-jet-pcdr-inbound-pub",
+            "clientUsername": "dev-jet-pcdr-inbound-pub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "dev-jet-pcdr-inbound-sub",
+            "clientProfileName": "dev-jet-pcdr-inbound-sub",
+            "clientUsername": "dev-jet-pcdr-inbound-sub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "dev-jet-pcdr-outbound-pub",
+            "clientProfileName": "dev-jet-pcdr-outbound-pub",
+            "clientUsername": "dev-jet-pcdr-outbound-pub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "dev-jet-pcdr-outbound-shares-sub",
+            "clientProfileName": "dev-jet-pcdr-outbound-shares-sub",
+            "clientUsername": "dev-jet-pcdr-outbound-shares-sub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "dev-jet-pcdr-outbound-tm-sub",
+            "clientProfileName": "dev-jet-pcdr-outbound-tm-sub",
+            "clientUsername": "dev-jet-pcdr-outbound-tm-sub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "dev-jet-ucd-sub",
+            "clientProfileName": "dev-jet-ucd-sub",
+            "clientUsername": "dev-jet-ucd-sub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "dev-uds-bagclaim-pub",
+            "clientProfileName": "dev-uds-bagclaim-pub",
+            "clientUsername": "dev-uds-bagclaim-pub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "dev-uds-bagclaim-sub",
+            "clientProfileName": "dev-uds-bagclaim-sub",
+            "clientUsername": "dev-uds-bagclaim-sub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "dev-uds-bagclaimetaevt-pub",
+            "clientProfileName": "dev-uds-bagclaimetaevt-pub",
+            "clientUsername": "dev-uds-bagclaimetaevt-pub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "dev-uds-bagclaimetaevt-sub",
+            "clientProfileName": "dev-uds-bagclaimetaevt-sub",
+            "clientUsername": "dev-uds-bagclaimetaevt-sub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "dev-uds-bagpier-pub",
+            "clientProfileName": "dev-uds-bagpier-pub",
+            "clientUsername": "dev-uds-bagpier-pub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "dev-uds-bagpier-sub",
+            "clientProfileName": "dev-uds-bagpier-sub",
+            "clientUsername": "dev-uds-bagpier-sub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "dev-uds-bagscan-pub",
+            "clientProfileName": "dev-uds-bagscan-pub",
+            "clientUsername": "dev-uds-bagscan-pub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "dev-uds-bagscan-sub",
+            "clientProfileName": "dev-uds-bagscan-sub",
+            "clientUsername": "dev-uds-bagscan-sub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "dev-uds-ezfidsgate-pub",
+            "clientProfileName": "dev-uds-ezfidsgate-pub",
+            "clientUsername": "dev-uds-ezfidsgate-pub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "dev-uds-ezfidsgate-sub",
+            "clientProfileName": "dev-uds-ezfidsgate-sub",
+            "clientUsername": "dev-uds-ezfidsgate-sub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "dev-uds-flifo-sub",
+            "clientProfileName": "dev-uds-flifo-sub",
+            "clientUsername": "dev-uds-flifo-sub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "dev-uds-formtr-notify-pub",
+            "clientProfileName": "dev-uds-formtr-notify-pub",
+            "clientUsername": "dev-uds-formtr-notify-pub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "dev-uds-formtr-notify-sub",
+            "clientProfileName": "dev-uds-formtr-notify-sub",
+            "clientUsername": "dev-uds-formtr-notify-sub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "dev-uds-fwdbags-pub",
+            "clientProfileName": "dev-uds-fwdbags-pub",
+            "clientUsername": "dev-uds-fwdbags-pub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "dev-uds-fwdbags-sub",
+            "clientProfileName": "dev-uds-fwdbags-sub",
+            "clientUsername": "dev-uds-fwdbags-sub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "dev-uds-gids-render-efids-pub",
+            "clientProfileName": "dev-uds-gids-render-efids-pub",
+            "clientUsername": "dev-uds-gids-render-efids-pub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "dev-uds-gids-render-efids-sub",
+            "clientProfileName": "dev-uds-gids-render-efids-sub",
+            "clientUsername": "dev-uds-gids-render-efids-sub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "dev-uds-hotbag-pub",
+            "clientProfileName": "dev-uds-hotbag-pub",
+            "clientUsername": "dev-uds-hotbag-pub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "dev-uds-hotbag-sub",
+            "clientProfileName": "dev-uds-hotbag-sub",
+            "clientUsername": "dev-uds-hotbag-sub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "dev-uds-lightdetectalerts-pub",
+            "clientProfileName": "dev-uds-lightdetectalerts-pub",
+            "clientUsername": "dev-uds-lightdetectalerts-pub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "dev-uds-lightdetectalerts-sub",
+            "clientProfileName": "dev-uds-lightdetectalerts-sub",
+            "clientUsername": "dev-uds-lightdetectalerts-sub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "dev-uds-wb-events-pub",
+            "clientProfileName": "dev-uds-wb-events-pub",
+            "clientUsername": "dev-uds-wb-events-pub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "dev-uds-wb-events-sub",
+            "clientProfileName": "dev-uds-wb-events-sub",
+            "clientUsername": "dev-uds-wb-events-sub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "dev-uia-bagcount-sub",
+            "clientProfileName": "dev-uia-bagcount-sub",
+            "clientUsername": "dev-uia-bagcount-sub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "dev-uia-waittimes-pub",
+            "clientProfileName": "dev-uia-waittimes-pub",
+            "clientUsername": "dev-uia-waittimes-pub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "clientUsername": "dqndevappuser",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "clientUsername": "dqnqaappuser",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "clientUsername": "loyaltydevuser",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "notification_direct_consumer",
+            "clientProfileName": "notification_direct_consumer_cp",
+            "clientUsername": "notification_direct_consumer",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "notification_direct_producer",
+            "clientProfileName": "notification_direct_producer_cp",
+            "clientUsername": "notification_direct_producer",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "clientUsername": "odmsdevuser",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "poc-aap-jumpseat-pub",
+            "clientProfileName": "poc-aap-jumpseat-pub",
+            "clientUsername": "poc-aap-jumpseat-pub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "poc-aap-jumpseat-sub",
+            "clientProfileName": "poc-aap-jumpseat-sub",
+            "clientUsername": "poc-aap-jumpseat-sub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "qa-cux-waittimes-sub",
+            "clientProfileName": "qa-cux-waittimes-sub",
+            "clientUsername": "qa-cux-waittimes-sub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "qa-cxp-flifo-pub",
+            "clientProfileName": "qa-cxp-flifo-pub",
+            "clientUsername": "qa-cxp-flifo-pub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "qa-cxp-flifo-sub",
+            "clientProfileName": "qa-cxp-flifo-sub",
+            "clientUsername": "qa-cxp-flifo-sub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "qa-epo-ucd-sub",
+            "clientProfileName": "qa-epo-ucd-sub",
+            "clientUsername": "qa-epo-ucd-sub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "qa-etj-edifact-out-tsa-pub",
+            "clientProfileName": "qa-etj-edifact-out-tsa-pub",
+            "clientUsername": "qa-etj-edifact-out-tsa-pub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "qa-etj-edifact-out-tsa-sub",
+            "clientProfileName": "qa-etj-edifact-out-tsa-sub",
+            "clientUsername": "qa-etj-edifact-out-tsa-sub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "qa-gsapp-ucd-sub",
+            "clientProfileName": "qa-gsapp-ucd-sub",
+            "clientUsername": "qa-gsapp-ucd-sub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "qa-jet-boarding-seat-sub",
+            "clientProfileName": "qa-jet-boarding-seat-sub",
+            "clientUsername": "qa-jet-boarding-seat-sub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "qa-jet-collab-pub",
+            "clientProfileName": "qa-jet-collab-pub",
+            "clientUsername": "qa-jet-collab-pub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "qa-jet-collab-sub",
+            "clientProfileName": "qa-jet-collab-sub",
+            "clientUsername": "qa-jet-collab-sub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "qa-jet-flifo-pub",
+            "clientProfileName": "qa-jet-flifo-pub",
+            "clientUsername": "qa-jet-flifo-pub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "qa-jet-flifo-sub",
+            "clientProfileName": "qa-jet-flifo-sub",
+            "clientUsername": "qa-jet-flifo-sub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "qa-jet-fm-autorefresh-pub",
+            "clientProfileName": "qa-jet-fm-autorefresh-pub",
+            "clientUsername": "qa-jet-fm-autorefresh-pub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "qa-jet-fm-autorefresh-pubsub",
+            "clientProfileName": "qa-jet-fm-autorefresh-pubsub",
+            "clientUsername": "qa-jet-fm-autorefresh-pubsub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "qa-jet-fm-bjb-pcdr-events-sub",
+            "clientProfileName": "qa-jet-fm-bjb-pcdr-events-sub",
+            "clientUsername": "qa-jet-fm-bjb-pcdr-events-sub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "qa-jet-fm-boarding-pub",
+            "clientProfileName": "qa-jet-fm-boarding-pub",
+            "clientUsername": "qa-jet-fm-boarding-pub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "qa-jet-fm-boarding-pubsub",
+            "clientProfileName": "qa-jet-fm-boarding-pubsub",
+            "clientUsername": "qa-jet-fm-boarding-pubsub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "qa-jet-fm-prnvalidation-sub",
+            "clientProfileName": "qa-jet-fm-prnvalidation-sub",
+            "clientUsername": "qa-jet-fm-prnvalidation-sub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "qa-jet-fm-ucd-sub",
+            "clientProfileName": "qa-jet-fm-ucd-sub",
+            "clientUsername": "qa-jet-fm-ucd-sub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "qa-jet-pcdr-inbound-pub",
+            "clientProfileName": "qa-jet-pcdr-inbound-pub",
+            "clientUsername": "qa-jet-pcdr-inbound-pub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "qa-jet-pcdr-inbound-sub",
+            "clientProfileName": "qa-jet-pcdr-inbound-sub",
+            "clientUsername": "qa-jet-pcdr-inbound-sub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "qa-jet-pcdr-outbound-shares-sub",
+            "clientProfileName": "qa-jet-pcdr-outbound-shares-sub",
+            "clientUsername": "qa-jet-pcdr-outbound-shares-sub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "qa-jet-pcdr-outbound-tm-sub",
+            "clientProfileName": "qa-jet-pcdr-outbound-tm-sub",
+            "clientUsername": "qa-jet-pcdr-outbound-tm-sub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "qa-jet-ucd-sub",
+            "clientProfileName": "qa-jet-ucd-sub",
+            "clientUsername": "qa-jet-ucd-sub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "qa-uds-bagclaim-pub",
+            "clientProfileName": "qa-uds-bagclaim-pub",
+            "clientUsername": "qa-uds-bagclaim-pub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "qa-uds-bagclaim-sub",
+            "clientProfileName": "qa-uds-bagclaim-sub",
+            "clientUsername": "qa-uds-bagclaim-sub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "qa-uds-bagclaimetaevt-pub",
+            "clientProfileName": "qa-uds-bagclaimetaevt-pub",
+            "clientUsername": "qa-uds-bagclaimetaevt-pub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "qa-uds-bagclaimetaevt-sub",
+            "clientProfileName": "qa-uds-bagclaimetaevt-sub",
+            "clientUsername": "qa-uds-bagclaimetaevt-sub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "qa-uds-bagpier-pub",
+            "clientProfileName": "qa-uds-bagpier-pub",
+            "clientUsername": "qa-uds-bagpier-pub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "qa-uds-bagpier-sub",
+            "clientProfileName": "qa-uds-bagpier-sub",
+            "clientUsername": "qa-uds-bagpier-sub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "qa-uds-bagscan-pub",
+            "clientProfileName": "qa-uds-bagscan-pub",
+            "clientUsername": "qa-uds-bagscan-pub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "qa-uds-bagscan-sub",
+            "clientProfileName": "qa-uds-bagscan-sub",
+            "clientUsername": "qa-uds-bagscan-sub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "qa-uds-ezfidsgate-pub",
+            "clientProfileName": "qa-uds-ezfidsgate-pub",
+            "clientUsername": "qa-uds-ezfidsgate-pub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "qa-uds-ezfidsgate-sub",
+            "clientProfileName": "qa-uds-ezfidsgate-sub",
+            "clientUsername": "qa-uds-ezfidsgate-sub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "qa-uds-flifo-sub",
+            "clientProfileName": "qa-uds-flifo-sub",
+            "clientUsername": "qa-uds-flifo-sub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "qa-uds-fwdbags-pub",
+            "clientProfileName": "qa-uds-fwdbags-pub",
+            "clientUsername": "qa-uds-fwdbags-pub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "qa-uds-fwdbags-sub",
+            "clientProfileName": "qa-uds-fwdbags-sub",
+            "clientUsername": "qa-uds-fwdbags-sub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "qa-uds-hotbag-pub",
+            "clientProfileName": "qa-uds-hotbag-pub",
+            "clientUsername": "qa-uds-hotbag-pub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "qa-uds-hotbag-sub",
+            "clientProfileName": "qa-uds-hotbag-sub",
+            "clientUsername": "qa-uds-hotbag-sub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "qa-uds-lightdetectalerts-pub",
+            "clientProfileName": "qa-uds-lightdetectalerts-pub",
+            "clientUsername": "qa-uds-lightdetectalerts-pub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "qa-uds-lightdetectalerts-sub",
+            "clientProfileName": "qa-uds-lightdetectalerts-sub",
+            "clientUsername": "qa-uds-lightdetectalerts-sub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "qa-uds-wb-events-pub",
+            "clientProfileName": "qa-uds-wb-events-pub",
+            "clientUsername": "qa-uds-wb-events-pub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "qa-uds-wb-events-sub",
+            "clientProfileName": "qa-uds-wb-events-sub",
+            "clientUsername": "qa-uds-wb-events-sub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "qa-uia-waittimes-pub",
+            "clientProfileName": "qa-uia-waittimes-pub",
+            "clientUsername": "qa-uia-waittimes-pub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "stg-jet-fm-autorefresh-pub",
+            "clientProfileName": "stg-jet-fm-autorefresh-pub",
+            "clientUsername": "stg-jet-fm-autorefresh-pub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "stg-jet-fm-autorefresh-pubsub",
+            "clientProfileName": "stg-jet-fm-autorefresh-pubsub",
+            "clientUsername": "stg-jet-fm-autorefresh-pubsub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "stg-jet-fm-bjb-pcdr-events-sub",
+            "clientProfileName": "stg-jet-fm-bjb-pcdr-events-sub",
+            "clientUsername": "stg-jet-fm-bjb-pcdr-events-sub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "stg-jet-fm-boarding-pubsub",
+            "clientProfileName": "stg-jet-fm-boarding-pubsub",
+            "clientUsername": "stg-jet-fm-boarding-pubsub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "stg-jet-fm-ucd-sub",
+            "clientProfileName": "stg-jet-fm-ucd-sub",
+            "clientUsername": "stg-jet-fm-ucd-sub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "stg-jet-pcdr-inbound-pub",
+            "clientProfileName": "stg-jet-pcdr-inbound-pub",
+            "clientUsername": "stg-jet-pcdr-inbound-pub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "stg-jet-pcdr-inbound-sub",
+            "clientProfileName": "stg-jet-pcdr-inbound-sub",
+            "clientUsername": "stg-jet-pcdr-inbound-sub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "stg-jet-pcdr-outbound-pub",
+            "clientProfileName": "stg-jet-pcdr-outbound-pub",
+            "clientUsername": "stg-jet-pcdr-outbound-pub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "stg-jet-pcdr-outbound-shares-sub",
+            "clientProfileName": "stg-jet-pcdr-outbound-shares-sub",
+            "clientUsername": "stg-jet-pcdr-outbound-shares-sub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "aclProfileName": "stg-jet-pcdr-outbound-tm-sub",
+            "clientProfileName": "stg-jet-pcdr-outbound-tm-sub",
+            "clientUsername": "stg-jet-pcdr-outbound-tm-sub",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "clientUsername": "test",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        }
+    ]
+}
