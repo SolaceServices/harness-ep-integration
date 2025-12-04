@@ -10,7 +10,7 @@
         "redundantRecievers": [],
         "senders": []
     },
-    "msgVpnName": "united-ep-tools-primary-v3",
+    "msgVpnName": "fuel-vpn",
     "queues": [],
     "replicatedTopics": [],
     "topicEndpoints": [],
