@@ -1,83 +1,6 @@
 {
-    "aclProfiles": [
-        {
-            "aclProfileName": "fae_user",
-            "clientConnectDefaultAction": "allow",
-            "publishTopicDefaultAction": "disallow",
-            "publishTopicExceptions": [
-                "ual/ops/fae/fuel/heartbeat/*/TO/*"
-            ],
-            "subscribeShareNameDefaultAction": "allow",
-            "subscribeTopicDefaultAction": "disallow",
-            "subscribeTopicExceptions": []
-        },
-        {
-            "aclProfileName": "ods_user",
-            "clientConnectDefaultAction": "allow",
-            "publishTopicDefaultAction": "disallow",
-            "publishTopicExceptions": [
-                "ual/ops/fae/fuel/heartbeat/*/TO/*"
-            ],
-            "subscribeShareNameDefaultAction": "allow",
-            "subscribeTopicDefaultAction": "disallow",
-            "subscribeTopicExceptions": []
-        },
-        {
-            "aclProfileName": "qt_user",
-            "clientConnectDefaultAction": "allow",
-            "publishTopicDefaultAction": "disallow",
-            "publishTopicExceptions": [
-                "ual/ops/fae/fuel/heartbeat/*/TO/*"
-            ],
-            "subscribeShareNameDefaultAction": "allow",
-            "subscribeTopicDefaultAction": "disallow",
-            "subscribeTopicExceptions": []
-        }
-    ],
-    "clientProfiles": [
-        {
-            "allowGuaranteedMsgReceiveEnabled": true,
-            "clientProfileName": "fae_cp",
-            "maxConnectionCountPerClientUsername": 20,
-            "maxEgressFlowCount": 20,
-            "maxEndpointCountPerClientUsername": 0,
-            "maxIngressFlowCount": 20,
-            "maxMsgsPerTransaction": 256,
-            "maxSubscriptionCount": 250,
-            "maxTransactedSessionCount": 0,
-            "maxTransactionCount": 0,
-            "serviceSmfMaxConnectionCountPerClientUsername": 20,
-            "serviceWebMaxConnectionCountPerClientUsername": 0
-        },
-        {
-            "allowGuaranteedMsgReceiveEnabled": true,
-            "clientProfileName": "ods_cp",
-            "maxConnectionCountPerClientUsername": 20,
-            "maxEgressFlowCount": 20,
-            "maxEndpointCountPerClientUsername": 0,
-            "maxIngressFlowCount": 20,
-            "maxMsgsPerTransaction": 256,
-            "maxSubscriptionCount": 250,
-            "maxTransactedSessionCount": 0,
-            "maxTransactionCount": 0,
-            "serviceSmfMaxConnectionCountPerClientUsername": 20,
-            "serviceWebMaxConnectionCountPerClientUsername": 0
-        },
-        {
-            "allowGuaranteedMsgReceiveEnabled": true,
-            "clientProfileName": "qt_cp",
-            "maxConnectionCountPerClientUsername": 20,
-            "maxEgressFlowCount": 20,
-            "maxEndpointCountPerClientUsername": 0,
-            "maxIngressFlowCount": 20,
-            "maxMsgsPerTransaction": 256,
-            "maxSubscriptionCount": 250,
-            "maxTransactedSessionCount": 0,
-            "maxTransactionCount": 0,
-            "serviceSmfMaxConnectionCountPerClientUsername": 20,
-            "serviceWebMaxConnectionCountPerClientUsername": 0
-        }
-    ],
+    "aclProfiles": [],
+    "clientProfiles": [],
     "jndi": {
         "connectionFactories": [],
         "queues": []
@@ -88,67 +11,8 @@
         "senders": []
     },
     "msgVpnName": "fuel-vpn",
-    "queues": [
-        {
-            "accessType": "exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'Fuel_Automation_Engine_ODS_Heartbeat'.",
-            "egressEnabled": true,
-            "ingressEnabled": true,
-            "maxMsgSpoolUsage": 5000,
-            "owner": "fae_user",
-            "permission": "no-access",
-            "queueName": "Fuel_Automation_Engine_ODS_Heartbeat",
-            "subscriptionTopics": []
-        },
-        {
-            "accessType": "exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'ODS_FAE_to_ODS_Heartbeat'.",
-            "egressEnabled": true,
-            "ingressEnabled": true,
-            "maxMsgSpoolUsage": 5000,
-            "owner": "ods_user",
-            "permission": "no-access",
-            "queueName": "ODS_FAE_to_ODS_Heartbeat",
-            "subscriptionTopics": []
-        },
-        {
-            "accessType": "exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'QT_FAE_Heartbeat'.",
-            "egressEnabled": true,
-            "ingressEnabled": true,
-            "maxMsgSpoolUsage": 5000,
-            "owner": "qt_user",
-            "permission": "no-access",
-            "queueName": "QT_FAE_Heartbeat",
-            "subscriptionTopics": []
-        }
-    ],
+    "queues": [],
     "replicatedTopics": [],
     "topicEndpoints": [],
-    "users": [
-        {
-            "aclProfileName": "fae_user",
-            "clientProfileName": "fae_cp",
-            "clientUsername": "fae_user",
-            "documentation": "This user was imported from Event Portal for app 'Fuel Automation Engine'.",
-            "enabled": true,
-            "password": "fae_user"
-        },
-        {
-            "aclProfileName": "ods_user",
-            "clientProfileName": "ods_cp",
-            "clientUsername": "ods_user",
-            "documentation": "This user was imported from Event Portal for app 'ODS'.",
-            "enabled": true,
-            "password": "ods_user"
-        },
-        {
-            "aclProfileName": "qt_user",
-            "clientProfileName": "qt_cp",
-            "clientUsername": "qt_user",
-            "documentation": "This user was imported from Event Portal for app 'QT'.",
-            "enabled": true,
-            "password": "qt_pwd"
-        }
-    ]
+    "users": []
 }
