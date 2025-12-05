@@ -24,7 +24,8 @@
             "clientConnectDefaultAction": "allow",
             "publishTopicDefaultAction": "disallow",
             "publishTopicExceptions": [
-                "ual/ops/fae/fuel/heartbeat/*/TO/*"
+                "ual/ops/fae/fuel/heartbeat/*/TO/*",
+                "ual/ops/fae/fuel/request/*/to/*"
             ],
             "subscribeShareNameDefaultAction": "allow",
             "subscribeTopicDefaultAction": "disallow",
@@ -35,7 +36,9 @@
             "clientConnectDefaultAction": "allow",
             "publishTopicDefaultAction": "disallow",
             "publishTopicExceptions": [
-                "ual/ops/fae/fuel/heartbeat/*/TO/*"
+                "ual/ops/fae/fuel/heartbeat/*/TO/*",
+                "ual/ops/fae/fuel/notifications",
+                "ual/ops/fae/fuel/request/*/to/*"
             ],
             "subscribeShareNameDefaultAction": "allow",
             "subscribeTopicDefaultAction": "disallow",
@@ -46,7 +49,10 @@
             "clientConnectDefaultAction": "allow",
             "publishTopicDefaultAction": "disallow",
             "publishTopicExceptions": [
-                "ual/ops/fae/fuel/heartbeat/*/TO/*"
+                "ual/ops/fae/fuel/fueling_state/*/to/*",
+                "ual/ops/fae/fuel/heartbeat/*/TO/*",
+                "ual/ops/fae/fuel/planeside_density/*/to/*",
+                "ual/ops/fae/fuel/receipt/*/to/*"
             ],
             "subscribeShareNameDefaultAction": "allow",
             "subscribeTopicDefaultAction": "disallow",
@@ -100,36 +106,133 @@
     "queues": [
         {
             "accessType": "exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'ODS_FAE_to_ODS_Heartbeat'.",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.OPS.FAE.FUEL.ODS.HEARTBEAT.FROM.FAE'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "maxMsgSpoolUsage": 5000,
             "owner": "ods_user",
             "permission": "no-access",
-            "queueName": "ODS_FAE_to_ODS_Heartbeat",
-            "subscriptionTopics": []
+            "queueName": "UAL.OPS.FAE.FUEL.ODS.HEARTBEAT.FROM.FAE",
+            "subscriptionTopics": [
+                "ual/ops/fae/fuel/heartbeat/FAE/TO/ODS"
+            ]
         },
         {
             "accessType": "exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'Fuel_Automation_Engine_ODS_Heartbeat'.",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.OPS.FAE.FUEL.ODS.NOTIFICATIONS'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "maxMsgSpoolUsage": 5000,
+            "owner": "ods_user",
+            "permission": "no-access",
+            "queueName": "UAL.OPS.FAE.FUEL.ODS.NOTIFICATIONS",
+            "subscriptionTopics": [
+                "ual/ops/fae/fuel/notifications"
+            ]
+        },
+        {
+            "accessType": "exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.OPS.FAE.FUEL.FAE.FUELING_STATE.FROM.QT'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "maxMsgSpoolUsage": 5000,
             "owner": "fae_user",
             "permission": "no-access",
-            "queueName": "Fuel_Automation_Engine_ODS_Heartbeat",
-            "subscriptionTopics": []
+            "queueName": "UAL.OPS.FAE.FUEL.FAE.FUELING_STATE.FROM.QT",
+            "subscriptionTopics": [
+                "ual/ops/fae/fuel/fueling_state/QT/to/FAE"
+            ]
         },
         {
             "accessType": "exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'QT_FAE_Heartbeat'.",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.OPS.FAE.FUEL.FAE.HEARTBEAT.FROM.ODS'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "maxMsgSpoolUsage": 5000,
+            "owner": "fae_user",
+            "permission": "no-access",
+            "queueName": "UAL.OPS.FAE.FUEL.FAE.HEARTBEAT.FROM.ODS",
+            "subscriptionTopics": [
+                "ual/ops/fae/fuel/heartbeat/ODS/TO/FAE"
+            ]
+        },
+        {
+            "accessType": "exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.OPS.FAE.FUEL.FAE.HEARTBEAT.FROM.QT'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "maxMsgSpoolUsage": 5000,
+            "owner": "fae_user",
+            "permission": "no-access",
+            "queueName": "UAL.OPS.FAE.FUEL.FAE.HEARTBEAT.FROM.QT",
+            "subscriptionTopics": [
+                "ual/ops/fae/fuel/heartbeat/QT/TO/FAE"
+            ]
+        },
+        {
+            "accessType": "exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.OPS.FAE.FUEL.FAE.PLANESIDE_DENSITY.FROM.QT'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "maxMsgSpoolUsage": 5000,
+            "owner": "fae_user",
+            "permission": "no-access",
+            "queueName": "UAL.OPS.FAE.FUEL.FAE.PLANESIDE_DENSITY.FROM.QT",
+            "subscriptionTopics": [
+                "ual/ops/fae/fuel/planeside_density/QT/to/FAE"
+            ]
+        },
+        {
+            "accessType": "exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.OPS.FAE.FUEL.FAE.RECEIPTS.FROM.QT'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "maxMsgSpoolUsage": 5000,
+            "owner": "fae_user",
+            "permission": "no-access",
+            "queueName": "UAL.OPS.FAE.FUEL.FAE.RECEIPTS.FROM.QT",
+            "subscriptionTopics": [
+                "ual/ops/fae/fuel/receipt/QT/to/FAE"
+            ]
+        },
+        {
+            "accessType": "exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.OPS.FAE.FUEL.FAE.REQUEST.FROM.ODS'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "maxMsgSpoolUsage": 5000,
+            "owner": "fae_user",
+            "permission": "no-access",
+            "queueName": "UAL.OPS.FAE.FUEL.FAE.REQUEST.FROM.ODS",
+            "subscriptionTopics": [
+                "ual/ops/fae/fuel/request/ODS/to/FAE"
+            ]
+        },
+        {
+            "accessType": "exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.OPS.FAE.FUEL.QT.HEARTBEAT.FROM.FAE'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "maxMsgSpoolUsage": 5000,
             "owner": "qt_user",
             "permission": "no-access",
-            "queueName": "QT_FAE_Heartbeat",
-            "subscriptionTopics": []
+            "queueName": "UAL.OPS.FAE.FUEL.QT.HEARTBEAT.FROM.FAE",
+            "subscriptionTopics": [
+                "ual/ops/fae/fuel/heartbeat/FAE/TO/QT"
+            ]
+        },
+        {
+            "accessType": "exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.OPS.FAE.FUEL.QT.REQUEST.FROM.FAE'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "maxMsgSpoolUsage": 5000,
+            "owner": "qt_user",
+            "permission": "no-access",
+            "queueName": "UAL.OPS.FAE.FUEL.QT.REQUEST.FROM.FAE",
+            "subscriptionTopics": [
+                "ual/ops/fae/fuel/request/FAE/to/QT"
+            ]
         }
     ],
     "users": [
