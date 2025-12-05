@@ -1,0 +1,18 @@
+{
+    "aclProfiles": [],
+    "clientProfiles": [],
+    "jndi": {
+        "connectionFactories": [],
+        "queues": []
+    },
+    "kafkaBridge": {
+        "recievers": [],
+        "redundantRecievers": [],
+        "senders": []
+    },
+    "msgVpnName": "united-ep-tools-primary-v3",
+    "queues": [],
+    "replicatedTopics": [],
+    "topicEndpoints": [],
+    "users": []
+}
