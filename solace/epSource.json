@@ -14,6 +14,10 @@
             {
                 "applicationName": "QT",
                  "version": "0.1.0"
+            },
+            {
+                "applicationName": "Right Angle",
+                 "version": "0.1.0"
             }
         ]
     },
@@ -34,6 +38,11 @@
                 "clientUsername": "qt_user",
                 "password": "qt_pwd",
                 "clientProfileName": "qt_cp"
+      		},
+            {
+                "clientUsername": "ra_user",
+                "password": "ra_user",
+                "clientProfileName": "ra_cp"
             }
       	]
       },
@@ -68,6 +77,20 @@
           },
           {
               "clientProfileName": "qt_cp",
+              "allowGuaranteedMsgReceiveEnabled": true,
+              "maxConnectionCountPerClientUsername": 20,
+              "maxEgressFlowCount": 20,
+              "maxEndpointCountPerClientUsername": 0,
+              "maxIngressFlowCount": 20,
+              "maxMsgsPerTransaction": 256,
+              "maxSubscriptionCount": 250,
+              "maxTransactedSessionCount": 0,
+              "maxTransactionCount": 0,
+              "serviceSmfMaxConnectionCountPerClientUsername": 20,
+              "serviceWebMaxConnectionCountPerClientUsername": 0
+          },
+          {
+              "clientProfileName": "ra_cp",
               "allowGuaranteedMsgReceiveEnabled": true,
               "maxConnectionCountPerClientUsername": 20,
               "maxEgressFlowCount": 20,
