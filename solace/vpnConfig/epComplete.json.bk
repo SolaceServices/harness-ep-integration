@@ -15,6 +15,11 @@
                 "clientUsername": "qt_user",
                 "id": "iscu0a8c9d2",
                 "name": "QT"
+            },
+            "__Right Angle": {
+                "clientUsername": "ra_user",
+                "id": "4e90iwat3ug",
+                "name": "Right Angle"
             }
         }
     },
@@ -53,6 +58,18 @@
                 "ual/ops/fae/fuel/heartbeat/*/TO/*",
                 "ual/ops/fae/fuel/planeside_density/*/to/*",
                 "ual/ops/fae/fuel/receipt/*/to/*"
+            ],
+            "subscribeShareNameDefaultAction": "allow",
+            "subscribeTopicDefaultAction": "disallow",
+            "subscribeTopicExceptions": []
+        },
+        {
+            "aclProfileName": "ra_user",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicDefaultAction": "disallow",
+            "publishTopicExceptions": [
+                "ual/ops/fae/fuel/new_event",
+                "ual/ops/fae/fuel/notifications"
             ],
             "subscribeShareNameDefaultAction": "allow",
             "subscribeTopicDefaultAction": "disallow",
@@ -101,6 +118,20 @@
             "maxTransactionCount": 0,
             "serviceSmfMaxConnectionCountPerClientUsername": 20,
             "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "clientProfileName": "ra_cp",
+            "maxConnectionCountPerClientUsername": 20,
+            "maxEgressFlowCount": 20,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 20,
+            "maxMsgsPerTransaction": 256,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 20,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
         }
     ],
     "queues": [
@@ -128,6 +159,19 @@
             "queueName": "UAL.OPS.FAE.FUEL.ODS.NOTIFICATIONS",
             "subscriptionTopics": [
                 "ual/ops/fae/fuel/notifications"
+            ]
+        },
+        {
+            "accessType": "exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.OPS.NEW_EVENT'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "maxMsgSpoolUsage": 5000,
+            "owner": "ods_user",
+            "permission": "no-access",
+            "queueName": "UAL.OPS.NEW_EVENT",
+            "subscriptionTopics": [
+                "ual/ops/fae/fuel/new_event"
             ]
         },
         {
@@ -259,6 +303,14 @@
             "documentation": "This user was imported from Event Portal for app 'QT'.",
             "enabled": true,
             "password": "qt_pwd"
+        },
+        {
+            "aclProfileName": "ra_user",
+            "clientProfileName": "ra_cp",
+            "clientUsername": "ra_user",
+            "documentation": "This user was imported from Event Portal for app 'Right Angle'.",
+            "enabled": true,
+            "password": "ra_user"
         }
     ]
 }

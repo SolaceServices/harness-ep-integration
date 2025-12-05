@@ -1,6 +1,74 @@
 {
-    "aclProfiles": [],
-    "clientProfiles": [],
+    "aclProfiles": [
+        {
+            "aclProfileName": "fae_user",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicExceptions": [
+                "ual/ops/fae/fuel/heartbeat/*/TO/*",
+                "ual/ops/fae/fuel/notifications",
+                "ual/ops/fae/fuel/request/*/to/*"
+            ]
+        },
+        {
+            "aclProfileName": "ods_user",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicExceptions": [
+                "ual/ops/fae/fuel/heartbeat/*/TO/*",
+                "ual/ops/fae/fuel/request/*/to/*"
+            ]
+        },
+        {
+            "aclProfileName": "qt_user",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicExceptions": [
+                "ual/ops/fae/fuel/fueling_state/*/to/*",
+                "ual/ops/fae/fuel/heartbeat/*/TO/*",
+                "ual/ops/fae/fuel/planeside_density/*/to/*",
+                "ual/ops/fae/fuel/receipt/*/to/*"
+            ]
+        }
+    ],
+    "clientProfiles": [
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "clientProfileName": "fae_cp",
+            "maxConnectionCountPerClientUsername": 20,
+            "maxEgressFlowCount": 20,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 20,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 20,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "clientProfileName": "ods_cp",
+            "maxConnectionCountPerClientUsername": 20,
+            "maxEgressFlowCount": 20,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 20,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 20,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "clientProfileName": "qt_cp",
+            "maxConnectionCountPerClientUsername": 20,
+            "maxEgressFlowCount": 20,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 20,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 20,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        }
+    ],
     "jndi": {
         "connectionFactories": [],
         "queues": []
@@ -11,8 +79,121 @@
         "senders": []
     },
     "msgVpnName": "fuel-vpn",
-    "queues": [],
+    "queues": [
+        {
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "fae_user",
+            "queueName": "UAL.OPS.FAE.FUEL.FAE.FUELING_STATE.FROM.QT",
+            "subscriptionTopics": [
+                "ual/ops/fae/fuel/fueling_state/QT/to/FAE"
+            ]
+        },
+        {
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "fae_user",
+            "queueName": "UAL.OPS.FAE.FUEL.FAE.HEARTBEAT.FROM.ODS",
+            "subscriptionTopics": [
+                "ual/ops/fae/fuel/heartbeat/ODS/TO/FAE"
+            ]
+        },
+        {
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "fae_user",
+            "queueName": "UAL.OPS.FAE.FUEL.FAE.HEARTBEAT.FROM.QT",
+            "subscriptionTopics": [
+                "ual/ops/fae/fuel/heartbeat/QT/TO/FAE"
+            ]
+        },
+        {
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "fae_user",
+            "queueName": "UAL.OPS.FAE.FUEL.FAE.PLANESIDE_DENSITY.FROM.QT",
+            "subscriptionTopics": [
+                "ual/ops/fae/fuel/planeside_density/QT/to/FAE"
+            ]
+        },
+        {
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "fae_user",
+            "queueName": "UAL.OPS.FAE.FUEL.FAE.RECEIPTS.FROM.QT",
+            "subscriptionTopics": [
+                "ual/ops/fae/fuel/receipt/QT/to/FAE"
+            ]
+        },
+        {
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "fae_user",
+            "queueName": "UAL.OPS.FAE.FUEL.FAE.REQUEST.FROM.ODS",
+            "subscriptionTopics": [
+                "ual/ops/fae/fuel/request/ODS/to/FAE"
+            ]
+        },
+        {
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "ods_user",
+            "queueName": "UAL.OPS.FAE.FUEL.ODS.HEARTBEAT.FROM.FAE",
+            "subscriptionTopics": [
+                "ual/ops/fae/fuel/heartbeat/FAE/TO/ODS"
+            ]
+        },
+        {
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "ods_user",
+            "queueName": "UAL.OPS.FAE.FUEL.ODS.NOTIFICATIONS",
+            "subscriptionTopics": [
+                "ual/ops/fae/fuel/notifications"
+            ]
+        },
+        {
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "qt_user",
+            "queueName": "UAL.OPS.FAE.FUEL.QT.HEARTBEAT.FROM.FAE",
+            "subscriptionTopics": [
+                "ual/ops/fae/fuel/heartbeat/FAE/TO/QT"
+            ]
+        },
+        {
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "qt_user",
+            "queueName": "UAL.OPS.FAE.FUEL.QT.REQUEST.FROM.FAE",
+            "subscriptionTopics": [
+                "ual/ops/fae/fuel/request/FAE/to/QT"
+            ]
+        }
+    ],
     "replicatedTopics": [],
     "topicEndpoints": [],
-    "users": []
+    "users": [
+        {
+            "aclProfileName": "fae_user",
+            "clientProfileName": "fae_cp",
+            "clientUsername": "fae_user",
+            "enabled": true,
+            "passwordToken": "jK2DknyFxhtFM6qV+grz+Q==BEWkabI+WMmjiy0Szg=="
+        },
+        {
+            "aclProfileName": "ods_user",
+            "clientProfileName": "ods_cp",
+            "clientUsername": "ods_user",
+            "enabled": true,
+            "passwordToken": "Z7gYR+oWDV4QaLizoqnEVA==DN4UvZVP5p/Wg0wD7Q=="
+        },
+        {
+            "aclProfileName": "qt_user",
+            "clientProfileName": "qt_cp",
+            "clientUsername": "qt_user",
+            "enabled": true,
+            "passwordToken": "CgrUNYLFL9HAlVVi4GIGVg==rQ8cOlsr4BmvbEs="
+        }
+    ]
 }
