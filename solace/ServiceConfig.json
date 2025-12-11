@@ -1,8 +1,8 @@
 {
         "common": {
                 "msgVpnName": "united-ep-tools-primary-v3",
-                "serviceTypeId": "enterprise-standalone",
-                "serviceClassId": "enterprise-10k-standalone",
+        				"serviceTypeId": "enterprise-standalone",
+        				"serviceClassId": "enterprise-250-standalone",
                 "eventBrokerVersion": "10.25",
                 "messagingStorage": 10,
                 "ssl": {
@@ -14,8 +14,8 @@
                 "cluster": {
                         "name": "united-ep-tools-cluster"
                 },
-        				"GlobalAdminUser": "mission-control-manager",
-        				"GlobalAdminToken": "6TnKVY8wEvU+nFuZkexC+Q==fBM0ple3rcHrnjnQ7x+QLtmLiCTzytbWpYBWrd4omg==",
+        				"GlobalAdminUser": "cicd_admin",
+        				"GlobalAdminToken": "p6tWgBCe1F28+uzZySK2rg==nM2KSsk=",				
         				"createDNSEntry": false,
         				"uploadCustomCerts": true,
         				"shellCommandsForWindows": false,
@@ -37,7 +37,7 @@
                 }
         },
         "dr": {
-                "serviceName": "united-ep-tools-standby-v3",
+                "serviceName": "baggage-dr",
                 "datacenterId": "unitedsolaceservices-eks-us-east-1",
                 "k8s": {
                         "namespace": "kube-system",
