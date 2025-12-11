@@ -1,22 +1,18 @@
 {
     "eventPortal": {
         "documentation": "Lists things pulled from event portal",
-        "applicationDomain": "MikeAppDomain",
+        "applicationDomain": "EZM",
         "applications": [
             {
-                "applicationName": "NotificationDirectProducerApp",
+                "applicationName": "DQN",
                 "version": "0.0.1"
             },
             {
-                "applicationName": "NotificationDirectConsumerApp",
+                "applicationName": "LOYALTY",
                  "version": "0.0.1"
             },
             {
-                "applicationName": "DQN_QA_AppUser",
-                 "version": "0.0.1"
-            },
-            {
-                "applicationName": "DqndevappuserApp",
+                "applicationName": "DQN.LYLT",
                  "version": "0.0.1"
             }
         ]
@@ -25,30 +21,25 @@
         "documentation": "User settings to be overlaid ontop of client username settings from event portal",
       	"users": [
       		{
-      			"clientUsername": "notification_direct_producer",
-      			"clientProfileName": "notification_direct_producer_cp",
-      			"password": "notification_direct_producer_pwd"
+      			"clientUsername": "DQN_user",
+      			"clientProfileName": "DQN_cp",
+      			"password": "DQN_user"
       		},
       		{
-      			"clientUsername": "notification_direct_consumer",
-      			"clientProfileName": "notification_direct_consumer_cp",
-      			"password": "notification_direct_consumer_pwd"
+      			"clientUsername": "LOYALTY_user",
+      			"clientProfileName": "LOYALTY_cp",
+      			"password": "LOYALTY_user"
       		},
             {
-                "clientUsername": "dqnqaappuser",
-                "password": "dqnqaappuser",
-                "aclProfileName": "default"
-            },
-            {
-                "clientUsername": "dqndevappuser",
-                "password": "dqndevappuser",
-                "aclProfileName": "default"
+                "clientUsername": "DQN_LYLT_user",
+                "password": "DQN_LYLT_user",
+                "clientProfileName": "DQN_LYLT_cp"
             }
       	]
       },
       "clientProfiles": [
           {
-              "clientProfileName": "notification_direct_producer_cp",
+              "clientProfileName": "DQN_cp",
               "allowGuaranteedMsgReceiveEnabled": true,
               "maxConnectionCountPerClientUsername": 20,
               "maxEgressFlowCount": 20,
@@ -62,7 +53,21 @@
               "serviceWebMaxConnectionCountPerClientUsername": 0
           },
           {
-              "clientProfileName": "notification_direct_consumer_cp",
+              "clientProfileName": "LOYALTY_cp",
+              "allowGuaranteedMsgReceiveEnabled": true,
+              "maxConnectionCountPerClientUsername": 20,
+              "maxEgressFlowCount": 20,
+              "maxEndpointCountPerClientUsername": 0,
+              "maxIngressFlowCount": 20,
+              "maxMsgsPerTransaction": 256,
+              "maxSubscriptionCount": 250,
+              "maxTransactedSessionCount": 0,
+              "maxTransactionCount": 0,
+              "serviceSmfMaxConnectionCountPerClientUsername": 20,
+              "serviceWebMaxConnectionCountPerClientUsername": 0
+          },
+          {
+              "clientProfileName": "DQN_LYLT_cp",
               "allowGuaranteedMsgReceiveEnabled": true,
               "maxConnectionCountPerClientUsername": 20,
               "maxEgressFlowCount": 20,
