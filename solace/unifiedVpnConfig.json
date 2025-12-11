@@ -1051,7 +1051,7 @@
             "clientUsername": "notification_direct_consumer",
             "documentation": "This user was imported from Event Portal for app 'NotificationDirectConsumerApp'.",
             "enabled": true,
-            "password": "notification_direct_consumer_pwd"
+            "passwordToken": "wH/VYUzFxAcRq5AZEry93w==6Kw6PLqSLTcnLmxik7FdTb9ADCi+G9XyxIjchf5hTtAg3+CIjw=="
         },
         {
             "aclProfileName": "notification_direct_producer",
@@ -1059,7 +1059,7 @@
             "clientUsername": "notification_direct_producer",
             "documentation": "This user was imported from Event Portal for app 'NotificationDirectProducerApp'.",
             "enabled": true,
-            "password": "notification_direct_producer_pwd"
+            "passwordToken": "v8a5g7Ja4igX8wcJY+Znqg==iWdnWEBVJYUKzW39b3R02Im1n5VoszIJcAOQxs0gVQ0NlhuxkQ=="
         },
         {
             "clientUsername": "odmsdevuser",
