@@ -1,6 +1,83 @@
 {
-    "aclProfiles": [],
-    "clientProfiles": [],
+    "aclProfiles": [
+        {
+            "aclProfileName": "DQN_LYLT_user",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicDefaultAction": "disallow",
+            "publishTopicExceptions": [],
+            "subscribeShareNameDefaultAction": "allow",
+            "subscribeTopicDefaultAction": "disallow",
+            "subscribeTopicExceptions": []
+        },
+        {
+            "aclProfileName": "DQN_user",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicDefaultAction": "disallow",
+            "publishTopicExceptions": [],
+            "subscribeShareNameDefaultAction": "allow",
+            "subscribeTopicDefaultAction": "disallow",
+            "subscribeTopicExceptions": []
+        },
+        {
+            "aclProfileName": "LOYALTY_user",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicDefaultAction": "disallow",
+            "publishTopicExceptions": [
+                "UAL/DEV/DQN/*/MILEPLAY/*/*/*/*/1",
+                "UAL/DEV/DQN/LYLT/MILESPOOLING/*/*/*/*/1",
+                "UAL/DEV/DQN/LYLT/PPR/*/*/*/*/1",
+                "UAL/DEV/DQN/LYT/CHS/*/*/*/*/1",
+                "UAL/DEV/DQN/LYT/PUG/*/*/*/*/1"
+            ],
+            "subscribeShareNameDefaultAction": "allow",
+            "subscribeTopicDefaultAction": "disallow",
+            "subscribeTopicExceptions": []
+        }
+    ],
+    "clientProfiles": [
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "clientProfileName": "DQN_LYLT_cp",
+            "maxConnectionCountPerClientUsername": 20,
+            "maxEgressFlowCount": 20,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 20,
+            "maxMsgsPerTransaction": 256,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 20,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "clientProfileName": "DQN_cp",
+            "maxConnectionCountPerClientUsername": 20,
+            "maxEgressFlowCount": 20,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 20,
+            "maxMsgsPerTransaction": 256,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 20,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "clientProfileName": "LOYALTY_cp",
+            "maxConnectionCountPerClientUsername": 20,
+            "maxEgressFlowCount": 20,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 20,
+            "maxMsgsPerTransaction": 256,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 20,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        }
+    ],
     "jndi": {
         "connectionFactories": [],
         "queues": []
@@ -11,8 +88,472 @@
         "senders": []
     },
     "msgVpnName": "united-ep-tools-primary-v3",
-    "queues": [],
+    "queues": [
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.CCE.PRETRAVEL.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "DQN_user",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.CCE.PRETRAVEL.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/CCE/PTP/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.COLLAB.NOTIFY.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "DQN_user",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.COLLAB.NOTIFY.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/ENR/VDR/FLTFEED/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.CONTACTPREF.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "DQN_user",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.CONTACTPREF.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/*/CONTACTPREF/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.EMAIL.FDBK.PERSIST.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "DQN_user",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.EMAIL.FDBK.PERSIST.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/EMAIL_FDBK_API/OUT/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.EMAIL.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "DQN_user",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.EMAIL.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/ENR/VDR/EMAIL/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.ENRICHER.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "DQN_user",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.ENRICHER.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/CONTACTPREF/ENR/NONVOICE/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.ERROR.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "DQN_user",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.ERROR.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/*/ERROR/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.FDBK.CALLBACK.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "DQN_user",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.FDBK.CALLBACK.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/EMAIL_FDBK_PERSIST/OUT/*/*/*/*/1",
+                "UAL/DEV/DQN/PUSH_FDBK_PERSIST/OUT/*/*/*/*/1",
+                "UAL/DEV/DQN/SMS_FDBK_PERSIST/OUT/*/*/*/*/1",
+                "UAL/DEV/DQN/VOICE_FDBK_PERSIST/OUT/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.FDBK.UCLD.DLV.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "DQN_user",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.FDBK.UCLD.DLV.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/EMAIL_FDBK_PERSIST/OUT/*/BOUNCE/*/*/1",
+                "UAL/DEV/DQN/EMAIL_FDBK_PERSIST/OUT/*/DELIVERED/*/*/1",
+                "UAL/DEV/DQN/EMAIL_FDBK_PERSIST/OUT/*/DROPPED/*/*/1",
+                "UAL/DEV/DQN/PUSH_FDBK_PERSIST/OUT/*/INBOX_MESSAGE_DELIVERED/*/*/1",
+                "UAL/DEV/DQN/PUSH_FDBK_PERSIST/OUT/*/NOTIFICATION_RECEIVED/*/*/1",
+                "UAL/DEV/DQN/SMS_FDBK_PERSIST/OUT/*/DELIVERED/*/*/1",
+                "UAL/DEV/DQN/SMS_FDBK_PERSIST/OUT/*/FAILED/*/*/1",
+                "UAL/DEV/DQN/SMS_FDBK_PERSIST/OUT/*/UNDELIVERED/*/*/1",
+                "UAL/DEV/DQN/VOICE_FDBK_PERSIST/OUT/*/BUSY/*/*/1",
+                "UAL/DEV/DQN/VOICE_FDBK_PERSIST/OUT/*/COMPLETED/*/*/1",
+                "UAL/DEV/DQN/VOICE_FDBK_PERSIST/OUT/*/FAILED/*/*/1",
+                "UAL/DEV/DQN/VOICE_FDBK_PERSIST/OUT/*/NO_ANSWER/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.FDBK.UCLD.INTR.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "DQN_user",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.FDBK.UCLD.INTR.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/EMAIL_FDBK_PERSIST/OUT/*/CLICK/*/*/1",
+                "UAL/DEV/DQN/EMAIL_FDBK_PERSIST/OUT/*/OPEN/*/*/1",
+                "UAL/DEV/DQN/PUSH_FDBK_PERSIST/OUT/*/INBOX_MESSAGE_OPENED/*/*/1",
+                "UAL/DEV/DQN/PUSH_FDBK_PERSIST/OUT/*/NOTIFICATION_OPENED/*/*/1",
+                "UAL/DEV/DQN/SMS_FDBK_PERSIST/OUT/*/CLICK/*/*/1",
+                "UAL/DEV/DQN/SMS_FDBK_PERSIST/OUT/*/PREVIEW/*/*/1",
+                "UAL/DEV/DQN/VOICE_FDBK_PERSIST/OUT/*/COMPLETED/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.FDBK.UPDATE.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "DQN_user",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.FDBK.UPDATE.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/EMAIL_FDBK_PERSIST/OUT/*/BOUNCE/*/*/1",
+                "UAL/DEV/DQN/EMAIL_FDBK_PERSIST/OUT/*/DROPPED/*/*/1",
+                "UAL/DEV/DQN/PUSH_FDBK_PERSIST/OUT/RETRIABLE/FAILED_TO_SEND_NOTIFICATION/*/*/1",
+                "UAL/DEV/DQN/PUSH_FDBK_PERSIST/OUT/RETRIABLE/NO_DEVICES_FOUND/*/*/1",
+                "UAL/DEV/DQN/PUSH_FDBK_PERSIST/OUT/RETRIABLE/OPT_OUT/*/*/1",
+                "UAL/DEV/DQN/SMS_FDBK_PERSIST/OUT/*/FAILED/*/*/1",
+                "UAL/DEV/DQN/SMS_FDBK_PERSIST/OUT/*/UNDELIVERED/*/*/1",
+                "UAL/DEV/DQN/VOICE_FDBK_PERSIST/OUT/*/FAILED/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.KAFKA.COMM.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "DQN_user",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.KAFKA.COMM.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/EMAIL_PROC/PERSIST/*/*/RAVENODMS/*/1",
+                "UAL/DEV/DQN/PUSH_PROC/PERSIST/*/*/RAVENODMS/*/1",
+                "UAL/DEV/DQN/RCS_PROC/PERSIST/*/*/RAVENODMS/*/1",
+                "UAL/DEV/DQN/SMS_PROC/PERSIST/*/*/RAVENODMS/*/1",
+                "UAL/DEV/DQN/VOICE_PROC/PERSIST/*/*/RAVENODMS/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.LYLT.CHASE.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "DQN_LYLT_user",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.LYLT.CHASE.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/LYT/CHS/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.LYLT.MILEPLAY.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "DQN_LYLT_user",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.LYLT.MILEPLAY.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/*/MILEPLAY/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.LYLT.MILESPOOLING.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "DQN_LYLT_user",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.LYLT.MILESPOOLING.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/LYLT/MILESPOOLING/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.LYLT.PPR.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "DQN_LYLT_user",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.LYLT.PPR.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/LYLT/PPR/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.LYLT.PUG.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "DQN_LYLT_user",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.LYLT.PUG.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/LYT/PUG/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.MAILHOG.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "DQN_user",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.MAILHOG.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/VDR/MAILHOG/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.PERSIST.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "DQN_user",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.PERSIST.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/EMAIL_PROC/PERSIST/*/FAILURE/*/*/1",
+                "UAL/DEV/DQN/EMAIL_PROC/PERSIST/*/SUCCESS/*/*/1",
+                "UAL/DEV/DQN/PUSH_PROC/PERSIST/*/FAILURE/*/*/1",
+                "UAL/DEV/DQN/PUSH_PROC/PERSIST/*/SUCCESS/*/*/1",
+                "UAL/DEV/DQN/RCS_PROC/PERSIST/*/FAILURE/*/*/1",
+                "UAL/DEV/DQN/RCS_PROC/PERSIST/*/SUCCESS/*/*/1",
+                "UAL/DEV/DQN/SMS_PROC/PERSIST/*/FAILURE/*/*/1",
+                "UAL/DEV/DQN/SMS_PROC/PERSIST/*/SUCCESS/*/*/1",
+                "UAL/DEV/DQN/VOICE_PROC/PERSIST/*/FAILURE/*/*/1",
+                "UAL/DEV/DQN/VOICE_PROC/PERSIST/*/SUCCESS/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.PHONEVERIFY.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "DQN_user",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.PHONEVERIFY.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/CONTACTPREF/ENR/VOICE/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.PUSH.FDBK.PERSIST.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "DQN_user",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.PUSH.FDBK.PERSIST.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/PUSH_FDBK_API/OUT/PERSIST/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.PUSH.FDBK.UCLD.COMM.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "DQN_user",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.PUSH.FDBK.UCLD.COMM.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/PUSH_FDBK_API/OUT/*/FAILED_TO_SEND_NOTIFICATION/*/*/1",
+                "UAL/DEV/DQN/PUSH_FDBK_API/OUT/*/INBOX_MESSAGE_DELIVERED/*/*/1",
+                "UAL/DEV/DQN/PUSH_FDBK_API/OUT/*/INBOX_MESSAGE_DELIVERY_FAILED/*/*/1",
+                "UAL/DEV/DQN/PUSH_FDBK_API/OUT/*/NOTIFICATION_SENT/*/*/1",
+                "UAL/DEV/DQN/PUSH_FDBK_API/OUT/*/OPT_OUT/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.PUSH.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "DQN_user",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.PUSH.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/ENR/VDR/PUSH/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.RCS.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "DQN_user",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.RCS.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/ENR/VDR/RCS/*/*/*/1",
+                "UAL/DEV/DQN/ENR/VDR/WHATSAPP/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.REPROCESS.ERROR.OUT.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "DQN_user",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.REPROCESS.ERROR.OUT.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/*/REPROCESS/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.SMS.FDBK.PERSIST.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "DQN_user",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.SMS.FDBK.PERSIST.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/SMS_FDBK_API/OUT/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.SMS.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "DQN_user",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.SMS.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/ENR/VDR/SMS/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.UCLD.COMM.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "DQN_user",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.UCLD.COMM.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/EMAIL_PROC/PERSIST/*/*/*/*/1",
+                "UAL/DEV/DQN/RCS_PROC/PERSIST/*/*/*/*/1",
+                "UAL/DEV/DQN/SMS_PROC/PERSIST/*/*/*/*/1",
+                "UAL/DEV/DQN/VOICE_PROC/PERSIST/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.VOICE.FDBK.PERSIST.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "DQN_user",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.VOICE.FDBK.PERSIST.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/VOICE_FDBK_API/OUT/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.VOICE.IN.1'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "DQN_user",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.VOICE.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/ENR/VDR/VOICE/*/*/*/1"
+            ]
+        }
+    ],
     "replicatedTopics": [],
     "topicEndpoints": [],
-    "users": []
+    "users": [
+        {
+            "aclProfileName": "DQN_LYLT_user",
+            "clientProfileName": "DQN_LYLT_cp",
+            "clientUsername": "DQN_LYLT_user",
+            "documentation": "This user was imported from Event Portal for app 'DQN.LYLT'.",
+            "enabled": true,
+            "password": "DQN_LYLT_user"
+        },
+        {
+            "aclProfileName": "DQN_user",
+            "clientProfileName": "DQN_cp",
+            "clientUsername": "DQN_user",
+            "documentation": "This user was imported from Event Portal for app 'DQN'.",
+            "enabled": true,
+            "password": "DQN_user"
+        },
+        {
+            "aclProfileName": "LOYALTY_user",
+            "clientProfileName": "LOYALTY_cp",
+            "clientUsername": "LOYALTY_user",
+            "documentation": "This user was imported from Event Portal for app 'LOYALTY'.",
+            "enabled": true,
+            "password": "LOYALTY_user"
+        }
+    ]
 }
