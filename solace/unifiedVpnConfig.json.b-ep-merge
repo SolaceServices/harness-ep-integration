@@ -1,54 +1,6 @@
 {
-    "aclProfiles": [
-        {
-            "aclProfileName": "notification_direct_consumer",
-            "clientConnectDefaultAction": "allow",
-            "publishTopicDefaultAction": "disallow",
-            "publishTopicExceptions": [],
-            "subscribeShareNameDefaultAction": "allow",
-            "subscribeTopicDefaultAction": "disallow",
-            "subscribeTopicExceptions": []
-        },
-        {
-            "aclProfileName": "notification_direct_producer",
-            "clientConnectDefaultAction": "allow",
-            "publishTopicDefaultAction": "disallow",
-            "publishTopicExceptions": [],
-            "subscribeShareNameDefaultAction": "allow",
-            "subscribeTopicDefaultAction": "disallow",
-            "subscribeTopicExceptions": []
-        }
-    ],
-    "clientProfiles": [
-        {
-            "allowGuaranteedMsgReceiveEnabled": true,
-            "clientProfileName": "notification_direct_consumer_cp",
-            "maxConnectionCountPerClientUsername": 20,
-            "maxEgressFlowCount": 20,
-            "maxEndpointCountPerClientUsername": 0,
-            "maxIngressFlowCount": 20,
-            "maxMsgsPerTransaction": 256,
-            "maxSubscriptionCount": 250,
-            "maxTransactedSessionCount": 0,
-            "maxTransactionCount": 0,
-            "serviceSmfMaxConnectionCountPerClientUsername": 20,
-            "serviceWebMaxConnectionCountPerClientUsername": 0
-        },
-        {
-            "allowGuaranteedMsgReceiveEnabled": true,
-            "clientProfileName": "notification_direct_producer_cp",
-            "maxConnectionCountPerClientUsername": 20,
-            "maxEgressFlowCount": 20,
-            "maxEndpointCountPerClientUsername": 0,
-            "maxIngressFlowCount": 20,
-            "maxMsgsPerTransaction": 256,
-            "maxSubscriptionCount": 250,
-            "maxTransactedSessionCount": 0,
-            "maxTransactionCount": 0,
-            "serviceSmfMaxConnectionCountPerClientUsername": 20,
-            "serviceWebMaxConnectionCountPerClientUsername": 0
-        }
-    ],
+    "aclProfiles": [],
+    "clientProfiles": [],
     "jndi": {
         "connectionFactories": [],
         "queues": []
@@ -61,34 +13,7 @@
     "msgVpnName": "united-ep-tools-primary-v3",
     "queues": [
         {
-            "accessType": "exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'Q.UaNotificationsDelivered'.",
-            "egressEnabled": true,
-            "ingressEnabled": true,
-            "maxMsgSpoolUsage": 5000,
-            "owner": "notification_direct_consumer",
-            "permission": "no-access",
-            "queueName": "Q.UaNotificationsDelivered",
-            "subscriptionTopics": [
-                "ua/notifications/delivered"
-            ]
-        },
-        {
-            "accessType": "exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'Q.UaNotificationsDelivered_CP'.",
-            "egressEnabled": true,
-            "ingressEnabled": true,
-            "maxMsgSpoolUsage": 5000,
-            "owner": "notification_direct_consumer",
-            "permission": "no-access",
-            "queueName": "Q.UaNotificationsDelivered_CP",
-            "subscriptionTopics": [
-                "ua/notifications/delivered"
-            ]
-        },
-        {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.CCE.PRETRAVEL.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqndevappuser",
@@ -101,7 +26,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.COLLAB.NOTIFY.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqndevappuser",
@@ -114,7 +38,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.CONTACTPREF.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqndevappuser",
@@ -127,7 +50,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.EMAIL.FDBK.PERSIST.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqndevappuser",
@@ -140,7 +62,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.EMAIL.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqndevappuser",
@@ -153,7 +74,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.ENRICHER.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqndevappuser",
@@ -166,7 +86,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.ERROR.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqndevappuser",
@@ -179,7 +98,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.FDBK.CALLBACK.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqndevappuser",
@@ -195,7 +113,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.FDBK.UCLD.DLV.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqndevappuser",
@@ -219,7 +136,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.FDBK.UCLD.INTR.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqndevappuser",
@@ -238,7 +154,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.FDBK.UPDATE.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqndevappuser",
@@ -258,7 +173,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.KAFKA.COMM.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqndevappuser",
@@ -275,7 +189,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.LYLT.CHASE.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqndevappuser",
@@ -288,7 +201,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.LYLT.MILEPLAY.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqndevappuser",
@@ -301,7 +213,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.LYLT.MILESPOOLING.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqndevappuser",
@@ -314,7 +225,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.LYLT.PPR.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqndevappuser",
@@ -327,7 +237,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.LYLT.PUG.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqndevappuser",
@@ -340,7 +249,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.MAILHOG.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqndevappuser",
@@ -353,7 +261,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.ODMS.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqndevappuser",
@@ -366,7 +273,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.PERSIST.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqndevappuser",
@@ -388,7 +294,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.PHONEVERIFY.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqndevappuser",
@@ -401,7 +306,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.PUSH.FDBK.PERSIST.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqndevappuser",
@@ -414,7 +318,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.PUSH.FDBK.UCLD.COMM.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqndevappuser",
@@ -431,7 +334,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.PUSH.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqndevappuser",
@@ -444,7 +346,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.RCS.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqndevappuser",
@@ -458,7 +359,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.REPROCESS.ERROR.OUT.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqndevappuser",
@@ -471,7 +371,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.SMS.FDBK.PERSIST.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqndevappuser",
@@ -484,7 +383,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.SMS.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqndevappuser",
@@ -497,7 +395,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.UCLD.COMM.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqndevappuser",
@@ -513,7 +410,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.VOICE.FDBK.PERSIST.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqndevappuser",
@@ -526,7 +422,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.DEV.DQN.VOICE.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqndevappuser",
@@ -539,7 +434,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.CCE.PRETRAVEL.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqnqaappuser",
@@ -552,7 +446,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.COLLAB.NOTIFY.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqnqaappuser",
@@ -565,7 +458,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.CONTACTPREF.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqnqaappuser",
@@ -578,7 +470,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.EMAIL.FDBK.PERSIST.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqnqaappuser",
@@ -591,7 +482,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.EMAIL.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqnqaappuser",
@@ -604,7 +494,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.ENRICHER.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqnqaappuser",
@@ -617,7 +506,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.ERROR.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqnqaappuser",
@@ -630,7 +518,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.FDBK.CALLBACK.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqnqaappuser",
@@ -646,7 +533,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.FDBK.UCLD.DLV.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqnqaappuser",
@@ -670,7 +556,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.FDBK.UCLD.INTR.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqnqaappuser",
@@ -689,7 +574,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.FDBK.UPDATE.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqnqaappuser",
@@ -709,7 +593,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.KAFKA.COMM.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqnqaappuser",
@@ -726,7 +609,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.LYLT.CHASE.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqnqaappuser",
@@ -739,7 +621,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.LYLT.MILEPLAY.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqnqaappuser",
@@ -752,7 +633,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.LYLT.MILESPOOLING.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqnqaappuser",
@@ -765,7 +645,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.LYLT.PPR.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqnqaappuser",
@@ -778,7 +657,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.LYLT.PUG.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqnqaappuser",
@@ -791,7 +669,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.MAILHOG.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqnqaappuser",
@@ -804,7 +681,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.ODMS.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqnqaappuser",
@@ -817,7 +693,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.PERSIST.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqnqaappuser",
@@ -839,7 +714,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.PHONEVERIFY.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqnqaappuser",
@@ -852,7 +726,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.PUSH.FDBK.PERSIST.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqnqaappuser",
@@ -865,7 +738,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.PUSH.FDBK.UCLD.COMM.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqnqaappuser",
@@ -882,7 +754,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.PUSH.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqnqaappuser",
@@ -895,7 +766,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.RCS.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqnqaappuser",
@@ -909,7 +779,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.REPROCESS.ERROR.OUT.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqndevappuser",
@@ -922,7 +791,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.SMS.FDBK.PERSIST.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqnqaappuser",
@@ -935,7 +803,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.SMS.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqnqaappuser",
@@ -948,7 +815,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.UCLD.COMM.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqnqaappuser",
@@ -964,7 +830,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.VOICE.FDBK.PERSIST.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqnqaappuser",
@@ -977,7 +842,6 @@
         },
         {
             "accessType": "non-exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'UAL.QA.DQN.VOICE.IN.1'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "owner": "dqnqaappuser",
@@ -1025,18 +889,12 @@
     "topicEndpoints": [],
     "users": [
         {
-            "aclProfileName": "default",
-            "clientProfileName": "default",
             "clientUsername": "dqndevappuser",
-            "documentation": "This user was imported from Event Portal for app 'DqndevappuserApp'.",
             "enabled": true,
             "passwordToken": "bq/G59/gN512py3VGmSP7g==IYMqMu0JPgI/sN+aepVsPnu4OcTrYOs="
         },
         {
-            "aclProfileName": "default",
-            "clientProfileName": "default",
             "clientUsername": "dqnqaappuser",
-            "documentation": "This user was imported from Event Portal for app 'DQN_QA_AppUser'.",
             "enabled": true,
             "passwordToken": "VW34V0HsjjV/C42Zm/z5yg==mv+l8b0e0pvCqA8CZda8DJBdMWi21A=="
         },
@@ -1044,22 +902,6 @@
             "clientUsername": "loyaltydevuser",
             "enabled": true,
             "passwordToken": "GFdQMtBy1vR+DfshNFLrmA==rpqZpqaYDTXY+UyQiO455HdWcFz8IVc/"
-        },
-        {
-            "aclProfileName": "notification_direct_consumer",
-            "clientProfileName": "notification_direct_consumer_cp",
-            "clientUsername": "notification_direct_consumer",
-            "documentation": "This user was imported from Event Portal for app 'NotificationDirectConsumerApp'.",
-            "enabled": true,
-            "password": "notification_direct_consumer_pwd"
-        },
-        {
-            "aclProfileName": "notification_direct_producer",
-            "clientProfileName": "notification_direct_producer_cp",
-            "clientUsername": "notification_direct_producer",
-            "documentation": "This user was imported from Event Portal for app 'NotificationDirectProducerApp'.",
-            "enabled": true,
-            "password": "notification_direct_producer_pwd"
         },
         {
             "clientUsername": "odmsdevuser",
