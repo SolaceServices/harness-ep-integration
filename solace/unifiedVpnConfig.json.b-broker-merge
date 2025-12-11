@@ -1,0 +1,917 @@
+{
+    "aclProfiles": [],
+    "clientProfiles": [],
+    "jndi": {
+        "connectionFactories": [],
+        "queues": []
+    },
+    "kafkaBridge": {
+        "recievers": [],
+        "redundantRecievers": [],
+        "senders": []
+    },
+    "msgVpnName": "united-ep-tools-primary-v3",
+    "queues": [
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.CCE.PRETRAVEL.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/CCE/PTP/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.COLLAB.NOTIFY.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/ENR/VDR/FLTFEED/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.CONTACTPREF.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/*/CONTACTPREF/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.EMAIL.FDBK.PERSIST.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/EMAIL_FDBK_API/OUT/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.EMAIL.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/ENR/VDR/EMAIL/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.ENRICHER.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/CONTACTPREF/ENR/NONVOICE/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.ERROR.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/*/ERROR/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.FDBK.CALLBACK.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/EMAIL_FDBK_PERSIST/OUT/*/*/*/*/1",
+                "UAL/DEV/DQN/PUSH_FDBK_PERSIST/OUT/*/*/*/*/1",
+                "UAL/DEV/DQN/SMS_FDBK_PERSIST/OUT/*/*/*/*/1",
+                "UAL/DEV/DQN/VOICE_FDBK_PERSIST/OUT/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.FDBK.UCLD.DLV.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/EMAIL_FDBK_PERSIST/OUT/*/BOUNCE/*/*/1",
+                "UAL/DEV/DQN/EMAIL_FDBK_PERSIST/OUT/*/DELIVERED/*/*/1",
+                "UAL/DEV/DQN/EMAIL_FDBK_PERSIST/OUT/*/DROPPED/*/*/1",
+                "UAL/DEV/DQN/PUSH_FDBK_PERSIST/OUT/*/INBOX_MESSAGE_DELIVERED/*/*/1",
+                "UAL/DEV/DQN/PUSH_FDBK_PERSIST/OUT/*/NOTIFICATION_RECEIVED/*/*/1",
+                "UAL/DEV/DQN/SMS_FDBK_PERSIST/OUT/*/DELIVERED/*/*/1",
+                "UAL/DEV/DQN/SMS_FDBK_PERSIST/OUT/*/FAILED/*/*/1",
+                "UAL/DEV/DQN/SMS_FDBK_PERSIST/OUT/*/UNDELIVERED/*/*/1",
+                "UAL/DEV/DQN/VOICE_FDBK_PERSIST/OUT/*/BUSY/*/*/1",
+                "UAL/DEV/DQN/VOICE_FDBK_PERSIST/OUT/*/COMPLETED/*/*/1",
+                "UAL/DEV/DQN/VOICE_FDBK_PERSIST/OUT/*/FAILED/*/*/1",
+                "UAL/DEV/DQN/VOICE_FDBK_PERSIST/OUT/*/NO_ANSWER/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.FDBK.UCLD.INTR.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/EMAIL_FDBK_PERSIST/OUT/*/CLICK/*/*/1",
+                "UAL/DEV/DQN/EMAIL_FDBK_PERSIST/OUT/*/OPEN/*/*/1",
+                "UAL/DEV/DQN/PUSH_FDBK_PERSIST/OUT/*/INBOX_MESSAGE_OPENED/*/*/1/*/*/1",
+                "UAL/DEV/DQN/PUSH_FDBK_PERSIST/OUT/*/NOTIFICATION_OPENED/*/*/1",
+                "UAL/DEV/DQN/SMS_FDBK_PERSIST/OUT/*/CLICK/*/*/1",
+                "UAL/DEV/DQN/SMS_FDBK_PERSIST/OUT/*/PREVIEW/*/*/1",
+                "UAL/DEV/DQN/VOICE_FDBK_PERSIST/OUT/*/COMPLETED/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.FDBK.UPDATE.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/EMAIL_FDBK_PERSIST/OUT/*/BOUNCE/*/*/1",
+                "UAL/DEV/DQN/EMAIL_FDBK_PERSIST/OUT/*/DROPPED/*/*/1",
+                "UAL/DEV/DQN/PUSH_FDBK_PERSIST/OUT/RETRIABLE/FAILED_TO_SEND_NOTIFICATION/*/*/1",
+                "UAL/DEV/DQN/PUSH_FDBK_PERSIST/OUT/RETRIABLE/NO_DEVICES_FOUND/*/*/1",
+                "UAL/DEV/DQN/PUSH_FDBK_PERSIST/OUT/RETRIABLE/OPT_OUT/*/*/1",
+                "UAL/DEV/DQN/SMS_FDBK_PERSIST/OUT/*/FAILED/*/*/1",
+                "UAL/DEV/DQN/SMS_FDBK_PERSIST/OUT/*/UNDELIVERED/*/*/1",
+                "UAL/DEV/DQN/VOICE_FDBK_PERSIST/OUT/*/FAILED/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.KAFKA.COMM.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/EMAIL_PROC/PERSIST/*/*/RAVENODMS/*/1",
+                "UAL/DEV/DQN/PUSH_PROC/PERSIST/*/*/RAVENODMS/*/1",
+                "UAL/DEV/DQN/RCS_PROC/PERSIST/*/*/RAVENODMS/*/1",
+                "UAL/DEV/DQN/SMS_PROC/PERSIST/*/*/RAVENODMS/*/1",
+                "UAL/DEV/DQN/VOICE_PROC/PERSIST/*/*/RAVENODMS/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.LYLT.CHASE.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/LYT/CHS/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.LYLT.MILEPLAY.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/*/MILEPLAY/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.LYLT.MILESPOOLING.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/LYLT/MILESPOOLING/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.LYLT.PPR.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/LYLT/PPR/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.LYLT.PUG.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/LYT/PUG/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.MAILHOG.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/VDR/MAILHOG/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.ODMS.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/*/ODMS/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.PERSIST.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/EMAIL_PROC/PERSIST/*/FAILURE/*/*/1",
+                "UAL/DEV/DQN/EMAIL_PROC/PERSIST/*/SUCCESS/*/*/1",
+                "UAL/DEV/DQN/PUSH_PROC/PERSIST/*/FAILURE/*/*/1",
+                "UAL/DEV/DQN/PUSH_PROC/PERSIST/*/SUCCESS/*/*/1",
+                "UAL/DEV/DQN/RCS_PROC/PERSIST/*/FAILURE/*/*/1",
+                "UAL/DEV/DQN/RCS_PROC/PERSIST/*/SUCCESS/*/*/1",
+                "UAL/DEV/DQN/SMS_PROC/PERSIST/*/FAILURE/*/*/1",
+                "UAL/DEV/DQN/SMS_PROC/PERSIST/*/SUCCESS/*/*/1",
+                "UAL/DEV/DQN/VOICE_PROC/PERSIST/*/FAILURE/*/*/1",
+                "UAL/DEV/DQN/VOICE_PROC/PERSIST/*/SUCCESS/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.PHONEVERIFY.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/CONTACTPREF/ENR/VOICE/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.PUSH.FDBK.PERSIST.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/PUSH_FDBK_API/OUT/PERSIST/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.PUSH.FDBK.UCLD.COMM.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/PUSH_FDBK_API/OUT/*/FAILED_TO_SEND_NOTIFICATION/*/*/1",
+                "UAL/DEV/DQN/PUSH_FDBK_API/OUT/*/INBOX_MESSAGE_DELIVERED/*/*/1",
+                "UAL/DEV/DQN/PUSH_FDBK_API/OUT/*/INBOX_MESSAGE_DELIVERY_FAILED/*/*/1",
+                "UAL/DEV/DQN/PUSH_FDBK_API/OUT/*/NOTIFICATION_SENT/*/*/1",
+                "UAL/DEV/DQN/PUSH_FDBK_API/OUT/*/OPT_OUT/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.PUSH.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/ENR/VDR/PUSH/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.RCS.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/ENR/VDR/RCS/*/*/*/1",
+                "UAL/DEV/DQN/ENR/VDR/WHATSAPP/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.REPROCESS.ERROR.OUT.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/*/REPROCESS/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.SMS.FDBK.PERSIST.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/SMS_FDBK_API/OUT/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.SMS.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/ENR/VDR/SMS/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.UCLD.COMM.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/EMAIL_PROC/PERSIST/*/*/*/*/1",
+                "UAL/DEV/DQN/RCS_PROC/PERSIST/*/*/*/*/1",
+                "UAL/DEV/DQN/SMS_PROC/PERSIST/*/*/*/*/1",
+                "UAL/DEV/DQN/VOICE_PROC/PERSIST/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.VOICE.FDBK.PERSIST.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/VOICE_FDBK_API/OUT/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.DEV.DQN.VOICE.IN.1",
+            "subscriptionTopics": [
+                "UAL/DEV/DQN/ENR/VDR/VOICE/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqnqaappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.QA.DQN.CCE.PRETRAVEL.IN.1",
+            "subscriptionTopics": [
+                "UAL/QA/DQN/CCE/PTP/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqnqaappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.QA.DQN.COLLAB.NOTIFY.IN.1",
+            "subscriptionTopics": [
+                "UAL/QA/DQN/ENR/VDR/FLTFEED/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqnqaappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.QA.DQN.CONTACTPREF.IN.1",
+            "subscriptionTopics": [
+                "UAL/QA/DQN/*/CONTACTPREF/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqnqaappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.QA.DQN.EMAIL.FDBK.PERSIST.IN.1",
+            "subscriptionTopics": [
+                "UAL/QA/DQN/EMAIL_FDBK_API/OUT/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqnqaappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.QA.DQN.EMAIL.IN.1",
+            "subscriptionTopics": [
+                "UAL/QA/DQN/ENR/VDR/EMAIL/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqnqaappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.QA.DQN.ENRICHER.IN.1",
+            "subscriptionTopics": [
+                "UAL/QA/DQN/CONTACTPREF/ENR/NONVOICE/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqnqaappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.QA.DQN.ERROR.IN.1",
+            "subscriptionTopics": [
+                "UAL/QA/DQN/*/ERROR/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqnqaappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.QA.DQN.FDBK.CALLBACK.IN.1",
+            "subscriptionTopics": [
+                "UAL/QA/DQN/EMAIL_FDBK_PERSIST/OUT/*/*/*/*/1",
+                "UAL/QA/DQN/PUSH_FDBK_PERSIST/OUT/*/*/*/*/1",
+                "UAL/QA/DQN/SMS_FDBK_PERSIST/OUT/*/*/*/*/1",
+                "UAL/QA/DQN/VOICE_FDBK_PERSIST/OUT/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqnqaappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.QA.DQN.FDBK.UCLD.DLV.IN.1",
+            "subscriptionTopics": [
+                "UAL/QA/DQN/EMAIL_FDBK_PERSIST/OUT/*/BOUNCE/*/*/1",
+                "UAL/QA/DQN/EMAIL_FDBK_PERSIST/OUT/*/DELIVERED/*/*/1",
+                "UAL/QA/DQN/EMAIL_FDBK_PERSIST/OUT/*/DROPPED/*/*/1",
+                "UAL/QA/DQN/PUSH_FDBK_PERSIST/OUT/*/INBOX_MESSAGE_DELIVERED/*/*/1",
+                "UAL/QA/DQN/PUSH_FDBK_PERSIST/OUT/*/NOTIFICATION_RECEIVED/*/*/1",
+                "UAL/QA/DQN/SMS_FDBK_PERSIST/OUT/*/DELIVERED/*/*/1",
+                "UAL/QA/DQN/SMS_FDBK_PERSIST/OUT/*/FAILED/*/*/1",
+                "UAL/QA/DQN/SMS_FDBK_PERSIST/OUT/*/UNDELIVERED/*/*/1",
+                "UAL/QA/DQN/VOICE_FDBK_PERSIST/OUT/*/BUSY/*/*/1",
+                "UAL/QA/DQN/VOICE_FDBK_PERSIST/OUT/*/COMPLETED/*/*/1",
+                "UAL/QA/DQN/VOICE_FDBK_PERSIST/OUT/*/FAILED/*/*/1",
+                "UAL/QA/DQN/VOICE_FDBK_PERSIST/OUT/*/NO_ANSWER/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqnqaappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.QA.DQN.FDBK.UCLD.INTR.IN.1",
+            "subscriptionTopics": [
+                "UAL/QA/DQN/EMAIL_FDBK_PERSIST/OUT/*/CLICK/*/*/1",
+                "UAL/QA/DQN/EMAIL_FDBK_PERSIST/OUT/*/OPEN/*/*/1",
+                "UAL/QA/DQN/PUSH_FDBK_PERSIST/OUT/*/INBOX_MESSAGE_OPENED/*/*/1",
+                "UAL/QA/DQN/PUSH_FDBK_PERSIST/OUT/*/NOTIFICATION_OPENED/*/*/1",
+                "UAL/QA/DQN/SMS_FDBK_PERSIST/OUT/*/CLICK/*/*/1",
+                "UAL/QA/DQN/SMS_FDBK_PERSIST/OUT/*/PREVIEW/*/*/1",
+                "UAL/QA/DQN/VOICE_FDBK_PERSIST/OUT/*/COMPLETED/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqnqaappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.QA.DQN.FDBK.UPDATE.IN.1",
+            "subscriptionTopics": [
+                "UAL/QA/DQN/EMAIL_FDBK_PERSIST/OUT/*/BOUNCE/*/*/1",
+                "UAL/QA/DQN/EMAIL_FDBK_PERSIST/OUT/*/DROPPED/*/*/1",
+                "UAL/QA/DQN/PUSH_FDBK_PERSIST/OUT/RETRIABLE/FAILED_TO_SEND_NOTIFICATION/*/*/1",
+                "UAL/QA/DQN/PUSH_FDBK_PERSIST/OUT/RETRIABLE/NO_DEVICES_FOUND/*/*/1",
+                "UAL/QA/DQN/PUSH_FDBK_PERSIST/OUT/RETRIABLE/OPT_OUT/*/*/1",
+                "UAL/QA/DQN/SMS_FDBK_PERSIST/OUT/*/FAILED/*/*/1",
+                "UAL/QA/DQN/SMS_FDBK_PERSIST/OUT/*/UNDELIVERED/*/*/1",
+                "UAL/QA/DQN/VOICE_FDBK_PERSIST/OUT/*/FAILED/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqnqaappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.QA.DQN.KAFKA.COMM.IN.1",
+            "subscriptionTopics": [
+                "UAL/QA/DQN/EMAIL_PROC/PERSIST/*/*/RAVENODMS/*/1",
+                "UAL/QA/DQN/PUSH_PROC/PERSIST/*/*/RAVENODMS/*/1",
+                "UAL/QA/DQN/RCS_PROC/PERSIST/*/*/RAVENODMS/*/1",
+                "UAL/QA/DQN/SMS_PROC/PERSIST/*/*/RAVENODMS/*/1",
+                "UAL/QA/DQN/VOICE_PROC/PERSIST/*/*/RAVENODMS/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqnqaappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.QA.DQN.LYLT.CHASE.IN.1",
+            "subscriptionTopics": [
+                "UAL/QA/DQN/LYT/CHS/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqnqaappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.QA.DQN.LYLT.MILEPLAY.IN.1",
+            "subscriptionTopics": [
+                "UAL/QA/DQN/*/MILEPLAY/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqnqaappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.QA.DQN.LYLT.MILESPOOLING.IN.1",
+            "subscriptionTopics": [
+                "UAL/QA/DQN/LYLT/MILESPOOLING/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqnqaappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.QA.DQN.LYLT.PPR.IN.1",
+            "subscriptionTopics": [
+                "UAL/QA/DQN/LYLT/PPR/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqnqaappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.QA.DQN.LYLT.PUG.IN.1",
+            "subscriptionTopics": [
+                "UAL/QA/DQN/LYT/PUG/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqnqaappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.QA.DQN.MAILHOG.IN.1",
+            "subscriptionTopics": [
+                "UAL/QA/DQN/VDR/MAILHOG/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqnqaappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.QA.DQN.ODMS.IN.1",
+            "subscriptionTopics": [
+                "UAL/QA/DQN/*/ODMS/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqnqaappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.QA.DQN.PERSIST.IN.1",
+            "subscriptionTopics": [
+                "UAL/QA/DQN/EMAIL_PROC/PERSIST/*/FAILURE/*/*/1",
+                "UAL/QA/DQN/EMAIL_PROC/PERSIST/*/SUCCESS/*/*/1",
+                "UAL/QA/DQN/PUSH_PROC/PERSIST/*/FAILURE/*/*/1",
+                "UAL/QA/DQN/PUSH_PROC/PERSIST/*/SUCCESS/*/*/1",
+                "UAL/QA/DQN/RCS_PROC/PERSIST/*/FAILURE/*/*/1",
+                "UAL/QA/DQN/RCS_PROC/PERSIST/*/SUCCESS/*/*/1",
+                "UAL/QA/DQN/SMS_PROC/PERSIST/*/FAILURE/*/*/1",
+                "UAL/QA/DQN/SMS_PROC/PERSIST/*/SUCCESS/*/*/1",
+                "UAL/QA/DQN/VOICE_PROC/PERSIST/*/FAILURE/*/*/1",
+                "UAL/QA/DQN/VOICE_PROC/PERSIST/*/SUCCESS/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqnqaappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.QA.DQN.PHONEVERIFY.IN.1",
+            "subscriptionTopics": [
+                "UAL/QA/DQN/CONTACTPREF/ENR/VOICE/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqnqaappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.QA.DQN.PUSH.FDBK.PERSIST.IN.1",
+            "subscriptionTopics": [
+                "UAL/QA/DQN/PUSH_FDBK_API/OUT/PERSIST/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqnqaappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.QA.DQN.PUSH.FDBK.UCLD.COMM.IN.1",
+            "subscriptionTopics": [
+                "UAL/QA/DQN/PUSH_FDBK_API/OUT/*/FAILED_TO_SEND_NOTIFICATION/*/*/1",
+                "UAL/QA/DQN/PUSH_FDBK_API/OUT/*/INBOX_MESSAGE_DELIVERED/*/*/1",
+                "UAL/QA/DQN/PUSH_FDBK_API/OUT/*/INBOX_MESSAGE_DELIVERY_FAILED/*/*/1",
+                "UAL/QA/DQN/PUSH_FDBK_API/OUT/*/NOTIFICATION_SENT/*/*/1",
+                "UAL/QA/DQN/PUSH_FDBK_API/OUT/*/OPT_OUT/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqnqaappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.QA.DQN.PUSH.IN.1",
+            "subscriptionTopics": [
+                "UAL/QA/DQN/ENR/VDR/PUSH/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqnqaappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.QA.DQN.RCS.IN.1",
+            "subscriptionTopics": [
+                "UAL/QA/DQN/ENR/VDR/RCS/*/*/*/1",
+                "UAL/QA/DQN/ENR/VDR/WHATSAPP/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqndevappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.QA.DQN.REPROCESS.ERROR.OUT.1",
+            "subscriptionTopics": [
+                "UAL/QA/DQN/*/REPROCESS/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqnqaappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.QA.DQN.SMS.FDBK.PERSIST.IN.1",
+            "subscriptionTopics": [
+                "UAL/QA/DQN/SMS_FDBK_API/OUT/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqnqaappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.QA.DQN.SMS.IN.1",
+            "subscriptionTopics": [
+                "UAL/QA/DQN/ENR/VDR/SMS/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqnqaappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.QA.DQN.UCLD.COMM.IN.1",
+            "subscriptionTopics": [
+                "UAL/QA/DQN/EMAIL_PROC/PERSIST/*/*/*/*/1",
+                "UAL/QA/DQN/RCS_PROC/PERSIST/*/*/*/*/1",
+                "UAL/QA/DQN/SMS_PROC/PERSIST/*/*/*/*/1",
+                "UAL/QA/DQN/VOICE_PROC/PERSIST/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqnqaappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.QA.DQN.VOICE.FDBK.PERSIST.IN.1",
+            "subscriptionTopics": [
+                "UAL/QA/DQN/VOICE_FDBK_API/OUT/*/*/*/*/1"
+            ]
+        },
+        {
+            "accessType": "non-exclusive",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "dqnqaappuser",
+            "partitionCount": 50,
+            "permission": "consume",
+            "queueName": "UAL.QA.DQN.VOICE.IN.1",
+            "subscriptionTopics": [
+                "UAL/QA/DQN/ENR/VDR/VOICE/*/*/*/1"
+            ]
+        },
+        {
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "test",
+            "permission": "consume",
+            "queueName": "test-89"
+        },
+        {
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "test",
+            "permission": "consume",
+            "queueName": "test-qa"
+        }
+    ],
+    "replayLog": {
+        "TopicFilterSubscriptions": [
+            ">",
+            "#P2P/>"
+        ],
+        "egressEnabled": true,
+        "ingressEnabled": true,
+        "maxSpoolUsage": 500000
+    },
+    "replicatedTopics": [
+        {
+            "replicatedTopic": ">",
+            "replicationMode": "async"
+        },
+        {
+            "replicatedTopic": "#P2P/>",
+            "replicationMode": "async"
+        }
+    ],
+    "topicEndpoints": [],
+    "users": [
+        {
+            "clientUsername": "dqndevappuser",
+            "enabled": true,
+            "passwordToken": "bq/G59/gN512py3VGmSP7g==IYMqMu0JPgI/sN+aepVsPnu4OcTrYOs="
+        },
+        {
+            "clientUsername": "dqnqaappuser",
+            "enabled": true,
+            "passwordToken": "VW34V0HsjjV/C42Zm/z5yg==mv+l8b0e0pvCqA8CZda8DJBdMWi21A=="
+        },
+        {
+            "clientUsername": "loyaltydevuser",
+            "enabled": true,
+            "passwordToken": "GFdQMtBy1vR+DfshNFLrmA==rpqZpqaYDTXY+UyQiO455HdWcFz8IVc/"
+        },
+        {
+            "clientUsername": "odmsdevuser",
+            "enabled": true,
+            "passwordToken": "Vhas0mFjtxCfTcMSNBVnCA==7MJxFHgFB0zMPZD1kh2mlrdqklD1"
+        },
+        {
+            "clientUsername": "test",
+            "enabled": true,
+            "passwordToken": "bnCpCLIHGOPWjHFOrIqCDg==un+2EvSvDvnvJWqtxw=="
+        }
+    ]
+}
