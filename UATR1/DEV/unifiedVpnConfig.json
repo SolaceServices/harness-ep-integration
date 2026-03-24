@@ -30,6 +30,5 @@
     "queues": [],
     "replicatedTopics": [],
     "topicEndpoints": [],
-    "users": [
-    ]
+    "users": []
 }
