@@ -1,0 +1,21 @@
+{
+	"msgVpnName": "UATR1",
+	"users": [ {
+	  "clientUsername": "drBridgeUser",
+	  "passwordToken": "J2EDoiWsw5KcaDOYmB9W4w==7qzWmvGYFHBv1fITua/0AvhhVbk=",
+	  "enabled": true,
+	  "clientProfile": {
+		"queueGuaranteed1MinMsgBurst": 4000,
+		"allowGuaranteedMsgReceiveEnabled": true,
+		"allowGuaranteedMsgSendEnabled": true,
+		"allowBridgeConnectionsEnabled": true,
+		"tcpMaxWindowSize": 4000
+	  },
+	  "aclProfile": {
+		"clientConnectDefaultAction": "allow",
+		"publishTopicDefaultAction": "allow",
+		"subscribeShareNameDefaultAction": "allow",
+		"subscribeTopicDefaultAction": "allow"
+	  }
+	}]
+}

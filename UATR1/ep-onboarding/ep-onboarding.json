@@ -1,0 +1,9 @@
+{
+  "appCI": "UATR1",
+  "adGroups": {
+    "manager_group_name": "UATR1-Manager",
+    "manager": "UAL-SOLACE-EP-UATR1-MGR-DGG",
+    "editor_group_name": "UATR1-Editor",
+    "editor": "UAL-SOLACE-EP-UATR1-RW-DGG"
+  }
+}

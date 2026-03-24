@@ -1,0 +1,37 @@
+{
+   "common":{
+      "unitedAppCI":"UAT",
+      "msgVpnName":"UATR1",
+      "serviceClassId":"DEVELOPER",
+      "eventBrokerVersion":"10.25",
+      "messagingStorage":40,
+      "cluster":{
+         "name":"UATR1-dev-cluster",
+         "clusterToken":"wx8ETVk9h4eVG/A1CZ7Mew==/flZcx/PRJAIYzqAwsDlPg=="
+      },
+      "GlobalAdminUser":"cicd_admin",
+      "GlobalAdminToken":"p6tWgBCe1F28+uzZySK2rg==nM2KSsk="
+   },
+   "primary":{
+      "serviceName":"UATR1-DEV-PRIMARY",
+      "datacenterId":"unitedsolaceservices-eks-us-east-1",
+      "k8s":{
+         "namespace":"solace-cloud",
+         "setupKubectlCommand":"source ~/tunnel.sh"
+      },
+      "dns":{
+         "cname":"uatr1-dev-primary.messaging.solace.cloud"
+      }
+   },
+   "dr":{
+      "serviceName":"UATR1-DEV-DR",
+      "datacenterId":"unitedsolaceservices-eks-us-east-1",
+      "k8s":{
+         "namespace":"solace-cloud",
+         "setupKubectlCommand":"source ~/tunnel.sh"
+      },
+      "dns":{
+         "cname":"uatr1-dev-dr.messaging.solace.cloud"
+      }
+   }
+}
