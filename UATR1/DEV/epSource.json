@@ -1,0 +1,38 @@
+{
+    "eventPortal": {
+        "documentation": "Lists things pulled from event portal",
+        "applicationDomain": "<App-domain>",
+        "applications": [
+            {
+                "applicationName": "<app-name>",
+                "version": "0.0.1"
+            }
+        ]
+    },
+    "eventPortalOverlays": {
+        "documentation": "User settings to be overlaid ontop of client username settings from event portal",
+      	"users": [
+      		{
+      			"clientUsername": "<app-name>",
+      			"clientProfileName": "<app-name-cp>",
+      			"password": "<app-name-pwd>"
+      		}
+      	]
+      },
+      "clientProfiles": [
+          {
+              "clientProfileName": "<app-name-cp>",
+              "allowGuaranteedMsgReceiveEnabled": true,
+              "maxConnectionCountPerClientUsername": 20,
+              "maxEgressFlowCount": 20,
+              "maxEndpointCountPerClientUsername": 0,
+              "maxIngressFlowCount": 20,
+              "maxMsgsPerTransaction": 256,
+              "maxSubscriptionCount": 250,
+              "maxTransactedSessionCount": 0,
+              "maxTransactionCount": 0,
+              "serviceSmfMaxConnectionCountPerClientUsername": 20,
+              "serviceWebMaxConnectionCountPerClientUsername": 0
+          }
+      ]
+  }
