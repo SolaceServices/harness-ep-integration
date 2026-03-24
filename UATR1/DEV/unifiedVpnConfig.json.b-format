@@ -17,15 +17,6 @@
             "tcpMaxWindowSize": 4000
         }
     ],
-    "jndi": {
-        "connectionFactories": [],
-        "queues": []
-    },
-    "kafkaBridge": {
-        "recievers": [],
-        "redundantRecievers": [],
-        "senders": []
-    },
     "msgVpnName": "UATR1",
     "queues": [],
     "replicatedTopics": [],
@@ -36,7 +27,7 @@
             "clientProfileName": "dr-bridge-user",
             "clientUsername": "dr-bridge-user",
             "enabled": true,
-            "passwordToken": "J2EDoiWsw5KcaDOYmB9W4w==7qzWmvGYFHBv1fITua/0AvhhVbk="
+    	  "passwordToken": "J2EDoiWsw5KcaDOYmB9W4w==7qzWmvGYFHBv1fITua/0AvhhVbk="
         }
     ]
 }
