@@ -1,0 +1,22 @@
+{
+    "aclProfiles": [],
+    "clientProfiles": [],
+    "jndi": {
+        "connectionFactories": [
+            {
+                "connectionFactoryName": "/jms/cf/default"
+            }
+        ],
+        "queues": []
+    },
+    "kafkaBridge": {
+        "recievers": [],
+        "redundantRecievers": [],
+        "senders": []
+    },
+    "msgVpnName": "UATR1",
+    "queues": [],
+    "replicatedTopics": [],
+    "topicEndpoints": [],
+    "users": []
+}

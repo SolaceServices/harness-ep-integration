@@ -1,4 +1,13 @@
 {
+    "__event-portal": {
+        "__ep_applications": {
+            "__App_A": {
+                "clientUsername": "a",
+                "id": "l3fuybg8q7a",
+                "name": "App_A"
+            }
+        }
+    },
     "aclProfiles": [
         {
             "aclProfileName": "a",
@@ -28,23 +37,7 @@
             "serviceWebMaxConnectionCountPerClientUsername": 0
         }
     ],
-    "jndi": {
-        "connectionFactories": [
-            {
-                "connectionFactoryName": "/jms/cf/default"
-            }
-        ],
-        "queues": []
-    },
-    "kafkaBridge": {
-        "recievers": [],
-        "redundantRecievers": [],
-        "senders": []
-    },
-    "msgVpnName": "UATR1",
     "queues": [],
-    "replicatedTopics": [],
-    "topicEndpoints": [],
     "users": [
         {
             "aclProfileName": "a",
