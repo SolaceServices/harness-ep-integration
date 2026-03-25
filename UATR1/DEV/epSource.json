@@ -1,11 +1,11 @@
 {
     "eventPortal": {
         "documentation": "Lists things pulled from event portal",
-        "applicationDomain": "UATR1",
+        "applicationDomain": "<App-domain>",
         "applications": [
             {
-                "applicationName": "App_A",
-                "version": "0.1.0"
+                "applicationName": "<app-name>",
+                "version": "0.0.1"
             }
         ]
     },
@@ -13,15 +13,15 @@
         "documentation": "User settings to be overlaid ontop of client username settings from event portal",
       	"users": [
       		{
-      			"clientUsername": "a",
-      			"clientProfileName": "app-a-cp",
-      			"password": "a"
+      			"clientUsername": "<app-name>",
+      			"clientProfileName": "<app-name-cp>",
+      			"password": "<app-name-pwd>"
       		}
       	]
       },
       "clientProfiles": [
           {
-              "clientProfileName": "app-a-cp",
+              "clientProfileName": "<app-name-cp>",
               "allowGuaranteedMsgReceiveEnabled": true,
               "maxConnectionCountPerClientUsername": 20,
               "maxEgressFlowCount": 20,
