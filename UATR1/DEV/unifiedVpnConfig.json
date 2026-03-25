@@ -1,34 +1,8 @@
 {
-    "aclProfiles": [
-        {
-            "aclProfileName": "drBridgeUser",
-            "clientConnectDefaultAction": "allow",
-            "publishTopicDefaultAction": "allow",
-            "subscribeTopicDefaultAction": "allow"
-        }
-    ],
-    "clientProfiles": [
-        {
-            "allowBridgeConnectionsEnabled": true,
-            "allowGuaranteedMsgReceiveEnabled": true,
-            "allowGuaranteedMsgSendEnabled": true,
-            "clientProfileName": "drBridgeUser",
-            "queueGuaranteed1MinMsgBurst": 4000,
-            "tcpMaxWindowSize": 4000
-        }
-    ],
-    "jndi": {
-        "connectionFactories": [],
-        "queues": []
-    },
-    "kafkaBridge": {
-        "recievers": [],
-        "redundantRecievers": [],
-        "senders": []
-    },
-    "msgVpnName": "UATR1",
-    "queues": [],
-    "replicatedTopics": [],
-    "topicEndpoints": [],
-    "users": []
+	"msgVpnName": "UATR1",
+	"users": [
+	],
+	"queues": [
+	],
+	"replicatedTopics": []
 }
