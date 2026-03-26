@@ -1,32 +1,7 @@
 {
     "aclProfiles": [
-        {
-            "aclProfileName": "a",
-            "clientConnectDefaultAction": "allow",
-            "publishTopicDefaultAction": "disallow",
-            "publishTopicExceptions": [
-                "demo/training/ua/as"
-            ],
-            "subscribeShareNameDefaultAction": "allow",
-            "subscribeTopicDefaultAction": "disallow",
-            "subscribeTopicExceptions": []
-        }
     ],
     "clientProfiles": [
-        {
-            "allowGuaranteedMsgReceiveEnabled": true,
-            "clientProfileName": "app-a-cp",
-            "maxConnectionCountPerClientUsername": 20,
-            "maxEgressFlowCount": 20,
-            "maxEndpointCountPerClientUsername": 0,
-            "maxIngressFlowCount": 20,
-            "maxMsgsPerTransaction": 256,
-            "maxSubscriptionCount": 250,
-            "maxTransactedSessionCount": 0,
-            "maxTransactionCount": 0,
-            "serviceSmfMaxConnectionCountPerClientUsername": 20,
-            "serviceWebMaxConnectionCountPerClientUsername": 0
-        }
     ],
     "jndi": {
         "connectionFactories": [
@@ -46,13 +21,5 @@
     "replicatedTopics": [],
     "topicEndpoints": [],
     "users": [
-        {
-            "aclProfileName": "a",
-            "clientProfileName": "app-a-cp",
-            "clientUsername": "a",
-            "documentation": "This user was imported from Event Portal for app 'App_A'.",
-            "enabled": true,
-            "password": "a"
-        }
     ]
 }
