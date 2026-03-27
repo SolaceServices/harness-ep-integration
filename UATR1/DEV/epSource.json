@@ -1,27 +1,72 @@
 {
     "eventPortal": {
         "documentation": "Lists things pulled from event portal",
-        "applicationDomain": "<App-domain>",
+        "applicationDomain": "UATR1-Complete",
         "applications": [
             {
-                "applicationName": "<app-name>",
-                "version": "0.0.1"
-            }
+                "applicationName": "Kiosk",
+                "version": "0.1.0"
+            },
+            {
+                "applicationName": "Web Portal",
+                "version": "0.1.0"
+            },
+            {
+                "applicationName": "Partner API",
+                "version": "0.1.0"
+            },
+            {
+                "applicationName": "Payment MS",
+                "version": "0.1.0"
+            },
+            {
+                "applicationName": "Booking MS",
+                "version": "0.1.0"
+            },
+            {
+                "applicationName": "Maintenance MS",
+                "version": "0.1.0"
+            }          
         ]
     },
     "eventPortalOverlays": {
         "documentation": "User settings to be overlaid ontop of client username settings from event portal",
       	"users": [
       		{
-      			"clientUsername": "<app-name>",
-      			"clientProfileName": "<app-name-cp>",
-      			"password": "<app-name-pwd>"
-      		}
+      			"clientUsername": "kiosk",
+      			"clientProfileName": "kiosk_cp",
+      			"password": "kiosk"
+      		},
+      		{
+      			"clientUsername": "web_portal",
+      			"clientProfileName": "web_portal_cp",
+      			"password": "web_portal"
+      		},
+      		{
+      			"clientUsername": "partner_api",
+      			"clientProfileName": "partner_api_cp",
+      			"password": "partner_api"
+      		},
+      		{
+      			"clientUsername": "payment",
+      			"clientProfileName": "payment_cp",
+      			"password": "payment"
+      		},
+      		{
+      			"clientUsername": "booking",
+      			"clientProfileName": "booking_cp",
+      			"password": "booking"
+      		},
+      		{
+      			"clientUsername": "maintenance",
+      			"clientProfileName": "maintenance_cp",
+      			"password": "maintenance"
+      		}            
       	]
       },
       "clientProfiles": [
           {
-              "clientProfileName": "<app-name-cp>",
+              "clientProfileName": "kiosk_cp",
               "allowGuaranteedMsgReceiveEnabled": true,
               "maxConnectionCountPerClientUsername": 20,
               "maxEgressFlowCount": 20,
@@ -33,6 +78,76 @@
               "maxTransactionCount": 0,
               "serviceSmfMaxConnectionCountPerClientUsername": 20,
               "serviceWebMaxConnectionCountPerClientUsername": 0
-          }
+          },
+          {
+              "clientProfileName": "web_portal_cp",
+              "allowGuaranteedMsgReceiveEnabled": true,
+              "maxConnectionCountPerClientUsername": 20,
+              "maxEgressFlowCount": 20,
+              "maxEndpointCountPerClientUsername": 0,
+              "maxIngressFlowCount": 20,
+              "maxMsgsPerTransaction": 256,
+              "maxSubscriptionCount": 250,
+              "maxTransactedSessionCount": 0,
+              "maxTransactionCount": 0,
+              "serviceSmfMaxConnectionCountPerClientUsername": 20,
+              "serviceWebMaxConnectionCountPerClientUsername": 0
+          },
+          {
+              "clientProfileName": "partner_api_cp",
+              "allowGuaranteedMsgReceiveEnabled": true,
+              "maxConnectionCountPerClientUsername": 20,
+              "maxEgressFlowCount": 20,
+              "maxEndpointCountPerClientUsername": 0,
+              "maxIngressFlowCount": 20,
+              "maxMsgsPerTransaction": 256,
+              "maxSubscriptionCount": 250,
+              "maxTransactedSessionCount": 0,
+              "maxTransactionCount": 0,
+              "serviceSmfMaxConnectionCountPerClientUsername": 20,
+              "serviceWebMaxConnectionCountPerClientUsername": 0
+          },
+          {
+              "clientProfileName": "payment_cp",
+              "allowGuaranteedMsgReceiveEnabled": true,
+              "maxConnectionCountPerClientUsername": 20,
+              "maxEgressFlowCount": 20,
+              "maxEndpointCountPerClientUsername": 0,
+              "maxIngressFlowCount": 20,
+              "maxMsgsPerTransaction": 256,
+              "maxSubscriptionCount": 250,
+              "maxTransactedSessionCount": 0,
+              "maxTransactionCount": 0,
+              "serviceSmfMaxConnectionCountPerClientUsername": 20,
+              "serviceWebMaxConnectionCountPerClientUsername": 0
+          },
+          {
+              "clientProfileName": "booking_cp",
+              "allowGuaranteedMsgReceiveEnabled": true,
+              "maxConnectionCountPerClientUsername": 20,
+              "maxEgressFlowCount": 20,
+              "maxEndpointCountPerClientUsername": 0,
+              "maxIngressFlowCount": 20,
+              "maxMsgsPerTransaction": 256,
+              "maxSubscriptionCount": 250,
+              "maxTransactedSessionCount": 0,
+              "maxTransactionCount": 0,
+              "serviceSmfMaxConnectionCountPerClientUsername": 20,
+              "serviceWebMaxConnectionCountPerClientUsername": 0
+          },
+          {
+              "clientProfileName": "maintenance_cp",
+              "allowGuaranteedMsgReceiveEnabled": true,
+              "maxConnectionCountPerClientUsername": 20,
+              "maxEgressFlowCount": 20,
+              "maxEndpointCountPerClientUsername": 0,
+              "maxIngressFlowCount": 20,
+              "maxMsgsPerTransaction": 256,
+              "maxSubscriptionCount": 250,
+              "maxTransactedSessionCount": 0,
+              "maxTransactionCount": 0,
+              "serviceSmfMaxConnectionCountPerClientUsername": 20,
+              "serviceWebMaxConnectionCountPerClientUsername": 0
+          }          
       ]
   }
