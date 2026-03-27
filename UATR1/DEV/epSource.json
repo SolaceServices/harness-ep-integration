@@ -1,7 +1,7 @@
 {
     "eventPortal": {
         "documentation": "Lists things pulled from event portal",
-        "applicationDomain": "UATR1-Complete",
+        "applicationDomain": "UATR1 - Complete",
         "applications": [
             {
                 "applicationName": "Kiosk",
