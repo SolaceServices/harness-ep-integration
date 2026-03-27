@@ -1,8 +1,6 @@
 {
-    "aclProfiles": [
-    ],
-    "clientProfiles": [
-    ],
+    "aclProfiles": [],
+    "clientProfiles": [],
     "jndi": {
         "connectionFactories": [
             {
@@ -20,6 +18,5 @@
     "queues": [],
     "replicatedTopics": [],
     "topicEndpoints": [],
-    "users": [
-    ]
+    "users": []
 }
