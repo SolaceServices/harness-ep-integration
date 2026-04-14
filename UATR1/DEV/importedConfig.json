@@ -181,26 +181,6 @@
             "subscriptionTopics": [
                 "airline/payment/processed/v1"
             ]
-        },
-        {
-            "egressEnabled": true,
-            "ingressEnabled": true,
-            "owner": "sdkperf",
-            "permission": "consume",
-            "queueName": "Q.SDKPERF_TESTING",
-            "subscriptionTopics": [
-                "topic/sdkperf/testing"
-            ]
-        },
-        {
-            "egressEnabled": true,
-            "ingressEnabled": true,
-            "owner": "verify_user",
-            "permission": "consume",
-            "queueName": "verify_Q",
-            "subscriptionTopics": [
-                "topic/verify"
-            ]
         }
     ],
     "replicatedTopics": [],
