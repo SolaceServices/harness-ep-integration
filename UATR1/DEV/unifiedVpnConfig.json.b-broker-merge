@@ -63,15 +63,6 @@
             ]
         },
         {
-            "aclProfileName": "sdkperf_acl",
-            "clientConnectDefaultAction": "allow",
-            "publishTopicDefaultAction": "allow",
-            "publishTopicExceptions": [],
-            "subscribeShareNameDefaultAction": "allow",
-            "subscribeTopicDefaultAction": "allow",
-            "subscribeTopicExceptions": []
-        },
-        {
             "aclProfileName": "web_portal",
             "clientConnectDefaultAction": "allow",
             "publishTopicDefaultAction": "disallow",
@@ -159,20 +150,6 @@
         },
         {
             "allowGuaranteedMsgReceiveEnabled": true,
-            "allowGuaranteedMsgSendEnabled": true,
-            "clientProfileName": "sdkperf_cp",
-            "compressionEnabled": false,
-            "maxConnectionCountPerClientUsername": 100,
-            "maxEgressFlowCount": 100,
-            "maxEndpointCountPerClientUsername": 100,
-            "maxIngressFlowCount": 100,
-            "maxSubscriptionCount": 1000,
-            "maxTransactedSessionCount": 100,
-            "maxTransactionCount": 500,
-            "tlsAllowDowngradeToPlainTextEnabled": false
-        },
-        {
-            "allowGuaranteedMsgReceiveEnabled": true,
             "clientProfileName": "web_portal_cp",
             "maxConnectionCountPerClientUsername": 20,
             "maxEgressFlowCount": 20,
@@ -213,32 +190,6 @@
             "subscriptionTopics": [
                 "airline/booking/created/v1",
                 "airline/seat/assigned/v1"
-            ]
-        },
-        {
-            "accessType": "exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'Q.MAINTENANCE_ALERTS'.",
-            "egressEnabled": true,
-            "ingressEnabled": true,
-            "maxMsgSpoolUsage": 5000,
-            "owner": "maintenance",
-            "permission": "no-access",
-            "queueName": "Q.MAINTENANCE_ALERTS",
-            "subscriptionTopics": [
-                "airline/maintenance/alert/v1"
-            ]
-        },
-        {
-            "accessType": "exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'Q.PAYMENTS.PROCESSED'.",
-            "egressEnabled": true,
-            "ingressEnabled": true,
-            "maxMsgSpoolUsage": 5000,
-            "owner": "payment",
-            "permission": "no-access",
-            "queueName": "Q.PAYMENTS.PROCESSED",
-            "subscriptionTopics": [
-                "airline/payment/processed/v1"
             ]
         }
     ],
@@ -284,18 +235,6 @@
             "documentation": "This user was imported from Event Portal for app 'Payment MS'.",
             "enabled": true,
             "passwordToken": "61CgFyzmE1wQYQduvF1VXg==PODrk8hkIZHW88vj"
-        },
-        {
-            "aclProfileName": "sdkperf_acl",
-            "clientProfileName": "sdkperf_cp",
-            "clientUsername": "sdkperf",
-            "enabled": true,
-            "passwordToken": "L8UNC360V28aiFqwbCnUnw==HaqVcCoJcNfLNLuf"
-        },
-        {
-            "clientUsername": "verify_user",
-            "enabled": true,
-            "passwordToken": "1h6eTbPdI6xHWYPECCWiAA==s0M8N6I5I0VV5+rNNgcAag=="
         },
         {
             "aclProfileName": "web_portal",
