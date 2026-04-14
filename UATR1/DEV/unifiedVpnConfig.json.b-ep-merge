@@ -180,13 +180,9 @@
     "msgVpnName": "UATR1",
     "queues": [
         {
-            "accessType": "exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'Q.BOOKING_EVENTS'.",
             "egressEnabled": true,
             "ingressEnabled": true,
-            "maxMsgSpoolUsage": 5000,
             "owner": "booking",
-            "permission": "no-access",
             "queueName": "Q.BOOKING_EVENTS",
             "subscriptionTopics": [
                 "airline/booking/created/v1",
@@ -194,26 +190,18 @@
             ]
         },
         {
-            "accessType": "exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'Q.MAINTENANCE_ALERTS'.",
             "egressEnabled": true,
             "ingressEnabled": true,
-            "maxMsgSpoolUsage": 5000,
             "owner": "maintenance",
-            "permission": "no-access",
             "queueName": "Q.MAINTENANCE_ALERTS",
             "subscriptionTopics": [
                 "airline/maintenance/alert/v1"
             ]
         },
         {
-            "accessType": "exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'Q.PAYMENTS.PROCESSED'.",
             "egressEnabled": true,
             "ingressEnabled": true,
-            "maxMsgSpoolUsage": 5000,
             "owner": "payment",
-            "permission": "no-access",
             "queueName": "Q.PAYMENTS.PROCESSED",
             "subscriptionTopics": [
                 "airline/payment/processed/v1"
