@@ -3,11 +3,6 @@
         {
             "aclProfileName": "booking",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
-            "publishTopicDefaultAction": "disallow",
-            "publishTopicExceptions": [],
-            "subscribeShareNameDefaultAction": "allow",
-            "subscribeTopicDefaultAction": "disallow",
             "subscribeTopicExceptions": [
                 "airline/booking/created/v1",
                 "airline/seat/assigned/v1"
@@ -25,26 +20,16 @@
         {
             "aclProfileName": "kiosk",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
-            "publishTopicDefaultAction": "disallow",
             "publishTopicExceptions": [
                 "airline/booking/created/v1",
                 "airline/maintenance/alert/v1",
                 "airline/payment/processed/v1",
                 "airline/seat/assigned/v1"
-            ],
-            "subscribeShareNameDefaultAction": "allow",
-            "subscribeTopicDefaultAction": "disallow",
-            "subscribeTopicExceptions": []
+            ]
         },
         {
             "aclProfileName": "maintenance",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
-            "publishTopicDefaultAction": "disallow",
-            "publishTopicExceptions": [],
-            "subscribeShareNameDefaultAction": "allow",
-            "subscribeTopicDefaultAction": "disallow",
             "subscribeTopicExceptions": [
                 "airline/maintenance/alert/v1"
             ]
@@ -52,26 +37,16 @@
         {
             "aclProfileName": "partner_api",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
-            "publishTopicDefaultAction": "disallow",
             "publishTopicExceptions": [
                 "airline/booking/created/v1",
                 "airline/maintenance/alert/v1",
                 "airline/payment/processed/v1",
                 "airline/seat/assigned/v1"
-            ],
-            "subscribeShareNameDefaultAction": "allow",
-            "subscribeTopicDefaultAction": "disallow",
-            "subscribeTopicExceptions": []
+            ]
         },
         {
             "aclProfileName": "payment",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
-            "publishTopicDefaultAction": "disallow",
-            "publishTopicExceptions": [],
-            "subscribeShareNameDefaultAction": "allow",
-            "subscribeTopicDefaultAction": "disallow",
             "subscribeTopicExceptions": [
                 "airline/payment/processed/v1"
             ]
@@ -79,26 +54,18 @@
         {
             "aclProfileName": "sdkperf_acl",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
             "publishTopicDefaultAction": "allow",
-            "publishTopicExceptions": [],
-            "subscribeTopicDefaultAction": "allow",
-            "subscribeTopicExceptions": []
+            "subscribeTopicDefaultAction": "allow"
         },
         {
             "aclProfileName": "web_portal",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
-            "publishTopicDefaultAction": "disallow",
             "publishTopicExceptions": [
                 "airline/booking/created/v1",
                 "airline/maintenance/alert/v1",
                 "airline/payment/processed/v1",
                 "airline/seat/assigned/v1"
-            ],
-            "subscribeShareNameDefaultAction": "allow",
-            "subscribeTopicDefaultAction": "disallow",
-            "subscribeTopicExceptions": []
+            ]
         }
     ],
     "clientProfiles": [
