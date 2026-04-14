@@ -63,6 +63,15 @@
             ]
         },
         {
+            "aclProfileName": "sdkperf_acl",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicDefaultAction": "allow",
+            "publishTopicExceptions": [],
+            "subscribeShareNameDefaultAction": "allow",
+            "subscribeTopicDefaultAction": "allow",
+            "subscribeTopicExceptions": []
+        },
+        {
             "aclProfileName": "web_portal",
             "clientConnectDefaultAction": "allow",
             "publishTopicDefaultAction": "disallow",
