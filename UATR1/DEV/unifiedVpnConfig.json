@@ -270,12 +270,12 @@
             "clientProfileName": "sdkperf_cp",
             "clientUsername": "sdkperf",
             "enabled": true,
-            "passwordToken": "<UNKNOWN>"
+            "password": "sdkperf"
         },
         {
             "clientUsername": "verify_user",
             "enabled": true,
-            "passwordToken": "<UNKNOWN>"
+            "password": "verify_user"
         },
         {
             "aclProfileName": "web_portal",
