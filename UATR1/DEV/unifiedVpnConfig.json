@@ -1,6 +1,15 @@
 {
     "aclProfiles": [
         {
+            "aclProfileName": "sdkperf_acl",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicDefaultAction": "allow",
+            "publishTopicExceptions": [],
+            "subscribeShareNameDefaultAction": "allow",
+            "subscribeTopicDefaultAction": "allow",
+            "subscribeTopicExceptions": []
+        },        
+        {
             "aclProfileName": "booking",
             "clientConnectDefaultAction": "allow",
             "publishTopicDefaultAction": "disallow",
@@ -78,6 +87,20 @@
         }
     ],
     "clientProfiles": [
+        {
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "clientProfileName": "sdkperf_cp",
+            "maxConnectionCountPerClientUsername": 20,
+            "maxEgressFlowCount": 20,
+            "maxEndpointCountPerClientUsername": 0,
+            "maxIngressFlowCount": 20,
+            "maxMsgsPerTransaction": 256,
+            "maxSubscriptionCount": 250,
+            "maxTransactedSessionCount": 0,
+            "maxTransactionCount": 0,
+            "serviceSmfMaxConnectionCountPerClientUsername": 20,
+            "serviceWebMaxConnectionCountPerClientUsername": 0
+        },        
         {
             "allowGuaranteedMsgReceiveEnabled": true,
             "clientProfileName": "booking_cp",
