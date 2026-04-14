@@ -3,6 +3,7 @@
         {
             "aclProfileName": "booking",
             "clientConnectDefaultAction": "allow",
+            "clientConnectExceptions": [],
             "publishTopicDefaultAction": "disallow",
             "publishTopicExceptions": [],
             "subscribeShareNameDefaultAction": "allow",
@@ -13,8 +14,18 @@
             ]
         },
         {
+            "aclProfileName": "default",
+            "clientConnectDefaultAction": "allow",
+            "clientConnectExceptions": [],
+            "publishTopicDefaultAction": "allow",
+            "publishTopicExceptions": [],
+            "subscribeTopicDefaultAction": "allow",
+            "subscribeTopicExceptions": []
+        },
+        {
             "aclProfileName": "kiosk",
             "clientConnectDefaultAction": "allow",
+            "clientConnectExceptions": [],
             "publishTopicDefaultAction": "disallow",
             "publishTopicExceptions": [
                 "airline/booking/created/v1",
@@ -29,6 +40,7 @@
         {
             "aclProfileName": "maintenance",
             "clientConnectDefaultAction": "allow",
+            "clientConnectExceptions": [],
             "publishTopicDefaultAction": "disallow",
             "publishTopicExceptions": [],
             "subscribeShareNameDefaultAction": "allow",
@@ -40,6 +52,7 @@
         {
             "aclProfileName": "partner_api",
             "clientConnectDefaultAction": "allow",
+            "clientConnectExceptions": [],
             "publishTopicDefaultAction": "disallow",
             "publishTopicExceptions": [
                 "airline/booking/created/v1",
@@ -54,6 +67,7 @@
         {
             "aclProfileName": "payment",
             "clientConnectDefaultAction": "allow",
+            "clientConnectExceptions": [],
             "publishTopicDefaultAction": "disallow",
             "publishTopicExceptions": [],
             "subscribeShareNameDefaultAction": "allow",
@@ -63,8 +77,18 @@
             ]
         },
         {
+            "aclProfileName": "sdkperf_acl",
+            "clientConnectDefaultAction": "allow",
+            "clientConnectExceptions": [],
+            "publishTopicDefaultAction": "allow",
+            "publishTopicExceptions": [],
+            "subscribeTopicDefaultAction": "allow",
+            "subscribeTopicExceptions": []
+        },
+        {
             "aclProfileName": "web_portal",
             "clientConnectDefaultAction": "allow",
+            "clientConnectExceptions": [],
             "publishTopicDefaultAction": "disallow",
             "publishTopicExceptions": [
                 "airline/booking/created/v1",
@@ -91,6 +115,22 @@
             "maxTransactionCount": 0,
             "serviceSmfMaxConnectionCountPerClientUsername": 20,
             "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowBridgeConnectionsEnabled": true,
+            "allowGuaranteedEndpointCreateEnabled": true,
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "allowGuaranteedMsgSendEnabled": true,
+            "allowSharedSubscriptionsEnabled": true,
+            "allowTransactedSessionsEnabled": true,
+            "clientProfileName": "default",
+            "maxConnectionCountPerClientUsername": 100,
+            "maxEgressFlowCount": 100,
+            "maxEndpointCountPerClientUsername": 100,
+            "maxIngressFlowCount": 100,
+            "maxSubscriptionCount": 1000,
+            "maxTransactedSessionCount": 100,
+            "maxTransactionCount": 500
         },
         {
             "allowGuaranteedMsgReceiveEnabled": true,
@@ -216,6 +256,26 @@
             "queueName": "Q.PAYMENTS.PROCESSED",
             "subscriptionTopics": [
                 "airline/payment/processed/v1"
+            ]
+        },
+        {
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "sdkperf",
+            "permission": "consume",
+            "queueName": "Q.SDKPERF_TESTING",
+            "subscriptionTopics": [
+                "topic/sdkperf/testing"
+            ]
+        },
+        {
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "verify_user",
+            "permission": "consume",
+            "queueName": "verify_Q",
+            "subscriptionTopics": [
+                "topic/verify"
             ]
         }
     ],
