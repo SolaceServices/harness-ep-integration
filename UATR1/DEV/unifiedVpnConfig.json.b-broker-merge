@@ -3,7 +3,6 @@
         {
             "aclProfileName": "booking",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
             "publishTopicDefaultAction": "disallow",
             "publishTopicExceptions": [],
             "subscribeShareNameDefaultAction": "allow",
@@ -25,7 +24,6 @@
         {
             "aclProfileName": "kiosk",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
             "publishTopicDefaultAction": "disallow",
             "publishTopicExceptions": [
                 "airline/booking/created/v1",
@@ -40,7 +38,6 @@
         {
             "aclProfileName": "maintenance",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
             "publishTopicDefaultAction": "disallow",
             "publishTopicExceptions": [],
             "subscribeShareNameDefaultAction": "allow",
@@ -52,7 +49,6 @@
         {
             "aclProfileName": "partner_api",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
             "publishTopicDefaultAction": "disallow",
             "publishTopicExceptions": [
                 "airline/booking/created/v1",
@@ -67,7 +63,6 @@
         {
             "aclProfileName": "payment",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
             "publishTopicDefaultAction": "disallow",
             "publishTopicExceptions": [],
             "subscribeShareNameDefaultAction": "allow",
@@ -79,16 +74,12 @@
         {
             "aclProfileName": "sdkperf_acl",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
             "publishTopicDefaultAction": "allow",
-            "publishTopicExceptions": [],
-            "subscribeTopicDefaultAction": "allow",
-            "subscribeTopicExceptions": []
+            "subscribeTopicDefaultAction": "allow"
         },
         {
             "aclProfileName": "web_portal",
             "clientConnectDefaultAction": "allow",
-            "clientConnectExceptions": [],
             "publishTopicDefaultAction": "disallow",
             "publishTopicExceptions": [
                 "airline/booking/created/v1",

@@ -157,6 +157,44 @@
         {
             "egressEnabled": true,
             "ingressEnabled": true,
+            "owner": "booking",
+            "queueName": "Q.BOOKING_EVENTS",
+            "subscriptionTopics": [
+                "airline/booking/created/v1",
+                "airline/seat/assigned/v1"
+            ]
+        },
+        {
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "maintenance",
+            "queueName": "Q.MAINTENANCE_ALERTS",
+            "subscriptionTopics": [
+                "airline/maintenance/alert/v1"
+            ]
+        },
+        {
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "payment",
+            "queueName": "Q.PAYMENTS.PROCESSED",
+            "subscriptionTopics": [
+                "airline/payment/processed/v1"
+            ]
+        },
+        {
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "sdkperf",
+            "permission": "consume",
+            "queueName": "Q.SDKPERF_TESTING",
+            "subscriptionTopics": [
+                "topic/sdkperf/testing"
+            ]
+        },
+        {
+            "egressEnabled": true,
+            "ingressEnabled": true,
             "owner": "verify_user",
             "permission": "consume",
             "queueName": "verify_Q",
