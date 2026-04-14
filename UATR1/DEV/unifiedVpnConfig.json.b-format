@@ -13,6 +13,15 @@
             ]
         },
         {
+            "aclProfileName": "default",
+            "clientConnectDefaultAction": "allow",
+            "clientConnectExceptions": [],
+            "publishTopicDefaultAction": "allow",
+            "publishTopicExceptions": [],
+            "subscribeTopicDefaultAction": "allow",
+            "subscribeTopicExceptions": []
+        },
+        {
             "aclProfileName": "kiosk",
             "clientConnectDefaultAction": "allow",
             "publishTopicDefaultAction": "disallow",
@@ -63,6 +72,12 @@
             ]
         },
         {
+            "aclProfileName": "sdkperf_acl",
+            "clientConnectDefaultAction": "allow",
+            "publishTopicDefaultAction": "allow",
+            "subscribeTopicDefaultAction": "allow"
+        },
+        {
             "aclProfileName": "web_portal",
             "clientConnectDefaultAction": "allow",
             "publishTopicDefaultAction": "disallow",
@@ -91,6 +106,22 @@
             "maxTransactionCount": 0,
             "serviceSmfMaxConnectionCountPerClientUsername": 20,
             "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowBridgeConnectionsEnabled": true,
+            "allowGuaranteedEndpointCreateEnabled": true,
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "allowGuaranteedMsgSendEnabled": true,
+            "allowSharedSubscriptionsEnabled": true,
+            "allowTransactedSessionsEnabled": true,
+            "clientProfileName": "default",
+            "maxConnectionCountPerClientUsername": 100,
+            "maxEgressFlowCount": 100,
+            "maxEndpointCountPerClientUsername": 100,
+            "maxIngressFlowCount": 100,
+            "maxSubscriptionCount": 1000,
+            "maxTransactedSessionCount": 100,
+            "maxTransactionCount": 500
         },
         {
             "allowGuaranteedMsgReceiveEnabled": true,
@@ -190,6 +221,32 @@
             "subscriptionTopics": [
                 "airline/booking/created/v1",
                 "airline/seat/assigned/v1"
+            ]
+        },
+        {
+            "accessType": "exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'Q.MAINTENANCE_ALERTS'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "maxMsgSpoolUsage": 5000,
+            "owner": "maintenance",
+            "permission": "no-access",
+            "queueName": "Q.MAINTENANCE_ALERTS",
+            "subscriptionTopics": [
+                "airline/maintenance/alert/v1"
+            ]
+        },
+        {
+            "accessType": "exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'Q.PAYMENTS.PROCESSED'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "maxMsgSpoolUsage": 5000,
+            "owner": "payment",
+            "permission": "no-access",
+            "queueName": "Q.PAYMENTS.PROCESSED",
+            "subscriptionTopics": [
+                "airline/payment/processed/v1"
             ]
         }
     ],
