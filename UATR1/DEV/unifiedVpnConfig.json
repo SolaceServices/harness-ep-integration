@@ -3,36 +3,39 @@
         {
             "aclProfileName": "booking",
             "clientConnectDefaultAction": "allow",
-            "publishTopicDefaultAction": "disallow",
+            "clientConnectExceptions": [],
             "publishTopicExceptions": [],
-            "subscribeShareNameDefaultAction": "allow",
-            "subscribeTopicDefaultAction": "disallow",
             "subscribeTopicExceptions": [
                 "airline/booking/created/v1",
                 "airline/seat/assigned/v1"
             ]
         },
         {
+            "aclProfileName": "default",
+            "clientConnectDefaultAction": "allow",
+            "clientConnectExceptions": [],
+            "publishTopicDefaultAction": "allow",
+            "publishTopicExceptions": [],
+            "subscribeTopicDefaultAction": "allow",
+            "subscribeTopicExceptions": []
+        },
+        {
             "aclProfileName": "kiosk",
             "clientConnectDefaultAction": "allow",
-            "publishTopicDefaultAction": "disallow",
+            "clientConnectExceptions": [],
             "publishTopicExceptions": [
                 "airline/booking/created/v1",
                 "airline/maintenance/alert/v1",
                 "airline/payment/processed/v1",
                 "airline/seat/assigned/v1"
             ],
-            "subscribeShareNameDefaultAction": "allow",
-            "subscribeTopicDefaultAction": "disallow",
             "subscribeTopicExceptions": []
         },
         {
             "aclProfileName": "maintenance",
             "clientConnectDefaultAction": "allow",
-            "publishTopicDefaultAction": "disallow",
+            "clientConnectExceptions": [],
             "publishTopicExceptions": [],
-            "subscribeShareNameDefaultAction": "allow",
-            "subscribeTopicDefaultAction": "disallow",
             "subscribeTopicExceptions": [
                 "airline/maintenance/alert/v1"
             ]
@@ -40,40 +43,43 @@
         {
             "aclProfileName": "partner_api",
             "clientConnectDefaultAction": "allow",
-            "publishTopicDefaultAction": "disallow",
+            "clientConnectExceptions": [],
             "publishTopicExceptions": [
                 "airline/booking/created/v1",
                 "airline/maintenance/alert/v1",
                 "airline/payment/processed/v1",
                 "airline/seat/assigned/v1"
             ],
-            "subscribeShareNameDefaultAction": "allow",
-            "subscribeTopicDefaultAction": "disallow",
             "subscribeTopicExceptions": []
         },
         {
             "aclProfileName": "payment",
             "clientConnectDefaultAction": "allow",
-            "publishTopicDefaultAction": "disallow",
+            "clientConnectExceptions": [],
             "publishTopicExceptions": [],
-            "subscribeShareNameDefaultAction": "allow",
-            "subscribeTopicDefaultAction": "disallow",
             "subscribeTopicExceptions": [
                 "airline/payment/processed/v1"
             ]
         },
         {
+            "aclProfileName": "sdkperf_acl",
+            "clientConnectDefaultAction": "allow",
+            "clientConnectExceptions": [],
+            "publishTopicDefaultAction": "allow",
+            "publishTopicExceptions": [],
+            "subscribeTopicDefaultAction": "allow",
+            "subscribeTopicExceptions": []
+        },
+        {
             "aclProfileName": "web_portal",
             "clientConnectDefaultAction": "allow",
-            "publishTopicDefaultAction": "disallow",
+            "clientConnectExceptions": [],
             "publishTopicExceptions": [
                 "airline/booking/created/v1",
                 "airline/maintenance/alert/v1",
                 "airline/payment/processed/v1",
                 "airline/seat/assigned/v1"
             ],
-            "subscribeShareNameDefaultAction": "allow",
-            "subscribeTopicDefaultAction": "disallow",
             "subscribeTopicExceptions": []
         }
     ],
@@ -85,12 +91,27 @@
             "maxEgressFlowCount": 20,
             "maxEndpointCountPerClientUsername": 0,
             "maxIngressFlowCount": 20,
-            "maxMsgsPerTransaction": 256,
             "maxSubscriptionCount": 250,
             "maxTransactedSessionCount": 0,
             "maxTransactionCount": 0,
             "serviceSmfMaxConnectionCountPerClientUsername": 20,
             "serviceWebMaxConnectionCountPerClientUsername": 0
+        },
+        {
+            "allowBridgeConnectionsEnabled": true,
+            "allowGuaranteedEndpointCreateEnabled": true,
+            "allowGuaranteedMsgReceiveEnabled": true,
+            "allowGuaranteedMsgSendEnabled": true,
+            "allowSharedSubscriptionsEnabled": true,
+            "allowTransactedSessionsEnabled": true,
+            "clientProfileName": "default",
+            "maxConnectionCountPerClientUsername": 100,
+            "maxEgressFlowCount": 100,
+            "maxEndpointCountPerClientUsername": 100,
+            "maxIngressFlowCount": 100,
+            "maxSubscriptionCount": 1000,
+            "maxTransactedSessionCount": 100,
+            "maxTransactionCount": 500
         },
         {
             "allowGuaranteedMsgReceiveEnabled": true,
@@ -99,7 +120,6 @@
             "maxEgressFlowCount": 20,
             "maxEndpointCountPerClientUsername": 0,
             "maxIngressFlowCount": 20,
-            "maxMsgsPerTransaction": 256,
             "maxSubscriptionCount": 250,
             "maxTransactedSessionCount": 0,
             "maxTransactionCount": 0,
@@ -113,7 +133,6 @@
             "maxEgressFlowCount": 20,
             "maxEndpointCountPerClientUsername": 0,
             "maxIngressFlowCount": 20,
-            "maxMsgsPerTransaction": 256,
             "maxSubscriptionCount": 250,
             "maxTransactedSessionCount": 0,
             "maxTransactionCount": 0,
@@ -127,7 +146,6 @@
             "maxEgressFlowCount": 20,
             "maxEndpointCountPerClientUsername": 0,
             "maxIngressFlowCount": 20,
-            "maxMsgsPerTransaction": 256,
             "maxSubscriptionCount": 250,
             "maxTransactedSessionCount": 0,
             "maxTransactionCount": 0,
@@ -141,7 +159,6 @@
             "maxEgressFlowCount": 20,
             "maxEndpointCountPerClientUsername": 0,
             "maxIngressFlowCount": 20,
-            "maxMsgsPerTransaction": 256,
             "maxSubscriptionCount": 250,
             "maxTransactedSessionCount": 0,
             "maxTransactionCount": 0,
@@ -155,7 +172,6 @@
             "maxEgressFlowCount": 20,
             "maxEndpointCountPerClientUsername": 0,
             "maxIngressFlowCount": 20,
-            "maxMsgsPerTransaction": 256,
             "maxSubscriptionCount": 250,
             "maxTransactedSessionCount": 0,
             "maxTransactionCount": 0,
@@ -179,13 +195,9 @@
     "msgVpnName": "UATR1",
     "queues": [
         {
-            "accessType": "exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'Q.BOOKING_EVENTS'.",
             "egressEnabled": true,
             "ingressEnabled": true,
-            "maxMsgSpoolUsage": 5000,
             "owner": "booking",
-            "permission": "no-access",
             "queueName": "Q.BOOKING_EVENTS",
             "subscriptionTopics": [
                 "airline/booking/created/v1",
@@ -193,29 +205,41 @@
             ]
         },
         {
-            "accessType": "exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'Q.MAINTENANCE_ALERTS'.",
             "egressEnabled": true,
             "ingressEnabled": true,
-            "maxMsgSpoolUsage": 5000,
             "owner": "maintenance",
-            "permission": "no-access",
             "queueName": "Q.MAINTENANCE_ALERTS",
             "subscriptionTopics": [
                 "airline/maintenance/alert/v1"
             ]
         },
         {
-            "accessType": "exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'Q.PAYMENTS.PROCESSED'.",
             "egressEnabled": true,
             "ingressEnabled": true,
-            "maxMsgSpoolUsage": 5000,
             "owner": "payment",
-            "permission": "no-access",
             "queueName": "Q.PAYMENTS.PROCESSED",
             "subscriptionTopics": [
                 "airline/payment/processed/v1"
+            ]
+        },
+        {
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "sdkperf",
+            "permission": "consume",
+            "queueName": "Q.SDKPERF_TESTING",
+            "subscriptionTopics": [
+                "topic/sdkperf/testing"
+            ]
+        },
+        {
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "verify_user",
+            "permission": "consume",
+            "queueName": "verify_Q",
+            "subscriptionTopics": [
+                "topic/verify"
             ]
         }
     ],
@@ -226,7 +250,6 @@
             "aclProfileName": "booking",
             "clientProfileName": "booking_cp",
             "clientUsername": "booking",
-            "documentation": "This user was imported from Event Portal for app 'Booking MS'.",
             "enabled": true,
             "passwordToken": "/DaaL1jrKNehPP9z4Sb/lA==ILNs+hn6fgqjx6B7"
         },
@@ -234,7 +257,6 @@
             "aclProfileName": "kiosk",
             "clientProfileName": "kiosk_cp",
             "clientUsername": "kiosk",
-            "documentation": "This user was imported from Event Portal for app 'Kiosk'.",
             "enabled": true,
             "passwordToken": "IwVYLBb+HMej4/2Lgad3Ug==TTQUpjMRcnu1Fg=="
         },
@@ -242,7 +264,6 @@
             "aclProfileName": "maintenance",
             "clientProfileName": "maintenance_cp",
             "clientUsername": "maintenance",
-            "documentation": "This user was imported from Event Portal for app 'Maintenance MS'.",
             "enabled": true,
             "passwordToken": "XtXvZq/IoIY3gJ7Pvnas6w==Qe/e97IDbYSwq26wv57eJw=="
         },
@@ -250,7 +271,6 @@
             "aclProfileName": "partner_api",
             "clientProfileName": "partner_api_cp",
             "clientUsername": "partner_api",
-            "documentation": "This user was imported from Event Portal for app 'Partner API'.",
             "enabled": true,
             "passwordToken": "tGBWZExilcooUh4la6zMcQ==LEtbbnX2Pzur825xMJJEvw=="
         },
@@ -258,7 +278,6 @@
             "aclProfileName": "payment",
             "clientProfileName": "payment_cp",
             "clientUsername": "payment",
-            "documentation": "This user was imported from Event Portal for app 'Payment MS'.",
             "enabled": true,
             "passwordToken": "61CgFyzmE1wQYQduvF1VXg==PODrk8hkIZHW88vj"
         },
@@ -266,7 +285,6 @@
             "aclProfileName": "web_portal",
             "clientProfileName": "web_portal_cp",
             "clientUsername": "web_portal",
-            "documentation": "This user was imported from Event Portal for app 'Web Portal'.",
             "enabled": true,
             "passwordToken": "suk/TX25/av/DrjG4GLbnw==OB+36FGAOrM3jUrFQaQ9"
         }
