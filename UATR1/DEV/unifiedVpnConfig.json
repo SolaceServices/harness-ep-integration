@@ -270,12 +270,12 @@
             "clientProfileName": "sdkperf_cp",
             "clientUsername": "sdkperf",
             "enabled": true,
-            "password": "sdkperf"
+            "passwordToken": "L8UNC360V28aiFqwbCnUnw==HaqVcCoJcNfLNLuf"
         },
         {
             "clientUsername": "verify_user",
             "enabled": true,
-            "password": "verify_user"
+            "passwordToken": "1h6eTbPdI6xHWYPECCWiAA==s0M8N6I5I0VV5+rNNgcAag=="
         },
         {
             "aclProfileName": "web_portal",
