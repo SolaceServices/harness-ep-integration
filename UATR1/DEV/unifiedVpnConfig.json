@@ -109,7 +109,6 @@
             "maxEgressFlowCount": 20,
             "maxEndpointCountPerClientUsername": 0,
             "maxIngressFlowCount": 20,
-            "maxMsgsPerTransaction": 256,
             "maxSubscriptionCount": 250,
             "maxTransactedSessionCount": 0,
             "maxTransactionCount": 0,
@@ -139,7 +138,6 @@
             "maxEgressFlowCount": 20,
             "maxEndpointCountPerClientUsername": 0,
             "maxIngressFlowCount": 20,
-            "maxMsgsPerTransaction": 256,
             "maxSubscriptionCount": 250,
             "maxTransactedSessionCount": 0,
             "maxTransactionCount": 0,
@@ -153,7 +151,6 @@
             "maxEgressFlowCount": 20,
             "maxEndpointCountPerClientUsername": 0,
             "maxIngressFlowCount": 20,
-            "maxMsgsPerTransaction": 256,
             "maxSubscriptionCount": 250,
             "maxTransactedSessionCount": 0,
             "maxTransactionCount": 0,
@@ -167,7 +164,6 @@
             "maxEgressFlowCount": 20,
             "maxEndpointCountPerClientUsername": 0,
             "maxIngressFlowCount": 20,
-            "maxMsgsPerTransaction": 256,
             "maxSubscriptionCount": 250,
             "maxTransactedSessionCount": 0,
             "maxTransactionCount": 0,
@@ -181,7 +177,6 @@
             "maxEgressFlowCount": 20,
             "maxEndpointCountPerClientUsername": 0,
             "maxIngressFlowCount": 20,
-            "maxMsgsPerTransaction": 256,
             "maxSubscriptionCount": 250,
             "maxTransactedSessionCount": 0,
             "maxTransactionCount": 0,
@@ -195,7 +190,6 @@
             "maxEgressFlowCount": 20,
             "maxEndpointCountPerClientUsername": 0,
             "maxIngressFlowCount": 20,
-            "maxMsgsPerTransaction": 256,
             "maxSubscriptionCount": 250,
             "maxTransactedSessionCount": 0,
             "maxTransactionCount": 0,
@@ -286,7 +280,6 @@
             "aclProfileName": "booking",
             "clientProfileName": "booking_cp",
             "clientUsername": "booking",
-            "documentation": "This user was imported from Event Portal for app 'Booking MS'.",
             "enabled": true,
             "passwordToken": "/DaaL1jrKNehPP9z4Sb/lA==ILNs+hn6fgqjx6B7"
         },
@@ -294,7 +287,6 @@
             "aclProfileName": "kiosk",
             "clientProfileName": "kiosk_cp",
             "clientUsername": "kiosk",
-            "documentation": "This user was imported from Event Portal for app 'Kiosk'.",
             "enabled": true,
             "passwordToken": "IwVYLBb+HMej4/2Lgad3Ug==TTQUpjMRcnu1Fg=="
         },
@@ -302,7 +294,6 @@
             "aclProfileName": "maintenance",
             "clientProfileName": "maintenance_cp",
             "clientUsername": "maintenance",
-            "documentation": "This user was imported from Event Portal for app 'Maintenance MS'.",
             "enabled": true,
             "passwordToken": "XtXvZq/IoIY3gJ7Pvnas6w==Qe/e97IDbYSwq26wv57eJw=="
         },
@@ -310,7 +301,6 @@
             "aclProfileName": "partner_api",
             "clientProfileName": "partner_api_cp",
             "clientUsername": "partner_api",
-            "documentation": "This user was imported from Event Portal for app 'Partner API'.",
             "enabled": true,
             "passwordToken": "tGBWZExilcooUh4la6zMcQ==LEtbbnX2Pzur825xMJJEvw=="
         },
@@ -318,7 +308,6 @@
             "aclProfileName": "payment",
             "clientProfileName": "payment_cp",
             "clientUsername": "payment",
-            "documentation": "This user was imported from Event Portal for app 'Payment MS'.",
             "enabled": true,
             "passwordToken": "61CgFyzmE1wQYQduvF1VXg==PODrk8hkIZHW88vj"
         },
@@ -326,7 +315,6 @@
             "aclProfileName": "web_portal",
             "clientProfileName": "web_portal_cp",
             "clientUsername": "web_portal",
-            "documentation": "This user was imported from Event Portal for app 'Web Portal'.",
             "enabled": true,
             "passwordToken": "suk/TX25/av/DrjG4GLbnw==OB+36FGAOrM3jUrFQaQ9"
         }
