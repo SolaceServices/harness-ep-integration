@@ -166,14 +166,57 @@
         {
             "egressEnabled": true,
             "ingressEnabled": true,
+            "maxMsgSpoolUsage": 5500,
+            "owner": "booking",
+            "queueName": "Q,BOOKING"
+        },
+        {
+            "egressEnabled": true,
+            "ingressEnabled": true,
             "permission": "consume",
             "queueName": "Q.HUGO_TEST"
         },
         {
             "egressEnabled": true,
             "ingressEnabled": true,
+            "owner": "maintenance",
+            "queueName": "Q.MAINTENANCE",
+            "subscriptionTopics": [
+                "airline/maintenance/alert/v1"
+            ]
+        },
+        {
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "maintenance",
+            "queueName": "Q.MAINTENANCE_ALERTS",
+            "subscriptionTopics": [
+                "airline/maintenance/alert/v1"
+            ]
+        },
+        {
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "payment",
+            "queueName": "Q.PAYMENT",
+            "subscriptionTopics": [
+                "airline/payment/processed/v1"
+            ]
+        },
+        {
+            "egressEnabled": true,
+            "ingressEnabled": true,
             "permission": "consume",
             "queueName": "Q.PAYMENTS"
+        },
+        {
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "payment",
+            "queueName": "Q.PAYMENTS.PROCESSED",
+            "subscriptionTopics": [
+                "airline/payment/processed/v1"
+            ]
         },
         {
             "egressEnabled": true,
