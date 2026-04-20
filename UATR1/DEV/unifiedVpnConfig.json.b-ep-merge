@@ -189,6 +189,13 @@
     "msgVpnName": "UATR1",
     "queues": [
         {
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "maxMsgSpoolUsage": 5500,
+            "owner": "booking",
+            "queueName": "Q,BOOKING"
+        },
+        {
             "accessType": "exclusive",
             "documentation": "This queue was imported from Event Portal for app 'Q.BOOKING_EVENTS'.",
             "egressEnabled": true,
@@ -209,16 +216,30 @@
             "queueName": "Q.HUGO_TEST"
         },
         {
-            "accessType": "exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'Q.MAINTENANCE_ALERTS'.",
             "egressEnabled": true,
             "ingressEnabled": true,
-            "maxMsgSpoolUsage": 5000,
             "owner": "maintenance",
-            "permission": "no-access",
+            "queueName": "Q.MAINTENANCE",
+            "subscriptionTopics": [
+                "airline/maintenance/alert/v1"
+            ]
+        },
+        {
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "maintenance",
             "queueName": "Q.MAINTENANCE_ALERTS",
             "subscriptionTopics": [
                 "airline/maintenance/alert/v1"
+            ]
+        },
+        {
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "payment",
+            "queueName": "Q.PAYMENT",
+            "subscriptionTopics": [
+                "airline/payment/processed/v1"
             ]
         },
         {
@@ -228,13 +249,9 @@
             "queueName": "Q.PAYMENTS"
         },
         {
-            "accessType": "exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'Q.PAYMENTS.PROCESSED'.",
             "egressEnabled": true,
             "ingressEnabled": true,
-            "maxMsgSpoolUsage": 5000,
             "owner": "payment",
-            "permission": "no-access",
             "queueName": "Q.PAYMENTS.PROCESSED",
             "subscriptionTopics": [
                 "airline/payment/processed/v1"
