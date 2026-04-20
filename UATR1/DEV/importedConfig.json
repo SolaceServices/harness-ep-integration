@@ -173,6 +173,16 @@
         {
             "egressEnabled": true,
             "ingressEnabled": true,
+            "owner": "booking",
+            "queueName": "Q.BOOKING_EVENTS",
+            "subscriptionTopics": [
+                "airline/booking/created/v1",
+                "airline/seat/assigned/v1"
+            ]
+        },
+        {
+            "egressEnabled": true,
+            "ingressEnabled": true,
             "permission": "consume",
             "queueName": "Q.HUGO_TEST"
         },
