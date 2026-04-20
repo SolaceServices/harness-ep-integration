@@ -74,7 +74,12 @@
             "serviceWebMaxConnectionCountPerClientUsername": 0
         },
         {
+            "allowBridgeConnectionsEnabled": true,
+            "allowGuaranteedEndpointCreateEnabled": true,
             "allowGuaranteedMsgReceiveEnabled": true,
+            "allowGuaranteedMsgSendEnabled": true,
+            "allowSharedSubscriptionsEnabled": true,
+            "allowTransactedSessionsEnabled": true,
             "clientProfileName": "kiosk_cp",
             "maxConnectionCountPerClientUsername": 20,
             "maxEgressFlowCount": 20,
@@ -83,8 +88,12 @@
             "maxSubscriptionCount": 250,
             "maxTransactedSessionCount": 0,
             "maxTransactionCount": 0,
+            "rejectMsgToSenderOnNoSubscriptionMatchEnabled": true,
+            "replicationAllowClientConnectWhenStandbyEnabled": true,
             "serviceSmfMaxConnectionCountPerClientUsername": 20,
-            "serviceWebMaxConnectionCountPerClientUsername": 0
+            "serviceWebInactiveTimeout": 33,
+            "serviceWebMaxConnectionCountPerClientUsername": 0,
+            "serviceWebMaxPayload": 1000001
         },
         {
             "allowGuaranteedMsgReceiveEnabled": true,
@@ -165,6 +174,13 @@
             "ingressEnabled": true,
             "permission": "consume",
             "queueName": "Q.PAYMENTS"
+        },
+        {
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "kiosk",
+            "permission": "consume",
+            "queueName": "Q.TESTQUEUE.1"
         }
     ],
     "replicatedTopics": [],
