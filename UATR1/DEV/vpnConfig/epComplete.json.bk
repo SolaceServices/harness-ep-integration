@@ -200,13 +200,13 @@
     "queues": [
         {
             "accessType": "exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'Q.BOOKING_EVENTS'.",
+            "documentation": "This queue was imported from Event Portal for app 'Q,BOOKING'.",
             "egressEnabled": true,
             "ingressEnabled": true,
-            "maxMsgSpoolUsage": 5000,
+            "maxMsgSpoolUsage": 5500,
             "owner": "booking",
             "permission": "no-access",
-            "queueName": "Q.BOOKING_EVENTS",
+            "queueName": "Q,BOOKING",
             "subscriptionTopics": [
                 "airline/booking/created/v1",
                 "airline/seat/assigned/v1"
@@ -214,26 +214,26 @@
         },
         {
             "accessType": "exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'Q.PAYMENTS.PROCESSED'.",
+            "documentation": "This queue was imported from Event Portal for app 'Q.PAYMENT'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "maxMsgSpoolUsage": 5000,
             "owner": "payment",
             "permission": "no-access",
-            "queueName": "Q.PAYMENTS.PROCESSED",
+            "queueName": "Q.PAYMENT",
             "subscriptionTopics": [
                 "airline/payment/processed/v1"
             ]
         },
         {
             "accessType": "exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'Q.MAINTENANCE_ALERTS'.",
+            "documentation": "This queue was imported from Event Portal for app 'Q.MAINTENANCE'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "maxMsgSpoolUsage": 5000,
             "owner": "maintenance",
             "permission": "no-access",
-            "queueName": "Q.MAINTENANCE_ALERTS",
+            "queueName": "Q.MAINTENANCE",
             "subscriptionTopics": [
                 "airline/maintenance/alert/v1"
             ]

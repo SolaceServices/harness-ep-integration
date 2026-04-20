@@ -99,7 +99,12 @@
             "maxTransactionCount": 500
         },
         {
+            "allowBridgeConnectionsEnabled": true,
+            "allowGuaranteedEndpointCreateEnabled": true,
             "allowGuaranteedMsgReceiveEnabled": true,
+            "allowGuaranteedMsgSendEnabled": true,
+            "allowSharedSubscriptionsEnabled": true,
+            "allowTransactedSessionsEnabled": true,
             "clientProfileName": "kiosk_cp",
             "maxConnectionCountPerClientUsername": 20,
             "maxEgressFlowCount": 20,
@@ -108,8 +113,12 @@
             "maxSubscriptionCount": 250,
             "maxTransactedSessionCount": 0,
             "maxTransactionCount": 0,
+            "rejectMsgToSenderOnNoSubscriptionMatchEnabled": true,
+            "replicationAllowClientConnectWhenStandbyEnabled": true,
             "serviceSmfMaxConnectionCountPerClientUsername": 20,
-            "serviceWebMaxConnectionCountPerClientUsername": 0
+            "serviceWebInactiveTimeout": 33,
+            "serviceWebMaxConnectionCountPerClientUsername": 0,
+            "serviceWebMaxPayload": 1000001
         },
         {
             "allowGuaranteedMsgReceiveEnabled": true,
@@ -180,9 +189,13 @@
     "msgVpnName": "UATR1",
     "queues": [
         {
+            "accessType": "exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'Q.BOOKING_EVENTS'.",
             "egressEnabled": true,
             "ingressEnabled": true,
+            "maxMsgSpoolUsage": 5000,
             "owner": "booking",
+            "permission": "no-access",
             "queueName": "Q.BOOKING_EVENTS",
             "subscriptionTopics": [
                 "airline/booking/created/v1",
@@ -192,7 +205,17 @@
         {
             "egressEnabled": true,
             "ingressEnabled": true,
+            "permission": "consume",
+            "queueName": "Q.HUGO_TEST"
+        },
+        {
+            "accessType": "exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'Q.MAINTENANCE_ALERTS'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "maxMsgSpoolUsage": 5000,
             "owner": "maintenance",
+            "permission": "no-access",
             "queueName": "Q.MAINTENANCE_ALERTS",
             "subscriptionTopics": [
                 "airline/maintenance/alert/v1"
@@ -201,11 +224,28 @@
         {
             "egressEnabled": true,
             "ingressEnabled": true,
+            "permission": "consume",
+            "queueName": "Q.PAYMENTS"
+        },
+        {
+            "accessType": "exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'Q.PAYMENTS.PROCESSED'.",
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "maxMsgSpoolUsage": 5000,
             "owner": "payment",
+            "permission": "no-access",
             "queueName": "Q.PAYMENTS.PROCESSED",
             "subscriptionTopics": [
                 "airline/payment/processed/v1"
             ]
+        },
+        {
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "owner": "kiosk",
+            "permission": "consume",
+            "queueName": "Q.TESTQUEUE.1"
         }
     ],
     "replicatedTopics": [],
