@@ -196,13 +196,9 @@
             "queueName": "Q,BOOKING"
         },
         {
-            "accessType": "exclusive",
-            "documentation": "This queue was imported from Event Portal for app 'Q.BOOKING_EVENTS'.",
             "egressEnabled": true,
             "ingressEnabled": true,
-            "maxMsgSpoolUsage": 5000,
             "owner": "booking",
-            "permission": "no-access",
             "queueName": "Q.BOOKING_EVENTS",
             "subscriptionTopics": [
                 "airline/booking/created/v1",
