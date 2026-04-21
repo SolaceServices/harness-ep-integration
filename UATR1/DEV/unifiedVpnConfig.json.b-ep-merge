@@ -300,6 +300,13 @@
             "passwordToken": "61CgFyzmE1wQYQduvF1VXg==PODrk8hkIZHW88vj"
         },
         {
+            "aclProfileName": "partner_api",
+            "clientProfileName": "kiosk_cp",
+            "clientUsername": "test_pipeline",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
             "aclProfileName": "web_portal",
             "clientProfileName": "web_portal_cp",
             "clientUsername": "web_portal",
