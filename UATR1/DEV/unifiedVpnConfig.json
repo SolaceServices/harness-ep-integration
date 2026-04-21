@@ -207,9 +207,33 @@
         "connectionFactories": [
             {
                 "connectionFactoryName": "/jms/cf/default"
+            },
+            {
+                "connectionFactoryName": "/jms/cf/test/cf1",
+                "transportConnectRetryCount": 1,
+                "transportConnectRetryPerHostCount": 1,
+                "transportConnectTimeout": 30001,
+                "transportKeepaliveCount": 31,
+                "transportKeepaliveInterval": 3001,
+                "transportReadTimeout": 10001,
+                "transportReceiveBufferSize": 65531,
+                "transportReconnectRetryCount": 31,
+                "transportReconnectRetryWait": 3001,
+                "transportSendBufferSize": 65531
             }
         ],
-        "queues": []
+        "queues": [
+            {
+                "physicalName": "Q.TESTQUEUE.1",
+                "queueName": "/jms/queue/q1"
+            }
+        ],
+        "topics": [
+            {
+                "physicalName": "topic/test1",
+                "topicName": "/jms/topic/test1"
+            }
+        ]
     },
     "kafkaBridge": {
         "recievers": [],
@@ -306,8 +330,25 @@
             "queueName": "Q.TESTQUEUE.1"
         }
     ],
-    "replicatedTopics": [],
-    "topicEndpoints": [],
+    "replicatedTopics": [
+        {
+            "replicatedTopic": "test/replicated/t1",
+            "replicationMode": "sync"
+        },
+        {
+            "replicatedTopic": "test/replicated/t2",
+            "replicationMode": "async"
+        }
+    ],
+    "topicEndpoints": [
+        {
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "maxBindCount": 31,
+            "permission": "modify-topic",
+            "topicEndpointName": "testTopicEndpoint"
+        }
+    ],
     "users": [
         {
             "aclProfileName": "booking",
