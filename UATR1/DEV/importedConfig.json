@@ -152,9 +152,27 @@
         "connectionFactories": [
             {
                 "connectionFactoryName": "/jms/cf/default"
+            },
+            {
+                "connectionFactoryName": "/jms/cf/test/cf1",
+                "transportConnectRetryCount": 1,
+                "transportConnectRetryPerHostCount": 1,
+                "transportConnectTimeout": 30001,
+                "transportKeepaliveCount": 31,
+                "transportKeepaliveInterval": 3001,
+                "transportReadTimeout": 10001,
+                "transportReceiveBufferSize": 65531,
+                "transportReconnectRetryCount": 31,
+                "transportReconnectRetryWait": 3001,
+                "transportSendBufferSize": 65531
             }
         ],
-        "queues": []
+        "queues": [
+            {
+                "physicalName": "Q.TESTQUEUE.1",
+                "queueName": "/jms/queue/q1"
+            }
+        ]
     },
     "kafkaBridge": {
         "recievers": [],
@@ -168,7 +186,11 @@
             "ingressEnabled": true,
             "maxMsgSpoolUsage": 5500,
             "owner": "booking",
-            "queueName": "Q,BOOKING"
+            "queueName": "Q,BOOKING",
+            "subscriptionTopics": [
+                "airline/booking/created/v1",
+                "airline/seat/assigned/v1"
+            ]
         },
         {
             "egressEnabled": true,
@@ -233,10 +255,31 @@
             "ingressEnabled": true,
             "owner": "kiosk",
             "permission": "consume",
-            "queueName": "Q.TESTQUEUE.1"
+            "queueName": "Q.TESTQUEUE.1",
+            "subscriptionTopics": [
+                "q/test/1"
+            ]
+        },
+        {
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "permission": "consume",
+            "queueName": "Q.TESTQUEUE.2",
+            "subscriptionTopics": [
+                "q/test/2"
+            ]
         }
     ],
-    "replicatedTopics": [],
+    "replicatedTopics": [
+        {
+            "replicatedTopic": "test/replicated/t1",
+            "replicationMode": "sync"
+        },
+        {
+            "replicatedTopic": "test/replicated/t2",
+            "replicationMode": "async"
+        }
+    ],
     "topicEndpoints": [],
     "users": [
         {
