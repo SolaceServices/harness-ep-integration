@@ -172,6 +172,12 @@
                 "physicalName": "Q.TESTQUEUE.1",
                 "queueName": "/jms/queue/q1"
             }
+        ],
+        "topics": [
+            {
+                "physicalName": "topic/test1",
+                "topicName": "/jms/topic/test1"
+            }
         ]
     },
     "kafkaBridge": {
@@ -280,7 +286,15 @@
             "replicationMode": "async"
         }
     ],
-    "topicEndpoints": [],
+    "topicEndpoints": [
+        {
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "maxBindCount": 31,
+            "permission": "modify-topic",
+            "topicEndpointName": "testTopicEndpoint"
+        }
+    ],
     "users": [
         {
             "aclProfileName": "booking",
