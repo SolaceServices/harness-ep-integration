@@ -177,6 +177,15 @@
             "subscriptionTopics": [
                 "airline/payment/processed/v1"
             ]
+        },
+        {
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "permission": "consume",
+            "queueName": "demoq",
+            "subscriptionTopics": [
+                "flight/boarding/fl1234/yow/ewr"
+            ]
         }
     ],
     "replicatedTopics": [],
@@ -187,42 +196,47 @@
             "clientProfileName": "booking_cp",
             "clientUsername": "booking",
             "enabled": true,
-            "passwordToken": "QiJI9VTbcTm0muqzbLzs5w==0BwWK1BR15nzJjJk"
+            "passwordToken": "2BL4nn6mbewjNO19G31ckA==8yfZ5TwwRSuxJxf/"
+        },
+        {
+            "clientUsername": "demo",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
         },
         {
             "aclProfileName": "kiosk",
             "clientProfileName": "kiosk_cp",
             "clientUsername": "kiosk",
             "enabled": true,
-            "passwordToken": "ro3Fll+3p8tsRARLT6aLMA==PrLVOrQ4XfDUxw=="
+            "passwordToken": "96jY796MQGkrkrX4+PCLrw==6yPuDp/slULm1A=="
         },
         {
             "aclProfileName": "maintenance",
             "clientProfileName": "maintenance_cp",
             "clientUsername": "maintenance",
             "enabled": true,
-            "passwordToken": "wqE4mFBrIttbN3cNi2Ut5w==+iZJ79gDMnmP/yQIrn1C9w=="
+            "passwordToken": "P/vsdjLUbaZtcihyRbJ9xw==k43h7FyfrBh21vX5WzDuTg=="
         },
         {
             "aclProfileName": "partner_api",
             "clientProfileName": "partner_api_cp",
             "clientUsername": "partner_api",
             "enabled": true,
-            "passwordToken": "VIaDp6UNstb2iiWjUn3Nhw==rAyV6d9Gt5X+wbHrEhMRWg=="
+            "passwordToken": "UHqx3clzPnU6N6wOeMBWQw==2yKlk1r+Fd9PQZDsBLAymA=="
         },
         {
             "aclProfileName": "payment",
             "clientProfileName": "payment_cp",
             "clientUsername": "payment",
             "enabled": true,
-            "passwordToken": "JPA+V6bVGk6D0XGuY+qoTQ==fHIoY/JPvWsDAEVI"
+            "passwordToken": "+ZPPbLsyxvR1kgyLizKDkA==bBuMy39CBcbMqCs3"
         },
         {
             "aclProfileName": "web_portal",
             "clientProfileName": "web_portal_cp",
             "clientUsername": "web_portal",
             "enabled": true,
-            "passwordToken": "z71pnvzVTCzJRDqRU9okKw==BJhHJdjaPMnN+FZCRjeU"
+            "passwordToken": "b1U9Vnt6pP+j3jtNN6HnRg==IFWu9Y5ocSfcpbcxmjPV"
         }
     ]
 }
