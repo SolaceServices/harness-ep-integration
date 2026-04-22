@@ -177,6 +177,15 @@
             "subscriptionTopics": [
                 "airline/payment/processed/v1"
             ]
+        },
+        {
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "permission": "consume",
+            "queueName": "demoq",
+            "subscriptionTopics": [
+                "flight/boarding/fl1234/yow/ewr"
+            ]
         }
     ],
     "replicatedTopics": [],
@@ -186,6 +195,11 @@
             "aclProfileName": "booking",
             "clientProfileName": "booking_cp",
             "clientUsername": "booking",
+            "enabled": true,
+            "passwordToken": "<UNKNOWN>"
+        },
+        {
+            "clientUsername": "demo",
             "enabled": true,
             "passwordToken": "<UNKNOWN>"
         },

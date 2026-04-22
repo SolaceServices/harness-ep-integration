@@ -229,7 +229,7 @@
             "clientUsername": "booking",
             "documentation": "This user was imported from Event Portal for app 'Booking MS'.",
             "enabled": true,
-            "password": "booking"
+            "passwordToken": "2BL4nn6mbewjNO19G31ckA==8yfZ5TwwRSuxJxf/"
         },
         {
             "aclProfileName": "kiosk",
@@ -237,7 +237,7 @@
             "clientUsername": "kiosk",
             "documentation": "This user was imported from Event Portal for app 'Kiosk'.",
             "enabled": true,
-            "password": "kiosk"
+            "passwordToken": "96jY796MQGkrkrX4+PCLrw==6yPuDp/slULm1A=="
         },
         {
             "aclProfileName": "maintenance",
@@ -245,7 +245,7 @@
             "clientUsername": "maintenance",
             "documentation": "This user was imported from Event Portal for app 'Maintenance MS'.",
             "enabled": true,
-            "password": "maintenance"
+            "passwordToken": "P/vsdjLUbaZtcihyRbJ9xw==k43h7FyfrBh21vX5WzDuTg=="
         },
         {
             "aclProfileName": "partner_api",
@@ -253,7 +253,7 @@
             "clientUsername": "partner_api",
             "documentation": "This user was imported from Event Portal for app 'Partner API'.",
             "enabled": true,
-            "password": "partner_api"
+            "passwordToken": "UHqx3clzPnU6N6wOeMBWQw==2yKlk1r+Fd9PQZDsBLAymA=="
         },
         {
             "aclProfileName": "payment",
@@ -261,7 +261,7 @@
             "clientUsername": "payment",
             "documentation": "This user was imported from Event Portal for app 'Payment MS'.",
             "enabled": true,
-            "password": "payment"
+            "passwordToken": "+ZPPbLsyxvR1kgyLizKDkA==bBuMy39CBcbMqCs3"
         },
         {
             "aclProfileName": "web_portal",
@@ -269,7 +269,7 @@
             "clientUsername": "web_portal",
             "documentation": "This user was imported from Event Portal for app 'Web Portal'.",
             "enabled": true,
-            "password": "web_portal"
+            "passwordToken": "b1U9Vnt6pP+j3jtNN6HnRg==IFWu9Y5ocSfcpbcxmjPV"
         }
     ]
 }
