@@ -218,25 +218,6 @@
             "subscriptionTopics": [
                 "airline/payment/processed/v1"
             ]
-        },
-        {
-            "egressEnabled": true,
-            "ingressEnabled": true,
-            "owner": "payment",
-            "permission": "consume",
-            "queueName": "demo-q123",
-            "subscriptionTopics": [
-                "flight/boarding/fl1234/yow/ew/q1234r"
-            ]
-        },
-        {
-            "egressEnabled": true,
-            "ingressEnabled": true,
-            "permission": "consume",
-            "queueName": "demoq",
-            "subscriptionTopics": [
-                "flight/boarding/fl1234/yow/ewr"
-            ]
         }
     ],
     "replicatedTopics": [],
