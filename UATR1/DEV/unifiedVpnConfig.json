@@ -227,6 +227,16 @@
             "subscriptionTopics": [
                 "flight/boarding/fl1234/yow/ewr"
             ]
+        },
+        {
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "permission": "consume",
+            "queueName": "demo-q123",
+            "owner": "payment",
+            "subscriptionTopics": [
+                "flight/boarding/fl1234/yow/ew/q1234r"
+            ]
         }
     ],
     "replicatedTopics": [],
