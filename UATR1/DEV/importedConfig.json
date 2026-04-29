@@ -186,7 +186,7 @@
         ],
         "egressEnabled": true,
         "ingressEnabled": true,
-        "maxSpoolUsage": 15550,
+        "maxSpoolUsage": 1000,
         "msgVpnName": "UATR1",
         "replayLogName": "defaultLog",
         "topicFilterEnabled": true
