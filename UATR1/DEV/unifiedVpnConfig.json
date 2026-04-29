@@ -220,7 +220,7 @@
             ]
         }
     ],
-    "replayLog": [
+    "replayLog": 
         {
             "TopicFilterSubscriptions": [
                 "topic/demo/replay1",
@@ -232,8 +232,7 @@
             "msgVpnName": "UATR1",
             "replayLogName": "defaultLog",
             "topicFilterEnabled": true
-        }
-    ],
+        },
     "replicatedTopics": [],
     "topicEndpoints": [],
     "users": [
