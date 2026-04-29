@@ -221,6 +221,20 @@
         }
     ],
     "replicatedTopics": [],
+    "replayLog": [
+        {
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "maxSpoolUsage": 15550,
+            "msgVpnName": "UATR1",
+            "replayLogName": "defaultLog",
+            "topicFilterEnabled": true,
+            "TopicFilterSubscriptions": [
+                "topic/demo/replay1",
+                "topic/demo/replay2"
+            ]
+        }
+    ],    
     "topicEndpoints": [],
     "users": [
         {
