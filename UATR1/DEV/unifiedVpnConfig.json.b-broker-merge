@@ -218,25 +218,20 @@
             "subscriptionTopics": [
                 "airline/payment/processed/v1"
             ]
-        },
+        }
+    ],
+    "replayLog": [
         {
+            "TopicFilterSubscriptions": [
+                "topic/demo/replay1",
+                "topic/demo/replay2"
+            ],
             "egressEnabled": true,
             "ingressEnabled": true,
-            "permission": "consume",
-            "queueName": "demoq",
-            "subscriptionTopics": [
-                "flight/boarding/fl1234/yow/ewr"
-            ]
-        },
-        {
-            "egressEnabled": true,
-            "ingressEnabled": true,
-            "permission": "consume",
-            "queueName": "demo-q123",
-            "owner": "payment",
-            "subscriptionTopics": [
-                "flight/boarding/fl1234/yow/ew/q1234r"
-            ]
+            "maxSpoolUsage": 15550,
+            "msgVpnName": "UATR1",
+            "replayLogName": "defaultLog",
+            "topicFilterEnabled": true
         }
     ],
     "replicatedTopics": [],
@@ -248,7 +243,7 @@
             "clientUsername": "booking",
             "documentation": "This user was imported from Event Portal for app 'Booking MS'.",
             "enabled": true,
-            "passwordToken": "Tcmr+idBFTPisJRU7bSCGA==O6lBq0XfTsk9hHqv"
+            "passwordToken": "/4OqwW5DM0K5KIAT8RNlWg==HPdYjMthMfmhaAsI"
         },
         {
             "clientUsername": "demo",
@@ -261,7 +256,7 @@
             "clientUsername": "kiosk",
             "documentation": "This user was imported from Event Portal for app 'Kiosk'.",
             "enabled": true,
-            "passwordToken": "ue0tOfdKYqZs0hQGVeoAyw==61C0ipa/rZ4lrA=="
+            "passwordToken": "vwilILQ5MlZloWDzmslytA==XfSfVrAdPFc+fw=="
         },
         {
             "aclProfileName": "maintenance",
@@ -269,7 +264,7 @@
             "clientUsername": "maintenance",
             "documentation": "This user was imported from Event Portal for app 'Maintenance MS'.",
             "enabled": true,
-            "passwordToken": "7NXBbEsU654DCxkpA5v/TA==CHMb3AJjuox6c0uBPhRbZQ=="
+            "passwordToken": "8ddt0Wy+zqQrmi5LrdOzwQ==/eDziO7mFW5ECBnQE8tuTg=="
         },
         {
             "aclProfileName": "partner_api",
@@ -277,7 +272,7 @@
             "clientUsername": "partner_api",
             "documentation": "This user was imported from Event Portal for app 'Partner API'.",
             "enabled": true,
-            "passwordToken": "iTIGrw+WRCXqZ0SnX2OORQ==coMxv7rlSWyfSCLLH2xDGQ=="
+            "passwordToken": "8nQBubu23HnHpgTJzSHsoA==Xh6GyS14RzyzkZFyTIUmMg=="
         },
         {
             "aclProfileName": "payment",
@@ -285,7 +280,7 @@
             "clientUsername": "payment",
             "documentation": "This user was imported from Event Portal for app 'Payment MS'.",
             "enabled": true,
-            "passwordToken": "q2QigblgrrVkoPWWkRkY3A==05gG1PZImPy0Qfgr"
+            "passwordToken": "hCcGb/MPIaZZvn2GdyFVSQ==xEbJWhojfmzm2tJB"
         },
         {
             "aclProfileName": "web_portal",
@@ -293,7 +288,7 @@
             "clientUsername": "web_portal",
             "documentation": "This user was imported from Event Portal for app 'Web Portal'.",
             "enabled": true,
-            "passwordToken": "xJKnvRL/e6M9B2K6T7zlDA==B7udDuKx39xAj34g/TA9"
+            "passwordToken": "paBPzvfx0POmmVQ6JEqC7w==6efwC7ecneuK8pGMVPNv"
         }
     ]
 }

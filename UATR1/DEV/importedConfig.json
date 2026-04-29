@@ -177,17 +177,20 @@
             "subscriptionTopics": [
                 "airline/payment/processed/v1"
             ]
-        },
-        {
-            "egressEnabled": true,
-            "ingressEnabled": true,
-            "permission": "consume",
-            "queueName": "demoq",
-            "subscriptionTopics": [
-                "flight/boarding/fl1234/yow/ewr"
-            ]
         }
     ],
+    "replayLog": {
+        "TopicFilterSubscriptions": [
+            "topic/demo/replay1",
+            "topic/demo/replay2"
+        ],
+        "egressEnabled": true,
+        "ingressEnabled": true,
+        "maxSpoolUsage": 15550,
+        "msgVpnName": "UATR1",
+        "replayLogName": "defaultLog",
+        "topicFilterEnabled": true
+    },
     "replicatedTopics": [],
     "topicEndpoints": [],
     "users": [
