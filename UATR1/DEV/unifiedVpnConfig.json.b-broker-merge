@@ -241,7 +241,7 @@
             "clientUsername": "booking",
             "documentation": "This user was imported from Event Portal for app 'Booking MS'.",
             "enabled": true,
-            "passwordToken": "eqseoG3iNe3vXRB3SQvT5A==ZI1aUvdH3uxMcwQ+"
+            "passwordToken": "gnRcKqhIlofnMaiz+JnM6g==Okc7neGqzbz9LC7E"
         },
         {
             "clientUsername": "demo",
@@ -254,7 +254,7 @@
             "clientUsername": "kiosk",
             "documentation": "This user was imported from Event Portal for app 'Kiosk'.",
             "enabled": true,
-            "passwordToken": "uwPQtUO8p0SB5QIVh7+1Vg==ckLzwsk6PWnIFA=="
+            "passwordToken": "qby5badyOyaybjBlWJmkxA==khIpno2LGYzFew=="
         },
         {
             "aclProfileName": "maintenance",
@@ -262,7 +262,7 @@
             "clientUsername": "maintenance",
             "documentation": "This user was imported from Event Portal for app 'Maintenance MS'.",
             "enabled": true,
-            "passwordToken": "04x65TLzHU9mpas+qO0XOg==Na64gMqbSzlYEwytLmkSBA=="
+            "passwordToken": "EZdp8n0DDGo3JCjR3dk2Mg==NfTvVzfISdj0ViuP6pLmTQ=="
         },
         {
             "aclProfileName": "partner_api",
@@ -270,7 +270,7 @@
             "clientUsername": "partner_api",
             "documentation": "This user was imported from Event Portal for app 'Partner API'.",
             "enabled": true,
-            "passwordToken": "iANDgtWi6jfc0GXWld0d3Q==kaC7zX4ObLnykncCxvNTgw=="
+            "passwordToken": "gKYJG1aoCoLRSAIkeRtMPA==KmlO6dMRKCjek9DIi71V8Q=="
         },
         {
             "aclProfileName": "payment",
@@ -278,7 +278,7 @@
             "clientUsername": "payment",
             "documentation": "This user was imported from Event Portal for app 'Payment MS'.",
             "enabled": true,
-            "passwordToken": "pOKBX574V9tP2lhcxCezqQ==jupqc2PiynRZkNaO"
+            "passwordToken": "E5WrBcaRDsDQ6Bx4FP73Hw==tA7Un+CyUshisYWG"
         },
         {
             "aclProfileName": "web_portal",
@@ -286,7 +286,7 @@
             "clientUsername": "web_portal",
             "documentation": "This user was imported from Event Portal for app 'Web Portal'.",
             "enabled": true,
-            "passwordToken": "v4AMdNuN4pzGNxBzXL+jnA==ZoCL0yo8ujYaJpP2IhyK"
+            "passwordToken": "0t4oUxlsHiodTa+I2mRe9Q==hkoxiKTPymOLUkUKAqSP"
         }
     ]
 }

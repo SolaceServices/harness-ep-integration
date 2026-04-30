@@ -177,6 +177,15 @@
             "subscriptionTopics": [
                 "airline/payment/processed/v1"
             ]
+        },
+        {
+            "egressEnabled": true,
+            "ingressEnabled": true,
+            "permission": "consume",
+            "queueName": "Q.TEST.PIPELINE",
+            "subscriptionTopics": [
+                "test/demo/pipeline"
+            ]
         }
     ],
     "replayLog": {
