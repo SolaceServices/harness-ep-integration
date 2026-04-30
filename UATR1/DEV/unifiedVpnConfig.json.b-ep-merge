@@ -199,7 +199,7 @@
             "clientProfileName": "booking_cp",
             "clientUsername": "booking",
             "enabled": true,
-            "passwordToken": "hMLLCN/ZvXaRHqAxpOBSkg==68gjppSUwJajfwqE"
+            "passwordToken": "eqseoG3iNe3vXRB3SQvT5A==ZI1aUvdH3uxMcwQ+"
         },
         {
             "clientUsername": "demo",
@@ -211,35 +211,35 @@
             "clientProfileName": "kiosk_cp",
             "clientUsername": "kiosk",
             "enabled": true,
-            "passwordToken": "NG025kj4sdoPKHpjSZnv3Q==ZVCDYcPmNOdltw=="
+            "passwordToken": "uwPQtUO8p0SB5QIVh7+1Vg==ckLzwsk6PWnIFA=="
         },
         {
             "aclProfileName": "maintenance",
             "clientProfileName": "maintenance_cp",
             "clientUsername": "maintenance",
             "enabled": true,
-            "passwordToken": "pJsqkoXbogK38WHiJV036A==pOyGrPIIeekHTsqxTza7QQ=="
+            "passwordToken": "04x65TLzHU9mpas+qO0XOg==Na64gMqbSzlYEwytLmkSBA=="
         },
         {
             "aclProfileName": "partner_api",
             "clientProfileName": "partner_api_cp",
             "clientUsername": "partner_api",
             "enabled": true,
-            "passwordToken": "/bxIlPs6bFVeWhSNvaUM9A==iMD/8MEVE1GgBfyaac3+kw=="
+            "passwordToken": "iANDgtWi6jfc0GXWld0d3Q==kaC7zX4ObLnykncCxvNTgw=="
         },
         {
             "aclProfileName": "payment",
             "clientProfileName": "payment_cp",
             "clientUsername": "payment",
             "enabled": true,
-            "passwordToken": "ov4e2yjWplxPgES5ASe86Q==Ima34hxKK0m0nJwP"
+            "passwordToken": "pOKBX574V9tP2lhcxCezqQ==jupqc2PiynRZkNaO"
         },
         {
             "aclProfileName": "web_portal",
             "clientProfileName": "web_portal_cp",
             "clientUsername": "web_portal",
             "enabled": true,
-            "passwordToken": "9n9gqu8252NAC7uMsDy1wg==zfblJcIxG7cbPqPe5C4O"
+            "passwordToken": "v4AMdNuN4pzGNxBzXL+jnA==ZoCL0yo8ujYaJpP2IhyK"
         }
     ]
 }
