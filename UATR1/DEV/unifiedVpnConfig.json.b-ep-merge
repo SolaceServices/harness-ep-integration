@@ -150,10 +150,13 @@
     "msgVpnName": "UATR1",
     "queues": [
         {
+            "accessType": "exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'Q,BOOKING'.",
             "egressEnabled": true,
             "ingressEnabled": true,
             "maxMsgSpoolUsage": 5500,
             "owner": "booking",
+            "permission": "no-access",
             "queueName": "Q,BOOKING",
             "subscriptionTopics": [
                 "airline/booking/created/v1",
@@ -161,30 +164,29 @@
             ]
         },
         {
+            "accessType": "exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'Q.MAINTENANCE'.",
             "egressEnabled": true,
             "ingressEnabled": true,
+            "maxMsgSpoolUsage": 5000,
             "owner": "maintenance",
+            "permission": "no-access",
             "queueName": "Q.MAINTENANCE",
             "subscriptionTopics": [
                 "airline/maintenance/alert/v1"
             ]
         },
         {
+            "accessType": "exclusive",
+            "documentation": "This queue was imported from Event Portal for app 'Q.PAYMENT'.",
             "egressEnabled": true,
             "ingressEnabled": true,
+            "maxMsgSpoolUsage": 5000,
             "owner": "payment",
+            "permission": "no-access",
             "queueName": "Q.PAYMENT",
             "subscriptionTopics": [
                 "airline/payment/processed/v1"
-            ]
-        },
-        {
-            "egressEnabled": true,
-            "ingressEnabled": true,
-            "permission": "consume",
-            "queueName": "Q.TEST.PIPELINE",
-            "subscriptionTopics": [
-                "test/demo/pipeline"
             ]
         }
     ],
@@ -208,7 +210,7 @@
             "clientProfileName": "booking_cp",
             "clientUsername": "booking",
             "enabled": true,
-            "passwordToken": "yt1cav2n7jPsv9EC0MfGew==VYosVZkDZwZTf7H1"
+            "passwordToken": "2xqZ18fBjlVHWGMb0FOM/w==P49i+FYwLpZkNSKb"
         },
         {
             "clientUsername": "demo",
@@ -220,35 +222,35 @@
             "clientProfileName": "kiosk_cp",
             "clientUsername": "kiosk",
             "enabled": true,
-            "passwordToken": "gBfZy7v/TXC8GsvTNE9v+A==wbO8GLCd7bYu3g=="
+            "passwordToken": "sitFColTu/3Gj+/zfSCp+g==frj/8TOR9xGFBQ=="
         },
         {
             "aclProfileName": "maintenance",
             "clientProfileName": "maintenance_cp",
             "clientUsername": "maintenance",
             "enabled": true,
-            "passwordToken": "IvH/H8Au6Fp9uym854J1OQ==bJASsC1RoVrM6EoiXFd2aQ=="
+            "passwordToken": "bkMiZGZNiB+EhfhPzlz4VA==lTeb9BAE8hySZD50fKBq1g=="
         },
         {
             "aclProfileName": "partner_api",
             "clientProfileName": "partner_api_cp",
             "clientUsername": "partner_api",
             "enabled": true,
-            "passwordToken": "W1ICzrRXsZQUQHmi+8kF1Q==JhVbhk6903GzPSeTm6UyZw=="
+            "passwordToken": "TmZeVxrAWygpnCBI6/XqPA==UqlxY5tdyofZNG43hBSLDg=="
         },
         {
             "aclProfileName": "payment",
             "clientProfileName": "payment_cp",
             "clientUsername": "payment",
             "enabled": true,
-            "passwordToken": "ISnOKfx3+xxH2lmXmqjzdw==Bor2A6m/POzsRu7K"
+            "passwordToken": "HWf6qfAVqhP/MXOGbuiZOQ==b3VDd4xHlNxIEwC0"
         },
         {
             "aclProfileName": "web_portal",
             "clientProfileName": "web_portal_cp",
             "clientUsername": "web_portal",
             "enabled": true,
-            "passwordToken": "yA12bCbLl3t4GupQyOaDMw==nuGlUsNoE2pkgR9sI/sX"
+            "passwordToken": "7djmx3wTWLG1vpAYYSsSvQ==xzEJqjd85TyGp1BNCJ3L"
         }
     ]
 }
