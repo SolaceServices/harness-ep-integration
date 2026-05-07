@@ -148,37 +148,7 @@
         "senders": []
     },
     "msgVpnName": "UATR1",
-    "queues": [
-        {
-            "egressEnabled": true,
-            "ingressEnabled": true,
-            "maxMsgSpoolUsage": 5500,
-            "owner": "booking",
-            "queueName": "Q,BOOKING",
-            "subscriptionTopics": [
-                "airline/booking/created/v1",
-                "airline/seat/assigned/v1"
-            ]
-        },
-        {
-            "egressEnabled": true,
-            "ingressEnabled": true,
-            "owner": "maintenance",
-            "queueName": "Q.MAINTENANCE",
-            "subscriptionTopics": [
-                "airline/maintenance/alert/v1"
-            ]
-        },
-        {
-            "egressEnabled": true,
-            "ingressEnabled": true,
-            "owner": "payment",
-            "queueName": "Q.PAYMENT",
-            "subscriptionTopics": [
-                "airline/payment/processed/v1"
-            ]
-        }
-    ],
+    "queues": [],
     "replayLog": {
         "TopicFilterSubscriptions": [
             "topic/demo/replay1",
