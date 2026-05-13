@@ -12,6 +12,10 @@
       "GlobalAdminUser":"cicd_admin",
       "GlobalAdminToken":"p6tWgBCe1F28+uzZySK2rg==nM2KSsk="
    },
+   "proxiesForSolaceCloudAPI" : {
+      "http": "http://gateway2ndc.ual.com:80",
+      "https": "http://gateway2ndc.ual.com:80"
+   }, 
    "primary":{
       "serviceName":"UATR1-DEV-PRIMARY",
       "datacenterId":"unitedsolaceservices-eks-us-east-1",
