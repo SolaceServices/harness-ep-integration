@@ -2,8 +2,13 @@
     "aclProfiles": [],
     "clientProfiles": [],
     "jndi": {
-        "connectionFactories": [],
-        "queues": []
+        "connectionFactories": [
+            {
+                "connectionFactoryName": "/jms/cf/default"
+            }
+        ],
+        "queues": [],
+        "topics": []
     },
     "kafkaBridge": {
         "recievers": [],

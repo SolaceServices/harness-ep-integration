@@ -2,11 +2,7 @@
     "aclProfiles": [],
     "clientProfiles": [],
     "jndi": {
-        "connectionFactories": [
-            {
-                "connectionFactoryName": "/jms/cf/default"
-            }
-        ],
+        "connectionFactories": [],
         "queues": []
     },
     "kafkaBridge": {
@@ -16,6 +12,7 @@
     },
     "msgVpnName": "UATR1",
     "queues": [],
+    "replayLog": {},
     "replicatedTopics": [],
     "topicEndpoints": [],
     "users": []
